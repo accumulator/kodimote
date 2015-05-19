@@ -32,9 +32,15 @@ Item {
     property int scrollCounter: 0
 
     HapticsEffect {
-        id: rumbleEffect
+        id: rumbleEffectSwipe
         intensity: 0.05
         duration: 150
+    }
+
+    HapticsEffect {
+        id: rumbleEffectPress
+        intensity: 0.50
+        duration: 50
     }
 
     Timer {
@@ -259,7 +265,7 @@ Item {
                 }
 
                 if (settings.hapticsEnabled) {
-                    rumbleEffect.start(1);
+                    rumbleEffectPress.start(1);
                 }
 
                 if (settings.introStep < Settings.IntroStepDone) {
@@ -286,7 +292,7 @@ Item {
             }
 
             if (settings.hapticsEnabled) {
-                rumbleEffect.start(2);
+                rumbleEffectSwipe.start(2);
             }
 
             if (settings.introStep == Settings.IntroStepScroll && repeated) {
