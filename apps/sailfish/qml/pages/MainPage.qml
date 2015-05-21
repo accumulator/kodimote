@@ -28,6 +28,8 @@ Page {
 
     property bool connected: kodi.connected
 
+    backNavigation: connected
+
     states: [
         State {
             when: connected
@@ -39,19 +41,21 @@ Page {
     ]
 
     onConnectedChanged: {
-        if (connected) {
-            pageStack.pushAttached("KodiPage.qml");
-        } else {
-            try {
-            pageStack.popAttached(undefined, PageStackAction.Immediate);
-            } catch (e) {}
-        }
+//        if (connected) {
+//            pageStack.pushAttached("KodiPage.qml");
+//        } else {
+//            try {
+//            pageStack.popAttached(undefined, PageStackAction.Immediate);
+//            } catch (e) {}
+//        }
         pageStack.pop(mainPage, PageStackAction.Immediate);
         populateMainMenu();
     }
 
     function showConnect(operationType) {
-        pageStack.push("ConnectionDialog.qml", undefined, operationType);
+        appWindow.psw.submit(function() { return pageStack.push("ConnectionDialog.qml", undefined, operationType); });
+
+//        pageStack.push("ConnectionDialog.qml", undefined, operationType);
     }
 
     function browse(target) {
@@ -110,13 +114,13 @@ Page {
                 }
             }
 
-            MenuItem {
-                text: qsTr("Now playing")
-                enabled: kodi.activePlayer !== null
-                onClicked: {
-                    pageStack.push("NowPlayingPage.qml")
-                }
-            }
+//            MenuItem {
+//                text: qsTr("Now playing")
+//                enabled: kodi.activePlayer !== null
+//                onClicked: {
+//                    pageStack.push("NowPlayingPage.qml")
+//                }
+//            }
         }
 
         PushUpMenu {
@@ -218,11 +222,13 @@ Page {
                 showConnect();
             }
 
-            if (kodi.connected) {
-                pageStack.pushAttached("KodiPage.qml");
-            } else {
-                pageStack.popAttached();
-            }
+            pageStack.pushAttached("NowPlayingPage.qml");
+
+//            if (kodi.connected) {
+//                pageStack.pushAttached("KodiPage.qml");
+//            } else {
+//                pageStack.popAttached();
+//            }
         }
     }
 

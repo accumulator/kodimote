@@ -34,7 +34,7 @@ Page {
     onPlayerChanged: {
         if(player === null) {
             //pop immediately to prevent the empty page being shown during the pop animation
-            pageStack.pop(undefined, PageStackAction.Immediate);
+            //pageStack.pop(undefined, PageStackAction.Immediate);
         }
     }
 
@@ -66,7 +66,7 @@ Page {
             MenuItem {
                 text: qsTr("Keypad")
                 onClicked: {
-                    pageStack.replace("Keypad.qml")
+                    pageStack.push("Keypad.qml")
                 }
             }
 

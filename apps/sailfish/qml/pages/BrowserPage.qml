@@ -46,6 +46,12 @@ Page {
         }
     }
 
+    onStatusChanged: {
+        if (status === PageStatus.Active) {
+            pageStack.pushAttached("NowPlayingPage.qml");
+        }
+    }
+
     KodiFilterModel {
         id: filterModel
         model: browserPage.model

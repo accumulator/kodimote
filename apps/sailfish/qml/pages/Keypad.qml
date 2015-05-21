@@ -83,13 +83,13 @@ Page {
 
             }
 
-            MenuItem {
-                text: qsTr("Now playing")
-                enabled: kodi.activePlayer !== null
-                onClicked: {
-                    pageStack.replace("NowPlayingPage.qml")
-                }
-            }
+//            MenuItem {
+//                text: qsTr("Now playing")
+//                enabled: kodi.activePlayer !== null
+//                onClicked: {
+//                    pageStack.replace("NowPlayingPage.qml")
+//                }
+//            }
         }
 
         PushUpMenu {

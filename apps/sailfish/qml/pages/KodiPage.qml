@@ -184,4 +184,14 @@ Page {
         target: kodi.profiles()
         onCountChanged: populateKodiMenu();
     }
+
+    onStatusChanged: {
+        if (status === PageStatus.Active) {
+            if (!kodi.connected && !kodi.connecting) {
+                showConnect();
+            }
+            pageStack.pushAttached("MainPage.qml");
+        }
+    }
+
 }

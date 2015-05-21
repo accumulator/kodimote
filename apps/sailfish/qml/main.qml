@@ -35,12 +35,43 @@ ApplicationWindow
     initialPage: mainPageComponent
     bottomMargin: dockedControls.visibleSize
 
-    Component {
-        id: mainPageComponent
-        MainPage {
+    property variant psw: Item {
+        id: psw
 
+        property var psfunc
+
+        function submit(func) {
+            psfunc = func;
+            pswTimer.start()
+        }
+
+        Timer {
+            id: pswTimer
+            interval: 10
+            repeat: true
+            running: false
+            onTriggered: {
+                if (appWindow.pageStack.busy) {
+                    return;
+                }
+
+                stop();
+                console.info(psw.psfunc);
+                psw.psfunc();
+            }
         }
     }
+
+    Component {
+        id: mainPageComponent
+//        MainPage {
+//        }
+        KodiPage {
+        }
+
+    }
+
+    Component.onCompleted: pageStack.push("pages/MainPage.qml");
 
     DockedControls {
         id: dockedControls
@@ -224,4 +255,5 @@ ApplicationWindow
         });
         appWindow.inputDialog.open();
     }
+
 }
