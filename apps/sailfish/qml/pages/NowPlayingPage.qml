@@ -110,7 +110,7 @@ Page {
 
             // create space to display thumbnail below navigation bullets
             PageHeader {
-
+                title: playlist.title
             }
 
             Thumbnail {
