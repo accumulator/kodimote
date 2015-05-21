@@ -28,106 +28,120 @@ Page {
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player.playlist()
 
-    PageHeader {
-        id: header
-        title: playlist.title
-    }
+    SilicaFlickable {
+        id: flickable
+        interactive: !listView.flicking
+        pressDelay: 0
+        anchors.fill: parent
 
-    SilicaListView {
-        id: listView
+        PullDownMenu {
+            id: mainMenu
 
-        anchors {
-            top: header.bottom
-            bottom: parent.bottom
-            //margins: Theme.paddingMedium
+            MenuItem {
+                text: qsTr("Clear playlist")
+                enabled: playlist.count > 0
+                onClicked: {
+                    playlist.clear()
+                }
+            }
         }
-        width: parent.width
-        model: playlist
 
-        delegate: ListItem {
-            id: listItem
+        PageHeader {
+            id: header
+            title: playlist.title
+        }
 
+        SilicaListView {
+            id: listView
+
+            anchors {
+                top: header.bottom
+                bottom: parent.bottom
+                //margins: Theme.paddingMedium
+            }
             width: parent.width
-            contentHeight: Theme.itemSizeMedium
+            model: playlist
 
-            onClicked: {
-                player.playItem(index);
-            }
+            delegate: ListItem {
+                id: listItem
 
-            menu: ContextMenu {
-                MenuItem {
-                    text: qsTr("Play")
-                    onClicked: {
-                        player.playItem(index)
-                    }
-                }
-                MenuItem {
-                    text: qsTr("Remove from playlist")
-                    onClicked: {
-                        playlist.removeItem(index)
-                    }
-                }
-                MenuItem {
-                    text: qsTr("Clear playlist")
-                    onClicked: {
-                        playlist.clear()
-                    }
-                }
-            }
+                width: parent.width
+                contentHeight: Theme.itemSizeMedium
 
-            Column {
-                anchors {
-                    verticalCenter: parent.verticalCenter
-                    left: parent.left
-                    right: durationLabel.left
-                    leftMargin: Theme.paddingLarge
+                onClicked: {
+                    player.playItem(index);
                 }
 
-                Label {
-                    id: mainText
-                    text: title
-                    font.weight: Font.Bold
-                    font.pixelSize: 26
-                    width: listView.width - durationLabel.width
-                    truncationMode: TruncationMode.Fade
-                    color: listItem.highlighted ? Theme.highlightColor : Theme.primaryColor
-                    states: [
-                        State {
-                            name: "highlighted"
-                            when: index === listView.model.currentTrackNumber - 1
-                            PropertyChanges {
-                                target: mainText
-                                color: Theme.highlightColor
-                            }
+                menu: ContextMenu {
+                    MenuItem {
+                        text: qsTr("Play")
+                        onClicked: {
+                            player.playItem(index)
                         }
-                    ]
+                    }
+                    MenuItem {
+                        text: qsTr("Remove from playlist")
+                        onClicked: {
+                            playlist.removeItem(index)
+                        }
+                    }
+                }
+
+                Column {
+                    anchors {
+                        verticalCenter: parent.verticalCenter
+                        left: parent.left
+                        right: durationLabel.left
+                        leftMargin: Theme.paddingLarge
+                    }
+
+                    Label {
+                        id: mainText
+                        text: title
+                        font.weight: Font.Bold
+                        font.pixelSize: 26
+                        width: listView.width - durationLabel.width
+                        truncationMode: TruncationMode.Fade
+                        color: listItem.highlighted ? Theme.highlightColor : Theme.primaryColor
+                        states: [
+                            State {
+                                name: "highlighted"
+                                when: index === listView.model.currentTrackNumber - 1
+                                PropertyChanges {
+                                    target: mainText
+                                    color: Theme.highlightColor
+                                }
+                            }
+                        ]
+                    }
+
+                    Label {
+                        id: subText
+                        text: subtitle ? subtitle : ""
+                        font.weight: Font.Light
+                        font.pixelSize: 24
+                        color: Theme.secondaryColor
+                        width: listView.width - durationLabel.width
+                        truncationMode: TruncationMode.Fade
+                        visible: text != ""
+                    }
                 }
 
                 Label {
-                    id: subText
-                    text: subtitle ? subtitle : ""
-                    font.weight: Font.Light
-                    font.pixelSize: 24
-                    color: Theme.secondaryColor
-                    width: listView.width - durationLabel.width
-                    truncationMode: TruncationMode.Fade
-                    visible: text != ""
+                    id: durationLabel
+                    text: duration
+                    anchors {
+                        right: parent.right
+                        rightMargin: Theme.paddingLarge
+                        verticalCenter: parent.verticalCenter
+                    }
                 }
             }
 
-            Label {
-                id: durationLabel
-                text: duration
-                anchors {
-                    right: parent.right
-                    rightMargin: Theme.paddingLarge
-                    verticalCenter: parent.verticalCenter
-                }
+            VerticalScrollDecorator {
+
             }
         }
 
-        VerticalScrollDecorator {
-
-        }
     }
 }
