@@ -77,6 +77,8 @@ Page {
         }
 
         PushUpMenu {
+            visible: !dockedControls.open
+
             MenuItem {
                 text: player && player.state === "playing" ? qsTr("Pause") : qsTr("Play")
                 onClicked: player.playPause()
