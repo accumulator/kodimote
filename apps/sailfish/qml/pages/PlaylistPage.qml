@@ -54,13 +54,11 @@ Page {
         SilicaListView {
             id: listView
 
-            anchors {
-                top: header.bottom
-                bottom: parent.bottom
-                //margins: Theme.paddingMedium
-            }
+            anchors.top: header.bottom
+            anchors.bottom: parent.bottom
             width: parent.width
             model: playlist
+            clip: true
 
             delegate: ListItem {
                 id: listItem
@@ -138,9 +136,7 @@ Page {
                 }
             }
 
-            VerticalScrollDecorator {
-
-            }
+            VerticalScrollDecorator {  }
         }
 
     }
