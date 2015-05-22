@@ -41,7 +41,10 @@ Page {
                 text: qsTr("Clear playlist")
                 enabled: playlist.count > 0
                 onClicked: {
-                    playlist.clear()
+                    clearRemorse.execute(qsTr("Clear playlist"), playlist.clear)
+                }
+                RemorsePopup {
+                    id: clearRemorse
                 }
             }
         }
