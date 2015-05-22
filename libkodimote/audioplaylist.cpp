@@ -44,6 +44,7 @@ void AudioPlaylist::refresh()
     koDebug(XDAREA_PLAYLIST) << "Refreshing playlist" << playlistId();
     QVariantMap params;
     QVariantList properties;
+    properties.append("title");
     properties.append("duration");
     properties.append("artist");
     properties.append("album");
@@ -80,8 +81,6 @@ void AudioPlaylist::queryItemData(int index)
 
 void AudioPlaylist::itemsReceived(const QVariantMap &rsp)
 {
-//    koDebug(XDAREA_PLAYLIST) << "AudioPlaylist response:" << rsp;
-
     koDebug(XDAREA_PLAYLIST) << "got GetItems response:" << rsp;
     QVariantList responseList = rsp.value("result").toMap().value("items").toList();
     bool modelResetted = false;
@@ -96,8 +95,9 @@ void AudioPlaylist::itemsReceived(const QVariantMap &rsp)
         QVariantMap itemMap = itemVariant.toMap();
         AudioPlaylistItem *item = new AudioPlaylistItem();
         item->setLabel(itemMap.value("label").toString());
+        item->setTitle(itemMap.value("title").toString());
         item->setDuration(QTime(0, 0, 0).addSecs(itemMap.value("duration").toInt()));
-        item->setArtist(itemMap.value("artist").toString());
+        item->setArtist(itemMap.value("artist").toStringList().join("/"));
         item->setAlbum(itemMap.value("album").toString());
         item->setThumbnail(itemMap.value("thumbnail").toString());
         m_itemList.append(item);
@@ -119,7 +119,7 @@ void AudioPlaylist::currentDataReceived(const QVariantMap &rsp)
         QVariantMap itemMap = responseList.first().toMap();
         item->setLabel(itemMap.value("label").toString());
         item->setTitle(itemMap.value("title").toString());
-        item->setArtist(itemMap.value("artist").toString());
+        item->setArtist(itemMap.value("artist").toStringList().join("/"));
         item->setAlbum(itemMap.value("album").toString());
         item->setFanart(itemMap.value("fanart").toString());
         item->setThumbnail(itemMap.value("thumbnail").toString());
@@ -129,15 +129,16 @@ void AudioPlaylist::currentDataReceived(const QVariantMap &rsp)
 
 QVariant AudioPlaylist::data(const QModelIndex &index, int role) const
 {
+    AudioPlaylistItem* item = m_itemList.at(index.row());
     switch(role) {
-    case Qt::DisplayRole:
-        return m_itemList.at(index.row())->label();
-    case Qt::UserRole+1:
+    case RoleTitle:
+        return item->title() != "" ? item->title() : item->label();
+    case RoleFileType:
         return "file";
-    case Qt::UserRole+2:
-        return m_itemList.at(index.row())->artist() + " - " + m_itemList.at(index.row())->album();
-    case Qt::UserRole+3:
-        return m_itemList.at(index.row())->duration().toString("mm:ss");
+    case RoleSubtitle:
+        return item->artist() + " - " + item->album();
+    case RoleDuration:
+        return item->duration().toString("mm:ss");
     }
     return QVariant();
 }
