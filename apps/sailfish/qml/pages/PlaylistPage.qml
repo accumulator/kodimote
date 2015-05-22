@@ -67,7 +67,7 @@ Page {
                 id: listItem
 
                 width: parent.width
-                contentHeight: Theme.itemSizeMedium
+                contentHeight: Theme.itemSizeSmall
 
                 onClicked: {
                     player.playItem(index);
