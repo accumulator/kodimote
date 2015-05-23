@@ -44,6 +44,7 @@ public slots:
 
 private slots:
     void readDatagram();
+    void readDatagram6();
 
 private:
     enum RecordType {
@@ -53,9 +54,9 @@ private:
         RecordTypeAdditional
     };
 
-    bool setMulticastGroup(const QHostAddress &groupAddress, bool join);
+    bool setMulticastGroup(const QUdpSocket *socket, const QHostAddress &groupAddress, bool join);
 
-
+    void doReadDatagram(QUdpSocket *socket);
     void parseDatagram(const QByteArray &datagram, int &index, RecordType recordType, KodiHost *host = 0);
     void parsePtrRecord(const QByteArray &datagram, int &index, RecordType recordType);
     void parseTxtRecord(const QByteArray &datagram, int &index, RecordType recordType);
@@ -65,8 +66,7 @@ private:
 
     /// @returns The IP address
     QString parseARecord(const QByteArray &datagram, int &index, RecordType recordType);
-
-    void parseAAAARecord(const QByteArray &datagram, int &index, RecordType recordType);
+    QString parseAAAARecord(const QByteArray &datagram, int &index, RecordType recordType);
 
     /// skip a record, adjusting the index
     void skipRecord(const QByteArray &datagram, int &index, RecordType recordType);
@@ -84,6 +84,8 @@ private:
     QTimer m_continuousDiscoveryTimer;
     QUdpSocket *m_socket;
     QHostAddress m_multicastAddress;
+    QUdpSocket *m_socket6;
+    QHostAddress m_multicastAddress6;
 };
 
 #endif // XBMCDISCOVERY_H

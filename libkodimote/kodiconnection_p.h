@@ -35,6 +35,7 @@
 #include <QPointer>
 #include <QNetworkConfigurationManager>
 #include <QNetworkSession>
+#include <QNetworkReply>
 
 class KodiDownload;
 
@@ -108,6 +109,7 @@ private slots:
     void readData();
     void clearPending();
     void socketError();
+    void requestError(QNetworkReply::NetworkError error);
     void slotConnected();
     void slotDisconnected();
     void internalConnect();
@@ -129,6 +131,7 @@ private slots:
 
 private:
     QTcpSocket *m_socket;
+    QString m_scopeId;
     int m_commandId;
     Notifier *m_notifier;
     int m_versionRequestId;

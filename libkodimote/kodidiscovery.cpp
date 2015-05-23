@@ -74,16 +74,29 @@ KodiDiscovery::KodiDiscovery(QObject *parent) :
 {
 
     m_socket = new QUdpSocket(this);
+    m_socket6 = new QUdpSocket(this);
+
     bool bound = m_socket->bind(5353, QUdpSocket::ShareAddress | QUdpSocket::ReuseAddressHint);
     if (!bound) {
         koDebug(XDAREA_DISCOVERY) << "Failed to bind Zeroconf socket:" << m_socket->errorString();
         return;
     }
-    koDebug(XDAREA_DISCOVERY) << "Bound Zeroconf socket successfully.";
+    koDebug(XDAREA_DISCOVERY) << "Bound IPv4 Zeroconf socket successfully.";
+
+    bound = m_socket6->bind(5353, QUdpSocket::ShareAddress | QUdpSocket::ReuseAddressHint);
+    if (!bound) {
+        koDebug(XDAREA_DISCOVERY) << "Failed to bind Zeroconf IPv6 socket:" << m_socket6->errorString();
+        return;
+    }
+    koDebug(XDAREA_DISCOVERY) << "Bound IPv6 Zeroconf socket successfully.";
 
     m_multicastAddress = QHostAddress("224.0.0.251");
-    setMulticastGroup(m_multicastAddress, true);
+    setMulticastGroup(m_socket, m_multicastAddress, true);
     connect(m_socket, SIGNAL(readyRead()), SLOT(readDatagram()));
+
+    m_multicastAddress6 = QHostAddress("FF02::FB");
+    setMulticastGroup(m_socket6, m_multicastAddress6, true);
+    connect(m_socket6, SIGNAL(readyRead()), SLOT(readDatagram6()));
 
     discover();
 
@@ -92,14 +105,25 @@ KodiDiscovery::KodiDiscovery(QObject *parent) :
 
 KodiDiscovery::~KodiDiscovery()
 {
-    setMulticastGroup(m_multicastAddress, false);
+    setMulticastGroup(m_socket, m_multicastAddress, false);
     delete m_socket;
+    setMulticastGroup(m_socket6, m_multicastAddress6, false);
+    delete m_socket6;
 }
 
 void KodiDiscovery::discover()
 {
-    koDebug(XDAREA_DISCOVERY) << "Sending Zeroconf Query packet";
-    m_socket->writeDatagram(QByteArray(query_jsonrpc_http_workstations, 103), m_multicastAddress, 5353);
+    int res;
+//    koDebug(XDAREA_DISCOVERY) << "Sending Zeroconf Query packet over IPv4";
+//    res = m_socket->writeDatagram(QByteArray(query_jsonrpc_http_workstations, 103), m_multicastAddress, 5353);
+//    if (res == -1) {
+//        koDebug(XDAREA_DISCOVERY) << "Failed to send over IPv4 socket:" << m_socket->errorString();
+//    }
+    koDebug(XDAREA_DISCOVERY) << "Sending Zeroconf Query packet over IPv6";
+    res = m_socket6->writeDatagram(QByteArray(query_jsonrpc_http_workstations, 103), m_multicastAddress6, 5353);
+    if (res == -1) {
+        koDebug(XDAREA_DISCOVERY) << "Failed to send over IPv6 socket:" << m_socket6->errorString();
+    }
 }
 
 bool KodiDiscovery::continuousDiscovery()
@@ -109,18 +133,26 @@ bool KodiDiscovery::continuousDiscovery()
 
 void KodiDiscovery::readDatagram()
 {
-    koDebug(XDAREA_DISCOVERY) << "***** multicast packet recieve *****";
+    koDebug(XDAREA_DISCOVERY) << "***** IPv4 multicast packet recieve *****";
+    doReadDatagram(m_socket);
+}
 
+void KodiDiscovery::readDatagram6()
+{
+    koDebug(XDAREA_DISCOVERY) << "***** IPv6 multicast packet recieve *****";
+    doReadDatagram(m_socket6);
+}
 
-    while (m_socket->hasPendingDatagrams()) {
+void KodiDiscovery::doReadDatagram(QUdpSocket *socket) {
+    while (socket->hasPendingDatagrams()) {
 
         koDebug(XDAREA_DISCOVERY) << "*********************************************";
         koDebug(XDAREA_DISCOVERY) << "************** next datagram ****************";
         koDebug(XDAREA_DISCOVERY) << "*********************************************";
 
-        int size = m_socket->pendingDatagramSize();
+        int size = socket->pendingDatagramSize();
         char *data = (char*)malloc(size);
-        m_socket->readDatagram(data, size);
+        socket->readDatagram(data, size);
         QByteArray datagram = QByteArray(data, size).toHex();
         free(data);
 
@@ -144,7 +176,7 @@ void KodiDiscovery::readDatagram()
         // read number of answer records in this datagram
         int answerCount = readNum(datagram, index, 4);
         index += 4;
-        koDebug(XDAREA_DISCOVERY) << "Ansert RRs:" << answerCount;
+        koDebug(XDAREA_DISCOVERY) << "Answer RRs:" << answerCount;
         if(answerCount == 0) {
             koDebug(XDAREA_DISCOVERY) << "No answers... Discarding packet...";
             continue;
@@ -185,6 +217,9 @@ void KodiDiscovery::readDatagram()
         if (!host->hwAddr().isEmpty()) {
             // We have a valid HW addr. Lets see if we know the host already
             existingHost = Kodi::instance()->hostModel()->findHost(host->hwAddr());
+            if (existingHost) {
+                koDebug(XDAREA_DISCOVERY) << "We know about HW addr" << host->hwAddr();
+            }
         } else {
             // No hw addr around... lets use ip addr to compare.
             // Using the first one we find, updating port etc.
@@ -195,6 +230,7 @@ void KodiDiscovery::readDatagram()
                 KodiHost *oldhost = Kodi::instance()->hostModel()->host(i);
                 if (host->address() == oldhost->address()) {
                     existingHost = oldhost;
+                    koDebug(XDAREA_DISCOVERY) << "We know about host" << host->address();
                     break;
                 }
             }
@@ -211,12 +247,23 @@ void KodiDiscovery::readDatagram()
     }
 }
 
-bool KodiDiscovery::setMulticastGroup(const QHostAddress &groupAddress, bool join)
+bool KodiDiscovery::setMulticastGroup(const QUdpSocket *socket, const QHostAddress &groupAddress, bool join)
 {
     QNetworkInterface interface;
     int sockOpt = 0;
     void *sockArg;
     int sockArgSize;
+
+    // find multicast interface
+    foreach(const QNetworkInterface &iface, QNetworkInterface::allInterfaces()) {
+        if (iface.isValid()
+                && (iface.flags() & QNetworkInterface::CanMulticast)
+                && (iface.flags() & QNetworkInterface::IsUp)
+                && !(iface.flags() & QNetworkInterface::IsLoopBack)) {
+            koDebug(XDAREA_DISCOVERY) << "found interface" << iface.index();
+            interface = iface;
+        }
+    }
 
     ip_mreq mreq4;
 #ifndef QT_NO_IPV6
@@ -232,6 +279,7 @@ bool KodiDiscovery::setMulticastGroup(const QHostAddress &groupAddress, bool joi
         sockArgSize = sizeof(mreq6);
         memset(&mreq6, 0, sizeof(mreq6));
         Q_IPV6ADDR ip6 = groupAddress.toIPv6Address();
+        koDebug(XDAREA_DISCOVERY) << "IPv6 target address" << groupAddress;
         memcpy(&mreq6.ipv6mr_multiaddr, &ip6, sizeof(ip6));
         mreq6.ipv6mr_interface = interface.index();
     } else
@@ -245,21 +293,16 @@ bool KodiDiscovery::setMulticastGroup(const QHostAddress &groupAddress, bool joi
             sockArg = &mreq4;
             sockArgSize = sizeof(mreq4);
             memset(&mreq4, 0, sizeof(mreq4));
+            koDebug(XDAREA_DISCOVERY) << "IPv4 target address" << groupAddress;
             mreq4.imr_multiaddr.s_addr = htonl(groupAddress.toIPv4Address());
-//            qDebug() << "set address to:" << groupAddress.toIPv4Address();
 
-            if (interface.isValid()) {
-//                qDebug() << "interface is valid!";
-                QList<QNetworkAddressEntry> addressEntries = interface.addressEntries();
-                if (!addressEntries.isEmpty()) {
-                    QHostAddress firstIP = addressEntries.first().ip();
-                    mreq4.imr_interface.s_addr = htonl(firstIP.toIPv4Address());
-                } else {
-//                    qDebug() << "error getting addressentries: network unreachable";
-                    return false;
-                }
+            QList<QNetworkAddressEntry> addressEntries = interface.addressEntries();
+            if (!addressEntries.isEmpty()) {
+                QHostAddress firstIP = addressEntries.first().ip();
+                mreq4.imr_interface.s_addr = htonl(firstIP.toIPv4Address());
             } else {
-                mreq4.imr_interface.s_addr = INADDR_ANY;
+//                    qDebug() << "error getting addressentries: network unreachable";
+                return false;
             }
         } else {
             // unreachable
@@ -267,7 +310,13 @@ bool KodiDiscovery::setMulticastGroup(const QHostAddress &groupAddress, bool joi
             return false;
         }
 
-    int res = setsockopt(m_socket->socketDescriptor(), IPPROTO_IP, sockOpt, sockArg, sockArgSize);
+    int res;
+    if (groupAddress.protocol() == QAbstractSocket::IPv6Protocol) {
+        res = setsockopt(socket->socketDescriptor(), IPPROTO_IPV6, sockOpt, sockArg, sockArgSize);
+    } else {
+        res = setsockopt(socket->socketDescriptor(), IPPROTO_IP, sockOpt, sockArg, sockArgSize);
+    }
+
     if (res == -1) {
         switch (errno) {
         case ENOPROTOOPT:
@@ -284,7 +333,7 @@ bool KodiDiscovery::setMulticastGroup(const QHostAddress &groupAddress, bool joi
 
 void KodiDiscovery::parseDatagram(const QByteArray &datagram, int &index, RecordType recordType, KodiHost *host)
 {
-    koDebug(XDAREA_DISCOVERY) << "**** start new datagram:" << datagram[index] << datagram[index+1] << datagram[index+2] << datagram[index+3]
+    koDebug(XDAREA_DISCOVERY) << "**** parsing datagram fragment from index " << index << ":" << datagram[index] << datagram[index+1] << datagram[index+2] << datagram[index+3]
                  << datagram[index+4] << datagram[index+5] << datagram[index+6] << datagram[index+7];
 
     QString serviceName = parseLabel(datagram, index);
@@ -321,9 +370,12 @@ void KodiDiscovery::parseDatagram(const QByteArray &datagram, int &index, Record
         parsePtrRecord(datagram, index, recordType);
     } else if (type == "0010") {
         parseTxtRecord(datagram, index, recordType);
-    } else if (type == "001c") {
-        parseAAAARecord(datagram, index, recordType);
 */
+    } else if (type == "001c") {
+        QString address = parseAAAARecord(datagram, index, recordType);
+        if (host) {
+            host->setAddress(address);
+        }
     } else {
         skipRecord(datagram, index, recordType);
     }
@@ -455,25 +507,33 @@ QString KodiDiscovery::parseARecord(const QByteArray &datagram, int &index, Kodi
     return address;
 }
 
-void KodiDiscovery::parseAAAARecord(const QByteArray &datagram, int &index, KodiDiscovery::RecordType recordType)
+QString KodiDiscovery::parseAAAARecord(const QByteArray &datagram, int &index, KodiDiscovery::RecordType recordType)
 {
     // class
     index += 4;
 
     if (recordType == RecordTypeQuery) {
-        return;
+        return QString();
     }
 
     // TTL
     index += 8;
 
-    int len = readNum(datagram, index, 4);
+    // int len = readNum(datagram, index, 4);
     index += 4;
 
     // ipv6 addr
-    koDebug(XDAREA_DISCOVERY) << "AAAA:" << readString(datagram, index, len*2);
-    index += len*2;
+    quint8 ip6bytes[16];
+    for (int i = 0; i < 16; i++) {
+        int ip6byte = readNum(datagram, index, 2);
+        ip6bytes[i] = (quint8)ip6byte;
+        index += 2;
+    }
 
+    QHostAddress address(ip6bytes);
+    koDebug(XDAREA_DISCOVERY) << "AAAA:" << address;
+
+    return address.toString();
 }
 
 void KodiDiscovery::skipRecord(const QByteArray &datagram, int &index, RecordType recordType)

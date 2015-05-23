@@ -224,8 +224,24 @@ void KodiConnectionPrivate::internalConnect()
     QObject::connect(m_networkSession, SIGNAL(stateChanged(QNetworkSession::State)), this, SLOT(sessionLost()));
 
     koDebug(XDAREA_CONNECTION) << "connecting to" << m_host->hostname() << m_host->address() << m_host->username() << "(using password:" << !m_host->password().isEmpty() << ")";
+    QHostAddress address(m_host->address());
+    // determine scopeId if IPv6
+    if (address.protocol() == QAbstractSocket::IPv6Protocol) {
+        foreach(const QNetworkInterface &iface, QNetworkInterface::allInterfaces()) {
+            if (iface.isValid()
+                    && (iface.flags() & QNetworkInterface::CanMulticast)
+                    && (iface.flags() & QNetworkInterface::IsUp)
+                    && !(iface.flags() & QNetworkInterface::IsLoopBack)) {
+                m_scopeId = QString::number(iface.index());
+                koDebug(XDAREA_DISCOVERY) << "found interface" << iface.index() << m_scopeId;
+
+                address.setScopeId(m_scopeId);
+            }
+        }
+    }
+
     // We connect to telnet on port 9090 for the announcements
-    m_socket->connectToHost(m_host->address(), 9090);
+    m_socket->connectToHost(address, 9090);
 
     m_connectionError = tr("Connecting to %1...").arg(m_host->hostname());
     emit m_notifier->connectionChanged();
@@ -321,6 +337,11 @@ void KodiConnectionPrivate::socketError()
     }
 }
 
+void KodiConnectionPrivate::requestError(QNetworkReply::NetworkError error)
+{
+    koDebug(XDAREA_CONNECTION) << "request error:" << error;
+}
+
 void KodiConnectionPrivate::sendNextCommand() {
 
     if(m_currentPendingCommand.id() >= 0 || m_socket->state() != QAbstractSocket::ConnectedState) {
@@ -340,7 +361,23 @@ void KodiConnectionPrivate::sendNextCommand() {
 QByteArray KodiConnectionPrivate::sendRequest(const Command &command)
 {
     QNetworkRequest request;
-    request.setUrl(QUrl("http://" + m_host->address() + ":" + QString::number(m_host->port()) + "/jsonrpc"));
+    QHostAddress address(m_host->address());
+    QUrl requestUrl;
+    requestUrl.setScheme("http");
+    requestUrl.setPort(m_host->port());
+    requestUrl.setPath("/jsonrpc");
+    if (address.protocol() == QAbstractSocket::IPv6Protocol) {
+        requestUrl.setHost("[" + address.toString() + "]");
+        // there is a problem with QNetworkAccessManager accessing IPv6 link-local addresses
+        // We need an interface/scopeId but there's no way to pass it to QNAM
+        // requestUrl.setHost("[" + address.toString() + "%" + m_scopeId + "]");
+    } else {
+        requestUrl.setHost(address.toString());
+    }
+
+    koDebug(XDAREA_CONNECTION) << "full URL:" << requestUrl.toString();
+
+    request.setUrl(requestUrl);
     request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
 
     QByteArray data = buildJsonPayload(command);
@@ -351,6 +388,7 @@ QByteArray KodiConnectionPrivate::sendRequest(const Command &command)
 #endif
     QNetworkReply * reply = m_network->post(request, data);
     QObject::connect(reply, SIGNAL(finished()), SLOT(replyReceived()));
+    QObject::connect(reply, SIGNAL(error(QNetworkReply::NetworkError)), SLOT(requestError(QNetworkReply::NetworkError)));
 
     return data;
 }
@@ -519,6 +557,7 @@ void KodiConnectionPrivate::handleData(const QString &data)
             if(m_callbacks.contains(id)) {
                 Callback callback = m_callbacks.take(id);
                 if(!callback.receiver().isNull()) {
+                    qDebug() << "Callback found for id" << id << "for method" << callback.member() << "on " << callback.receiver().data();
                     QMetaObject::invokeMethod(callback.receiver().data(), callback.member().toLocal8Bit(), Qt::DirectConnection, Q_ARG(const QVariantMap&, rsp));
                 }
             }
