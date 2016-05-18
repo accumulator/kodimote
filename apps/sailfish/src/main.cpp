@@ -23,11 +23,6 @@
 #include <QtQuick>
 #include <QStandardPaths>
 
-#ifndef HARBOUR_BUILD
-#include <grp.h>
-#include <pwd.h>
-#endif
-
 #include "libkodimote/kodi.h"
 #include "libkodimote/eventclient.h"
 #include "libkodimote/settings.h"
@@ -39,11 +34,6 @@
 
 int main(int argc, char *argv[])
 {
-#ifndef HARBOUR_BUILD
-    setuid(getpwnam("nemo")->pw_uid);
-    setgid(getgrnam("privileged")->gr_gid);
-#endif
-
     QGuiApplication *application = SailfishApp::application(argc, argv);
 
     // Load language file
