@@ -49,19 +49,18 @@ Page {
             }
         }
 
-        PageHeader {
-            id: header
-            title: playlist.title
-        }
-
         SilicaListView {
             id: listView
 
-            anchors.top: header.bottom
+            anchors.top: parent.top
             anchors.bottom: parent.bottom
             width: parent.width
             model: playlist
             clip: true
+
+            header: PageHeader {
+                title: "Current Playlist" // playlist.title
+            }
 
             delegate: ListItem {
                 id: listItem

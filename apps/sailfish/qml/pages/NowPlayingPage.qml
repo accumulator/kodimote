@@ -57,22 +57,10 @@ Page {
             }
 
             MenuItem {
-                text: qsTr("Media")
-                onClicked: {
-                    pageStack.pop();
-                }
-            }
-
-            MenuItem {
                 text: qsTr("Keypad")
                 onClicked: {
                     pageStack.push("Keypad.qml")
                 }
-            }
-
-            MenuItem {
-                text: qsTr("Now playing")
-                enabled: false
             }
         }
 
@@ -100,8 +88,6 @@ Page {
             }
         }
 
-        contentHeight: column.childrenRect.height
-
         Column {
             id: column
             anchors.left: parent.left
@@ -110,7 +96,7 @@ Page {
 
             // create space to display thumbnail below navigation bullets
             PageHeader {
-                title: playlist.title
+                title: "Now Playing"
             }
 
             Thumbnail {

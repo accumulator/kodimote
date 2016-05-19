@@ -90,20 +90,6 @@ Page {
                     pageStack.push("Keypad.qml")
                 }
             }
-
-            MenuItem {
-                text: qsTr("Now playing")
-                enabled: kodi.activePlayer !== null
-                onClicked: {
-                    pageStack.push("NowPlayingPage.qml")
-                }
-            }
-        }
-
-        PageHeader {
-            id: header
-            title: model ? model.title : ""
-            width: parent.width
         }
 
         BusyIndicator {
@@ -118,7 +104,7 @@ Page {
             id: listView
             highlightFollowsCurrentItem: true
             model: filterModel
-            anchors.top: header.bottom
+            anchors.top: parent.top
             anchors.bottom: controlBar.top
             width: parent.width
             clip: true
@@ -127,6 +113,10 @@ Page {
 
             property bool useThumbnails: settings.useThumbnails
             property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? 126 : 92
+
+            header: PageHeader {
+                title: model ? model.title : ""
+            }
 
             delegate: Drawer {
                 id: drawer
