@@ -85,6 +85,31 @@ Page {
             }
 
             MenuItem {
+                text: filterModel.sortOrder == Qt.AscendingOrder ? "Sort (asc)" : "Sort (desc)"
+                onClicked: {
+                    filterModel.sortOrder = filterModel.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
+                }
+            }
+
+            MenuItem {
+                text: "Search"
+                enabled: !browserPage.showSearch
+                onClicked: {
+                    browserPage.showSearch = !browserPage.showSearch
+                    if (browserPage.showSearch)
+                        earchField.forceActiveFocus();
+                }
+            }
+
+            MenuItem {
+                visible: model.allowWatchedFilter
+                text: filterModel.hideWatched ? "Show Watched" : "Hide Watched"
+                onClicked: {
+                    filterModel.hideWatched = !filterModel.hideWatched
+                }
+            }
+
+            MenuItem {
                 text: qsTr("Keypad")
                 onClicked: {
                     pageStack.push("Keypad.qml")
@@ -378,54 +403,19 @@ Page {
                 id: searchField
                 width: parent.width
 
-                visible: browserPage.showSearch && searchSwitch.checked
+                visible: browserPage.showSearch
+
+                onTextChanged: {
+                    if (text == "") {
+                        browserPage.showSearch = false
+                        controlBar.forceActiveFocus();
+                    }
+                }
 
                 Binding {
                     target: filterModel
                     property: "filter"
                     value: searchField.text
-                }
-            }
-
-            Row {
-                Switch {
-                    id: searchSwitch
-                    icon.source: "image://theme/icon-m-search"
-                    icon.height: 32
-                    icon.width: 32
-                    visible: browserPage.showSearch
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.verticalCenterOffset: -14
-                    onCheckedChanged: {
-                        if (searchSwitch.checked) {
-                            searchField.forceActiveFocus();
-                        }
-                    }
-                }
-
-                Switch {
-                    icon.source: "image://theme/icon-s-installed"
-                    visible: model.allowWatchedFilter
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.verticalCenterOffset: -14
-                    checked: !filterModel.hideWatched
-                    automaticCheck: false
-                    onClicked: {
-                        filterModel.hideWatched = !filterModel.hideWatched
-                    }
-                }
-
-                IconButton {
-                    icon.source: "image://theme/icon-direction-forward"
-                    rotation: filterModel.sortOrder == Qt.AscendingOrder ? 180 : 0
-                    height: 70
-                    width: 70
-                    icon.height: 70
-                    icon.width: 70
-                    onClicked: {
-                        filterModel.sortOrder = filterModel.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
-                    }
-                    anchors.verticalCenter: parent.verticalCenter
                 }
             }
 
