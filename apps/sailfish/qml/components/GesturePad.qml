@@ -132,9 +132,9 @@ Item {
                             }
                         }
 
-                        PauseAnimation { duration: 100 * index }
-                        NumberAnimation { target: arrowImage; properties: "opacity"; from: 0.3; to: 1; duration: 200 }
-                        NumberAnimation { target: arrowImage; properties: "opacity"; from: 1; to: 0.3; duration: 200 }
+                        PauseAnimation { duration: 50 * index }
+                        NumberAnimation { target: arrowImage; properties: "opacity"; from: 0.3; to: 1; duration: 150 }
+                        NumberAnimation { target: arrowImage; properties: "opacity"; from: 1; to: 0.3; duration: 150 }
                     }
                 }
             }
@@ -146,7 +146,7 @@ Item {
         anchors.centerIn: parent
         width: parent.width
         height: width * 0.75
-        color: Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
+        color: "transparent"
 
         Image {
             anchors.fill: parent

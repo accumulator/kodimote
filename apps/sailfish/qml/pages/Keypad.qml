@@ -118,7 +118,10 @@ Page {
 
             Rectangle {
                 width: parent.width
-                color: Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
+                color: "transparent"
+                border.color: Theme.rgba(Theme.highlightColor, Theme.highlightBackgroundOpacity)
+                border.width: 2
+                radius: 10
                 height: Theme.itemSizeMedium
 
                 Label {
@@ -288,7 +291,10 @@ Page {
             }
             Rectangle {
                 width: parent.width
-                color: Theme.rgba(Theme.highlightBackgroundColor, Theme.highlightBackgroundOpacity)
+                color: "transparent"
+                border.color: Theme.rgba(Theme.highlightColor, Theme.highlightBackgroundOpacity)
+                border.width: 2
+                radius: 10
                 height: Theme.itemSizeMedium
 
                 Row {
