@@ -92,26 +92,22 @@ void Keys::previousMenu()
 
 void Keys::red()
 {
-//    executeAction("red");
-    Kodi::instance()->eventClient()->sendIrPress("red");
+    Kodi::instance()->eventClient()->sendKeypress("red");
 }
 
 void Keys::green()
 {
-//    executeAction("green");
-    Kodi::instance()->eventClient()->sendIrPress("green");
+    Kodi::instance()->eventClient()->sendKeypress("green");
 }
 
 void Keys::yellow()
 {
-//    executeAction("yellow");
-    Kodi::instance()->eventClient()->sendIrPress("yellow");
+    Kodi::instance()->eventClient()->sendKeypress("yellow");
 }
 
 void Keys::blue()
 {
-//    executeAction("blue");
-    Kodi::instance()->eventClient()->sendIrPress("blue");
+    Kodi::instance()->eventClient()->sendKeypress("blue");
 }
 
 void Keys::home()
