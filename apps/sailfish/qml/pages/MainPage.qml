@@ -106,44 +106,6 @@ Page {
             ControlsMenuItem {
 
             }
-
-            MenuItem {
-                text: qsTr("Keypad")
-                onClicked: {
-                    pageStack.push("Keypad.qml")
-                }
-            }
-
-//            MenuItem {
-//                text: qsTr("Now playing")
-//                enabled: kodi.activePlayer !== null
-//                onClicked: {
-//                    pageStack.push("NowPlayingPage.qml")
-//                }
-//            }
-        }
-
-        PushUpMenu {
-            MenuItem {
-                text: qsTr("Change connection...")
-                onClicked: showConnect()
-                visible: kodi.connected
-            }
-
-            MenuItem {
-                id: settingsMenu
-                text: qsTr("Settings")
-                onClicked: {
-                    pageStack.push("SettingsDialog.qml");
-                }
-            }
-
-            MenuItem {
-                text: qsTr("About")
-                onClicked: {
-                    pageStack.push("AboutDialog.qml");
-                }
-            }
         }
 
         NoConnection {
@@ -222,7 +184,7 @@ Page {
                 showConnect();
             }
 
-            pageStack.pushAttached("NowPlayingPage.qml");
+            pageStack.pushAttached("Keypad.qml");
 
 //            if (kodi.connected) {
 //                pageStack.pushAttached("KodiPage.qml");

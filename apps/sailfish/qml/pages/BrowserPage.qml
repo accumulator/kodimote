@@ -48,7 +48,7 @@ Page {
 
     onStatusChanged: {
         if (status === PageStatus.Active) {
-            pageStack.pushAttached("NowPlayingPage.qml");
+            pageStack.pushAttached("Keypad.qml");
         }
     }
 
@@ -106,13 +106,6 @@ Page {
                 text: filterModel.hideWatched ? "Show Watched" : "Hide Watched"
                 onClicked: {
                     filterModel.hideWatched = !filterModel.hideWatched
-                }
-            }
-
-            MenuItem {
-                text: qsTr("Keypad")
-                onClicked: {
-                    pageStack.push("Keypad.qml")
                 }
             }
         }

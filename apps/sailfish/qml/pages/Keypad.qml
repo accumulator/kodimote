@@ -44,6 +44,7 @@ Page {
     onStatusChanged: {
         if (status === PageStatus.Active) {
             dockedControls.hideTemporary = settings.introStep < Settings.IntroStepDone
+            pageStack.pushAttached("NowPlayingPage.qml");
         } else {
             dockedControls.hideTemporary = false
         }
@@ -60,35 +61,15 @@ Page {
         anchors.fill: parent
         pressDelay: 0
 
-        PageHeader {
-            id: header
-            title: qsTr("Keypad")
-        }
-
         PullDownMenu {
+            visible: kodi.activePlayer || kodi.picturePlayerActive
             ControlsMenuItem {
 
             }
 
             MenuItem {
-                text: qsTr("Media")
-                onClicked: {
-                    pageStack.pop();
-                }
-            }
-
-            MenuItem {
-                text: qsTr("Keypad")
                 enabled: kodi.picturePlayerActive
-
-            }
-        }
-
-        PushUpMenu {
-            enabled: kodi.picturePlayerActive
-            visible: kodi.picturePlayerActive
-            MenuItem {
-                text: !enabled || usePictureControls ? qsTr("Keypad") : qsTr("Pictures")
+                text: !enabled || usePictureControls ? qsTr("Pictures Mode (off)") : qsTr("Pictures Mode (on)")
                 onClicked: {
                     pictureControlsOverride = !pictureControlsOverride
                 }
@@ -100,13 +81,18 @@ Page {
         Column {
             id: column
 
-            anchors.top: header.bottom
+            anchors.top: parent.top
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.leftMargin: Theme.paddingLarge
             anchors.rightMargin: Theme.paddingLarge
 
             spacing: Theme.paddingLarge * 1.5
+
+            PageHeader {
+                id: header
+                title: qsTr("Keypad")
+            }
 
             Rectangle {
                 width: parent.width

@@ -23,10 +23,37 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
+    function showConnect(operationType) {
+        appWindow.psw.submit(function() { return pageStack.push("ConnectionDialog.qml", undefined, operationType); });
+    }
+
     SilicaListView {
         id: listView
         anchors.fill: parent
         model: kodiMenuModel
+
+        PullDownMenu {
+            MenuItem {
+                text: qsTr("Change connection...")
+                onClicked: showConnect()
+                visible: kodi.connected
+            }
+
+            MenuItem {
+                id: settingsMenu
+                text: qsTr("Settings")
+                onClicked: {
+                    pageStack.push("SettingsDialog.qml");
+                }
+            }
+
+            MenuItem {
+                text: qsTr("About")
+                onClicked: {
+                    pageStack.push("AboutDialog.qml");
+                }
+            }
+        }
 
         header: PageHeader {
             title: qsTr("Kodi on %1").arg(kodi.connectedHostName)

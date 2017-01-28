@@ -64,11 +64,9 @@ ApplicationWindow
 
     Component {
         id: mainPageComponent
-//        MainPage {
-//        }
+
         KodiPage {
         }
-
     }
 
     Component.onCompleted: pageStack.push("pages/MainPage.qml");

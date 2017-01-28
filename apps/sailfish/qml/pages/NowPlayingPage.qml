@@ -52,39 +52,9 @@ Page {
         anchors.fill: parent
 
         PullDownMenu {
+            visible: kodi.activePlayer
             ControlsMenuItem {
 
-            }
-
-            MenuItem {
-                text: qsTr("Keypad")
-                onClicked: {
-                    pageStack.push("Keypad.qml")
-                }
-            }
-        }
-
-        PushUpMenu {
-            visible: !dockedControls.open
-
-            MenuItem {
-                text: player && player.state === "playing" ? qsTr("Pause") : qsTr("Play")
-                onClicked: player.playPause()
-            }
-
-            MenuItem {
-                text: qsTr("Next")
-                onClicked: player.skipNext()
-            }
-
-            MenuItem {
-                text: qsTr("Previous")
-                onClicked: player.skipPrevious()
-            }
-
-            MenuItem {
-                text: qsTr("Stop")
-                onClicked: player.stop()
             }
         }
 
