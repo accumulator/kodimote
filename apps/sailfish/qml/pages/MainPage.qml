@@ -34,7 +34,7 @@ Page {
         State {
             when: connected
             PropertyChanges { target: listView.headerItem; visible: true }
-            PropertyChanges { target: mainMenu; visible: true; enabled: true }
+            PropertyChanges { target: mainMenu; enabled: true }
             PropertyChanges { target: listView; model: mainMenuModel }
             PropertyChanges { target: noConnection; visible: false }
         }
@@ -101,7 +101,7 @@ Page {
 
         PullDownMenu {
             id: mainMenu
-            visible: false
+            visible: kodi.activePlayer
             enabled: false
             ControlsMenuItem {
 

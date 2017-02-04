@@ -33,6 +33,7 @@ ApplicationWindow
     }
 
     initialPage: mainPageComponent
+    // TODO: this is the reason the header 'snaps' on pushed pages :/
     bottomMargin: dockedControls.visibleSize
 
     property variant psw: Item {
