@@ -32,6 +32,8 @@
 
 #include <sailfishapp.h>
 
+#include <keepalive/displayblanking.h>
+
 int main(int argc, char *argv[])
 {
     QGuiApplication *application = SailfishApp::application(argc, argv);
@@ -53,6 +55,8 @@ int main(int argc, char *argv[])
     application->installTranslator(&translator);
 
     Kodi::instance()->setDataPath(QStandardPaths::writableLocation(QStandardPaths::CacheLocation));
+
+    qmlRegisterType<DisplayBlanking>("harbour.kodimote", 1, 0, "DisplayBlanking");
 
     QQuickView *view = SailfishApp::createView();
 

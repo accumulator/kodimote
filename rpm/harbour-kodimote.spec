@@ -26,6 +26,7 @@ BuildRequires:  pkgconfig(Qt5Core)
 BuildRequires:  pkgconfig(Qt5Qml)
 BuildRequires:  pkgconfig(Qt5Quick)
 BuildRequires:  pkgconfig(libresourceqt5)
+BuildRequires:  pkgconfig(keepalive)
 BuildRequires:  desktop-file-utils
 
 %description
