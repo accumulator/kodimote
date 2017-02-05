@@ -182,7 +182,7 @@ Page {
                     width: parent.width
                 }
 
-                height: playerColumn.height < backgroundHeight ? backgroundHeight : playerColumn.height
+                height: Math.max(playerColumn.height,backgroundHeight)
                 width: parent.width
 
                 Column {
