@@ -27,6 +27,7 @@ PkgConfigBR:
   - Qt5Qml
   - Qt5Quick
   - libresourceqt5
+  - keepalive
 
 # Build dependencies without a pkgconfig setup can be listed here
 # PkgBR:

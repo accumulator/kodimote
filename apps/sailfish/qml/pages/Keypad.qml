@@ -41,6 +41,10 @@ Page {
         duration: 50
     }
 
+    DisplayBlanking {
+        preventBlanking: keypad.status === PageStatus.Active && Qt.application.active
+    }
+
     onStatusChanged: {
         if (status === PageStatus.Active) {
             dockedControls.hideTemporary = settings.introStep < Settings.IntroStepDone

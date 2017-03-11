@@ -15,7 +15,7 @@ contains(STORE, harbour) {
     DEFINES += HARBOUR_BUILD=
 } else {
     CONFIG += Qt5Contacts
-    PKGCONFIG += Qt5Contacts
+    PKGCONFIG += Qt5Contacts keepalive
 }
 
 SOURCES += \
