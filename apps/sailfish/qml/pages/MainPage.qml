@@ -114,6 +114,7 @@ Page {
             visible: true
 
             onShowConnect: mainPage.showConnect()
+            onVisibleChanged: mainPage.forwardNavigation = !visible
         }
 
         delegate: ListItem {
