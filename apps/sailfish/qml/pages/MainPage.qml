@@ -42,21 +42,20 @@ Page {
     ]
 
     onConnectedChanged: {
-//        if (connected) {
-//            pageStack.pushAttached("KodiPage.qml");
-//        } else {
-//            try {
-//            pageStack.popAttached(undefined, PageStackAction.Immediate);
-//            } catch (e) {}
-//        }
-        pageStack.pop(mainPage, PageStackAction.Immediate);
-        populateMainMenu();
+        if (connected) {
+            // reconnected to same host? do nothing
+            if (appWindow.lastConnectedHostName === kodi.connectedHostName)
+                return;
+
+            // new or different host? reinit
+            appWindow.lastConnectedHostName = kodi.connectedHostName
+            pageStack.pop(mainPage, PageStackAction.Immediate);
+            populateMainMenu();
+        }
     }
 
     function showConnect(operationType) {
         appWindow.psw.submit(function() { return pageStack.push("ConnectionDialog.qml", undefined, operationType); });
-
-//        pageStack.push("ConnectionDialog.qml", undefined, operationType);
     }
 
     function browse(target) {

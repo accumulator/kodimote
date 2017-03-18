@@ -29,6 +29,8 @@ ApplicationWindow
 {
     id: appWindow
 
+    property string lastConnectedHostName
+
     cover: CoverPage {
         id: cover
     }
