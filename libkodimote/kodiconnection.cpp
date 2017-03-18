@@ -233,6 +233,9 @@ void KodiConnectionPrivate::internalConnect()
 
 void KodiConnectionPrivate::sessionLost()
 {
+    if (!m_networkSession)
+        return;
+
     if(m_networkSession->state() != QNetworkSession::Disconnected) {
         return;
     }
