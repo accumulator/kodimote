@@ -23,10 +23,6 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
-    function showConnect(operationType) {
-        appWindow.psw.submit(function() { return pageStack.push("ConnectionDialog.qml", undefined, operationType); });
-    }
-
     SilicaListView {
         id: listView
         anchors.fill: parent
@@ -35,7 +31,7 @@ Page {
         PullDownMenu {
             MenuItem {
                 text: qsTr("Change connection...")
-                onClicked: showConnect()
+                onClicked: appWindow.showConnect()
                 visible: kodi.connected
             }
 

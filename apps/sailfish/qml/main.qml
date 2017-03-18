@@ -66,6 +66,10 @@ ApplicationWindow
         }
     }
 
+    function showConnect(operationType) {
+        psw.submit(function() { return pageStack.push("pages/ConnectionDialog.qml", undefined, operationType); });
+    }
+
     Component {
         id: mainPageComponent
 

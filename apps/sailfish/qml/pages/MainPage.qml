@@ -54,10 +54,6 @@ Page {
         }
     }
 
-    function showConnect(operationType) {
-        appWindow.psw.submit(function() { return pageStack.push("ConnectionDialog.qml", undefined, operationType); });
-    }
-
     function browse(target) {
         var menuModel = null;
 
@@ -113,7 +109,7 @@ Page {
             anchors.fill: parent
             visible: true
 
-            onShowConnect: mainPage.showConnect()
+            onShowConnect: appWindow.showConnect()
             onVisibleChanged: mainPage.forwardNavigation = !visible
         }
 
