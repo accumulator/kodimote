@@ -1,6 +1,7 @@
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
+ *            2017      Sander van Grieken <sander@outrightsolutions.nl>     *
  *                                                                           *
  * This file is part of Kodimote                                           *
  *                                                                           *
@@ -37,9 +38,8 @@ Row {
     }
 
     IconButton {
+        id: referenceIcon
         icon.source: "image://theme/icon-m-previous"
-        icon.height: 75; icon.width: 75
-        height: 75; width: 75
         enabled: !!player
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -51,8 +51,7 @@ Row {
 
     IconButton {
         icon.source: "../icons/icon-m-backwards.png"
-        icon.height: 75; icon.width: 75
-        height: 75; width: 75
+        icon.height: referenceIcon.icon.height; icon.width: referenceIcon.icon.width
         enabled: player ? player.state == "playing" && player.type !== Player.PlayerTypePictures : false
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -65,8 +64,7 @@ Row {
 
     IconButton {
         icon.source: "../icons/icon-m-stop.png"
-        icon.height: 75; icon.width: 75
-        height: 75; width: 75
+        icon.height: referenceIcon.icon.height; icon.width: referenceIcon.icon.width
         enabled: player ? player.state !== "stopped" : false
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -78,8 +76,6 @@ Row {
 
     IconButton {
         icon.source: "image://theme/icon-m-" + (player && player.speed === 1 && player.state === "playing" ? "pause" : "play")
-        icon.height: 75; icon.width: 75
-        height: 75; width: 75
         enabled: !!player
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -91,8 +87,7 @@ Row {
 
     IconButton {
         icon.source: "../icons/icon-m-forward.png"
-        icon.height: 75; icon.width: 75
-        height: 75; width: 75
+        icon.height: referenceIcon.icon.height; icon.width: referenceIcon.icon.width
         enabled: player ? player.state == "playing" && player.type !== Player.PlayerTypePictures : false
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -105,8 +100,6 @@ Row {
 
     IconButton {
         icon.source: "image://theme/icon-m-next"
-        icon.height: 75; icon.width: 75
-        height: 75; width: 75
         enabled: !!player
         onClicked: {
             if (settings.hapticsEnabled) {

@@ -101,7 +101,7 @@ DockedPanel {
         width:parent.width
         height: childrenRect.height
         anchors.verticalCenter: parent.verticalCenter
-        spacing: Theme.paddingMedium
+        spacing: Theme.paddingLarge
 
         Item {
             anchors {
@@ -119,6 +119,7 @@ DockedPanel {
                 width: height
                 anchors.left: parent.left
                 icon.source: "../icons/icon-m-volume-down.png"
+                icon.height: volumeUpButton.icon.height; icon.width: volumeUpButton.icon.width
                 onClicked: {
                     if (settings.hapticsEnabled) {
                         rumbleEffect.start(2);
@@ -131,6 +132,7 @@ DockedPanel {
                 id: volumeSlider
                 anchors.left: volumeDownButton.right
                 anchors.right: volumeUpButton.left
+                anchors.verticalCenter: parent.verticalCenter
                 enabled: kodi.connectedHost.volumeControlType !== KodiHost.VolumeControlTypeRelative
                 visible: enabled
                 leftMargin: Theme.paddingSmall

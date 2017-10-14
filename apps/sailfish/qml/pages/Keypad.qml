@@ -148,6 +148,7 @@ Page {
                     spacing: Theme.paddingMedium
 
                     IconButton {
+                        id: referenceIcon
                         icon.source: "image://theme/icon-m-image"
                         onClicked: {
                             if (settings.hapticsEnabled) {
@@ -189,6 +190,7 @@ Page {
                     }
                     IconButton {
                         icon.source: "../icons/icon-m-tv.png"
+                        icon.height: referenceIcon.icon.height; icon.width: referenceIcon.icon.width
                         onClicked: {
                             if (settings.hapticsEnabled) {
                                 rumbleEffect.start(2);
@@ -205,6 +207,7 @@ Page {
                 width: parent.width
 
                 IconButton {
+                    id: backButton
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity { NumberAnimation { duration: 500 } }
                     icon.source: "image://theme/icon-m-back"
@@ -256,6 +259,7 @@ Page {
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity { NumberAnimation { duration: 500 } }
                     icon.source: usePictureControls ? "image://theme/icon-m-remove" : "../icons/icon-m-menu.png"
+                    icon.height: backButton.icon.height; icon.width: backButton.icon.width
                     anchors { right: parent.right; bottom: parent.bottom; margins: Theme.paddingMedium }
                     onClicked: {
                         if (settings.hapticsEnabled) {

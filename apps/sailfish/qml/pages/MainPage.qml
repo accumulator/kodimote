@@ -126,6 +126,7 @@ Page {
                 anchors.verticalCenter: parent.verticalCenter
 
                 source: icon
+                height: referenceIcon.icon.height; width: referenceIcon.icon.width
             }
 
             Column {
@@ -193,6 +194,12 @@ Page {
 
     Component.onCompleted: {
         populateMainMenu();
+    }
+
+    IconButton {
+        id: referenceIcon
+        icon.source: "image://theme/icon-l-music"
+        visible: false
     }
 
     ListModel {
