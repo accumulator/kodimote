@@ -70,6 +70,8 @@ CoverBackground {
         source: "./background.png"
         anchors.verticalCenter: parent.verticalCenter
         width: parent.width
+        height: sourceSize.height * (parent.width / sourceSize.width)
+        fillMode: Image.PreserveAspectFit
     }
 
     Image {
