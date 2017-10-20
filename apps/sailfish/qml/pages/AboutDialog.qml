@@ -37,7 +37,7 @@ Dialog {
                 family: Theme.fontFamilyHeading
             }
             color: Theme.highlightColor
-            text: "Kodimote 2.1.0"
+            text: "Kodimote 2.1.1 - accumulator build"
         }
 
         Label {
@@ -45,6 +45,7 @@ Dialog {
             color: Theme.highlightColor
             text: "Michael Zanetti<br>michael_zanetti@gmx.net" +
                   "<br>Robert Meijers<br>robert.meijers@gmail.com" +
+                  "<br>Sander van Grieken<br>sander@outrightsolutions.nl" +
                   "<br>http://notyetthere.org/maemomeego/kodimote"
         }
 

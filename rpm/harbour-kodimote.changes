@@ -1,3 +1,12 @@
+* Fri Oct 19 2017 Sander van Grieken <sander@outrightsolutions.nl> 2.1.1-1
+- completely new page navigation, now left/right swipe based instead of via pulley
+- fix red/yellow/green/blue buttons
+- various UI improvements, icon scales, alignments
+- keep device awake when the keypad is active
+- don't collapse pagestack when kodimote reconnects
+- dont crash when reconnecting after network reappears
+- reduce haptics duration, because xperia seems to not honour intensity
+
 * Sun Jun 07 2015 Robert Meijers <robert.meijers@gmail.com> 2.1.0-1
 - Add support for resuming playback of a previously stopped item
 - Remember watched filter for movies and TV shows
