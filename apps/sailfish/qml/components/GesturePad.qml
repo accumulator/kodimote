@@ -34,7 +34,7 @@ Item {
     HapticsEffect {
         id: rumbleEffectSwipe
         intensity: 0.05
-        duration: 150
+        duration: 50
     }
 
     HapticsEffect {
