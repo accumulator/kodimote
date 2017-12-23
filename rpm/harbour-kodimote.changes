@@ -1,3 +1,7 @@
+* Sat Dec 23 2017 Arno Dekker <email@me.com> 2.1.2-1
+- Added tablet layout support
+- Some additional layout changes
+
 * Fri Oct 19 2017 Sander van Grieken <sander@outrightsolutions.nl> 2.1.1-1
 - completely new page navigation, now left/right swipe based instead of via pulley
 - fix red/yellow/green/blue buttons

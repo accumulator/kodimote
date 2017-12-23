@@ -29,7 +29,11 @@ DockedPanel {
     property bool hideTemporary: false
     property bool _opened
     property bool _dialogOpen
+    property bool largeScreen: screen.width > 1080
+    property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
+    // property bool smallScreen: (screen.width  <= 540)
 
+    property int iconResize: largeScreen? 140 : (mediumScreen ? 90 : 64)
     open: player
     width: parent.width
     height: column.height + (2 * Theme.paddingLarge)
@@ -101,9 +105,10 @@ DockedPanel {
         width:parent.width
         height: childrenRect.height
         anchors.verticalCenter: parent.verticalCenter
-        spacing: Theme.paddingLarge
+        spacing: Theme.paddingMedium
 
         Item {
+            visible: appWindow.orientation === Orientation.Portrait || largeScreen
             anchors {
                 left: parent.left
                 right: parent.right
@@ -111,15 +116,15 @@ DockedPanel {
                 rightMargin: Theme.paddingLarge
             }
 
-            height: 64
+            height: iconResize
 
             IconButton {
                 id: volumeDownButton
-                height: 64
+                height: iconResize
                 width: height
+                icon.height: iconResize; icon.width: iconResize
                 anchors.left: parent.left
                 icon.source: "../icons/icon-m-volume-down.png"
-                icon.height: volumeUpButton.icon.height; icon.width: volumeUpButton.icon.width
                 onClicked: {
                     if (settings.hapticsEnabled) {
                         rumbleEffect.start(2);
@@ -154,8 +159,9 @@ DockedPanel {
 
             IconButton {
                 id: volumeUpButton
-                height: 64
+                height: iconResize
                 width: height
+                icon.height: iconResize; icon.width: iconResize
                 anchors.right: parent.right
                 icon.source: "image://theme/icon-m-speaker"
                 onClicked: {

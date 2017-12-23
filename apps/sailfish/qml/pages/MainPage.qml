@@ -26,6 +26,10 @@ import "../components/"
 
 Page {
     id: mainPage
+    property bool bigScreen: Screen.sizeCategory === Screen.Large
+                               || Screen.sizeCategory === Screen.ExtraLarge
+    allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
 
     property bool connected: kodi.connected
 

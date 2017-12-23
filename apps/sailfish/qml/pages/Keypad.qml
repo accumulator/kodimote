@@ -27,6 +27,10 @@ import "../components/"
 
 Page {
     id: keypad
+    property bool bigScreen: Screen.sizeCategory === Screen.Large
+                               || Screen.sizeCategory === Screen.ExtraLarge
+    allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
 
     property QtObject picturePlayer: kodi.picturePlayer()
 
@@ -204,7 +208,8 @@ Page {
 
             GesturePad {
                 id: gesturePad
-                width: parent.width
+                width: isPortrait ? parent.width : parent.width / 2
+                anchors.horizontalCenter: parent.horizontalCenter
 
                 IconButton {
                     id: backButton

@@ -23,6 +23,10 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Dialog {
+    property bool bigScreen: Screen.sizeCategory === Screen.Large
+                               || Screen.sizeCategory === Screen.ExtraLarge
+    allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
     Component.onCompleted: {
         console.log("settings: " + settings);
         console.log("use thumbnail: " + settings.useThumbnails);

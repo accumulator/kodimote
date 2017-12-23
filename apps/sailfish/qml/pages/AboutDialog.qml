@@ -24,6 +24,10 @@ import Sailfish.Silica 1.0
 
 Dialog {
 
+    property bool bigScreen: Screen.sizeCategory === Screen.Large
+                               || Screen.sizeCategory === Screen.ExtraLarge
+    allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
     Column {
         anchors.fill: parent
         anchors.topMargin: Theme.itemSizeLarge
@@ -37,7 +41,7 @@ Dialog {
                 family: Theme.fontFamilyHeading
             }
             color: Theme.highlightColor
-            text: "Kodimote 2.1.1 - accumulator build"
+            text: "Kodimote 2.1.2"
         }
 
         Label {

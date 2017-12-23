@@ -27,9 +27,15 @@ import harbour.kodimote 1.0
 Page {
     id: nowPlayingPage
 
+    property bool bigScreen: Screen.sizeCategory === Screen.Large
+                               || Screen.sizeCategory === Screen.ExtraLarge
+    allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player ? player.playlist() : null
     property QtObject currentItem: player ? player.currentItem : null
+    property bool largeScreen:screen.width > 540
+
 
     onPlayerChanged: {
         if(player === null) {
@@ -50,6 +56,8 @@ Page {
 
     SilicaFlickable {
         anchors.fill: parent
+        // Tell SilicaFlickable the height of its content.
+        contentHeight: column.height
 
         PullDownMenu {
             visible: kodi.activePlayer
@@ -72,7 +80,7 @@ Page {
             Thumbnail {
                 artworkSource: currentItem ? currentItem.thumbnail : ""
                 width: parent.width
-                height: artworkSize && artworkSize.width > artworkSize.height ? artworkSize.height / (artworkSize.width / width) : 400
+                height: artworkSize && artworkSize.width > artworkSize.height ? artworkSize.height / (artworkSize.width / width) : (largeScreen ? 900 : 400)
                 fillMode: Image.PreserveAspectFit
                 smooth: true
                 defaultText: currentItem ? currentItem.title : ""
