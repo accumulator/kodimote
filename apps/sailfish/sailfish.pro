@@ -55,3 +55,16 @@ OTHER_FILES += \
     qml/pages/ProfileSelectionDialog.qml \
     qml/pages/ResumeDialog.qml
 
+icon86.files += icons/86x86/harbour-kodimote.png
+icon86.path = /usr/share/icons/hicolor/86x86/apps
+
+icon108.files += icons/108x108/harbour-kodimote.png
+icon108.path = /usr/share/icons/hicolor/108x108/apps
+
+icon128.files += icons/128x128/harbour-kodimote.png
+icon128.path = /usr/share/icons/hicolor/128x128/apps
+
+icon256.files += icons/256x256/harbour-kodimote.png
+icon256.path = /usr/share/icons/hicolor/256x256/apps
+
+INSTALLS += icon86 icon108 icon128 icon256

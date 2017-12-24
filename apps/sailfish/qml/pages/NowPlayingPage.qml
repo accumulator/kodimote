@@ -59,6 +59,9 @@ Page {
         // Tell SilicaFlickable the height of its content.
         contentHeight: column.height
 
+        VerticalScrollDecorator {
+        }
+
         PullDownMenu {
             visible: kodi.activePlayer
             ControlsMenuItem {
