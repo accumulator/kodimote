@@ -90,7 +90,7 @@ Page {
             }
 
             MenuItem {
-                text: filterModel.sortOrder == Qt.AscendingOrder ? "Sort (asc)" : "Sort (desc)"
+                text: filterModel.sortOrder == Qt.AscendingOrder ? "Sort ▲" : "Sort ▼"
                 onClicked: {
                     filterModel.sortOrder = filterModel.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
                 }

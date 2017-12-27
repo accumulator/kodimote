@@ -32,8 +32,8 @@ Row {
     property bool largeScreen: screen.width > 1080
     property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
     // property bool smallScreen: (screen.width  <= 540)
-    spacing: Theme.paddingSmall
-    property int iconResize: largeScreen? 200 : (mediumScreen ? 130 : 75)
+    spacing: (mediumScreen || largeScreen) ? Theme.paddingLarge : Theme.paddingSmall
+    property int iconResize: largeScreen? 200 : (mediumScreen ? 128 : 75)
 
     HapticsEffect {
         id: rumbleEffect

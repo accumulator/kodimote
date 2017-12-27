@@ -30,6 +30,7 @@ Item {
     width: parent.width
 
     property int scrollCounter: 0
+    property bool smallScreen: (Screen.width  <= 540)
 
     HapticsEffect {
         id: rumbleEffectSwipe
@@ -109,6 +110,7 @@ Item {
                     id: arrowImage
                     opacity: 0.3
                     source: "../icons/pad-arrow.png"
+                    scale: smallScreen ? 1 : 2
 
                     Connections {
                         target: arrowsRoot

@@ -29,6 +29,7 @@ Page {
     id: keypad
     property bool bigScreen: Screen.sizeCategory === Screen.Large
                                || Screen.sizeCategory === Screen.ExtraLarge
+    property bool smallScreen: (Screen.width  <= 540)
     allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted : Orientation.Portrait
 
@@ -69,6 +70,9 @@ Page {
         anchors.fill: parent
         pressDelay: 0
 
+        VerticalScrollDecorator {
+        }
+
         PullDownMenu {
             visible: kodi.activePlayer || kodi.picturePlayerActive
             ControlsMenuItem {
@@ -95,7 +99,7 @@ Page {
             anchors.leftMargin: Theme.paddingLarge
             anchors.rightMargin: Theme.paddingLarge
 
-            spacing: Theme.paddingLarge * 1.5
+            spacing: smallScreen ? Theme.paddingLarge : Theme.paddingLarge * 1.5
 
             PageHeader {
                 id: header
@@ -149,7 +153,7 @@ Page {
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity { NumberAnimation { duration: 500 } }
                     anchors.centerIn: parent
-                    spacing: Theme.paddingMedium
+                    spacing: smallScreen ? Theme.paddingMedium : 50
 
                     IconButton {
                         id: referenceIcon
@@ -208,7 +212,7 @@ Page {
 
             GesturePad {
                 id: gesturePad
-                width: isPortrait ? parent.width : parent.width / 2
+                width: isPortrait ? (bigScreen ? parent.width * 0.75 : parent.width) : parent.width / 2
                 anchors.horizontalCenter: parent.horizontalCenter
 
                 IconButton {

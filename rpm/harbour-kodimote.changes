@@ -1,3 +1,8 @@
+* Wed Dec 27 2017 Arno Dekker <email@me.com> 2.1.2-2
+- Layout improvements for various screensizes in keypad
+- Layout improvements for various screensizes in dockerpanel
+- Added some scrolldecorators
+
 * Sat Dec 23 2017 Arno Dekker <email@me.com> 2.1.2-1
 - Added tablet layout support
 - Some additional layout changes

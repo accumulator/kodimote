@@ -12,9 +12,9 @@ Name:       harbour-kodimote
 %{!?qtc_qmake5:%define qtc_qmake5 %qmake5}
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
-Summary:    A remote control for XBMC/Kodi written in Qt with QML
+Summary:    A remote control for Kodi written in Qt with QML
 Version:    2.1.2
-Release:    1
+Release:    2
 Group:      Applications/Multimedia
 License:    GPL
 URL:        http://notyetthere.org/maemomeego/xbmcremote/
@@ -30,7 +30,7 @@ BuildRequires:  pkgconfig(keepalive)
 BuildRequires:  desktop-file-utils
 
 %description
-A remote control for XBMC/Kodi written in Qt with QML for XBMC Frodo (12.0) and up (including Kodi Helix)
+A remote control for Kodi written in Qt with QML for XBMC Frodo (12.0) and up (including Kodi Helix)
 NOTE: This application does not work with older versions of XBMC
 
 

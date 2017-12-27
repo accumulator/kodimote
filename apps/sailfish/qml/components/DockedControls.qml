@@ -33,7 +33,7 @@ DockedPanel {
     property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
     // property bool smallScreen: (screen.width  <= 540)
 
-    property int iconResize: largeScreen? 140 : (mediumScreen ? 90 : 64)
+    property int iconResize: largeScreen? 140 : (mediumScreen ? 128 : 64)
     open: player
     width: parent.width
     height: column.height + (2 * Theme.paddingLarge)
