@@ -1,3 +1,5 @@
+* Fri Dec 29 2017 Arno Dekker <email@me.com> 2.1.2-3
+- Equalized/resized icons on device control page
 * Wed Dec 27 2017 Arno Dekker <email@me.com> 2.1.2-2
 - Layout improvements for various screensizes in keypad
 - Layout improvements for various screensizes in dockerpanel

@@ -25,8 +25,10 @@ import Sailfish.Silica 1.0
 Page {
     property bool bigScreen: Screen.sizeCategory === Screen.Large
                                || Screen.sizeCategory === Screen.ExtraLarge
+    property bool largeScreen: Screen.width > 540 && Screen.width <= 1080
     allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted : Orientation.Portrait
+
     SilicaListView {
         id: listView
         anchors.fill: parent
@@ -73,6 +75,8 @@ Page {
                 anchors.verticalCenter: parent.verticalCenter
 
                 source: icon
+                height: largeScreen || bigScreen ? 188 : 94
+                width: height
             }
 
             Column {
