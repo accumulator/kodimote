@@ -31,7 +31,7 @@ DockedPanel {
     property bool _dialogOpen
     property bool largeScreen: screen.width > 1080
     property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
-    // property bool smallScreen: (screen.width  <= 540)
+    property bool smallScreen: (screen.width  <= 540)
 
     property int iconResize: largeScreen? 140 : (mediumScreen ? 128 : 64)
     open: player
@@ -194,14 +194,15 @@ DockedPanel {
             }
 
             Switch {
-                icon.source: "image://theme/icon-l-shuffle"
+                icon.source: "image://theme/icon-m-shuffle"
                 visible: kodi.state == "audio"
                 checked: player && player.shuffle
                 onClicked: player.shuffle = ! player.shuffle
             }
 
             Switch {
-                icon.source: player && player.repeat === Player.RepeatOne ? "../icons/icon-l-repeat-one.png" : "image://theme/icon-l-repeat"
+                icon.source: player && player.repeat === Player.RepeatOne ? "../icons/icon-l-repeat-one.png" : "image://theme/icon-m-repeat"
+                icon.scale: player && player.repeat === Player.RepeatOne && !smallScreen ? 2 : 1
                 visible: kodi.state == "audio"
                 checked: player && player.repeat !== Player.RepeatNone
                 automaticCheck: false
