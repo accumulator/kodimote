@@ -1,3 +1,7 @@
+* Thu Jan 4 2018 Arno Dekker <email@me.com> 2.1.2-5
+- Added option in pulley on keypad page to paste YouTube URL
+* Sat Dec 30 2017 Arno Dekker <email@me.com> 2.1.2-4
+- scaling repeat and shuffle icons in docker panel
 * Fri Dec 29 2017 Arno Dekker <email@me.com> 2.1.2-3
 - Equalized/resized icons on device control page
 * Wed Dec 27 2017 Arno Dekker <email@me.com> 2.1.2-2

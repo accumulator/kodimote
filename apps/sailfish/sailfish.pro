@@ -53,7 +53,8 @@ OTHER_FILES += \
     qml/components/DockedControls.qml \
     qml/components/ControlsMenuItem.qml \
     qml/pages/ProfileSelectionDialog.qml \
-    qml/pages/ResumeDialog.qml
+    qml/pages/ResumeDialog.qml \
+    qml/pages/YouTubeSendPage.qml
 
 icon86.files += icons/86x86/harbour-kodimote.png
 icon86.path = /usr/share/icons/hicolor/86x86/apps
