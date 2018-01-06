@@ -28,6 +28,11 @@ CoverBackground {
     property QtObject player: kodi.activePlayer
     property QtObject currentItem: player ? player.currentItem : null
     property bool hasThumbnail: cover.currentItem && cover.currentItem.thumbnail.length
+    property bool timerActive: cover.status === PageStatus.Active
+
+    onTimerActiveChanged: {
+        player.timerActive = timerActive
+    }
 
     function addHost() {
         pageStack.clear();
@@ -103,6 +108,18 @@ CoverBackground {
         height: lineCount * font.pixelSize
     }
 
+    ProgressBar {
+        id: progressBar
+        anchors.top: description.bottom
+        anchors.left: cover.left
+        anchors.right: cover.right
+
+        minimumValue: 0
+        maximumValue: 100
+        value: cover.player ? cover.player.percentage : 0
+        visible: cover.player
+    }
+
     CoverActionList {
         id: actions
 
@@ -170,5 +187,3 @@ CoverBackground {
         }
     ]
 }
-
-

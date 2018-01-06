@@ -67,6 +67,12 @@ Page {
             ControlsMenuItem {
 
             }
+            MenuItem {
+                text: qsTr("Play YouTube URL")
+                onClicked: {
+                    pageStack.push(Qt.resolvedUrl("YouTubeSendPage.qml"))
+                }
+            }
         }
 
         Column {

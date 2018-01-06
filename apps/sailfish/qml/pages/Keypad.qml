@@ -74,22 +74,15 @@ Page {
         }
 
         PullDownMenu {
+            visible: kodi.activePlayer || kodi.picturePlayerActive
             ControlsMenuItem {
-                visible: kodi.activePlayer || kodi.picturePlayerActive
             }
 
             MenuItem {
-                visible: kodi.activePlayer || kodi.picturePlayerActive
                 enabled: kodi.picturePlayerActive
                 text: !enabled || usePictureControls ? qsTr("Pictures Mode (off)") : qsTr("Pictures Mode (on)")
                 onClicked: {
                     pictureControlsOverride = !pictureControlsOverride
-                }
-            }
-            MenuItem {
-                text: qsTr("Play YouTube URL")
-                onClicked: {
-                    pageStack.push(Qt.resolvedUrl("YouTubeSendPage.qml"))
                 }
             }
         }

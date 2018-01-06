@@ -49,6 +49,12 @@ Page {
             }
 
             MenuItem {
+                text: qsTr("Play YouTube URL")
+                onClicked: {
+                    pageStack.push(Qt.resolvedUrl("YouTubeSendPage.qml"))
+                }
+            }
+            MenuItem {
                 text: qsTr("Clear playlist")
                 enabled: playlist.count > 0
                 onClicked: {
