@@ -108,16 +108,32 @@ CoverBackground {
         height: lineCount * font.pixelSize
     }
 
-    ProgressBar {
-        id: progressBar
-        anchors.top: description.bottom
-        anchors.left: cover.left
-        anchors.right: cover.right
+    SilicaFlickable {
+        width: parent.width
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: parent.height / 1.8
 
-        minimumValue: 0
-        maximumValue: 100
-        value: cover.player ? cover.player.percentage : 0
-        visible: cover.player
+        ProgressBar {
+            id: progressBar
+            width: parent.width
+            minimumValue: 0
+            maximumValue: 100
+            value: cover.player ? cover.player.percentage : 0
+            visible: cover.player
+            anchors.bottomMargin: 0
+        }
+        Label {
+            id: elapsed
+            anchors.top: progressBar.bottom
+            width: parent.width
+            anchors.topMargin: -Theme.paddingLarge
+            horizontalAlignment: Text.AlignHCenter
+            color: Theme.highlightColor
+            font.pixelSize: Theme.fontSizeSmall
+            text: player ? player.timeString  + " - " + player.totalTimeString : "00:00"
+            visible: cover.player
+        }
     }
 
     CoverActionList {

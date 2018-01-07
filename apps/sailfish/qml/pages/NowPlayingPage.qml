@@ -50,7 +50,8 @@ Page {
         }
     }
 
-    property bool timerActive: Qt.application.active && nowPlayingPage.status == PageStatus.Active
+    property bool timerActive: (( Qt.application.active && nowPlayingPage.status == PageStatus.Active ) ||
+    cover.status === Cover.Active) && cover.status !== Cover.Deactivating
 
     onTimerActiveChanged: { player.timerActive = timerActive }
 
