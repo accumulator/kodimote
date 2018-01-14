@@ -84,7 +84,7 @@ Page {
 
             // create space to display thumbnail below navigation bullets
             PageHeader {
-                title: "Now Playing"
+                title: qsTr("Now Playing")
             }
 
             Thumbnail {

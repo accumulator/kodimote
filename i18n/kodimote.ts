@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1">
+<TS version="2.0">
 <context>
     <name>AboutDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="81"/>
+        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="86"/>
         <location filename="../apps/generic/ui/aboutdialog.cpp" line="73"/>
         <source>Donate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="86"/>
+        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="91"/>
         <location filename="../apps/generic/ui/aboutdialog.cpp" line="77"/>
         <source>Flattr</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/AboutDialog.qml" line="66"/>
+        <location filename="../apps/ubuntu/qml/components/AboutDialog.qml" line="78"/>
         <location filename="../apps/generic/ui/aboutdialog.cpp" line="69"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
@@ -40,68 +40,68 @@
 <context>
     <name>AddHostDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="50"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="51"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="54"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="55"/>
         <source>Name</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="86"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="87"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="90"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="91"/>
         <source>Hostname or IP Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="99"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="100"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="103"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="104"/>
         <source>Port</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="112"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="113"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="116"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="117"/>
         <source>Mac Address</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="121"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="125"/>
         <source>Volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="129"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="133"/>
         <source>Control type</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="133"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="137"/>
         <source>Custom stepping</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="136"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="140"/>
         <source>Up or down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="139"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="143"/>
         <source>Custom script</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="151"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="155"/>
         <source>Stepping</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="164"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="165"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="168"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="169"/>
         <source>Up command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="174"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="175"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="178"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="179"/>
         <source>Down command</source>
         <translation type="unfinished"></translation>
     </message>
@@ -185,7 +185,7 @@
     <name>AudioPlaylist</name>
     <message>
         <location filename="../apps/generic/qml/AudioPlaylist.qml" line="64"/>
-        <location filename="../libkodimote/audioplaylist.cpp" line="152"/>
+        <location filename="../libkodimote/audioplaylist.cpp" line="153"/>
         <source>Now Playing</source>
         <translation type="unfinished"></translation>
     </message>
@@ -210,7 +210,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../libkodimote/audioplaylist.cpp" line="152"/>
+        <location filename="../libkodimote/audioplaylist.cpp" line="153"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
@@ -218,25 +218,25 @@
 <context>
     <name>AuthenticationDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="32"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="36"/>
         <source>Authenticate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="47"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="51"/>
         <location filename="../apps/generic/ui/authenticationdialog.cpp" line="47"/>
         <source>Kodi on %1 requires authentication:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="56"/>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="57"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="60"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="61"/>
         <source>Username</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="67"/>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="68"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="71"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="72"/>
         <source>Password</source>
         <translation type="unfinished"></translation>
     </message>
@@ -300,38 +300,28 @@
 <context>
     <name>BrowserPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="75"/>
-        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="545"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="86"/>
+        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="573"/>
         <source>Home</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="82"/>
-        <source>Keypad</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="89"/>
-        <source>Now playing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="224"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="243"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="228"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="247"/>
         <source>Add to playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="555"/>
-        <source>Show watched</source>
+        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="583"/>
+        <source>Hide watched</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="564"/>
+        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="592"/>
         <source>Sorting</source>
         <translation type="unfinished"></translation>
     </message>
@@ -339,16 +329,26 @@
 <context>
     <name>ChannelGroups</name>
     <message>
-        <location filename="../libkodimote/channelgroups.cpp" line="34"/>
+        <location filename="../libkodimote/channelgroups.cpp" line="37"/>
         <source>TV Channels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/channelgroups.cpp" line="39"/>
+        <source>Radio Channels</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Channels</name>
     <message>
-        <location filename="../libkodimote/channels.cpp" line="38"/>
+        <location filename="../libkodimote/channels.cpp" line="41"/>
         <source>TV Channels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/channels.cpp" line="43"/>
+        <source>Radio Channels</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -429,77 +429,77 @@
 <context>
     <name>ConnectionDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="43"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="47"/>
         <source>Add</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="61"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="65"/>
         <source>Connect</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="62"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="66"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="89"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="93"/>
         <source>Searching for Kodi hosts.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="90"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="94"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="91"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="95"/>
         <source>Allow control of Kodi via HTTP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="92"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="96"/>
         <source>Allow programs on other systems to control Kodi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="93"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="97"/>
         <source>Announce these services to other systems via Zeroconf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="94"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="98"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="101"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="105"/>
         <source>Add host</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="142"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="146"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="145"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="149"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="149"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="153"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="151"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="155"/>
         <source>Removing %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="155"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="159"/>
         <source>Wake up</source>
         <translation type="unfinished"></translation>
     </message>
@@ -603,17 +603,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="138"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="173"/>
         <source>Kodi on</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="155"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="190"/>
         <source>Kodimote</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="156"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
         <source>Disconnected</source>
         <translation type="unfinished"></translation>
     </message>
@@ -667,7 +667,7 @@
 <context>
     <name>Episodes</name>
     <message>
-        <location filename="../libkodimote/episodes.cpp" line="225"/>
+        <location filename="../libkodimote/episodes.cpp" line="211"/>
         <source>Episodes</source>
         <translation type="unfinished"></translation>
     </message>
@@ -917,7 +917,6 @@
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="249"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="273"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="49"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="220"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
@@ -925,7 +924,6 @@
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="253"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="277"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="45"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="226"/>
         <source>Add to playlist</source>
         <translation type="unfinished"></translation>
     </message>
@@ -945,73 +943,66 @@
 <context>
     <name>Keypad</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="65"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="81"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="99"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="28"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="105"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="29"/>
         <source>Keypad</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="74"/>
-        <source>Media</source>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="83"/>
+        <source>Pictures Mode (off)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="87"/>
-        <source>Now playing</source>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="83"/>
+        <source>Pictures Mode (on)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="99"/>
-        <source>Pictures</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="136"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="66"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="128"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="70"/>
         <source>To move left or right, swipe horizontally anywhere on the pad.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="138"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="68"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="130"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="72"/>
         <source>To move up or down, swipe vertically.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="142"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="72"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="134"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="76"/>
         <source>To scroll through lists keep holding after swiping.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="144"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="74"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="136"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="78"/>
         <source>You&apos;ve scrolled 1 time, keep holding to scroll another 9 times.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="146"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="76"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="138"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="80"/>
         <source>You&apos;ve scrolled %1 times, keep holding to scroll another %2 times.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="149"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="79"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="141"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="83"/>
         <source>To select an item, tap anywhere on the pad.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="151"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="81"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="143"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="85"/>
         <source>Pro tip: The color buttons at the bottom simulate an infrared remote.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="153"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="83"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="145"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="87"/>
         <source>Tap the pad to finish the tutorial.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1020,22 +1011,22 @@
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="328"/>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="346"/>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="364"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="275"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="288"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="301"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="314"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="278"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="291"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="317"/>
         <source>Remote name: %1&lt;br&gt;Button name: %2</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="390"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="230"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="392"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="232"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1043,12 +1034,12 @@
 <context>
     <name>Kodi</name>
     <message>
-        <location filename="../libkodimote/kodi.cpp" line="250"/>
+        <location filename="../libkodimote/kodi.cpp" line="258"/>
         <source>Finished downloading %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../libkodimote/kodi.cpp" line="252"/>
+        <location filename="../libkodimote/kodi.cpp" line="260"/>
         <source>Error downloading %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1061,23 +1052,23 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../libkodimote/kodiconnection.cpp" line="292"/>
+        <location filename="../libkodimote/kodiconnection.cpp" line="295"/>
         <source>This version of Kodimote is designed to work with XBMC Frodo (v12) or above (XBMC Gotham (v13), Kodi Helix (v14)). It seems you have connected to an older version of XBMC. Please upgrade XBMC to Kodi in order to use Kodimote.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../libkodimote/kodiconnection.cpp" line="308"/>
+        <location filename="../libkodimote/kodiconnection.cpp" line="311"/>
         <source>The connection has been disconnected</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../libkodimote/kodiconnection.cpp" line="319"/>
-        <location filename="../libkodimote/kodiconnection.cpp" line="386"/>
+        <location filename="../libkodimote/kodiconnection.cpp" line="322"/>
+        <location filename="../libkodimote/kodiconnection.cpp" line="389"/>
         <source>Connection failed: %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../libkodimote/kodiconnection.cpp" line="543"/>
+        <location filename="../libkodimote/kodiconnection.cpp" line="546"/>
         <source>Connection to %1 timed out...</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1085,52 +1076,67 @@
 <context>
     <name>KodiPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="32"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="39"/>
+        <source>Change connection...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="46"/>
+        <source>Settings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="53"/>
+        <source>About</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="61"/>
         <source>Kodi on %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="103"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="134"/>
         <source>Change user</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="106"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="137"/>
         <source>Quit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="109"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="140"/>
         <source>Shutdown</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="112"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="143"/>
         <source>Reboot</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="115"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="146"/>
         <source>Suspend</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="118"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="149"/>
         <source>Hibernate</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="20"/>
+        <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="24"/>
         <source>Media</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="29"/>
+        <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="33"/>
         <source>Now Playing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="38"/>
+        <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="42"/>
         <source>Keypad</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1172,22 +1178,22 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="91"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="276"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="69"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="252"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="70"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="94"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="279"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="72"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="255"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="73"/>
         <source>Videos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="97"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="282"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="75"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="258"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="76"/>
         <source>Pictures</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1218,52 +1224,31 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="293"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="195"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="255"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="163"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="257"/>
         <source>Rescan library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="309"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="203"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="256"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="171"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="258"/>
         <source>Clean library</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="95"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="99"/>
         <source>Browse %1</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="107"/>
-        <source>Keypad</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="114"/>
-        <source>Now playing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="124"/>
-        <source>Change connection...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="131"/>
-        <source>Settings</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="138"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="292"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="297"/>
         <source>About</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="285"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="78"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="261"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="79"/>
         <source>Live TV</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1273,7 +1258,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="284"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="289"/>
         <source>Options</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1319,7 +1304,7 @@
 <context>
     <name>MediaSelectionDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MediaSelectionDialog.qml" line="36"/>
+        <location filename="../apps/sailfish/qml/pages/MediaSelectionDialog.qml" line="40"/>
         <source>None</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1335,7 +1320,7 @@
 <context>
     <name>Movies</name>
     <message>
-        <location filename="../libkodimote/movies.cpp" line="234"/>
+        <location filename="../libkodimote/movies.cpp" line="220"/>
         <source>Movies</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1343,7 +1328,7 @@
 <context>
     <name>MprisApplication</name>
     <message>
-        <location filename="../libkodimote/mpris2/mprisapplication.cpp" line="59"/>
+        <location filename="../libkodimote/mpris2/mprisapplication.cpp" line="63"/>
         <source>Kodi on %1</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1351,7 +1336,7 @@
 <context>
     <name>MusicVideos</name>
     <message>
-        <location filename="../libkodimote/musicvideos.cpp" line="189"/>
+        <location filename="../libkodimote/musicvideos.cpp" line="175"/>
         <source>Music Videos</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1569,7 +1554,7 @@
     <name>NowPlayingPage</name>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="77"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="448"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="475"/>
         <source>Select audio track</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1580,33 +1565,33 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="140"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="437"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="464"/>
         <source>Select subtitle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="206"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="215"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="182"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Season:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="212"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="215"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="188"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Episode:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="304"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="215"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Rating:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="330"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="204"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="233"/>
         <source>Year:</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1621,89 +1606,59 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="60"/>
-        <source>Media</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="67"/>
-        <source>Keypad</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="74"/>
-        <source>Now playing</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="81"/>
-        <source>Pause</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="81"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="377"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="404"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="86"/>
-        <source>Next</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="91"/>
-        <source>Previous</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="96"/>
-        <source>Stop</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="87"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="31"/>
         <source>Now Playing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="74"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="70"/>
         <source>No active playback. Please select some content from the media tab.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="351"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="378"/>
         <source>None</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="384"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="411"/>
         <source>Remove from playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="391"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="418"/>
         <source>Clear playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="405"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="432"/>
         <source>Repeat</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="423"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="450"/>
         <source>Shuffle</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="432"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="459"/>
         <source>Subtitles</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="443"/>
+        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="470"/>
         <source>Audio track</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="72"/>
+        <source>Play YouTube URL</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1732,20 +1687,31 @@
     <name>PlaylistPage</name>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="157"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="59"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="94"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="163"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="65"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="100"/>
         <source>Remove from playlist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="169"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="71"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="58"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="61"/>
         <source>Clear playlist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="52"/>
+        <source>Play YouTube URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="79"/>
+        <source>Current Playlist</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -1813,14 +1779,14 @@
 <context>
     <name>ProfileSelectionDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="59"/>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="63"/>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="10"/>
         <source>Select user</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="129"/>
-        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="130"/>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="133"/>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="134"/>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="61"/>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="66"/>
         <source>Lock code</source>
@@ -1849,11 +1815,16 @@
     </message>
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="37"/>
+        <source>Radio Channels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/pvrmenu.cpp" line="42"/>
         <source>Recordings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../libkodimote/pvrmenu.cpp" line="45"/>
+        <location filename="../libkodimote/pvrmenu.cpp" line="50"/>
         <source>Live TV</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1913,12 +1884,12 @@
 <context>
     <name>ResumeDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="30"/>
+        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="34"/>
         <source>Resume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="36"/>
+        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="40"/>
         <source>Do you want to resume playback at %1?</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1944,79 +1915,79 @@
 <context>
     <name>SettingsDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="38"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="42"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="48"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="52"/>
         <source>Look and feel</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="53"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="57"/>
         <location filename="../apps/generic/ui/settingsdialog.cpp" line="71"/>
         <source>Use Thumbnails</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="63"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="67"/>
         <location filename="../apps/generic/ui/settingsdialog.cpp" line="75"/>
         <source>Ignore articles for sorting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="69"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="73"/>
         <source>Enable haptics on keypad</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="74"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="78"/>
         <source>Used media</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="81"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="85"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="87"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="91"/>
         <source>Videos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="97"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="101"/>
         <source>Pictures</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="103"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="107"/>
         <source>Live TV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="111"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="115"/>
         <source>Phone calls</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="116"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="120"/>
         <source>Change volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="131"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="135"/>
         <source>Pause video</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="136"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="140"/>
         <source>Pause music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="141"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="145"/>
         <location filename="../apps/generic/ui/settingsdialog.cpp" line="98"/>
         <source>Show call notifications</source>
         <translation type="unfinished"></translation>
@@ -2062,6 +2033,7 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="46"/>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="31"/>
         <source>Invert theme</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2077,25 +2049,25 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="61"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="40"/>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="59"/>
         <source>Ignore articles for sorting</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="69"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="65"/>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="81"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="75"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="76"/>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="91"/>
         <source>Videos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="85"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="87"/>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="101"/>
         <source>Pictures</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2131,21 +2103,26 @@
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="9"/>
-        <source>Media browser settings</source>
+        <source>Settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="48"/>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="45"/>
+        <source>Keep display on</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="65"/>
         <source>Used media</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="99"/>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="112"/>
         <source>Live TV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="153"/>
+        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="169"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2303,6 +2280,29 @@
     </message>
 </context>
 <context>
+    <name>YouTubeSendPage</name>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="41"/>
+        <source>YouTube</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="44"/>
+        <source>YouTube URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="51"/>
+        <source>Enter YouTube URL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="62"/>
+        <source>Play</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
     <name>main</name>
     <message>
         <location filename="../apps/harmattan/qml/main.qml" line="99"/>
@@ -2333,8 +2333,9 @@
         <location filename="../apps/harmattan/qml/main.qml" line="210"/>
         <location filename="../apps/harmattan/qml/main.qml" line="231"/>
         <location filename="../apps/harmattan/qml/main.qml" line="253"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="467"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="603"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="473"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="599"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="658"/>
         <source>OK</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2343,9 +2344,10 @@
         <location filename="../apps/harmattan/qml/main.qml" line="232"/>
         <location filename="../apps/harmattan/qml/main.qml" line="254"/>
         <location filename="../apps/harmattan/qml/main.qml" line="359"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="230"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="459"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="598"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="287"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="464"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="594"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="665"/>
         <source>Cancel</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2395,132 +2397,132 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="114"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="134"/>
         <source>Connecting...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="114"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="134"/>
         <source>Select Host</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="183"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="232"/>
         <source>Searching for Kodi hosts.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="184"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="224"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="241"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="281"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="185"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="225"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="242"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="282"/>
         <source>Allow control of Kodi via HTTP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="186"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="226"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="243"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="283"/>
         <source>Allow programs on other systems to control Kodi</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="187"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="244"/>
         <source>Announce these services to other systems via Zeroconf</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="188"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="245"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="280"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="311"/>
         <source>Remove</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="285"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="316"/>
         <source>Wake up</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="290"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="321"/>
         <source>Edit</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="302"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="333"/>
         <source>Host settings</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="327"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="345"/>
         <source>Name:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="361"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="377"/>
         <source>Hostname or IP Address:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="371"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="385"/>
         <source>Port:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="381"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="393"/>
         <source>Mac Address:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="393"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="403"/>
         <source>Volume</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="399"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="408"/>
         <source>Custom Stepping</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="399"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="408"/>
         <source>Up or down</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="399"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="408"/>
         <source>Custom script</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="427"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="435"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="443"/>
         <source>Up command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="440"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="448"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="447"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="455"/>
         <source>Down command</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="573"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="572"/>
         <source>Kodi on %1 requires authentication:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="578"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="576"/>
         <source>Username</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="586"/>
+        <location filename="../apps/ubuntu/qml/main.qml" line="583"/>
         <source>Password</source>
         <translation type="unfinished"></translation>
     </message>

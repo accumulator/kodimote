@@ -1,105 +1,100 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="nl" sourcelanguage="en">
 <context>
     <name>AboutDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="80"/>
-        <location filename="../apps/generic/ui/aboutdialog.cpp" line="73"/>
+        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="86"/>
         <source>Donate</source>
         <translation>Schenken</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="85"/>
-        <location filename="../apps/generic/ui/aboutdialog.cpp" line="77"/>
+        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="91"/>
         <source>Flattr</source>
         <translation>Flattr</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/AboutDialog.qml" line="64"/>
-        <location filename="../apps/generic/ui/aboutdialog.cpp" line="69"/>
         <source>Close</source>
-        <translation>Sluiten</translation>
+        <translation type="vanished">Sluiten</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/aboutdialog.cpp" line="36"/>
         <source>About</source>
-        <translation>Over</translation>
+        <translation type="vanished">Over</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/aboutdialog.cpp" line="60"/>
         <source>Copyright</source>
-        <translation>Auteur</translation>
+        <translation type="vanished">Auteur</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/aboutdialog.cpp" line="63"/>
         <source>Thanks to</source>
-        <translation>Met dank aan</translation>
+        <translation type="vanished">Met dank aan</translation>
     </message>
 </context>
 <context>
     <name>AddHostDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="50"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="51"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="54"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="55"/>
         <source>Name</source>
         <translation>Naam</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="86"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="87"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="90"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="91"/>
         <source>Hostname or IP Address</source>
         <translation>Systeemnaam of IP adres</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="99"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="100"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="103"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="104"/>
         <source>Port</source>
         <translation>Poort</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="112"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="113"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="116"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="117"/>
         <source>Mac Address</source>
         <translation>MAC adres</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="121"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="125"/>
         <source>Volume</source>
         <translation>Volume</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="129"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="133"/>
         <source>Control type</source>
         <translation>Regeling</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="133"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="137"/>
         <source>Custom stepping</source>
         <translation>Aangepaste stappen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="136"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="140"/>
         <source>Up or down</source>
         <translation>Omhoog of omlaag</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="139"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="143"/>
         <source>Custom script</source>
         <translation>Eigen commando</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="151"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="155"/>
         <source>Stepping</source>
-        <translation>Stapgrote</translation>
+        <translation>Stapgrootte</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="164"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="165"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="168"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="169"/>
         <source>Up command</source>
         <translation>Commando omhoog</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="174"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="175"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="178"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="179"/>
         <source>Down command</source>
         <translation>Commando omlaag</translation>
     </message>
@@ -107,462 +102,374 @@
 <context>
     <name>Albums</name>
     <message>
-        <location filename="../libxbmcremote/albums.cpp" line="188"/>
         <source>Albums</source>
-        <translation>Albums</translation>
+        <translation type="vanished">Albums</translation>
     </message>
 </context>
 <context>
     <name>Artists</name>
     <message>
-        <location filename="../libxbmcremote/artists.cpp" line="168"/>
         <source>Artists</source>
-        <translation>Artiesten</translation>
+        <translation type="vanished">Artiesten</translation>
     </message>
 </context>
 <context>
     <name>AudioLibrary</name>
     <message>
-        <location filename="../libxbmcremote/audiolibrary.cpp" line="33"/>
         <source>Artists</source>
-        <translation>Artiesten</translation>
+        <translation type="vanished">Artiesten</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/audiolibrary.cpp" line="38"/>
         <source>Albums</source>
-        <translation>Albums</translation>
+        <translation type="vanished">Albums</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/audiolibrary.cpp" line="43"/>
         <source>Titles</source>
-        <translation>Titels</translation>
+        <translation type="vanished">Titels</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/audiolibrary.cpp" line="48"/>
+        <source>Genres</source>
+        <translation type="vanished">Genres</translation>
+    </message>
+    <message>
         <source>Recently added</source>
-        <translation>Onlangs toegevoegd</translation>
+        <translation type="vanished">Onlangs toegevoegd</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/audiolibrary.cpp" line="53"/>
         <source>Recently played</source>
-        <translation>Onlangs afgespeeld</translation>
+        <translation type="vanished">Onlangs afgespeeld</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/audiolibrary.cpp" line="89"/>
+        <source>Playlists</source>
+        <translation type="vanished">Afspeellijst</translation>
+    </message>
+    <message>
+        <source>Music Add-ons</source>
+        <translation type="vanished">Muziek Uitbreidingen</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation type="vanished">Bestanden</translation>
+    </message>
+    <message>
+        <source>Audio playlists</source>
+        <translation type="vanished">Geluid afspeellijst</translation>
+    </message>
+    <message>
         <source>Audio Library</source>
-        <translation>Audio bibliotheek</translation>
+        <translation type="vanished">Audio bibliotheek</translation>
     </message>
 </context>
 <context>
     <name>AudioPlaylist</name>
     <message>
-        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="64"/>
-        <location filename="../libxbmcremote/audioplaylist.cpp" line="152"/>
         <source>Now Playing</source>
-        <translation>Speelt af</translation>
+        <translation type="vanished">Speelt af</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="64"/>
         <source>Playlist</source>
-        <translation>Afspeellijst</translation>
+        <translation type="vanished">Afspeellijst</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="204"/>
         <source>Play</source>
-        <translation>Afspelen</translation>
+        <translation type="vanished">Afspelen</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="205"/>
         <source>Remove from playlist</source>
-        <translation>Verwijderen van afspeellijst</translation>
+        <translation type="vanished">Verwijderen van afspeellijst</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="206"/>
         <source>Clear playlist</source>
-        <translation>Afspeellijst leegmaken</translation>
+        <translation type="vanished">Afspeellijst leegmaken</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/audioplaylist.cpp" line="152"/>
         <source>Music</source>
-        <translation>Muziek</translation>
+        <translation type="vanished">Muziek</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="32"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="36"/>
         <source>Authenticate</source>
         <translation>Authenticatie</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="47"/>
-        <location filename="../apps/generic/ui/authenticationdialog.cpp" line="47"/>
-        <source>XBMC on %1 requires authentication:</source>
-        <translation>XBMC op %1 vereist authenticatie:</translation>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="51"/>
+        <source>Kodi on %1 requires authentication:</source>
+        <translation>Kodi op %1 vereist authenticatie:</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="56"/>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="57"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="60"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="61"/>
         <source>Username</source>
         <translation>Gebruikersnaam</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="67"/>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="68"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="71"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="72"/>
         <source>Password</source>
         <translation>Wachtwoord</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/authenticationdialog.cpp" line="35"/>
         <source>Authentication</source>
-        <translation>Authenticatie</translation>
+        <translation type="vanished">Authenticatie</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/authenticationdialog.cpp" line="53"/>
         <source>Username:</source>
-        <translation>Gebruikersnaam:</translation>
+        <translation type="vanished">Gebruikersnaam:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/authenticationdialog.cpp" line="59"/>
         <source>Password:</source>
-        <translation>Wachtwoord:</translation>
+        <translation type="vanished">Wachtwoord:</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationSheet</name>
     <message>
-        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="27"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation type="vanished">OK</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="28"/>
         <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="39"/>
         <source>XBMC on %1 requires authentication:</source>
-        <translation>XBMC op %1 vereist authenticatie:</translation>
+        <translation type="vanished">Kodi op %1 vereist authenticatie:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="43"/>
         <source>Username:</source>
-        <translation>Gebruikersnaam:</translation>
+        <translation type="vanished">Gebruikersnaam:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="53"/>
         <source>Password:</source>
-        <translation>Wachtwoord:</translation>
+        <translation type="vanished">Wachtwoord:</translation>
     </message>
 </context>
 <context>
     <name>Browser</name>
     <message>
-        <location filename="../apps/plasmoid/qml/Browser.qml" line="108"/>
         <source>Update library</source>
-        <translation>Bibliotheek bijwerken</translation>
+        <translation type="vanished">Bibliotheek bijwerken</translation>
     </message>
     <message>
-        <location filename="../apps/plasmoid/qml/Browser.qml" line="113"/>
         <source>Clean library</source>
-        <translation>Bibliotheek opruimen</translation>
+        <translation type="vanished">Bibliotheek opruimen</translation>
     </message>
 </context>
 <context>
     <name>BrowserPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="58"/>
-        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="472"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="86"/>
         <source>Home</source>
         <translation>Start</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="65"/>
-        <source>Keypad</source>
-        <translation>Keypad</translation>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="243"/>
+        <source>Play</source>
+        <translation>Afspelen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="72"/>
-        <source>Now playing</source>
-        <translation>Nu afspelen</translation>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="247"/>
+        <source>Add to playlist</source>
+        <translation>Aan afspeellijst toevoegen</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="482"/>
-        <source>Show watched</source>
-        <translation>Bekeken weergeven</translation>
+        <source>Hide watched</source>
+        <translation type="vanished">Al bekeken verbergen</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="491"/>
         <source>Sorting</source>
-        <translation>Sortering</translation>
+        <translation type="vanished">Sortering</translation>
     </message>
 </context>
 <context>
     <name>ChannelGroups</name>
     <message>
-        <location filename="../libxbmcremote/channelgroups.cpp" line="34"/>
         <source>TV Channels</source>
-        <translation>TV Kanalen</translation>
+        <translation type="vanished">TV Kanalen</translation>
+    </message>
+    <message>
+        <source>Radio Channels</source>
+        <translation type="vanished">Radio Kanalen</translation>
     </message>
 </context>
 <context>
     <name>Channels</name>
     <message>
-        <location filename="../libxbmcremote/channels.cpp" line="38"/>
         <source>TV Channels</source>
-        <translation>TV Kanalen</translation>
+        <translation type="vanished">TV Kanalen</translation>
+    </message>
+    <message>
+        <source>Radio Channels</source>
+        <translation type="vanished">Radio Kanalen</translation>
     </message>
 </context>
 <context>
     <name>ConnectDialog</name>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="41"/>
-        <source>Connect to XBMC</source>
-        <translation>Verbind met XBMC</translation>
+        <source>Connect to Kodi</source>
+        <translation type="vanished">Verbind met Kodi</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="52"/>
-        <source>Searching for XBMC hosts.</source>
-        <translation>Zoeken naar XBMC hosts.</translation>
+        <source>Searching for Kodi hosts.</source>
+        <translation type="vanished">Zoeken naar Kodi hosts.</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="53"/>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation>Schakel de volgende opties in onder de Diensten-instellingen van XBMC:</translation>
+        <source>Please enable the following options in the Services settings of Kodi:</source>
+        <translation type="vanished">Schakel de volgende opties in onder de Diensten-instellingen van Kodi:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="54"/>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation>Gebeurtenissen op afstand activeren</translation>
+        <source>Allow control of Kodi via HTTP</source>
+        <translation type="vanished">Aansturing Kodi via HTTP toestaan</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="55"/>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation>Gebeurtenissen van andere computers ontvangen</translation>
+        <source>Allow programs on other systems to control Kodi</source>
+        <translation type="vanished">Programma&apos;s op andere systemen beheer van Kodi toestaan</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="56"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation>Zeroconf publishing</translation>
+        <translation type="vanished">Zeroconf publishing</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="57"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation>Als je geen gebruik maakt van Zeroconf, voeg dan manueel een host toe.</translation>
+        <translation type="vanished">Als je geen gebruik maakt van Zeroconf, voeg dan manueel een host toe.</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="76"/>
         <source>Host:</source>
-        <translation>Host:</translation>
+        <translation type="vanished">Host:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="81"/>
         <source>HTTP Port:</source>
-        <translation>HTTP poort:</translation>
+        <translation type="vanished">HTTP poort:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="88"/>
         <source>MAC Address (optional):</source>
-        <translation>MAC adres (optioneel):</translation>
+        <translation type="vanished">MAC adres (optioneel):</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="112"/>
         <source>Connect</source>
-        <translation>Verbinden</translation>
+        <translation type="vanished">Verbinden</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="115"/>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="166"/>
         <source>Add Host</source>
-        <translation>Host toevoegen</translation>
+        <translation type="vanished">Host toevoegen</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="118"/>
         <source>Remove Host</source>
-        <translation>Host verwijderen</translation>
+        <translation type="vanished">Host verwijderen</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/connectdialog.cpp" line="159"/>
         <source>Back</source>
-        <translation>Vorige</translation>
+        <translation type="vanished">Vorige</translation>
     </message>
 </context>
 <context>
     <name>ConnectionDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="43"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="47"/>
         <source>Add</source>
         <translation>Toevoegen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="60"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="65"/>
         <source>Connect</source>
         <translation>Verbinden</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="61"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="66"/>
         <source>Cancel</source>
         <translation>Annuleren</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="88"/>
-        <source>Searching for XBMC hosts.</source>
-        <translation>Zoeken naar XBMC</translation>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="93"/>
+        <source>Searching for Kodi hosts.</source>
+        <translation>Zoeken naar Kodi systemen.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="89"/>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation>Schakel de volgende opties in de onder Diensten-instellingen van XBMC:</translation>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="94"/>
+        <source>Please enable the following options in the Services settings of Kodi:</source>
+        <translation>Schakel de volgende opties in de onder Diensten-instellingen van Kodi:</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="90"/>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation>Gebeurtenissen op afstand activeren</translation>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="95"/>
+        <source>Allow control of Kodi via HTTP</source>
+        <translation>Aansturing Kodi via HTTP toestaan</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="91"/>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation>Programma&apos;s op andere systemen toestaan XBMC te besturen</translation>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="96"/>
+        <source>Allow programs on other systems to control Kodi</source>
+        <translation>Programma&apos;s op andere systemen beheer van Kodi toestaan</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="92"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="97"/>
         <source>Announce these services to other systems via Zeroconf</source>
         <translation>Zeroconf publishing</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="93"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="98"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
         <translation>Als je geen gebruik maakt van Zeroconf, voeg dan handmatig een host toe.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="100"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="105"/>
         <source>Add host</source>
         <translation>Systeem toevoegen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="141"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="146"/>
         <source>Edit</source>
-        <translation type="unfinished"/>
+        <translation>Bewerken</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="144"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="149"/>
         <source>Save</source>
         <translation>Opslaan</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="148"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="153"/>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation>Verwijderen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="150"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="155"/>
         <source>Removing %1</source>
-        <translation type="unfinished"/>
+        <translation>Verwijderen van %1</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="154"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="159"/>
         <source>Wake up</source>
         <translation>Ontwaken</translation>
     </message>
 </context>
 <context>
-    <name>ConnectionSheet</name>
+    <name>ControlsMenuItem</name>
     <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="29"/>
-        <source>Connect</source>
-        <translation>Verbinden</translation>
+        <location filename="../apps/sailfish/qml/components/ControlsMenuItem.qml" line="27"/>
+        <source>Hide controls</source>
+        <translation>Verberg bedieningspaneel</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="30"/>
-        <source>Cancel</source>
-        <translation>Annuleren</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="81"/>
-        <source>Searching for XBMC hosts.</source>
-        <translation>Bezig met zoeken naar XBMC host.</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="82"/>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation>Schakel de volgende opties in onder de Diensten-instellingen van XBMC:</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="83"/>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation>Gebeurtenissen op afstand activeren</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="84"/>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation>Gebeurtenissen van andere computers ontvangen</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="85"/>
-        <source>Announce these services to other systems via Zeroconf</source>
-        <translation>Zeroconf publishing</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="86"/>
-        <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation>Als je geen gebruik maakt van Zeroconf, voeg dan manueel een host toe.</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="128"/>
-        <source>XBMC on %1</source>
-        <translation>XBMC op %1</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="142"/>
-        <source>Waking up %1...</source>
-        <translation>%1 ontwaken...</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="159"/>
-        <source>Remove Host</source>
-        <translation>Host verwijderen</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="166"/>
-        <source>Add Host</source>
-        <translation>Host toevoegen</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="179"/>
-        <source>Host:</source>
-        <translation>Host:</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="192"/>
-        <source>HTTP Port:</source>
-        <translation>HTTP poort:</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="206"/>
-        <source>MAC Address for WakeOnLan (optional):</source>
-        <translation>MAC Adres voor WakeOnLan (optioneel):</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="217"/>
-        <source>Back</source>
-        <translation>Vorige</translation>
+        <location filename="../apps/sailfish/qml/components/ControlsMenuItem.qml" line="27"/>
+        <source>Show controls</source>
+        <translation>Toon bedieningspaneel</translation>
     </message>
 </context>
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="138"/>
-        <source>XBMC on</source>
-        <translation>XBMC op</translation>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="173"/>
+        <source>Kodi on</source>
+        <translation>Kodi op</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="155"/>
-        <source>XBMC remote</source>
-        <translation>XBMC remote</translation>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="190"/>
+        <source>Kodimote</source>
+        <translation>Kodimote</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="156"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
         <source>Disconnected</source>
         <translation>Verbinding verbroken</translation>
     </message>
@@ -570,314 +477,196 @@
 <context>
     <name>DatePicker</name>
     <message>
-        <location filename="../apps/ubuntu/qml/components/DatePicker.qml" line="26"/>
         <source>Date</source>
-        <translation>Datum</translation>
+        <translation type="vanished">Datum</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/DatePicker.qml" line="73"/>
         <source>Day</source>
-        <translation>Dag</translation>
+        <translation type="vanished">Dag</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/DatePicker.qml" line="89"/>
         <source>Month</source>
-        <translation>Maand</translation>
+        <translation type="vanished">Maand</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/DatePicker.qml" line="114"/>
         <source>Year</source>
-        <translation>Jaar</translation>
+        <translation type="vanished">Jaar</translation>
     </message>
 </context>
 <context>
     <name>DownloadDialog</name>
     <message>
-        <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="35"/>
         <source>Start download?</source>
-        <translation>Download starten?</translation>
+        <translation type="vanished">Start download?</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="49"/>
         <source>Start downloading %1?</source>
-        <translation>Start downloaden van %1?</translation>
+        <translation type="vanished">Start downloading %1?</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="58"/>
         <source>Yes</source>
-        <translation>Ja</translation>
+        <translation type="vanished">Ja</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="63"/>
         <source>No</source>
-        <translation>Nee</translation>
+        <translation type="vanished">Nee</translation>
     </message>
 </context>
 <context>
     <name>Episodes</name>
     <message>
-        <location filename="../libxbmcremote/episodes.cpp" line="227"/>
         <source>Episodes</source>
-        <translation>Afleveringen</translation>
+        <translation type="vanished">Afleveringen</translation>
+    </message>
+</context>
+<context>
+    <name>Genres</name>
+    <message>
+        <source>Genres</source>
+        <translation type="vanished">Genres</translation>
     </message>
 </context>
 <context>
     <name>HomeMenu</name>
     <message>
-        <location filename="../apps/generic/qml/HomeMenu.qml" line="56"/>
         <source>Music</source>
-        <translation>Muziek</translation>
+        <translation type="vanished">Muziek</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/HomeMenu.qml" line="57"/>
         <source>Videos</source>
-        <translation>Video&apos;s</translation>
+        <translation type="vanished">Video&apos;s</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/HomeMenu.qml" line="58"/>
         <source>Pictures</source>
-        <translation>Afbeeldingen</translation>
+        <translation type="vanished">Afbeeldingen</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/HomeMenu.qml" line="196"/>
         <source>Files</source>
-        <translation>Bestanden</translation>
+        <translation type="vanished">Bestanden</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/HomeMenu.qml" line="197"/>
         <source>Library</source>
-        <translation>Bibliotheek</translation>
-    </message>
-</context>
-<context>
-    <name>HostList</name>
-    <message>
-        <location filename="../apps/plasmoid/qml/HostList.qml" line="109"/>
-        <source>Add</source>
-        <translation>Toevoegen</translation>
-    </message>
-    <message>
-        <location filename="../apps/plasmoid/qml/HostList.qml" line="116"/>
-        <source>Remove</source>
-        <translation>Verwijderen</translation>
-    </message>
-    <message>
-        <location filename="../apps/plasmoid/qml/HostList.qml" line="126"/>
-        <source>Connect</source>
-        <translation>Verbinden</translation>
-    </message>
-    <message>
-        <location filename="../apps/plasmoid/qml/HostList.qml" line="148"/>
-        <source>Host:</source>
-        <translation>Host:</translation>
-    </message>
-    <message>
-        <location filename="../apps/plasmoid/qml/HostList.qml" line="156"/>
-        <source>Port:</source>
-        <translation>Poort:</translation>
-    </message>
-    <message>
-        <location filename="../apps/plasmoid/qml/HostList.qml" line="165"/>
-        <source>MAC Address for WakeOnLan (optional):</source>
-        <translation>MAC adres voor WakeOnLan (optioneel):</translation>
-    </message>
-    <message>
-        <location filename="../apps/plasmoid/qml/HostList.qml" line="181"/>
-        <source>OK</source>
-        <translation>Akkoord</translation>
-    </message>
-    <message>
-        <location filename="../apps/plasmoid/qml/HostList.qml" line="195"/>
-        <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Bibliotheek</translation>
     </message>
 </context>
 <context>
     <name>ItemDetails</name>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="113"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="64"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="68"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="76"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="76"/>
         <source>Rating:</source>
         <translation>Waardering:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="119"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="83"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="92"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="94"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="106"/>
         <source>Season:</source>
         <translation>Seizoen:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="125"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="89"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="98"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="100"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="112"/>
         <source>Episode:</source>
         <translation>Aflevering:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="131"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="95"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="103"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="106"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="117"/>
         <source>First aired:</source>
-        <translation>Eerst uitgezonden:</translation>
+        <translation>Eerste uitzending:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="137"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="101"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="108"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="112"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="122"/>
         <source>Genre:</source>
         <translation>Genre:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="143"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="107"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="113"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="118"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="127"/>
         <source>Year:</source>
         <translation>Jaar:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="149"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="113"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="118"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="124"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="132"/>
         <source>Director:</source>
         <translation>Regisseur:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="155"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="119"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="123"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="130"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="137"/>
         <source>Tagline:</source>
-        <translation>Tagline:</translation>
+        <translation>Slogan:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="161"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="125"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="128"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="136"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="142"/>
         <source>MPAA:</source>
-        <translation>Leeftijdsadvies:</translation>
+        <translation>MPAA:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="167"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="131"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="133"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="142"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="147"/>
         <source>Instrument:</source>
         <translation>Instrument:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="173"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="137"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="138"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="148"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="152"/>
         <source>Style:</source>
         <translation>Stijl:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="179"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="143"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="143"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="154"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="157"/>
         <source>Mood:</source>
         <translation>Stemming:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="185"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="149"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="148"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="160"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="162"/>
         <source>Born:</source>
-        <translation>Geboortedatum:</translation>
+        <translation>Geboren:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="191"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="155"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="153"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="166"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="167"/>
         <source>Formed:</source>
-        <translation>Opleiding:</translation>
+        <translation>Geformeerd:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="197"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="161"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="158"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="172"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="172"/>
         <source>Died:</source>
-        <translation>Gestorven:</translation>
+        <translation>Overleden:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="203"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="167"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="163"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="178"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="177"/>
         <source>Disbanded:</source>
-        <translation>Ontbonden:</translation>
+        <translation>Opgeheven:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="209"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="173"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="168"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="184"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="182"/>
         <source>Duration:</source>
         <translation>Duur:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="215"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="179"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="173"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="190"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="187"/>
         <source>Comment:</source>
         <translation>Commentaar:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="221"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="185"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="178"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="196"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="193"/>
         <source>Playcount:</source>
-        <translation>Aantal keer afgespeeld:</translation>
+        <translation>Aantal keren afgespeeld:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="227"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="191"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="183"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="202"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="198"/>
         <source>Cast:</source>
-        <translation>Cast:</translation>
+        <translation>CVast:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="249"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="273"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="49"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="220"/>
         <source>Play</source>
         <translation>Afspelen</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="253"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="277"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="45"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="225"/>
         <source>Add to playlist</source>
-        <translation>Toevoegen aan afspeellijst</translation>
+        <translation>Aan afspeellijst toevoegen</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="257"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="281"/>
         <source>Download</source>
-        <translation>Download</translation>
+        <translation type="vanished">Download</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="88"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="100"/>
         <source>Title:</source>
         <translation>Titel:</translation>
     </message>
@@ -885,445 +674,484 @@
 <context>
     <name>Keypad</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="54"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="70"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="88"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="28"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="105"/>
         <source>Keypad</source>
         <translation>Keypad</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="63"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="83"/>
+        <source>Pictures Mode (off)</source>
+        <translation>Foto Mode (uit)</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="83"/>
+        <source>Pictures Mode (on)</source>
+        <translation>Foto Mode (aan)</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="128"/>
+        <source>To move left or right, swipe horizontally anywhere on the pad.</source>
+        <translation>Om links of recht te bewegen veeg je horizontaal op de pad.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="130"/>
+        <source>To move up or down, swipe vertically.</source>
+        <translation>Om omhoog of omlaag te gaan veeg je verticaal.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="134"/>
+        <source>To scroll through lists keep holding after swiping.</source>
+        <translation>Om door lijsten te bewegen niet loslaten na het vegen.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="136"/>
+        <source>You&apos;ve scrolled 1 time, keep holding to scroll another 9 times.</source>
+        <translation>Je hebt 1 maal bewogen, houdt vast om nog 9 keer te bewegen.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="138"/>
+        <source>You&apos;ve scrolled %1 times, keep holding to scroll another %2 times.</source>
+        <translation>Je het %1 maal bewogen, houd van om nog %2 keer te bewegen.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="141"/>
+        <source>To select an item, tap anywhere on the pad.</source>
+        <translation>Om een item te selecteren kun je ergens het pad aanraken.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="143"/>
+        <source>Pro tip: The color buttons at the bottom simulate an infrared remote.</source>
+        <translation>Tip: de knoppen aan de onderkant simuleren die van een afstandsbediening.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="145"/>
+        <source>Tap the pad to finish the tutorial.</source>
+        <translation>Drup op de pad om de handleiding af te ronden.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="310"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="328"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="346"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="364"/>
+        <source>Remote name: %1&lt;br&gt;Button name: %2</source>
+        <translation>Remote naam: %1&lt;br&gt;Knop naam: %2</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="390"/>
+        <source>The further you move, the faster you scroll.</source>
+        <translation>Hoe verder je beweegt, hoe sneller je verplaatst.</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="392"/>
+        <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
+        <translation>You can map them to anything you want in Kodi&apos;s Lircmap.xml</translation>
+    </message>
+</context>
+<context>
+    <name>Kodi</name>
+    <message>
+        <source>Finished downloading %1</source>
+        <translation type="vanished">%1 gedownload</translation>
+    </message>
+    <message>
+        <source>Error downloading %1</source>
+        <translation type="vanished">Fout bij downloaden van %1</translation>
+    </message>
+</context>
+<context>
+    <name>KodiConnection::KodiConnectionPrivate</name>
+    <message>
+        <source>Connecting to %1...</source>
+        <translation type="vanished">Verbinden met %1...</translation>
+    </message>
+    <message>
+        <source>This version of Kodimote is designed to work with XBMC Frodo (v12) or above (XBMC Gotham (v13), Kodi Helix (v14)). It seems you have connected to an older version of XBMC. Please upgrade XBMC to Kodi in order to use Kodimote.</source>
+        <translation type="vanished">kodimote is ontwikkeld voor Kodi Frodo (v12.0). Je hebt verbinding gemaakt met een oudere versie van XBMC. Je dient XBMC te updaten om Xbmcremote te gebruiken.</translation>
+    </message>
+    <message>
+        <source>The connection has been disconnected</source>
+        <translation type="vanished">De connectie is verbroken</translation>
+    </message>
+    <message>
+        <source>Connection failed: %1</source>
+        <translation type="vanished">Verbinding misukt: %1</translation>
+    </message>
+    <message>
+        <source>Connection to %1 timed out...</source>
+        <translation type="vanished">Time-out tijdens verbinden met %1...</translation>
+    </message>
+</context>
+<context>
+    <name>KodiPage</name>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="39"/>
+        <source>Change connection...</source>
+        <translation>Verbinding wijzigen...</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="46"/>
+        <source>Settings</source>
+        <translation>Instellingen</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="53"/>
+        <source>About</source>
+        <translation>Over</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="61"/>
+        <source>Kodi on %1</source>
+        <translation>Kodi op %1</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="134"/>
+        <source>Change user</source>
+        <translation>Account wisselen</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="137"/>
+        <source>Quit</source>
+        <translation>Stoppen</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="140"/>
+        <source>Shutdown</source>
+        <translation>Afsluiten</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="143"/>
+        <source>Reboot</source>
+        <translation>Opnieuw opstarten</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="146"/>
+        <source>Suspend</source>
+        <translation>Sluimerstand</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="149"/>
+        <source>Hibernate</source>
+        <translation>Slaapstand</translation>
+    </message>
+    <message>
         <source>Media</source>
-        <translation>Media</translation>
+        <translation type="vanished">Media</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="76"/>
-        <source>Now playing</source>
-        <translation>Nu aan het afspelen</translation>
+        <source>Now Playing</source>
+        <translation type="vanished">Speelt af</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="88"/>
-        <source>Pictures</source>
-        <translation>Afbeeldingen</translation>
+        <source>Keypad</source>
+        <translation type="vanished">Keypad</translation>
     </message>
 </context>
 <context>
     <name>LibraryView</name>
     <message>
-        <location filename="../apps/generic/qml/LibraryView.qml" line="219"/>
         <source>Play</source>
-        <translation>Afspelen</translation>
+        <translation type="vanished">Afspelen</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/LibraryView.qml" line="220"/>
         <source>Add to playlist</source>
-        <translation>Toevoegen aan afspeellijst</translation>
+        <translation type="vanished">Aan afspeellijst toevoegen</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/LibraryView.qml" line="221"/>
         <source>Rescan library</source>
-        <translation>Bibliotheek herscannen</translation>
+        <translation type="vanished">Herscan bibliotheek</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/LibraryView.qml" line="222"/>
         <source>Details</source>
-        <translation>Details</translation>
+        <translation type="vanished">Details</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/LibraryView.qml" line="223"/>
         <source>Download</source>
-        <translation>Download</translation>
+        <translation type="vanished">Download</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="49"/>
         <source>XBMC on %1</source>
-        <translation>XBMC op %1</translation>
+        <translation type="vanished">Kodi op %1</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="91"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="302"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="79"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="252"/>
         <source>Music</source>
         <translation>Muziek</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="94"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="305"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="82"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="255"/>
         <source>Videos</source>
         <translation>Video&apos;s</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="97"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="308"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="85"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="258"/>
         <source>Pictures</source>
         <translation>Afbeeldingen</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="100"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="311"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="88"/>
         <source>TV Channels</source>
-        <translation>TV Kanalen</translation>
+        <translation type="vanished">TV Kanalen</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="193"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="181"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="196"/>
         <source>Library</source>
-        <translation>Bibliotheek</translation>
+        <translation type="vanished">Bibliotheek</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="195"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="183"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="196"/>
         <source>Files</source>
-        <translation>Bestanden</translation>
+        <translation type="vanished">Bestanden</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="267"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="207"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="302"/>
         <source>Show files</source>
-        <translation>Toon bestanden</translation>
+        <translation type="vanished">Toon bestanden</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="280"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="215"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="305"/>
         <source>Show library</source>
-        <translation>Toon bibliotheek</translation>
+        <translation type="vanished">Toon bibliotheek</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="293"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="222"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="308"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="163"/>
         <source>Rescan library</source>
         <translation>Herscan bibliotheek</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/MainPage.qml" line="309"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="230"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="309"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="171"/>
         <source>Clean library</source>
         <translation>Bibliotheek opruimen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="92"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="99"/>
         <source>Browse %1</source>
-        <translation type="unfinished"/>
+        <translation>Verkennen van: %1</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="104"/>
-        <source>Keypad</source>
-        <translation>Keypad</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="111"/>
-        <source>Now playing</source>
-        <translation>Nu afspelen</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="121"/>
-        <source>Change connection...</source>
-        <translation>Verbinden met...</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="127"/>
-        <source>Settings</source>
-        <translation>Instellingen</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="134"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="345"/>
         <source>About</source>
-        <translation>Over</translation>
+        <translation type="vanished">Over</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="31"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="261"/>
+        <source>Live TV</source>
+        <translation>Live TV</translation>
+    </message>
+    <message>
         <source>Media Browser</source>
-        <translation>Media Browser</translation>
+        <translation type="vanished">Media verkenner</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="337"/>
         <source>Options</source>
-        <translation>Opties</translation>
+        <translation type="vanished">Opties</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../apps/generic/ui/mainwindow.cpp" line="84"/>
         <source>Connect...</source>
-        <translation>Verbinden...</translation>
+        <translation type="vanished">Verbinden...</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/mainwindow.cpp" line="85"/>
         <source>Settings</source>
-        <translation>Instellingen</translation>
+        <translation type="vanished">Instellingen</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/mainwindow.cpp" line="91"/>
         <source>About</source>
-        <translation>Over</translation>
+        <translation type="vanished">Over</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/mainwindow.cpp" line="232"/>
         <source>Incoming call</source>
-        <translation>Inkomende oproep</translation>
+        <translation type="vanished">Inkomende oproep</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/mainwindow.cpp" line="283"/>
         <source>Download started: %1</source>
-        <translation>Download gestart: %1</translation>
+        <translation type="vanished">Download gestart: %1</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/mainwindow.cpp" line="296"/>
         <source>Download finished: %1</source>
-        <translation>Download voltooid: %1</translation>
+        <translation type="vanished">Download voltooid: %1</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/mainwindow.cpp" line="298"/>
         <source>Error downloading %1</source>
-        <translation>Fout bij downloaden van %1</translation>
+        <translation type="vanished">Fout bij downloaden van %1</translation>
     </message>
 </context>
 <context>
     <name>MediaSelectionDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MediaSelectionDialog.qml" line="36"/>
+        <location filename="../apps/sailfish/qml/pages/MediaSelectionDialog.qml" line="40"/>
         <source>None</source>
-        <translation type="unfinished"/>
+        <translation>Geen</translation>
     </message>
 </context>
 <context>
     <name>MeeGoHelper</name>
     <message>
-        <location filename="../apps/harmattan/meegohelper.cpp" line="192"/>
         <source>Incoming call</source>
-        <translation>Inkomende oproep</translation>
+        <translation type="vanished">Inkomend gesprek</translation>
     </message>
 </context>
 <context>
     <name>Movies</name>
     <message>
-        <location filename="../libxbmcremote/movies.cpp" line="234"/>
         <source>Movies</source>
-        <translation>Speelfilms</translation>
+        <translation type="vanished">Films</translation>
+    </message>
+</context>
+<context>
+    <name>MprisApplication</name>
+    <message>
+        <source>Kodi on %1</source>
+        <translation type="vanished">Kodi op %1</translation>
     </message>
 </context>
 <context>
     <name>MusicVideos</name>
     <message>
-        <location filename="../libxbmcremote/musicvideos.cpp" line="188"/>
         <source>Music Videos</source>
-        <translation>Muziekvideo&apos;s</translation>
-    </message>
-</context>
-<context>
-    <name>NfcHandler</name>
-    <message>
-        <location filename="../apps/harmattan/nfchandler.cpp" line="110"/>
-        <location filename="../apps/harmattan/nfchandler.cpp" line="119"/>
-        <location filename="../apps/harmattan/nfchandler.cpp" line="136"/>
-        <source>NFC tag is not compatible with Xbmcremote. In order to use it with Xbmcremote you need to write connection information to it.</source>
-        <translation>NFC tag is niet comptatibel met Xbmcremote. Om het te gebruiken met Xbmcremote moet je er verbindingsinformatie naar schrijven.</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/nfchandler.cpp" line="117"/>
-        <source>NFC tag is outdated. In order to use it with Xbmcremote you need to update it by rewriting connection information to it.</source>
-        <translation>NFC tag is verouderd. Om het te gebruiken met Xbmcremote moet je de verbindingsinformatie updaten.</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/nfchandler.cpp" line="152"/>
-        <source>Tag written successfully. NOTE: This tag does not offer enough space to write all informations. Wake on LAN will not work with this tag.</source>
-        <translation>Tag succesvol geschreven. OPMERKING: deze tag biedt niet genoeg ruitme om alle informatie op te slaan. Wake on LAN zal niet werken.</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/nfchandler.cpp" line="154"/>
-        <source>Tag written successfully.</source>
-        <translation>Tag succesvol geschreven.</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/nfchandler.cpp" line="164"/>
-        <source>Error writing NFC tag.</source>
-        <translation>Fout bij schrijven NFC tag</translation>
+        <translation type="vanished">Muziekvideo&apos;s</translation>
     </message>
 </context>
 <context>
     <name>NoConnection</name>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="67"/>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation>Schakel de volgende opties in de onder Diensten-instellingen van XBMC:</translation>
+        <source>Please enable the following options in the Services settings of Kodi:</source>
+        <translation>Schakel de volgende opties in de onder Diensten-instellingen van Kodi:</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="68"/>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation>Webserver</translation>
+        <source>Allow control of Kodi via HTTP</source>
+        <translation>Aansturing Kodi via HTTP toestaan</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="69"/>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation>Programma&apos;s op andere computers toestaan XBMC te besturen</translation>
+        <source>Allow programs on other systems to control Kodi</source>
+        <translation>Programma&apos;s op andere systemen beheer van Kodi toestaan</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="74"/>
         <source>Connect</source>
         <translation>Verbinden</translation>
     </message>
-</context>
-<context>
-    <name>NoConnectionPage</name>
     <message>
-        <location filename="../apps/harmattan/qml/NoConnectionPage.qml" line="47"/>
-        <source>Connect...</source>
-        <translation>Verbinden...</translation>
+        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="80"/>
+        <source>Wake host</source>
+        <translation>Ontwaken</translation>
     </message>
 </context>
 <context>
     <name>NowPlaying</name>
     <message>
-        <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="78"/>
         <source>Year:</source>
-        <translation>Jaar:</translation>
+        <translation type="vanished">Jaar:</translation>
     </message>
     <message>
-        <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
         <source>Season:</source>
-        <translation>Seizoen:</translation>
+        <translation type="vanished">Seizoen:</translation>
     </message>
     <message>
-        <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
         <source>Episode:</source>
-        <translation>Aflevering:</translation>
+        <translation type="vanished">Aflevering:</translation>
     </message>
     <message>
-        <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
         <source>Rating:</source>
-        <translation>Score:</translation>
+        <translation type="vanished">Waardering:</translation>
     </message>
 </context>
 <context>
     <name>NowPlayingDetails</name>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="98"/>
         <source>Rating:</source>
-        <translation>Waardering:</translation>
+        <translation type="vanished">Waardering:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="117"/>
         <source>Season:</source>
-        <translation>Seizoen:</translation>
+        <translation type="vanished">Seizoen:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="123"/>
         <source>Episode:</source>
-        <translation>Aflevering:</translation>
+        <translation type="vanished">Aflevering:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="129"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="31"/>
         <source>First aired:</source>
-        <translation>Eerst uitgezonden:</translation>
+        <translation>Eerste uitzending:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="135"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="36"/>
         <source>Genre:</source>
         <translation>Genre:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="141"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="41"/>
         <source>Year:</source>
         <translation>Jaar:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="147"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="46"/>
         <source>Director:</source>
         <translation>Regisseur:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="153"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="51"/>
         <source>Tagline:</source>
-        <translation>Tagline:</translation>
+        <translation>Slogan:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="159"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="56"/>
         <source>MPAA:</source>
-        <translation>Leeftijdsadvies:</translation>
+        <translation>MPAA:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="165"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="61"/>
         <source>Instrument:</source>
         <translation>Instrument:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="171"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="66"/>
         <source>Style:</source>
         <translation>Stijl:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="177"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="71"/>
         <source>Mood:</source>
         <translation>Stemming:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="183"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="76"/>
         <source>Born:</source>
-        <translation>Geboortedatum:</translation>
+        <translation>Geboren:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="189"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="81"/>
         <source>Formed:</source>
-        <translation>Opleiding:</translation>
+        <translation>Geformeerd:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="195"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="86"/>
         <source>Died:</source>
-        <translation>Gestorven:</translation>
+        <translation>Overleden:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="201"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="91"/>
         <source>Disbanded:</source>
-        <translation>Ontbonden:</translation>
+        <translation>Opgeheven:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="207"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="96"/>
         <source>Duration:</source>
         <translation>Duur:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="213"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="101"/>
         <source>Comment:</source>
         <translation>Commentaar:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="219"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="106"/>
         <source>Playcount:</source>
-        <translation>Aantal keer afgespeeld:</translation>
+        <translation>Aantal keren afgespeeld:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="225"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="111"/>
         <source>Cast:</source>
         <translation>Cast:</translation>
@@ -1332,930 +1160,665 @@
 <context>
     <name>NowPlayingPage</name>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="77"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="468"/>
         <source>Select audio track</source>
-        <translation>Selecteer geluidskanaal</translation>
+        <translation type="vanished">Selecteer geluidstrack</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="139"/>
         <source>Off</source>
-        <translation>Geen</translation>
+        <translation type="vanished">Uit</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="140"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="457"/>
         <source>Select subtitle</source>
-        <translation>Selecteer ondertitels</translation>
+        <translation type="vanished">Kies ondertiteling</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="192"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="215"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="182"/>
         <source>Season:</source>
         <translation>Seizoen:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="198"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="215"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="188"/>
         <source>Episode:</source>
         <translation>Aflevering:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="304"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="215"/>
         <source>Rating:</source>
-        <translation>Waardering:</translation>
+        <translation type="vanished">Waardering:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="330"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="204"/>
         <source>Year:</source>
-        <translation>Jaar:</translation>
+        <translation type="vanished">Jaar:</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="371"/>
         <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="372"/>
         <source>OK</source>
-        <translation>Akkoord</translation>
+        <translation type="vanished">Akkoord</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="62"/>
-        <source>Media</source>
-        <translation>Media</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="69"/>
-        <source>Keypad</source>
-        <translation>Keypad</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="76"/>
-        <source>Now playing</source>
-        <translation>Nu aan het spelen</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="83"/>
-        <source>Pause</source>
-        <translation>Pauze</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="83"/>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="397"/>
         <source>Play</source>
-        <translation>Afspelen</translation>
+        <translation type="vanished">Afspelen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="88"/>
-        <source>Next</source>
-        <translation>Volgende</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="93"/>
-        <source>Previous</source>
-        <translation>Vorige</translation>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="98"/>
-        <source>Stop</source>
-        <translation>Stop</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="31"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="87"/>
         <source>Now Playing</source>
-        <translation type="unfinished"/>
+        <translation>Speelt af</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="74"/>
         <source>No active playback. Please select some content from the media tab.</source>
-        <translation>Niet aan het afspelen. Selecteer inhoud van de media tab.</translation>
+        <translation type="vanished">Er wordt niets afgespeeld. Selecteer iets vanuit de media tab.</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="371"/>
         <source>None</source>
-        <translation>Geen</translation>
+        <translation type="vanished">Geen</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="404"/>
         <source>Remove from playlist</source>
-        <translation>Verwijderen uit afspeellijst</translation>
+        <translation type="vanished">Verwijderen van afspeellijst</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="411"/>
         <source>Clear playlist</source>
-        <translation>Afspeellijst legen</translation>
+        <translation type="vanished">Afspeellijst leegmaken</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="425"/>
         <source>Repeat</source>
-        <translation>Herhalen</translation>
+        <translation type="vanished">Herhalen</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="443"/>
         <source>Shuffle</source>
-        <translation>Shuffle</translation>
+        <translation type="vanished">Willekeurig</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="452"/>
         <source>Subtitles</source>
-        <translation>Ondertiteling</translation>
+        <translation type="vanished">Ondertitels</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="463"/>
         <source>Audio track</source>
-        <translation>Geluidskanaal</translation>
+        <translation type="vanished">Geluidsspoor</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="72"/>
+        <source>Play YouTube URL</source>
+        <translation>Speel YouTube URL</translation>
     </message>
 </context>
 <context>
     <name>NowPlayingView</name>
     <message>
-        <location filename="../apps/generic/qml/NowPlayingView.qml" line="218"/>
         <source>Now playing:</source>
-        <translation>Speelt af:</translation>
+        <translation type="vanished">Speelt af:</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/NowPlayingView.qml" line="228"/>
         <source>Track:</source>
-        <translation>Nummer:</translation>
+        <translation type="vanished">Nummer:</translation>
+    </message>
+</context>
+<context>
+    <name>PlatformHelper</name>
+    <message>
+        <source>Incoming call</source>
+        <translation type="vanished">Inkomend gesprek</translation>
     </message>
 </context>
 <context>
     <name>PlaylistPage</name>
     <message>
-        <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="157"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="59"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="79"/>
+        <source>Current Playlist</source>
+        <translation>Huidige afspeellijst</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="94"/>
         <source>Play</source>
         <translation>Afspelen</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="163"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="65"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="100"/>
         <source>Remove from playlist</source>
         <translation>Verwijderen van afspeellijst</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="169"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="71"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="58"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="61"/>
         <source>Clear playlist</source>
         <translation>Afspeellijst leegmaken</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="52"/>
+        <source>Play YouTube URL</source>
+        <translation>Speel YouTube URL</translation>
     </message>
 </context>
 <context>
     <name>PopupDialog</name>
     <message>
-        <location filename="../apps/plasmoid/qml/PopupDialog.qml" line="61"/>
         <source>Xbmc on %1</source>
-        <translation>Xbmc op %1</translation>
+        <translation type="vanished">Kodi op %1</translation>
     </message>
     <message>
-        <location filename="../apps/plasmoid/qml/PopupDialog.qml" line="80"/>
         <source>Connect to...</source>
-        <translation>Verbinden met...</translation>
+        <translation type="vanished">Verbinden met...</translation>
     </message>
 </context>
 <context>
     <name>PowerMenu</name>
     <message>
-        <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="7"/>
-        <source>Power menu</source>
-        <translation>Afsluiten</translation>
+        <source>Change user</source>
+        <translation type="obsolete">Account wisselen</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="14"/>
         <source>Disconnect</source>
-        <translation>Verbinding verbreken</translation>
+        <translation type="obsolete">Verbinding verbreken</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="23"/>
-        <source>Quit XBMC</source>
-        <translation>XBMC sluiten</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="32"/>
-        <source>Shutdown XBMC host</source>
-        <translation>Systeem afsluiten</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="42"/>
-        <source>Reboot XBMC host</source>
-        <translation>Systeem opnieuw opstarten</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="52"/>
-        <source>Suspend XBMC host</source>
-        <translation>Systeem in stand-by zetten</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="62"/>
-        <source>Hibernate XBMC host</source>
-        <translation>Systeem in slaapstand zetten</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="72"/>
         <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
+    </message>
+</context>
+<context>
+    <name>ProfileSelectionDialog</name>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="63"/>
+        <source>Select user</source>
+        <translation>Selecteer gebruiker</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="133"/>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="134"/>
+        <source>Lock code</source>
+        <translation>Lock code</translation>
+    </message>
+    <message>
+        <source>OK</source>
+        <translation type="vanished">Akkoord</translation>
+    </message>
+</context>
+<context>
+    <name>Profiles</name>
+    <message>
+        <source>Profiles</source>
+        <translation type="vanished">Profielen</translation>
+    </message>
+</context>
+<context>
+    <name>PvrMenu</name>
+    <message>
+        <source>TV Channels</source>
+        <translation type="vanished">TV Kanalen</translation>
+    </message>
+    <message>
+        <source>Radio Channels</source>
+        <translation type="vanished">Radio Kanalen</translation>
+    </message>
+    <message>
+        <source>Recordings</source>
+        <translation type="vanished">Opnames</translation>
+    </message>
+    <message>
+        <source>Live TV</source>
+        <translation type="vanished">Live TV</translation>
     </message>
 </context>
 <context>
     <name>RecentItems</name>
     <message>
-        <location filename="../libxbmcremote/recentitems.cpp" line="37"/>
         <source>Albums</source>
-        <translation>Albums</translation>
+        <translation type="vanished">Albums</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/recentitems.cpp" line="43"/>
         <source>Songs</source>
-        <translation>Nummers</translation>
+        <translation type="vanished">Liedjes</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/recentitems.cpp" line="49"/>
         <source>Movies</source>
-        <translation>Speelfilms</translation>
+        <translation type="vanished">Films</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/recentitems.cpp" line="55"/>
         <source>Episodes</source>
-        <translation>Afleveringen</translation>
+        <translation type="vanished">Afleveringen</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/recentitems.cpp" line="61"/>
         <source>Music Videos</source>
-        <translation>Muziekvideo&apos;s</translation>
+        <translation type="vanished">Muziekvideo&apos;s</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/recentitems.cpp" line="104"/>
         <source>Recently added</source>
-        <translation>Recent toegevoegd</translation>
+        <translation type="vanished">Onlangs toegevoegd</translation>
     </message>
 </context>
 <context>
-    <name>SailfishHelper</name>
+    <name>Recordings</name>
     <message>
-        <location filename="../apps/sailfish/src/sailfishhelper.cpp" line="92"/>
-        <source>Incoming call</source>
-        <translation>Inkomende oproep</translation>
+        <source>Recordings</source>
+        <translation type="vanished">Opnames</translation>
+    </message>
+    <message>
+        <source>%1 recordings</source>
+        <translation type="vanished">%1 opnames</translation>
+    </message>
+    <message>
+        <source>All recordings</source>
+        <translation type="vanished">Alle opnames</translation>
+    </message>
+</context>
+<context>
+    <name>ResumeDialog</name>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="34"/>
+        <source>Resume</source>
+        <translation>Hervatten</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="40"/>
+        <source>Do you want to resume playback at %1?</source>
+        <translation>Afspelen hervatten vanaf %1?</translation>
+    </message>
+    <message>
+        <source>Resume at %1</source>
+        <translation type="vanished">Hervatten vanaf %1</translation>
+    </message>
+    <message>
+        <source>Start from beginning</source>
+        <translation type="vanished">Vanaf begin afspelen</translation>
     </message>
 </context>
 <context>
     <name>Seasons</name>
     <message>
-        <location filename="../libxbmcremote/seasons.cpp" line="173"/>
         <source>Seasons</source>
-        <translation>Seizoenen</translation>
+        <translation type="vanished">Seizoenen</translation>
     </message>
 </context>
 <context>
     <name>SettingsDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="45"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="42"/>
         <source>Save</source>
         <translation>Opslaan</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="49"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="52"/>
         <source>Look and feel</source>
         <translation>Uiterlijk en ervaring</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="54"/>
-        <location filename="../apps/generic/ui/settingsdialog.cpp" line="71"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="57"/>
         <source>Use Thumbnails</source>
-        <translation>Gebruik thumbnails</translation>
+        <translation>Gebruik miniatuur afbeeldingen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="64"/>
-        <location filename="../apps/generic/ui/settingsdialog.cpp" line="75"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="67"/>
         <source>Ignore articles for sorting</source>
-        <translation>Artikels negeren voor sorteren</translation>
+        <translation>Artikelen negeren voor sorteren</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="69"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="73"/>
+        <source>Enable haptics on keypad</source>
+        <translation>Vibrerend keypad</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="78"/>
         <source>Used media</source>
-        <translation>Gebruikte media</translation>
+        <translation>Gebruik media</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="76"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="85"/>
         <source>Music</source>
         <translation>Muziek</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="82"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="91"/>
         <source>Videos</source>
         <translation>Video&apos;s</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="92"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="101"/>
         <source>Pictures</source>
         <translation>Afbeeldingen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="98"/>
-        <source>TV Channels</source>
-        <translation>TV Kanalen</translation>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="107"/>
+        <source>Live TV</source>
+        <translation>Live TV</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="105"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="115"/>
         <source>Phone calls</source>
-        <translation>Telefoon</translation>
+        <translation>Telefoon gesprekken</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="110"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="120"/>
         <source>Change volume</source>
-        <translation>Volume aanpassen</translation>
+        <translation>Verander volume</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="125"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="135"/>
         <source>Pause video</source>
         <translation>Video pauzeren</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="130"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="140"/>
         <source>Pause music</source>
         <translation>Muziek pauzeren</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="135"/>
-        <location filename="../apps/generic/ui/settingsdialog.cpp" line="98"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="145"/>
         <source>Show call notifications</source>
-        <translation>Toon inkomende oproepen</translation>
+        <translation>Toon telefoon notificaties</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/settingsdialog.cpp" line="40"/>
         <source>Settings</source>
-        <translation>Instellingen</translation>
+        <translation type="vanished">Instellingen</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/settingsdialog.cpp" line="79"/>
         <source>Change volume during calls</source>
-        <translation>Verander volume tijdens oproep</translation>
+        <translation type="vanished">Verander volume tijdens telefoongesprek</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/settingsdialog.cpp" line="88"/>
         <source>Pause video during calls</source>
-        <translation>Pauzeer video tijdens oproep</translation>
+        <translation type="vanished">Pauseer video tijdens telefoonoproep</translation>
     </message>
     <message>
-        <location filename="../apps/generic/ui/settingsdialog.cpp" line="92"/>
         <source>Pause music during calls</source>
-        <translation>Pauzeer muziek tijdens oproep</translation>
-    </message>
-</context>
-<context>
-    <name>SettingsSheet</name>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="26"/>
-        <source>Save</source>
-        <translation>Opslaan</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="27"/>
-        <source>Cancel</source>
-        <translation>Annuleren</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="40"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="18"/>
-        <source>Look and feel</source>
-        <translation>Gebruikerservaring</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="46"/>
-        <source>Invert theme</source>
-        <translation>Thema omkeren</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="51"/>
-        <source>Use Thumbnails</source>
-        <translation>Gebruik thumbnails</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="56"/>
-        <source>Keep display on when charging</source>
-        <translation>Laat scherm aan tijdens opladen</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="61"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="40"/>
-        <source>Ignore articles for sorting</source>
-        <translation>Artikels negeren voor sorteren</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="69"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="65"/>
-        <source>Music</source>
-        <translation>Muziek</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="75"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="76"/>
-        <source>Videos</source>
-        <translation>Video&apos;s</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="85"/>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="87"/>
-        <source>Pictures</source>
-        <translation>Afbeeldingen</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="91"/>
-        <source>TV Channels</source>
-        <translation>TV Kanalen</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="98"/>
-        <source>Phone calls</source>
-        <translation>Oproepen</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="104"/>
-        <source>Change volume</source>
-        <translation>Volume veranderen</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="117"/>
-        <source>Pause video</source>
-        <translation>Pauzeer Video</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="122"/>
-        <source>Pause music</source>
-        <translation>Pauzeer Muziek</translation>
-    </message>
-    <message>
-        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="127"/>
-        <source>Show call notifications</source>
-        <translation>Toon inkomende oproepen.</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="9"/>
-        <source>Media browser settings</source>
-        <translation>Media browser instellingen</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="48"/>
-        <source>Used media</source>
-        <translation>Gebruikte media</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="98"/>
-        <source>TV</source>
-        <translation>TV</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="151"/>
-        <source>Close</source>
-        <translation>Sluiten</translation>
+        <translation type="vanished">Pauseer muziek tijdens telefoonoproep</translation>
     </message>
 </context>
 <context>
     <name>Shares</name>
     <message>
-        <location filename="../libxbmcremote/shares.cpp" line="35"/>
         <source>Music</source>
-        <translation>Muziek</translation>
+        <translation type="vanished">Muziek</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/shares.cpp" line="41"/>
         <source>Videos</source>
-        <translation>Video&apos;s</translation>
+        <translation type="vanished">Video&apos;s</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/shares.cpp" line="116"/>
         <source>Music Files</source>
-        <translation>Muziekbestanden</translation>
+        <translation type="vanished">Muziek bestanden</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/shares.cpp" line="118"/>
         <source>Video Files</source>
-        <translation>Videobestanden</translation>
+        <translation type="vanished">Video bestanden</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/shares.cpp" line="120"/>
         <source>Picture Files</source>
-        <translation>Afbeeldingsbestanden</translation>
+        <translation type="vanished">Foto bestanden</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/shares.cpp" line="122"/>
         <source>Shares</source>
-        <translation>Gedeeld</translation>
+        <translation type="vanished">Shares</translation>
     </message>
 </context>
 <context>
     <name>Songs</name>
     <message>
-        <location filename="../libxbmcremote/songs.cpp" line="226"/>
         <source>Songs</source>
-        <translation>Nummers</translation>
+        <translation type="vanished">Liedjes</translation>
     </message>
 </context>
 <context>
     <name>TimePicker</name>
     <message>
-        <location filename="../apps/ubuntu/qml/components/TimePicker.qml" line="26"/>
         <source>Time</source>
-        <translation>Tijd</translation>
+        <translation type="vanished">Tijd</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/TimePicker.qml" line="51"/>
         <source>Hour</source>
-        <translation>Uur</translation>
+        <translation type="vanished">Uur</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/components/TimePicker.qml" line="63"/>
         <source>Minute</source>
-        <translation>Minuut</translation>
+        <translation type="vanished">Minuut</translation>
     </message>
 </context>
 <context>
     <name>TvShows</name>
     <message>
-        <location filename="../libxbmcremote/tvshows.cpp" line="200"/>
         <source>TV Shows</source>
-        <translation>TV-Series</translation>
+        <translation type="vanished">TV-Series</translation>
     </message>
 </context>
 <context>
     <name>VideoLibrary</name>
     <message>
-        <location filename="../libxbmcremote/videolibrary.cpp" line="33"/>
         <source>Movies</source>
-        <translation>Speelfilms</translation>
+        <translation type="vanished">Speelfilms</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/videolibrary.cpp" line="38"/>
         <source>TV Shows</source>
-        <translation>TV-Series</translation>
+        <translation type="vanished">TV-Series</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/videolibrary.cpp" line="43"/>
         <source>Music Videos</source>
-        <translation>Muziekvideo&apos;s</translation>
+        <translation type="vanished">Muziekvideo&apos;s</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/videolibrary.cpp" line="48"/>
         <source>Recently added</source>
-        <translation>Recent afgespeeld</translation>
+        <translation type="vanished">Recent toegevoegd</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/videolibrary.cpp" line="82"/>
+        <source>Playlists</source>
+        <translation type="vanished">Afspeellijsten</translation>
+    </message>
+    <message>
+        <source>Video Add-ons</source>
+        <translation type="vanished">Video Uitbreidingen</translation>
+    </message>
+    <message>
+        <source>Files</source>
+        <translation type="vanished">Bestanden</translation>
+    </message>
+    <message>
+        <source>Video playlists</source>
+        <translation type="vanished">Video afspeellijsten</translation>
+    </message>
+    <message>
         <source>Video Library</source>
-        <translation>Videobibliotheek</translation>
+        <translation type="vanished">Video bibliotheek</translation>
     </message>
 </context>
 <context>
     <name>VideoPlaylist</name>
     <message>
-        <location filename="../libxbmcremote/videoplaylist.cpp" line="166"/>
         <source>Now Playing</source>
-        <translation>Speelt af</translation>
+        <translation type="vanished">Speelt af</translation>
     </message>
     <message>
-        <location filename="../libxbmcremote/videoplaylist.cpp" line="166"/>
         <source>Videos</source>
-        <translation>Video&apos;s</translation>
+        <translation type="vanished">Video&apos;s</translation>
     </message>
 </context>
 <context>
-    <name>WriteNfcTagSheet</name>
+    <name>YouTubeSendPage</name>
     <message>
-        <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="46"/>
-        <source>Tap a NFC tag to write XBMC connection information to it. You can then use the tag to connect to this XBMC.</source>
-        <translation>Tik op een NFC tag om XBMC verbindingsinformatie te schrijven. Je kan dan deze tag gebruiken om te verbinden met deze XBMC.</translation>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="41"/>
+        <source>YouTube</source>
+        <translation>YouTube</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="58"/>
-        <source>Close</source>
-        <translation>Sluiten</translation>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="44"/>
+        <source>YouTube URL</source>
+        <translation>YouTube URL</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="70"/>
-        <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="51"/>
+        <source>Enter YouTube URL</source>
+        <translation>Geef YouTube URL</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="70"/>
-        <source>Write NFC Tag</source>
-        <translation>NFC tag schrijven</translation>
-    </message>
-</context>
-<context>
-    <name>Xbmc</name>
-    <message>
-        <location filename="../libxbmcremote/xbmc.cpp" line="236"/>
-        <source>Finished downloading %1</source>
-        <translation>%1 gedownload</translation>
-    </message>
-    <message>
-        <location filename="../libxbmcremote/xbmc.cpp" line="238"/>
-        <source>Error downloading %1</source>
-        <translation>Fout bij downloaden van %1</translation>
-    </message>
-</context>
-<context>
-    <name>XbmcConnection::XbmcConnectionPrivate</name>
-    <message>
-        <location filename="../libxbmcremote/xbmcconnection.cpp" line="215"/>
-        <source>Connecting to %1...</source>
-        <translation>Verbinden met %1...</translation>
-    </message>
-    <message>
-        <location filename="../libxbmcremote/xbmcconnection.cpp" line="269"/>
-        <source>The connection has been disconnected</source>
-        <translation>De verbinding werd verbroken</translation>
-    </message>
-    <message>
-        <location filename="../libxbmcremote/xbmcconnection.cpp" line="279"/>
-        <location filename="../libxbmcremote/xbmcconnection.cpp" line="338"/>
-        <source>Connection failed: %1</source>
-        <translation>Verbinden mislukt: %1</translation>
-    </message>
-    <message>
-        <location filename="../libxbmcremote/xbmcconnection.cpp" line="390"/>
-        <source>This version of Xbmcremote is designed to work with XBMC Frodo (v12.0). It seems you have connected to an older version of XMBC. Please upgrade XBMC in order to use Xbmcremote.</source>
-        <translation>Xbmcremote is ontwikkeld voor XBMC Frodo (v12.0). Je hebt verbinding gemaakt met een oudere versie van XBMC. Je dient XBMC te updaten om Xbmcremote te gebruiken.</translation>
-    </message>
-    <message>
-        <location filename="../libxbmcremote/xbmcconnection.cpp" line="610"/>
-        <source>Connection to %1 timed out...</source>
-        <translation>Time-out tijdens verbinden met %1...</translation>
-    </message>
-</context>
-<context>
-    <name>XbmcPage</name>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="32"/>
-        <source>XBMC on %1</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="99"/>
-        <source>Quit</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="102"/>
-        <source>Shutdown</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="105"/>
-        <source>Reboot</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="108"/>
-        <source>Suspend</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="111"/>
-        <source>Hibernate</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/components/XbmcPage.qml" line="21"/>
-        <source>Media</source>
-        <translation>Media</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/components/XbmcPage.qml" line="32"/>
-        <source>Now Playing</source>
-        <translation>Speelt af</translation>
-    </message>
-    <message>
-        <location filename="../apps/ubuntu/qml/components/XbmcPage.qml" line="43"/>
-        <source>Keypad</source>
-        <translation>Keypad</translation>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="62"/>
+        <source>Play</source>
+        <translation>Afspelen</translation>
     </message>
 </context>
 <context>
     <name>main</name>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="99"/>
         <source>Connect...</source>
-        <translation>Verbinden...</translation>
+        <translation type="vanished">Verbinden...</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="110"/>
         <source>Quit xbmc</source>
-        <translation>XBMC afsluiten</translation>
+        <translation type="vanished">Kodi afsluiten</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="117"/>
         <source>Write NFC Tag</source>
-        <translation>NFC tag schrijven</translation>
+        <translation type="vanished">NFC tag schrijven</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="129"/>
         <source>Settings</source>
-        <translation>Instellingen</translation>
+        <translation type="vanished">Instellingen</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="142"/>
         <source>About</source>
-        <translation>Over</translation>
+        <translation type="vanished">Over</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="210"/>
-        <location filename="../apps/harmattan/qml/main.qml" line="231"/>
-        <location filename="../apps/harmattan/qml/main.qml" line="253"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="445"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="573"/>
         <source>OK</source>
-        <translation>Akkoord</translation>
+        <translation type="vanished">Akkoord</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="211"/>
-        <location filename="../apps/harmattan/qml/main.qml" line="232"/>
-        <location filename="../apps/harmattan/qml/main.qml" line="254"/>
-        <location filename="../apps/harmattan/qml/main.qml" line="359"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="211"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="437"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="568"/>
         <source>Cancel</source>
-        <translation>Annuleren</translation>
+        <translation type="vanished">Annuleren</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="333"/>
         <source>Quit</source>
-        <translation>Afsluiten</translation>
+        <translation type="vanished">Afsluiten</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="337"/>
         <source>Shutdown</source>
-        <translation>Systeem afsluiten</translation>
+        <translation type="vanished">Systeem afsluiten</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="342"/>
         <source>Reboot</source>
-        <translation>Opnieuw opstarten</translation>
+        <translation type="vanished">Opnieuw opstarten</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="347"/>
         <source>Suspend</source>
-        <translation>Sluimerstand</translation>
+        <translation type="vanished">Sluimerstand</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="352"/>
         <source>Hibernate</source>
-        <translation>Slaapstand</translation>
+        <translation type="vanished">Slaapstand</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="398"/>
         <source>Copyright</source>
-        <translation>Auteursrecht</translation>
+        <translation type="vanished">Auteursrecht</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="405"/>
         <source>Close</source>
-        <translation>Sluiten</translation>
+        <translation type="vanished">Sluiten</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="412"/>
         <source>Donate</source>
-        <translation>Schenken</translation>
+        <translation type="vanished">Schenken</translation>
     </message>
     <message>
-        <location filename="../apps/harmattan/qml/main.qml" line="418"/>
         <source>Flattr</source>
-        <translation>Flattr</translation>
+        <translation type="vanished">Flattr</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="108"/>
         <source>Connecting...</source>
-        <translation>Verbinden met...</translation>
+        <translation type="vanished">Verbinden met...</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="108"/>
         <source>Select Host</source>
-        <translation>Selecteer systeem</translation>
+        <translation type="vanished">Selecteer systeem</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="164"/>
-        <source>Searching for XBMC hosts.</source>
-        <translation>Bezig met zoeken naar XBMC host.</translation>
+        <source>Searching for Kodi hosts.</source>
+        <translation type="vanished">Bezig met zoeken naar Kodi host.</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="165"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="205"/>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation>Schakel de volgende opties in onder de Diensten-instellingen van XBMC:</translation>
+        <source>Please enable the following options in the Services settings of Kodi:</source>
+        <translation type="vanished">Schakel de volgende opties in onder de Diensten-instellingen van Kodi:</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="166"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="206"/>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation>Gebeurtenissen op afstand activeren</translation>
+        <source>Allow control of Kodi via HTTP</source>
+        <translation type="vanished">Aansturing Kodi via HTTP toestaan</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="167"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="207"/>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation>Gebeurtenissen van andere computers ontvangen</translation>
+        <source>Allow programs on other systems to control Kodi</source>
+        <translation type="vanished">Programma&apos;s op andere systemen beheer van Kodi toestaan</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="168"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation>Zeroconf publishing</translation>
+        <translation type="vanished">Zeroconf publishing</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="169"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation>Als je geen gebruik maakt van Zeroconf, voeg dan manueel een host toe.</translation>
+        <translation type="vanished">Als je geen gebruik maakt van Zeroconf, voeg dan manueel een host toe.</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="260"/>
         <source>Remove</source>
-        <translation>Verwijderen</translation>
+        <translation type="vanished">Verwijderen</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="265"/>
         <source>Wake up</source>
-        <translation>Ontwaken</translation>
+        <translation type="vanished">Ontwaken</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="270"/>
         <source>Edit</source>
-        <translation>Wijzigen</translation>
+        <translation type="vanished">Bewerken</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="282"/>
         <source>Host settings</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Systeem instellingen</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="305"/>
         <source>Name:</source>
-        <translation>Naam:</translation>
+        <translation type="vanished">Naam:</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="339"/>
         <source>Hostname or IP Address:</source>
-        <translation>Systeemnaam of IP adres:</translation>
+        <translation type="vanished">Systeemnaam of IP adres:</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="349"/>
         <source>Port:</source>
-        <translation>Poort:</translation>
+        <translation type="vanished">Poort:</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="359"/>
         <source>Mac Address:</source>
-        <translation>MAC adres</translation>
+        <translation type="vanished">MAC adres:</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="371"/>
         <source>Volume</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Volume</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="377"/>
         <source>Custom Stepping</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Aangepaste stappen</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="377"/>
         <source>Up or down</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Omhoog of omlaag</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="377"/>
         <source>Custom script</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Eigen commando</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="405"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="413"/>
         <source>Up command</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Commando omhoog</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="418"/>
-        <location filename="../apps/ubuntu/qml/main.qml" line="426"/>
         <source>Down command</source>
-        <translation type="unfinished"/>
+        <translation type="vanished">Commando omlaag</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="546"/>
-        <source>XBMC on %1 requires authentication:</source>
-        <translation>XBMC op %1 vereist authenticatie:</translation>
+        <source>Kodi on %1 requires authentication:</source>
+        <translation type="vanished">Kodi op %1 vereist authenticatie:</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="550"/>
         <source>Username</source>
-        <translation>Gebruikersnaam</translation>
+        <translation type="vanished">Gebruikersnaam</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/main.qml" line="557"/>
         <source>Password</source>
-        <translation>Wachtwoord</translation>
+        <translation type="vanished">Wachtwoord</translation>
     </message>
 </context>
 </TS>

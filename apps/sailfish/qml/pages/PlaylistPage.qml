@@ -76,7 +76,7 @@ Page {
             clip: true
 
             header: PageHeader {
-                title: "Current Playlist" // playlist.title
+                title: qsTr("Current Playlist") // playlist.title
             }
 
             delegate: ListItem {
