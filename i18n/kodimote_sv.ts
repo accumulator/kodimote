@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="sv">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -41,67 +43,67 @@
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="50"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="51"/>
         <source>Name</source>
-        <translation type="unfinished"/>
+        <translation>Namn</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="86"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="87"/>
         <source>Hostname or IP Address</source>
-        <translation type="unfinished"/>
+        <translation>Värdnamn eller IP-adress</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="99"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="100"/>
         <source>Port</source>
-        <translation type="unfinished"/>
+        <translation>Port</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="112"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="113"/>
         <source>Mac Address</source>
-        <translation type="unfinished"/>
+        <translation>MAC-adress</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="121"/>
         <source>Volume</source>
-        <translation type="unfinished"/>
+        <translation>Volym</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="129"/>
         <source>Control type</source>
-        <translation type="unfinished"/>
+        <translation>Kontrolltyp</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="133"/>
         <source>Custom stepping</source>
-        <translation type="unfinished"/>
+        <translation>Steganpassning</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="136"/>
         <source>Up or down</source>
-        <translation type="unfinished"/>
+        <translation>Upp eller ner</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="139"/>
         <source>Custom script</source>
-        <translation type="unfinished"/>
+        <translation>Skriptanpassning</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="151"/>
         <source>Stepping</source>
-        <translation type="unfinished"/>
+        <translation>Steg</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="164"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="165"/>
         <source>Up command</source>
-        <translation type="unfinished"/>
+        <translation>Uppkommando</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="174"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="175"/>
         <source>Down command</source>
-        <translation type="unfinished"/>
+        <translation>Nerkommando</translation>
     </message>
 </context>
 <context>
@@ -192,7 +194,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="32"/>
         <source>Authenticate</source>
-        <translation type="unfinished"/>
+        <translation>Autenticera</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="47"/>
@@ -204,13 +206,13 @@
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="56"/>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="57"/>
         <source>Username</source>
-        <translation type="unfinished"/>
+        <translation>Användarnamn</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="67"/>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="68"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Lösenord</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/authenticationdialog.cpp" line="35"/>
@@ -233,7 +235,7 @@
     <message>
         <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="27"/>
         <source>OK</source>
-        <translation>Ok</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="28"/>
@@ -261,7 +263,7 @@
     <message>
         <location filename="../apps/plasmoid/qml/Browser.qml" line="108"/>
         <source>Update library</source>
-        <translation type="unfinished"/>
+        <translation>Uppdatera bibliotek</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/Browser.qml" line="113"/>
@@ -275,27 +277,27 @@
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="58"/>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="472"/>
         <source>Home</source>
-        <translation type="unfinished"/>
+        <translation>Hem</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="65"/>
         <source>Keypad</source>
-        <translation type="unfinished"/>
+        <translation>Tangentbord</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="72"/>
         <source>Now playing</source>
-        <translation type="unfinished"/>
+        <translation>Nu spelas</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="482"/>
         <source>Show watched</source>
-        <translation type="unfinished"/>
+        <translation>Visa visade</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="491"/>
         <source>Sorting</source>
-        <translation type="unfinished"/>
+        <translation>Sortering</translation>
     </message>
 </context>
 <context>
@@ -334,12 +336,12 @@
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="54"/>
         <source>Allow control of XBMC via HTTP</source>
-        <translation>Tillåt kontroll av XBMC via HHTP</translation>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="55"/>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation>Tillåt program på andra system kontrollera XBMC</translation>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="56"/>
@@ -393,77 +395,77 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="43"/>
         <source>Add</source>
-        <translation type="unfinished"/>
+        <translation>Lägg till</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="60"/>
         <source>Connect</source>
-        <translation type="unfinished"/>
+        <translation>Anslut</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="61"/>
         <source>Cancel</source>
-        <translation type="unfinished"/>
+        <translation>Avbryt</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="88"/>
         <source>Searching for XBMC hosts.</source>
-        <translation type="unfinished"/>
+        <translation>Söker efter Kodi-värdar.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="89"/>
         <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="unfinished"/>
+        <translation>Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="90"/>
         <source>Allow control of XBMC via HTTP</source>
-        <translation type="unfinished"/>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="91"/>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation type="unfinished"/>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="92"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation type="unfinished"/>
+        <translation>Annonsera dessa tjänster för andra system via Zerokonf</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="93"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation type="unfinished"/>
+        <translation>Lägg till en värd manuellt, om du inte använder Zerokonf.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="100"/>
         <source>Add host</source>
-        <translation type="unfinished"/>
+        <translation>Lägg till värd</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="141"/>
         <source>Edit</source>
-        <translation type="unfinished"/>
+        <translation>Redigera</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="144"/>
         <source>Save</source>
-        <translation type="unfinished"/>
+        <translation>Spara</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="148"/>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="150"/>
         <source>Removing %1</source>
-        <translation type="unfinished"/>
+        <translation>Tar bort %1</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="154"/>
         <source>Wake up</source>
-        <translation type="unfinished"/>
+        <translation>Väckning</translation>
     </message>
 </context>
 <context>
@@ -491,12 +493,12 @@
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="83"/>
         <source>Allow control of XBMC via HTTP</source>
-        <translation>Tillåt kontroll av XBMC via HHTP</translation>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="84"/>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation>Tillåt program på andra system kontrollera XBMC</translation>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="85"/>
@@ -554,17 +556,17 @@
     <message>
         <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="138"/>
         <source>XBMC on</source>
-        <translation type="unfinished"/>
+        <translation>Kodi på</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="155"/>
         <source>XBMC remote</source>
-        <translation type="unfinished"/>
+        <translation>Kodi fjärr</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="156"/>
         <source>Disconnected</source>
-        <translation type="unfinished"/>
+        <translation>Bortkopplad</translation>
     </message>
 </context>
 <context>
@@ -572,22 +574,22 @@
     <message>
         <location filename="../apps/ubuntu/qml/components/DatePicker.qml" line="26"/>
         <source>Date</source>
-        <translation type="unfinished"/>
+        <translation>Datum</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/DatePicker.qml" line="73"/>
         <source>Day</source>
-        <translation type="unfinished"/>
+        <translation>Dag</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/DatePicker.qml" line="89"/>
         <source>Month</source>
-        <translation type="unfinished"/>
+        <translation>Månad</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/DatePicker.qml" line="114"/>
         <source>Year</source>
-        <translation type="unfinished"/>
+        <translation>År</translation>
     </message>
 </context>
 <context>
@@ -600,7 +602,7 @@
     <message>
         <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="49"/>
         <source>Start downloading %1?</source>
-        <translation>Börja ladda ned &amp;1?</translation>
+        <translation>Börja ladda ned %1?</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="58"/>
@@ -654,27 +656,27 @@
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="109"/>
         <source>Add</source>
-        <translation type="unfinished"/>
+        <translation>Lägg till</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="116"/>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="126"/>
         <source>Connect</source>
-        <translation type="unfinished"/>
+        <translation>Anslut</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="148"/>
         <source>Host:</source>
-        <translation type="unfinished"/>
+        <translation>Värd:</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="156"/>
         <source>Port:</source>
-        <translation type="unfinished"/>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="165"/>
@@ -684,7 +686,7 @@
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="181"/>
         <source>OK</source>
-        <translation>Ok</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="195"/>
@@ -879,7 +881,7 @@
     <message>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="88"/>
         <source>Title:</source>
-        <translation type="unfinished"/>
+        <translation>Titel:</translation>
     </message>
 </context>
 <context>
@@ -890,22 +892,22 @@
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="88"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="28"/>
         <source>Keypad</source>
-        <translation type="unfinished"/>
+        <translation>Tangentbord</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="63"/>
         <source>Media</source>
-        <translation type="unfinished"/>
+        <translation>Media</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="76"/>
         <source>Now playing</source>
-        <translation type="unfinished"/>
+        <translation>Nu spelas</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="88"/>
         <source>Pictures</source>
-        <translation type="unfinished"/>
+        <translation>Bilder</translation>
     </message>
 </context>
 <context>
@@ -1016,43 +1018,43 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="92"/>
         <source>Browse %1</source>
-        <translation type="unfinished"/>
+        <translation>Bläddra %1</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="104"/>
         <source>Keypad</source>
-        <translation type="unfinished"/>
+        <translation>Tangentbord</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="111"/>
         <source>Now playing</source>
-        <translation type="unfinished"/>
+        <translation>Nu spelas</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="121"/>
         <source>Change connection...</source>
-        <translation type="unfinished"/>
+        <translation>Byt anslutning</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="127"/>
         <source>Settings</source>
-        <translation type="unfinished"/>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="134"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="345"/>
         <source>About</source>
-        <translation type="unfinished"/>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="31"/>
         <source>Media Browser</source>
-        <translation type="unfinished"/>
+        <translation>Medialäsare</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="337"/>
         <source>Options</source>
-        <translation type="unfinished"/>
+        <translation>Alternativ</translation>
     </message>
 </context>
 <context>
@@ -1098,7 +1100,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/MediaSelectionDialog.qml" line="36"/>
         <source>None</source>
-        <translation type="unfinished"/>
+        <translation>Inget</translation>
     </message>
 </context>
 <context>
@@ -1160,22 +1162,22 @@
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="67"/>
         <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="unfinished"/>
+        <translation>Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="68"/>
         <source>Allow control of XBMC via HTTP</source>
-        <translation type="unfinished"/>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="69"/>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation type="unfinished"/>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="74"/>
         <source>Connect</source>
-        <translation type="unfinished"/>
+        <translation>Anslut</translation>
     </message>
 </context>
 <context>
@@ -1183,7 +1185,7 @@
     <message>
         <location filename="../apps/harmattan/qml/NoConnectionPage.qml" line="47"/>
         <source>Connect...</source>
-        <translation type="unfinished"/>
+        <translation>Anslut...</translation>
     </message>
 </context>
 <context>
@@ -1382,27 +1384,27 @@
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="372"/>
         <source>OK</source>
-        <translation>Ok</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="62"/>
         <source>Media</source>
-        <translation type="unfinished"/>
+        <translation>Media</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="69"/>
         <source>Keypad</source>
-        <translation type="unfinished"/>
+        <translation>Tangentbord</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="76"/>
         <source>Now playing</source>
-        <translation type="unfinished"/>
+        <translation>Nu spelas</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="83"/>
         <source>Pause</source>
-        <translation type="unfinished"/>
+        <translation>Paus</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="83"/>
@@ -1413,32 +1415,32 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="88"/>
         <source>Next</source>
-        <translation type="unfinished"/>
+        <translation>Nästa</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="93"/>
         <source>Previous</source>
-        <translation type="unfinished"/>
+        <translation>Föregående</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="98"/>
         <source>Stop</source>
-        <translation type="unfinished"/>
+        <translation>Stopp</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="31"/>
         <source>Now Playing</source>
-        <translation type="unfinished"/>
+        <translation>Nu spelas</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="74"/>
         <source>No active playback. Please select some content from the media tab.</source>
-        <translation type="unfinished"/>
+        <translation>Ingen aktiv uppspelning. Välj något innehåll från mediafliken.</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="371"/>
         <source>None</source>
-        <translation type="unfinished"/>
+        <translation>Inget</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="404"/>
@@ -1453,22 +1455,22 @@
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="425"/>
         <source>Repeat</source>
-        <translation type="unfinished"/>
+        <translation>Upprepa</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="443"/>
         <source>Shuffle</source>
-        <translation type="unfinished"/>
+        <translation>Blanda</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="452"/>
         <source>Subtitles</source>
-        <translation type="unfinished"/>
+        <translation>Undertexter</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="463"/>
         <source>Audio track</source>
-        <translation type="unfinished"/>
+        <translation>Ljudspår</translation>
     </message>
 </context>
 <context>
@@ -1510,12 +1512,12 @@
     <message>
         <location filename="../apps/plasmoid/qml/PopupDialog.qml" line="61"/>
         <source>Xbmc on %1</source>
-        <translation type="unfinished"/>
+        <translation>Kodi på %1</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/PopupDialog.qml" line="80"/>
         <source>Connect to...</source>
-        <translation type="unfinished"/>
+        <translation>Anslut till...</translation>
     </message>
 </context>
 <context>
@@ -1523,42 +1525,42 @@
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="7"/>
         <source>Power menu</source>
-        <translation type="unfinished"/>
+        <translation>Energimeny</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="14"/>
         <source>Disconnect</source>
-        <translation type="unfinished"/>
+        <translation>Koppla ifrån</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="23"/>
         <source>Quit XBMC</source>
-        <translation type="unfinished"/>
+        <translation>Avsluta Kodi</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="32"/>
         <source>Shutdown XBMC host</source>
-        <translation type="unfinished"/>
+        <translation>Stäng av Kodi-värden</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="42"/>
         <source>Reboot XBMC host</source>
-        <translation type="unfinished"/>
+        <translation>Starta om Kodi-värden</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="52"/>
         <source>Suspend XBMC host</source>
-        <translation type="unfinished"/>
+        <translation>Sätt Kodi-värden i vänteläge</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="62"/>
         <source>Hibernate XBMC host</source>
-        <translation type="unfinished"/>
+        <translation>Sätt Kodi-värden i viloläge</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="72"/>
         <source>Cancel</source>
-        <translation type="unfinished"/>
+        <translation>Avbryt</translation>
     </message>
 </context>
 <context>
@@ -1599,7 +1601,7 @@
     <message>
         <location filename="../apps/sailfish/src/sailfishhelper.cpp" line="92"/>
         <source>Incoming call</source>
-        <translation type="unfinished"/>
+        <translation>Inkommande samtal</translation>
     </message>
 </context>
 <context>
@@ -1615,12 +1617,12 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="45"/>
         <source>Save</source>
-        <translation type="unfinished"/>
+        <translation>Spara</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="49"/>
         <source>Look and feel</source>
-        <translation type="unfinished"/>
+        <translation>Utseende och känsla</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="54"/>
@@ -1637,47 +1639,47 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="69"/>
         <source>Used media</source>
-        <translation type="unfinished"/>
+        <translation>Använt media</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="76"/>
         <source>Music</source>
-        <translation type="unfinished"/>
+        <translation>Musik</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="82"/>
         <source>Videos</source>
-        <translation type="unfinished"/>
+        <translation>Videor</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="92"/>
         <source>Pictures</source>
-        <translation type="unfinished"/>
+        <translation>Bilder</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="98"/>
         <source>TV Channels</source>
-        <translation type="unfinished"/>
+        <translation>TV-kanaler</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="105"/>
         <source>Phone calls</source>
-        <translation type="unfinished"/>
+        <translation>Telefonsamtal</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="110"/>
         <source>Change volume</source>
-        <translation type="unfinished"/>
+        <translation>Ändra volym</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="125"/>
         <source>Pause video</source>
-        <translation type="unfinished"/>
+        <translation>Pausa video</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="130"/>
         <source>Pause music</source>
-        <translation type="unfinished"/>
+        <translation>Pausa musik</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="135"/>
@@ -1722,7 +1724,7 @@
         <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="40"/>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="18"/>
         <source>Look and feel</source>
-        <translation>Utseénde och känsla</translation>
+        <translation>Utseende och känsla</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="46"/>
@@ -1796,22 +1798,22 @@
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="9"/>
         <source>Media browser settings</source>
-        <translation type="unfinished"/>
+        <translation>Medialäsarinställningar</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="48"/>
         <source>Used media</source>
-        <translation type="unfinished"/>
+        <translation>Använt media</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="98"/>
         <source>TV</source>
-        <translation type="unfinished"/>
+        <translation>TV</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="151"/>
         <source>Close</source>
-        <translation type="unfinished"/>
+        <translation>Stäng</translation>
     </message>
 </context>
 <context>
@@ -1819,7 +1821,7 @@
     <message>
         <location filename="../libxbmcremote/shares.cpp" line="35"/>
         <source>Music</source>
-        <translation type="unfinished"/>
+        <translation>Musik</translation>
     </message>
     <message>
         <location filename="../libxbmcremote/shares.cpp" line="41"/>
@@ -1844,7 +1846,7 @@
     <message>
         <location filename="../libxbmcremote/shares.cpp" line="122"/>
         <source>Shares</source>
-        <translation type="unfinished"/>
+        <translation>Delningar</translation>
     </message>
 </context>
 <context>
@@ -1860,17 +1862,17 @@
     <message>
         <location filename="../apps/ubuntu/qml/components/TimePicker.qml" line="26"/>
         <source>Time</source>
-        <translation type="unfinished"/>
+        <translation>Tid</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/TimePicker.qml" line="51"/>
         <source>Hour</source>
-        <translation type="unfinished"/>
+        <translation>Timma</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/TimePicker.qml" line="63"/>
         <source>Minute</source>
-        <translation type="unfinished"/>
+        <translation>Minut</translation>
     </message>
 </context>
 <context>
@@ -1992,47 +1994,47 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="32"/>
         <source>XBMC on %1</source>
-        <translation type="unfinished"/>
+        <translation>Kodi på %1</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="99"/>
         <source>Quit</source>
-        <translation type="unfinished"/>
+        <translation>Avsluta</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="102"/>
         <source>Shutdown</source>
-        <translation type="unfinished"/>
+        <translation>Stäng av</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="105"/>
         <source>Reboot</source>
-        <translation type="unfinished"/>
+        <translation>Starta om</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="108"/>
         <source>Suspend</source>
-        <translation type="unfinished"/>
+        <translation>Vänteläge</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/XbmcPage.qml" line="111"/>
         <source>Hibernate</source>
-        <translation type="unfinished"/>
+        <translation>Viloläge</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/XbmcPage.qml" line="21"/>
         <source>Media</source>
-        <translation type="unfinished"/>
+        <translation>Media</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/XbmcPage.qml" line="32"/>
         <source>Now Playing</source>
-        <translation type="unfinished"/>
+        <translation>Nu spelas</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/XbmcPage.qml" line="43"/>
         <source>Keypad</source>
-        <translation type="unfinished"/>
+        <translation>Tangentbord</translation>
     </message>
 </context>
 <context>
@@ -2069,7 +2071,7 @@
         <location filename="../apps/ubuntu/qml/main.qml" line="445"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="573"/>
         <source>OK</source>
-        <translation>Ok</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/main.qml" line="211"/>
@@ -2100,7 +2102,7 @@
     <message>
         <location filename="../apps/harmattan/qml/main.qml" line="347"/>
         <source>Suspend</source>
-        <translation>Skjut upp</translation>
+        <translation>Vänteläge</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/main.qml" line="352"/>
@@ -2130,17 +2132,17 @@
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="108"/>
         <source>Connecting...</source>
-        <translation type="unfinished"/>
+        <translation>Ansluter...</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="108"/>
         <source>Select Host</source>
-        <translation type="unfinished"/>
+        <translation>Välj värd</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="164"/>
         <source>Searching for XBMC hosts.</source>
-        <translation type="unfinished"/>
+        <translation>Säker efter Kodi-värdar.</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="165"/>
@@ -2152,110 +2154,110 @@
         <location filename="../apps/ubuntu/qml/main.qml" line="166"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="206"/>
         <source>Allow control of XBMC via HTTP</source>
-        <translation type="unfinished"/>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="167"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="207"/>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation type="unfinished"/>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="168"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation type="unfinished"/>
+        <translation>Annonsera dessa tjänster för andra system via Zerokonf</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="169"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation type="unfinished"/>
+        <translation>Lägg till en värd manuellt, om du inte använder Zerokonf.</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="260"/>
         <source>Remove</source>
-        <translation type="unfinished"/>
+        <translation>Ta bort</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="265"/>
         <source>Wake up</source>
-        <translation type="unfinished"/>
+        <translation>Väckning</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="270"/>
         <source>Edit</source>
-        <translation type="unfinished"/>
+        <translation>Redigera</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="282"/>
         <source>Host settings</source>
-        <translation type="unfinished"/>
+        <translation>Värdinställningar</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="305"/>
         <source>Name:</source>
-        <translation type="unfinished"/>
+        <translation>Namn:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="339"/>
         <source>Hostname or IP Address:</source>
-        <translation type="unfinished"/>
+        <translation>Värdnamn eller IP-adress:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="349"/>
         <source>Port:</source>
-        <translation type="unfinished"/>
+        <translation>Port:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="359"/>
         <source>Mac Address:</source>
-        <translation type="unfinished"/>
+        <translation>MAC-adress:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="371"/>
         <source>Volume</source>
-        <translation type="unfinished"/>
+        <translation>Volym</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="377"/>
         <source>Custom Stepping</source>
-        <translation type="unfinished"/>
+        <translation>Steganpassning</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="377"/>
         <source>Up or down</source>
-        <translation type="unfinished"/>
+        <translation>Upp eller ner</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="377"/>
         <source>Custom script</source>
-        <translation type="unfinished"/>
+        <translation>Skriptanpassning</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="405"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="413"/>
         <source>Up command</source>
-        <translation type="unfinished"/>
+        <translation>Uppkommando</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="418"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="426"/>
         <source>Down command</source>
-        <translation type="unfinished"/>
+        <translation>Nerkommando</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="546"/>
         <source>XBMC on %1 requires authentication:</source>
-        <translation type="unfinished"/>
+        <translation>Kodi på %1 kräver autentisering:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="550"/>
         <source>Username</source>
-        <translation type="unfinished"/>
+        <translation>Användarnamn</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="557"/>
         <source>Password</source>
-        <translation type="unfinished"/>
+        <translation>Lösenord</translation>
     </message>
 </context>
 </TS>
