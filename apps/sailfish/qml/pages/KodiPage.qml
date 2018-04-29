@@ -23,10 +23,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
-    property bool bigScreen: Screen.sizeCategory === Screen.Large
-                               || Screen.sizeCategory === Screen.ExtraLarge
-    property bool largeScreen: Screen.width > 540 && Screen.width <= 1080
-    allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted : Orientation.Portrait
 
     SilicaListView {
@@ -75,7 +72,7 @@ Page {
                 anchors.verticalCenter: parent.verticalCenter
 
                 source: icon
-                height: largeScreen || bigScreen ? 188 : 94
+                height: appWindow.mediumScreen || appWindow.bigScreen ? 188 : 94
                 width: height
             }
 

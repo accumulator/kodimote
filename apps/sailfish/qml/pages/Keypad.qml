@@ -27,10 +27,7 @@ import "../components/"
 
 Page {
     id: keypad
-    property bool bigScreen: Screen.sizeCategory === Screen.Large
-                               || Screen.sizeCategory === Screen.ExtraLarge
-    property bool smallScreen: (Screen.width  <= 540)
-    allowedOrientations: bigScreen ? Orientation.Portrait | Orientation.Landscape
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted : Orientation.Portrait
 
     property QtObject picturePlayer: kodi.picturePlayer()
@@ -98,7 +95,7 @@ Page {
             anchors.leftMargin: Theme.paddingLarge
             anchors.rightMargin: Theme.paddingLarge
 
-            spacing: smallScreen ? Theme.paddingLarge : Theme.paddingLarge * 1.5
+            spacing: appWindow.smallScreen ? Theme.paddingLarge : Theme.paddingLarge * 1.5
 
             PageHeader {
                 id: header
@@ -152,7 +149,7 @@ Page {
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity { NumberAnimation { duration: 500 } }
                     anchors.centerIn: parent
-                    spacing: smallScreen ? Theme.paddingMedium : 50
+                    spacing: appWindow.smallScreen ? Theme.paddingMedium : 50
 
                     IconButton {
                         id: referenceIcon
@@ -211,7 +208,7 @@ Page {
 
             GesturePad {
                 id: gesturePad
-                width: isPortrait ? (bigScreen ? parent.width * 0.75 : parent.width) : parent.width / 2
+                width: isPortrait ? (appWindow.bigScreen ? parent.width * 0.75 : parent.width) : parent.width / 2
                 anchors.horizontalCenter: parent.horizontalCenter
 
                 IconButton {

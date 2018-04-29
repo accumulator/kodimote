@@ -30,6 +30,11 @@ ApplicationWindow
     id: appWindow
 
     property string lastConnectedHostName
+    property bool bigScreen: Screen.sizeCategory === Screen.Large
+                               || Screen.sizeCategory === Screen.ExtraLarge
+    property bool largeScreen: screen.width > 1080
+    property bool mediumScreen: (screen.width > 720 && screen.width <= 1080)
+    property bool smallScreen: (screen.width  <= 720)
 
     cover: CoverPage {
         id: cover
