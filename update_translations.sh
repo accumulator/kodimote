@@ -1,5 +1,3 @@
-tx pull -a
-
 lupdate -recursive . -ts i18n/kodimote.ts -no-obsolete
 
 lrelease i18n/kodimote_*.ts

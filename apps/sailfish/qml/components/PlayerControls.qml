@@ -29,11 +29,8 @@ Row {
     id: playerControls
 
     property QtObject player
-    property bool largeScreen: screen.width > 1080
-    property bool mediumScreen: (screen.width > 540 && screen.width <= 1080)
-    // property bool smallScreen: (screen.width  <= 540)
-    spacing: (mediumScreen || largeScreen) ? Theme.paddingLarge : Theme.paddingSmall
-    property int iconResize: largeScreen? 200 : (mediumScreen ? 128 : 75)
+    spacing: (appWindow.mediumScreen || appWindow.largeScreen) ? Theme.paddingLarge : Theme.paddingSmall
+    property int iconResize: appWindow.largeScreen? 200 : (appWindow.mediumScreen ? 128 : 75)
 
     HapticsEffect {
         id: rumbleEffect
@@ -83,7 +80,7 @@ Row {
     }
 
     IconButton {
-        icon.source: "image://theme/icon-" + (largeScreen ? "l-" : "m-") + (player && player.speed === 1 && player.state === "playing" ? "pause" : "play")
+        icon.source: "image://theme/icon-" + (appWindow.largeScreen ? "l-" : "m-") + (player && player.speed === 1 && player.state === "playing" ? "pause" : "play")
         icon.height: iconResize; icon.width: iconResize
         height: iconResize; width: iconResize
         enabled: !!player
