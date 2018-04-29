@@ -182,7 +182,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="49"/>
         <source>Kodi on %1 requires authentication:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodi på %1 kräver autentisering:</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="58"/>
@@ -256,12 +256,12 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="241"/>
         <source>Play</source>
-        <translation type="unfinished">Spela</translation>
+        <translation>Spela</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="245"/>
         <source>Add to playlist</source>
-        <translation type="unfinished">Lägg till i spellista</translation>
+        <translation>Lägg till i spellista</translation>
     </message>
     <message>
         <source>Keypad</source>
@@ -278,7 +278,7 @@
     <message>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="583"/>
         <source>Hide watched</source>
-        <translation type="unfinished"></translation>
+        <translation>Dölj visade</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="592"/>
@@ -395,22 +395,22 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="91"/>
         <source>Searching for Kodi hosts.</source>
-        <translation type="unfinished"></translation>
+        <translation>Söker efter Kodi-värdar.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="92"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="93"/>
         <source>Allow control of Kodi via HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="94"/>
         <source>Allow programs on other systems to control Kodi</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="95"/>
@@ -525,12 +525,12 @@
     <message>
         <location filename="../apps/sailfish/qml/components/ControlsMenuItem.qml" line="27"/>
         <source>Hide controls</source>
-        <translation type="unfinished"></translation>
+        <translation>Dölj kontroller</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/ControlsMenuItem.qml" line="27"/>
         <source>Show controls</source>
-        <translation type="unfinished"></translation>
+        <translation>Visa kontroller</translation>
     </message>
 </context>
 <context>
@@ -546,12 +546,12 @@
     <message>
         <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="173"/>
         <source>Kodi on</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodi på</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="190"/>
         <source>Kodimote</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodimote</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
@@ -822,66 +822,66 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="80"/>
         <source>Pictures Mode (off)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildläge (av)</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="80"/>
         <source>Pictures Mode (on)</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildläge (på)</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="102"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="29"/>
         <source>Keypad</source>
-        <translation>Tangentbord</translation>
+        <translation>Knappsats</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="125"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="70"/>
         <source>To move left or right, swipe horizontally anywhere on the pad.</source>
-        <translation type="unfinished"></translation>
+        <translation>Svep horisontellt, för att flytta åt höger eller vänster.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="127"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="72"/>
         <source>To move up or down, swipe vertically.</source>
-        <translation type="unfinished"></translation>
+        <translation>Svep vertikalt för att flytta uppåt eller neråt.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="131"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="76"/>
         <source>To scroll through lists keep holding after swiping.</source>
-        <translation type="unfinished"></translation>
+        <translation>Håll kvar efter svep för att skrolla genom listor.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="133"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="78"/>
         <source>You&apos;ve scrolled 1 time, keep holding to scroll another 9 times.</source>
-        <translation type="unfinished"></translation>
+        <translation>Du har skrollat en gång, håll kvar för att skrolla 9 gånger till.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="135"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="80"/>
         <source>You&apos;ve scrolled %1 times, keep holding to scroll another %2 times.</source>
-        <translation type="unfinished"></translation>
+        <translation>Du har skrollat %1 gånger, håll kvar för att skrolla %2 gånger till.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="138"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="83"/>
         <source>To select an item, tap anywhere on the pad.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryck var som helst för att välja ett objekt.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="140"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="85"/>
         <source>Pro tip: The color buttons at the bottom simulate an infrared remote.</source>
-        <translation type="unfinished"></translation>
+        <translation>Proffstips: De färgade knapparna i botten simulerar en infraröd fjärrkontroll.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="142"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="87"/>
         <source>Tap the pad to finish the tutorial.</source>
-        <translation type="unfinished"></translation>
+        <translation>Tryck för att avsluta guiden.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="307"/>
@@ -893,19 +893,19 @@
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="317"/>
         <source>Remote name: %1&lt;br&gt;Button name: %2</source>
-        <translation type="unfinished"></translation>
+        <translation>Fjärrnamn: %1&lt;br&gt;Knappnamn: %2</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="387"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ju längre du flyttar, desto snabbare skrollar du.</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="389"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
-        <translation type="unfinished"></translation>
+        <translation>Du kan tilldela dem till vad du vill, i Kodis Lircmap.xml</translation>
     </message>
     <message>
         <source>Media</source>
@@ -925,67 +925,67 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="36"/>
         <source>Change connection...</source>
-        <translation type="unfinished">Byt anslutning</translation>
+        <translation>Änndra anslutning...</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="43"/>
         <source>Settings</source>
-        <translation type="unfinished">Inställningar</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="50"/>
         <source>About</source>
-        <translation type="unfinished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="58"/>
         <source>Kodi on %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodi på %1</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="131"/>
         <source>Change user</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändra användare</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="134"/>
         <source>Quit</source>
-        <translation type="unfinished">Avsluta</translation>
+        <translation>Avsluta</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="137"/>
         <source>Shutdown</source>
-        <translation type="unfinished">Stäng av</translation>
+        <translation>Stäng av</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="140"/>
         <source>Reboot</source>
-        <translation type="unfinished">Starta om</translation>
+        <translation>Starta om</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="143"/>
         <source>Suspend</source>
-        <translation type="unfinished">Vänteläge</translation>
+        <translation>Vänteläge</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="146"/>
         <source>Hibernate</source>
-        <translation type="unfinished">Viloläge</translation>
+        <translation>Viloläge</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="24"/>
         <source>Media</source>
-        <translation type="unfinished">Media</translation>
+        <translation>Media</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="33"/>
         <source>Now Playing</source>
-        <translation type="unfinished">Nu spelas</translation>
+        <translation>Nu spelas</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="42"/>
         <source>Keypad</source>
-        <translation type="unfinished">Tangentbord</translation>
+        <translation>Knappsats</translation>
     </message>
 </context>
 <context>
@@ -1039,7 +1039,7 @@
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="259"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="79"/>
         <source>Live TV</source>
-        <translation type="unfinished"></translation>
+        <translation>Live-TV</translation>
     </message>
     <message>
         <source>TV Channels</source>
@@ -1210,17 +1210,17 @@
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="67"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="68"/>
         <source>Allow control of Kodi via HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="69"/>
         <source>Allow programs on other systems to control Kodi</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="74"/>
@@ -1230,7 +1230,7 @@
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="80"/>
         <source>Wake host</source>
-        <translation type="unfinished"></translation>
+        <translation>Väck värd</translation>
     </message>
 </context>
 <context>
@@ -1382,7 +1382,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="68"/>
         <source>Play YouTube URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela YouTube-URL</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="178"/>
@@ -1510,12 +1510,12 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="49"/>
         <source>Play YouTube URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Spela YouTube-URL</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="76"/>
         <source>Current Playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktuell spellista</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="91"/>
@@ -1557,7 +1557,7 @@
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="16"/>
         <source>Change user</source>
-        <translation type="unfinished"></translation>
+        <translation>Ändra användare</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="27"/>
@@ -1567,27 +1567,27 @@
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="36"/>
         <source>Quit Kodi</source>
-        <translation type="unfinished"></translation>
+        <translation>Avsluta Kodi</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="45"/>
         <source>Shutdown Kodi host</source>
-        <translation type="unfinished"></translation>
+        <translation>Stäng av Kodi-värden</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="55"/>
         <source>Reboot Kodi host</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta om Kodi-värden</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="65"/>
         <source>Suspend Kodi host</source>
-        <translation type="unfinished"></translation>
+        <translation>Sätt Kodi-värden i vänteläge</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="75"/>
         <source>Hibernate Kodi host</source>
-        <translation type="unfinished"></translation>
+        <translation>Sätt Kodi-värden i viloläge</translation>
     </message>
     <message>
         <source>Quit XBMC</source>
@@ -1621,7 +1621,7 @@
         <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="61"/>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="10"/>
         <source>Select user</source>
-        <translation type="unfinished"></translation>
+        <translation>Välj användare</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="131"/>
@@ -1629,12 +1629,12 @@
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="61"/>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="66"/>
         <source>Lock code</source>
-        <translation type="unfinished"></translation>
+        <translation>Låskod</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="79"/>
         <source>OK</source>
-        <translation type="unfinished">OK</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -1669,22 +1669,22 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="32"/>
         <source>Resume</source>
-        <translation type="unfinished"></translation>
+        <translation>Fortsätt</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="38"/>
         <source>Do you want to resume playback at %1?</source>
-        <translation type="unfinished"></translation>
+        <translation>Vill du fortsätta uppspelningen från %1?</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/ResumeDialog.qml" line="34"/>
         <source>Resume at %1</source>
-        <translation type="unfinished"></translation>
+        <translation>Fortsätt från %1</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/ResumeDialog.qml" line="42"/>
         <source>Start from beginning</source>
-        <translation type="unfinished"></translation>
+        <translation>Starta från början</translation>
     </message>
 </context>
 <context>
@@ -1726,7 +1726,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="71"/>
         <source>Enable haptics on keypad</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera haptik på knappsatsen</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="76"/>
@@ -1751,7 +1751,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="105"/>
         <source>Live TV</source>
-        <translation type="unfinished"></translation>
+        <translation>Live-TV</translation>
     </message>
     <message>
         <source>TV Channels</source>
@@ -1830,12 +1830,12 @@
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="9"/>
         <source>Settings</source>
-        <translation type="unfinished">Inställningar</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="45"/>
         <source>Keep display on</source>
-        <translation type="unfinished"></translation>
+        <translation>Behåll skärmen på</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="59"/>
@@ -1860,7 +1860,7 @@
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="112"/>
         <source>Live TV</source>
-        <translation type="unfinished"></translation>
+        <translation>Live-TV</translation>
     </message>
     <message>
         <source>TV Channels</source>
@@ -2095,22 +2095,22 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="38"/>
         <source>YouTube</source>
-        <translation type="unfinished"></translation>
+        <translation>YouTube</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="41"/>
         <source>YouTube URL</source>
-        <translation type="unfinished"></translation>
+        <translation>YouTube-URL</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="48"/>
         <source>Enter YouTube URL</source>
-        <translation type="unfinished"></translation>
+        <translation>Ange YouTube-URL</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="59"/>
         <source>Play</source>
-        <translation type="unfinished">Spela</translation>
+        <translation>Spela</translation>
     </message>
 </context>
 <context>
@@ -2215,25 +2215,25 @@
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="232"/>
         <source>Searching for Kodi hosts.</source>
-        <translation type="unfinished"></translation>
+        <translation>Söker efter Kodi-värdar.</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="241"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="281"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
-        <translation type="unfinished"></translation>
+        <translation>Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="242"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="282"/>
         <source>Allow control of Kodi via HTTP</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="243"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="283"/>
         <source>Allow programs on other systems to control Kodi</source>
-        <translation type="unfinished"></translation>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="244"/>
@@ -2320,7 +2320,7 @@
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="572"/>
         <source>Kodi on %1 requires authentication:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kodi på %1 kräver autentisering:</translation>
     </message>
     <message>
         <source>XBMC on %1 requires authentication:</source>
