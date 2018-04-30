@@ -1744,7 +1744,7 @@
     </message>
     <message>
         <source>Enter YouTube URL</source>
-        <translation>Играть по адресу в YouTube</translation>
+        <translation>Введите адрес YouTube</translation>
     </message>
     <message>
         <source>Play</source>
