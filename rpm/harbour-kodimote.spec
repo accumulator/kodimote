@@ -13,8 +13,8 @@ Name:       harbour-kodimote
 %{!?qtc_make:%define qtc_make make}
 %{?qtc_builddir:%define _builddir %qtc_builddir}
 Summary:    A remote control for Kodi written in Qt with QML
-Version:    2.1.2
-Release:    9
+Version:    2.1.3
+Release:    1
 Group:      Applications/Multimedia
 License:    GPL
 URL:        http://notyetthere.org/maemomeego/xbmcremote/
