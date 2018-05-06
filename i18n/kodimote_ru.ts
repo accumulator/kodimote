@@ -396,7 +396,7 @@
     </message>
     <message>
         <source>Wake up</source>
-        <translation>Разбудить сервер</translation>
+        <translation>Включить сервер</translation>
     </message>
 </context>
 <context>
@@ -830,7 +830,7 @@
     </message>
     <message>
         <source>Suspend</source>
-        <translation>Пассивный режим</translation>
+        <translation>Ждущий режим</translation>
     </message>
     <message>
         <source>Hibernate</source>
@@ -1048,7 +1048,7 @@
     </message>
     <message>
         <source>Wake host</source>
-        <translation>Разбудить сервер</translation>
+        <translation>Включить сервер</translation>
     </message>
 </context>
 <context>
@@ -1323,7 +1323,7 @@
     </message>
     <message>
         <source>Suspend Kodi host</source>
-        <translation>Перевести в пассивный режим</translation>
+        <translation>Перевести в ждущий режим</translation>
     </message>
     <message>
         <source>Hibernate Kodi host</source>
@@ -1459,11 +1459,11 @@
     </message>
     <message>
         <source>Ignore articles for sorting</source>
-        <translation>Игнорировать артикли при сортировке</translation>
+        <translation>Сортировка без артиклей</translation>
     </message>
     <message>
         <source>Enable haptics on keypad</source>
-        <translation>Включить виброотклик пульта</translation>
+        <translation>Виброотклик пульта</translation>
     </message>
     <message>
         <source>Used media</source>
@@ -1503,7 +1503,7 @@
     </message>
     <message>
         <source>Show call notifications</source>
-        <translation>Показывать уведомления о звонках</translation>
+        <translation>Уведомления о звонках</translation>
     </message>
     <message>
         <source>Settings</source>
@@ -1542,7 +1542,7 @@
     </message>
     <message>
         <source>Ignore articles for sorting</source>
-        <translation>Игнорировать артикли при сортировке</translation>
+        <translation>Сортировка без артиклей</translation>
     </message>
     <message>
         <source>Used media</source>
@@ -1598,7 +1598,7 @@
     </message>
     <message>
         <source>Show call notifications</source>
-        <translation>Показывать уведомления о звонках</translation>
+        <translation>Уведомления о звонках</translation>
     </message>
     <message>
         <source>Live TV</source>
@@ -1825,7 +1825,7 @@
     </message>
     <message>
         <source>Suspend</source>
-        <translation>Пассивный режим</translation>
+        <translation>Ждущий режим</translation>
     </message>
     <message>
         <source>Hibernate</source>
@@ -1853,7 +1853,7 @@
     </message>
     <message>
         <source>Wake up</source>
-        <translation>Разбудить сервер</translation>
+        <translation>Включить сервер</translation>
     </message>
     <message>
         <source>Edit</source>
