@@ -86,7 +86,7 @@ Page {
             Thumbnail {
                 artworkSource: currentItem ? currentItem.thumbnail : ""
                 width: parent.width
-                height: artworkSize && artworkSize.width > artworkSize.height ? artworkSize.height / (artworkSize.width / width) : (appWindow.mediumScreen || appWindow.largeScreen ? 900 : 400)
+                height: artworkSize && artworkSize.width > artworkSize.height ? artworkSize.height / (artworkSize.width / width) : appWindow.mediumScreen || appWindow.largeScreen ? 900 : appWindow.smallScreen ? 648 : 400
                 fillMode: Image.PreserveAspectFit
                 smooth: true
                 defaultText: currentItem ? currentItem.title : ""

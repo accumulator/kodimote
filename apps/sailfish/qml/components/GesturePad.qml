@@ -109,7 +109,7 @@ Item {
                     id: arrowImage
                     opacity: 0.3
                     source: "../icons/pad-arrow.png"
-                    scale: appWindow.smallScreen ? 1 : 2
+                    scale: appWindow.sizeRatio
 
                     Connections {
                         target: arrowsRoot

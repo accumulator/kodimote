@@ -95,7 +95,7 @@ Page {
             anchors.leftMargin: Theme.paddingLarge
             anchors.rightMargin: Theme.paddingLarge
 
-            spacing: appWindow.smallScreen ? Theme.paddingLarge : Theme.paddingLarge * 1.5
+            spacing: appWindow.smallestScreen ? Theme.paddingLarge : Theme.paddingLarge * 1.5
 
             PageHeader {
                 id: header
@@ -149,7 +149,7 @@ Page {
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity { NumberAnimation { duration: 500 } }
                     anchors.centerIn: parent
-                    spacing: appWindow.smallScreen ? Theme.paddingMedium : 50
+                    spacing: appWindow.smallestScreen ? Theme.paddingMedium : appWindow.smallScreen ? 25 : 50
 
                     IconButton {
                         id: referenceIcon

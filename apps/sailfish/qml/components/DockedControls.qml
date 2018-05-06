@@ -30,7 +30,7 @@ DockedPanel {
     property bool _opened
     property bool _dialogOpen
 
-    property int iconResize: appWindow.largeScreen? 140 : (appWindow.mediumScreen ? 128 : 64)
+    property int iconResize: appWindow.largeScreen? 140 : appWindow.mediumScreen ? 128 : appWindow.smallScreen ? 96 : 64
     open: player
     width: parent.width
     height: column.height + (2 * Theme.paddingLarge)
@@ -199,7 +199,7 @@ DockedPanel {
 
             Switch {
                 icon.source: player && player.repeat === Player.RepeatOne ? "../icons/icon-l-repeat-one.png" : "image://theme/icon-m-repeat"
-                icon.scale: player && player.repeat === Player.RepeatOne && !appWindow.smallScreen ? 2 : 1
+                icon.scale: player && player.repeat === Player.RepeatOne ? appWindow.sizeRatio : 1
                 visible: kodi.state == "audio"
                 checked: player && player.repeat !== Player.RepeatNone
                 automaticCheck: false

@@ -133,7 +133,7 @@ Page {
             cacheBuffer: itemHeight * 3
 
             property bool useThumbnails: settings.useThumbnails
-            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallScreen? 126 : 126*2) : (appWindow.smallScreen? 92 : 92*2)
+            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallestScreen? 126 : 126*2) : (appWindow.smallestScreen? 92 : 92*2)
 
             header: PageHeader {
                 title: model ? model.title : ""
@@ -250,8 +250,8 @@ Page {
 
                     Thumbnail {
                         id: thumbnailImage
-                        height: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallScreen ? 120 : 120*2) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatNone ? 0 : (appWindow.smallScreen ? 86 : 86*2))
-                        width: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallScreen ? 80 : 80*2) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatLandscape ? (appWindow.smallScreen ? 152 : 152*2) : height)
+                        height: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (120 * appWindow.sizeRatio) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatNone ? 0 : (86 * appWindow.sizeRatio))
+                        width: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (80 * appWindow.sizeRatio) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatLandscape ? (152 * appWindow.sizeRatio ) : height)
 
                         anchors.left: parent.left
                         anchors.leftMargin: Theme.paddingLarge

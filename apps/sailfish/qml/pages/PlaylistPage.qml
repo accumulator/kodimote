@@ -113,7 +113,7 @@ Page {
                         id: mainText
                         text: title
                         font.weight: Font.Bold
-                        font.pixelSize: appWindow.mediumScreen || appWindow.largeScreen ? 26*2 : 26
+                        font.pixelSize: 26 * appWindow.sizeRatio
                         width: listView.width - durationLabel.width
                         truncationMode: TruncationMode.Fade
                         color: listItem.highlighted ? Theme.highlightColor : Theme.primaryColor
@@ -133,7 +133,7 @@ Page {
                         id: subText
                         text: subtitle ? subtitle : ""
                         font.weight: Font.Light
-                        font.pixelSize: appWindow.mediumScreen || appWindow.largeScreen ? 24*2 : 24
+                        font.pixelSize: 24 * appWindow.sizeRatio
                         color: Theme.secondaryColor
                         width: listView.width - durationLabel.width
                         truncationMode: TruncationMode.Fade
