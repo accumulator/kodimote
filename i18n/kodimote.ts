@@ -306,6 +306,21 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
+        <source>Sort ▲</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
+        <source>Sort ▼</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="98"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="241"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
@@ -943,12 +958,6 @@
 <context>
     <name>Keypad</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="102"/>
-        <location filename="../apps/ubuntu/qml/Keypad.qml" line="29"/>
-        <source>Keypad</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="80"/>
         <source>Pictures Mode (off)</source>
         <translation type="unfinished"></translation>
@@ -956,6 +965,12 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="80"/>
         <source>Pictures Mode (on)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="102"/>
+        <location filename="../apps/ubuntu/qml/Keypad.qml" line="29"/>
+        <source>Keypad</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

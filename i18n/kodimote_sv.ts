@@ -1,34 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<TS version="2.0" language="sv">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="84"/>
+        <location filename="../apps/generic/ui/aboutdialog.cpp" line="73"/>
         <source>Donate</source>
         <translation>Donera</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="89"/>
+        <location filename="../apps/generic/ui/aboutdialog.cpp" line="77"/>
         <source>Flattr</source>
         <translation>Flattr</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/AboutDialog.qml" line="78"/>
+        <location filename="../apps/generic/ui/aboutdialog.cpp" line="69"/>
         <source>Close</source>
         <translation>Stäng</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/aboutdialog.cpp" line="36"/>
         <source>About</source>
-        <translation type="vanished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/aboutdialog.cpp" line="60"/>
         <source>Copyright</source>
-        <translation type="vanished">Copyright</translation>
+        <translation>Copyright</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/aboutdialog.cpp" line="63"/>
         <source>Thanks to</source>
-        <translation type="vanished">Tack till</translation>
+        <translation>Tack till</translation>
     </message>
 </context>
 <context>
@@ -103,69 +109,110 @@
 <context>
     <name>Albums</name>
     <message>
+        <location filename="../libkodimote/albums.cpp" line="196"/>
         <source>Albums</source>
-        <translation type="vanished">Album</translation>
+        <translation>Album</translation>
     </message>
 </context>
 <context>
     <name>Artists</name>
     <message>
+        <location filename="../libkodimote/artists.cpp" line="173"/>
         <source>Artists</source>
-        <translation type="vanished">Artister</translation>
+        <translation>Artister</translation>
     </message>
 </context>
 <context>
     <name>AudioLibrary</name>
     <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="37"/>
         <source>Artists</source>
-        <translation type="vanished">Artister</translation>
+        <translation>Artister</translation>
     </message>
     <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="42"/>
         <source>Albums</source>
-        <translation type="vanished">Album</translation>
+        <translation>Album</translation>
     </message>
     <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="47"/>
         <source>Titles</source>
-        <translation type="vanished">Titlar</translation>
+        <translation>Titlar</translation>
     </message>
     <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="52"/>
+        <source>Genres</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="57"/>
         <source>Recently added</source>
-        <translation type="vanished">Senast tillagt</translation>
+        <translation>Senast tillagt</translation>
     </message>
     <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="62"/>
         <source>Recently played</source>
-        <translation type="vanished">Senast spelat</translation>
+        <translation>Senast spelat</translation>
     </message>
     <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="67"/>
+        <source>Playlists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="72"/>
+        <location filename="../libkodimote/audiolibrary.cpp" line="101"/>
+        <source>Music Add-ons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="77"/>
+        <source>Files</source>
+        <translation type="unfinished">Filer</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="99"/>
+        <source>Audio playlists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/audiolibrary.cpp" line="122"/>
         <source>Audio Library</source>
-        <translation type="vanished">Ljudbibliotek</translation>
+        <translation>Ljudbibliotek</translation>
     </message>
 </context>
 <context>
     <name>AudioPlaylist</name>
     <message>
+        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="64"/>
+        <location filename="../libkodimote/audioplaylist.cpp" line="153"/>
         <source>Now Playing</source>
-        <translation type="vanished">Nu spelas</translation>
+        <translation>Nu spelas</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="64"/>
         <source>Playlist</source>
-        <translation type="vanished">Spellista</translation>
+        <translation>Spellista</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="204"/>
         <source>Play</source>
-        <translation type="vanished">Spela</translation>
+        <translation>Spela</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="205"/>
         <source>Remove from playlist</source>
-        <translation type="vanished">Ta bort från spellista</translation>
+        <translation>Ta bort från spellista</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/AudioPlaylist.qml" line="206"/>
         <source>Clear playlist</source>
-        <translation type="vanished">Rensa spellista</translation>
+        <translation>Rensa spellista</translation>
     </message>
     <message>
+        <location filename="../libkodimote/audioplaylist.cpp" line="153"/>
         <source>Music</source>
-        <translation type="vanished">Musik</translation>
+        <translation>Musik</translation>
     </message>
 </context>
 <context>
@@ -177,10 +224,11 @@
     </message>
     <message>
         <source>XBMC on %1 requires authentication:</source>
-        <translation type="vanished">XBMC på %1 kräver autensiering:</translation>
+        <translation type="obsolete">XBMC på %1 kräver autensiering:</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="49"/>
+        <location filename="../apps/generic/ui/authenticationdialog.cpp" line="47"/>
         <source>Kodi on %1 requires authentication:</source>
         <translation>Kodi på %1 kräver autentisering:</translation>
     </message>
@@ -197,39 +245,47 @@
         <translation>Lösenord</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/authenticationdialog.cpp" line="35"/>
         <source>Authentication</source>
-        <translation type="vanished">Autentisering</translation>
+        <translation>Autentisering</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/authenticationdialog.cpp" line="53"/>
         <source>Username:</source>
-        <translation type="vanished">Användarnamn:</translation>
+        <translation>Användarnamn:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/authenticationdialog.cpp" line="59"/>
         <source>Password:</source>
-        <translation type="vanished">Lösenord:</translation>
+        <translation>Lösenord:</translation>
     </message>
 </context>
 <context>
     <name>AuthenticationSheet</name>
     <message>
+        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="27"/>
         <source>OK</source>
-        <translation type="vanished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="28"/>
         <source>Cancel</source>
-        <translation type="vanished">Avbryt</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="39"/>
         <source>XBMC on %1 requires authentication:</source>
-        <translation type="vanished">XBMC på %1 kräver autensiering:</translation>
+        <translation>XBMC på %1 kräver autensiering:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="43"/>
         <source>Username:</source>
-        <translation type="vanished">Användarnamn:</translation>
+        <translation>Användarnamn:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/AuthenticationSheet.qml" line="53"/>
         <source>Password:</source>
-        <translation type="vanished">Lösenord:</translation>
+        <translation>Lösenord:</translation>
     </message>
 </context>
 <context>
@@ -254,6 +310,21 @@
         <translation>Hem</translation>
     </message>
     <message>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
+        <source>Sort ▲</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
+        <source>Sort ▼</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="98"/>
+        <source>Search</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="241"/>
         <source>Play</source>
         <translation>Spela</translation>
@@ -265,15 +336,15 @@
     </message>
     <message>
         <source>Keypad</source>
-        <translation type="vanished">Tangentbord</translation>
+        <translation type="obsolete">Tangentbord</translation>
     </message>
     <message>
         <source>Now playing</source>
-        <translation type="vanished">Nu spelas</translation>
+        <translation type="obsolete">Nu spelas</translation>
     </message>
     <message>
         <source>Show watched</source>
-        <translation type="vanished">Visa visade</translation>
+        <translation type="obsolete">Visa visade</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="583"/>
@@ -289,74 +360,121 @@
 <context>
     <name>ChannelGroups</name>
     <message>
+        <location filename="../libkodimote/channelgroups.cpp" line="37"/>
         <source>TV Channels</source>
-        <translation type="vanished">TV-kanaler</translation>
+        <translation>TV-kanaler</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/channelgroups.cpp" line="39"/>
+        <source>Radio Channels</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>Channels</name>
     <message>
+        <location filename="../libkodimote/channels.cpp" line="41"/>
         <source>TV Channels</source>
-        <translation type="vanished">TV-kanaler</translation>
+        <translation>TV-kanaler</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/channels.cpp" line="43"/>
+        <source>Radio Channels</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>ConnectDialog</name>
     <message>
         <source>Connect to XBMC</source>
-        <translation type="vanished">Anslut till XBMC</translation>
+        <translation type="obsolete">Anslut till XBMC</translation>
     </message>
     <message>
         <source>Searching for XBMC hosts.</source>
-        <translation type="vanished">Söker efter XBMC värdar.</translation>
+        <translation type="obsolete">Söker efter XBMC värdar.</translation>
     </message>
     <message>
         <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="vanished">Vänligen aktivera följande val i Service inställningar på XBMC:</translation>
+        <translation type="obsolete">Vänligen aktivera följande val i Service inställningar på XBMC:</translation>
     </message>
     <message>
         <source>Allow control of XBMC via HTTP</source>
-        <translation type="vanished">Tillåt fjärrstyrning av Kodi via HTTP</translation>
+        <translation type="obsolete">Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation type="vanished">Tillåt program på andra system att styra Kodi</translation>
+        <translation type="obsolete">Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="41"/>
+        <source>Connect to Kodi</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="52"/>
+        <source>Searching for Kodi hosts.</source>
+        <translation type="unfinished">Söker efter Kodi-värdar.</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="53"/>
+        <source>Please enable the following options in the Services settings of Kodi:</source>
+        <translation type="unfinished">Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="54"/>
+        <source>Allow control of Kodi via HTTP</source>
+        <translation type="unfinished">Tillåt fjärrstyrning av Kodi via HTTP</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="55"/>
+        <source>Allow programs on other systems to control Kodi</source>
+        <translation type="unfinished">Tillåt program på andra system att styra Kodi</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="56"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation type="vanished">Avisera dessa tjänster till andra system via Zeroconf</translation>
+        <translation>Avisera dessa tjänster till andra system via Zeroconf</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="57"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation type="vanished">Om du inte använder Zeroconf, lägg till värd manuellt.</translation>
+        <translation>Om du inte använder Zeroconf, lägg till värd manuellt.</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="76"/>
         <source>Host:</source>
-        <translation type="vanished">Värd:</translation>
+        <translation>Värd:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="81"/>
         <source>HTTP Port:</source>
-        <translation type="vanished">HTTP Port:</translation>
+        <translation>HTTP Port:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="88"/>
         <source>MAC Address (optional):</source>
-        <translation type="vanished">MAC adress (valfri)</translation>
+        <translation>MAC adress (valfri)</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="112"/>
         <source>Connect</source>
-        <translation type="vanished">Anslut</translation>
+        <translation>Anslut</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="115"/>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="167"/>
         <source>Add Host</source>
-        <translation type="vanished">Lägg till värd</translation>
+        <translation>Lägg till värd</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="118"/>
         <source>Remove Host</source>
-        <translation type="vanished">Ta bort värd</translation>
+        <translation>Ta bort värd</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/connectdialog.cpp" line="160"/>
         <source>Back</source>
-        <translation type="vanished">Tillbaka</translation>
+        <translation>Tillbaka</translation>
     </message>
 </context>
 <context>
@@ -378,19 +496,19 @@
     </message>
     <message>
         <source>Searching for XBMC hosts.</source>
-        <translation type="vanished">Söker efter Kodi-värdar.</translation>
+        <translation type="obsolete">Söker efter Kodi-värdar.</translation>
     </message>
     <message>
         <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="vanished">Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
+        <translation type="obsolete">Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
     </message>
     <message>
         <source>Allow control of XBMC via HTTP</source>
-        <translation type="vanished">Tillåt fjärrstyrning av Kodi via HTTP</translation>
+        <translation type="obsolete">Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation type="vanished">Tillåt program på andra system att styra Kodi</translation>
+        <translation type="obsolete">Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="91"/>
@@ -456,68 +574,84 @@
 <context>
     <name>ConnectionSheet</name>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="29"/>
         <source>Connect</source>
-        <translation type="vanished">Anslut</translation>
+        <translation>Anslut</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="30"/>
         <source>Cancel</source>
-        <translation type="vanished">Avbryt</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="81"/>
         <source>Searching for XBMC hosts.</source>
-        <translation type="vanished">Söker efter XBMC värdar.</translation>
+        <translation>Söker efter XBMC värdar.</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="82"/>
         <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="vanished">Vänligen aktivera följande val i Service inställningar på XBMC:</translation>
+        <translation>Vänligen aktivera följande val i Service inställningar på XBMC:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="83"/>
         <source>Allow control of XBMC via HTTP</source>
-        <translation type="vanished">Tillåt fjärrstyrning av Kodi via HTTP</translation>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="84"/>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation type="vanished">Tillåt program på andra system att styra Kodi</translation>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="85"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation type="vanished">Avisera dessa tjänster till andra system via Zeroconf</translation>
+        <translation>Avisera dessa tjänster till andra system via Zeroconf</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="86"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation type="vanished">Om du inte använder Zeroconf, lägg till värd manuellt.</translation>
+        <translation>Om du inte använder Zeroconf, lägg till värd manuellt.</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="128"/>
         <source>XBMC on %1</source>
-        <translation type="vanished">XBMC på %1</translation>
+        <translation>XBMC på %1</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="142"/>
         <source>Waking up %1...</source>
-        <translation type="vanished">Väcker %1...</translation>
+        <translation>Väcker %1...</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="159"/>
         <source>Remove Host</source>
-        <translation type="vanished">Ta bort värd</translation>
+        <translation>Ta bort värd</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="166"/>
         <source>Add Host</source>
-        <translation type="vanished">Lägg till värd</translation>
+        <translation>Lägg till värd</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="179"/>
         <source>Host:</source>
-        <translation type="vanished">Värd:</translation>
+        <translation>Värd:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="192"/>
         <source>HTTP Port:</source>
-        <translation type="vanished">HTTP Port:</translation>
+        <translation>HTTP Port:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="206"/>
         <source>MAC Address for WakeOnLan (optional):</source>
-        <translation type="vanished">MAC adress för WakeOnLan (valfritt)</translation>
+        <translation>MAC adress för WakeOnLan (valfritt)</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="217"/>
         <source>Back</source>
-        <translation type="vanished">Tillbaka</translation>
+        <translation>Tillbaka</translation>
     </message>
 </context>
 <context>
@@ -537,11 +671,11 @@
     <name>CoverPage</name>
     <message>
         <source>XBMC on</source>
-        <translation type="vanished">Kodi på</translation>
+        <translation type="obsolete">Kodi på</translation>
     </message>
     <message>
         <source>XBMC remote</source>
-        <translation type="vanished">Kodi fjärr</translation>
+        <translation type="obsolete">Kodi fjärr</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="173"/>
@@ -585,50 +719,68 @@
 <context>
     <name>DownloadDialog</name>
     <message>
+        <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="35"/>
         <source>Start download?</source>
-        <translation type="vanished">Börja nedaddning?</translation>
+        <translation>Börja nedaddning?</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="49"/>
         <source>Start downloading %1?</source>
-        <translation type="vanished">Börja ladda ned %1?</translation>
+        <translation>Börja ladda ned %1?</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="58"/>
         <source>Yes</source>
-        <translation type="vanished">Ja</translation>
+        <translation>Ja</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/DownloadDialog.qml" line="63"/>
         <source>No</source>
-        <translation type="vanished">Nej</translation>
+        <translation>Nej</translation>
     </message>
 </context>
 <context>
     <name>Episodes</name>
     <message>
+        <location filename="../libkodimote/episodes.cpp" line="211"/>
         <source>Episodes</source>
-        <translation type="vanished">Episoder</translation>
+        <translation>Episoder</translation>
+    </message>
+</context>
+<context>
+    <name>Genres</name>
+    <message>
+        <location filename="../libkodimote/genres.cpp" line="99"/>
+        <source>Genres</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
     <name>HomeMenu</name>
     <message>
+        <location filename="../apps/generic/qml/HomeMenu.qml" line="56"/>
         <source>Music</source>
-        <translation type="vanished">Musik</translation>
+        <translation>Musik</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/HomeMenu.qml" line="57"/>
         <source>Videos</source>
-        <translation type="vanished">Videor</translation>
+        <translation>Videor</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/HomeMenu.qml" line="58"/>
         <source>Pictures</source>
-        <translation type="vanished">Bilder</translation>
+        <translation>Bilder</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/HomeMenu.qml" line="196"/>
         <source>Files</source>
-        <translation type="vanished">Filer</translation>
+        <translation>Filer</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/HomeMenu.qml" line="197"/>
         <source>Library</source>
-        <translation type="vanished">Bibliotek</translation>
+        <translation>Bibliotek</translation>
     </message>
 </context>
 <context>
@@ -677,138 +829,184 @@
 <context>
     <name>ItemDetails</name>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="113"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="64"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="76"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="76"/>
         <source>Rating:</source>
         <translation>Betyg:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="119"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="83"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="106"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="94"/>
         <source>Season:</source>
         <translation>Säsong:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="125"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="89"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="112"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="100"/>
         <source>Episode:</source>
         <translation>Episoder:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="131"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="95"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="117"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="106"/>
         <source>First aired:</source>
         <translation>Första sändning:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="137"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="101"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="122"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="112"/>
         <source>Genre:</source>
         <translation>Genre:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="143"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="107"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="127"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="118"/>
         <source>Year:</source>
         <translation>År:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="149"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="113"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="132"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="124"/>
         <source>Director:</source>
         <translation>Regissör:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="155"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="119"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="137"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="130"/>
         <source>Tagline:</source>
         <translation>Slogan:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="161"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="125"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="142"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="136"/>
         <source>MPAA:</source>
         <translation>MPAA:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="167"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="131"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="147"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="142"/>
         <source>Instrument:</source>
         <translation>Instrument:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="173"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="137"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="152"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="148"/>
         <source>Style:</source>
         <translation>Stil:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="179"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="143"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="157"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="154"/>
         <source>Mood:</source>
         <translation>Humör:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="185"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="149"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="162"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="160"/>
         <source>Born:</source>
         <translation>Född:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="191"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="155"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="167"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="166"/>
         <source>Formed:</source>
         <translation>Bildades:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="197"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="161"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="172"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="172"/>
         <source>Died:</source>
         <translation>Död:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="203"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="167"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="177"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="178"/>
         <source>Disbanded:</source>
         <translation>Upplöstes:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="209"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="173"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="182"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="184"/>
         <source>Duration:</source>
         <translation>Varaktighet:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="215"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="179"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="187"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="190"/>
         <source>Comment:</source>
         <translation>Kommentera:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="221"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="185"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="193"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="196"/>
         <source>Playcount:</source>
         <translation>Spelningar:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="227"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="191"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="198"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="202"/>
         <source>Cast:</source>
         <translation>Rollista:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="249"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="273"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="49"/>
         <source>Play</source>
         <translation>Spela</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="253"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="277"/>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="45"/>
         <source>Add to playlist</source>
         <translation>Lägg till i spellista</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="257"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="281"/>
         <source>Download</source>
-        <translation type="vanished">Ladda ned</translation>
+        <translation>Ladda ned</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="100"/>
@@ -909,15 +1107,57 @@
     </message>
     <message>
         <source>Media</source>
-        <translation type="vanished">Media</translation>
+        <translation type="obsolete">Media</translation>
     </message>
     <message>
         <source>Now playing</source>
-        <translation type="vanished">Nu spelas</translation>
+        <translation type="obsolete">Nu spelas</translation>
     </message>
     <message>
         <source>Pictures</source>
-        <translation type="vanished">Bilder</translation>
+        <translation type="obsolete">Bilder</translation>
+    </message>
+</context>
+<context>
+    <name>Kodi</name>
+    <message>
+        <location filename="../libkodimote/kodi.cpp" line="258"/>
+        <source>Finished downloading %1</source>
+        <translation type="unfinished">Avslutad nedladdning %1</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/kodi.cpp" line="260"/>
+        <source>Error downloading %1</source>
+        <translation type="unfinished">Fel vid nedladdning %1</translation>
+    </message>
+</context>
+<context>
+    <name>KodiConnection::KodiConnectionPrivate</name>
+    <message>
+        <location filename="../libkodimote/kodiconnection.cpp" line="230"/>
+        <source>Connecting to %1...</source>
+        <translation type="unfinished">Ansluter till %1</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/kodiconnection.cpp" line="295"/>
+        <source>This version of Kodimote is designed to work with XBMC Frodo (v12) or above (XBMC Gotham (v13), Kodi Helix (v14)). It seems you have connected to an older version of XBMC. Please upgrade XBMC to Kodi in order to use Kodimote.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/kodiconnection.cpp" line="311"/>
+        <source>The connection has been disconnected</source>
+        <translation type="unfinished">Anlutningen har blivit bortkopplad</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/kodiconnection.cpp" line="322"/>
+        <location filename="../libkodimote/kodiconnection.cpp" line="389"/>
+        <source>Connection failed: %1</source>
+        <translation type="unfinished">Anslutning misslyckades: %1</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/kodiconnection.cpp" line="546"/>
+        <source>Connection to %1 timed out...</source>
+        <translation type="unfinished">Anslutning tll %1 tog för länge...</translation>
     </message>
 </context>
 <context>
@@ -991,45 +1231,54 @@
 <context>
     <name>LibraryView</name>
     <message>
+        <location filename="../apps/generic/qml/LibraryView.qml" line="219"/>
         <source>Play</source>
-        <translation type="vanished">Spela</translation>
+        <translation>Spela</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/LibraryView.qml" line="220"/>
         <source>Add to playlist</source>
-        <translation type="vanished">Lägg till i spellista</translation>
+        <translation>Lägg till i spellista</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/LibraryView.qml" line="221"/>
         <source>Rescan library</source>
-        <translation type="vanished">Skanna bibliotek</translation>
+        <translation>Skanna bibliotek</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/LibraryView.qml" line="222"/>
         <source>Details</source>
-        <translation type="vanished">Detaljer</translation>
+        <translation>Detaljer</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/LibraryView.qml" line="223"/>
         <source>Download</source>
-        <translation type="vanished">Ladda ned</translation>
+        <translation>Ladda ned</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="49"/>
         <source>XBMC on %1</source>
-        <translation type="vanished">XBMC på %1</translation>
+        <translation>XBMC på %1</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="91"/>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="250"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="70"/>
         <source>Music</source>
         <translation>Musik</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="94"/>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="253"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="73"/>
         <source>Videos</source>
         <translation>Videor</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="97"/>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="256"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="76"/>
         <source>Pictures</source>
@@ -1042,34 +1291,41 @@
         <translation>Live-TV</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="100"/>
         <source>TV Channels</source>
-        <translation type="vanished">TV-kanaler</translation>
+        <translation>TV-kanaler</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="193"/>
         <source>Library</source>
-        <translation type="vanished">Bibliotek</translation>
+        <translation>Bibliotek</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="195"/>
         <source>Files</source>
-        <translation type="vanished">Filer</translation>
+        <translation>Filer</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="267"/>
         <source>Show files</source>
-        <translation type="vanished">Visa filer</translation>
+        <translation>Visa filer</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="280"/>
         <source>Show library</source>
-        <translation type="vanished">Visa bibliotek</translation>
+        <translation>Visa bibliotek</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="293"/>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="161"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="267"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="257"/>
         <source>Rescan library</source>
         <translation>Skanna bibliotek</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/MainPage.qml" line="309"/>
         <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="169"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="268"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="258"/>
         <source>Clean library</source>
         <translation>Rensa bibliotek</translation>
     </message>
@@ -1080,22 +1336,22 @@
     </message>
     <message>
         <source>Keypad</source>
-        <translation type="vanished">Tangentbord</translation>
+        <translation type="obsolete">Tangentbord</translation>
     </message>
     <message>
         <source>Now playing</source>
-        <translation type="vanished">Nu spelas</translation>
+        <translation type="obsolete">Nu spelas</translation>
     </message>
     <message>
         <source>Change connection...</source>
-        <translation type="vanished">Byt anslutning</translation>
+        <translation type="obsolete">Byt anslutning</translation>
     </message>
     <message>
         <source>Settings</source>
-        <translation type="vanished">Inställningar</translation>
+        <translation type="obsolete">Inställningar</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="307"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="297"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
@@ -1105,7 +1361,7 @@
         <translation>Medialäsare</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="299"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="289"/>
         <source>Options</source>
         <translation>Alternativ</translation>
     </message>
@@ -1113,32 +1369,39 @@
 <context>
     <name>MainWindow</name>
     <message>
+        <location filename="../apps/generic/ui/mainwindow.cpp" line="84"/>
         <source>Connect...</source>
-        <translation type="vanished">Anslut...</translation>
+        <translation>Anslut...</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/mainwindow.cpp" line="85"/>
         <source>Settings</source>
-        <translation type="vanished">Inställningar</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/mainwindow.cpp" line="91"/>
         <source>About</source>
-        <translation type="vanished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/mainwindow.cpp" line="219"/>
         <source>Incoming call</source>
-        <translation type="vanished">Inkommande samtal</translation>
+        <translation>Inkommande samtal</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/mainwindow.cpp" line="270"/>
         <source>Download started: %1</source>
-        <translation type="vanished">Nedladdning startade: %1</translation>
+        <translation>Nedladdning startade: %1</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/mainwindow.cpp" line="283"/>
         <source>Download finished: %1</source>
-        <translation type="vanished">Nedladdning klar: %1</translation>
+        <translation>Nedladdning klar: %1</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/mainwindow.cpp" line="285"/>
         <source>Error downloading %1</source>
-        <translation type="vanished">Fel vid nedladdning %1</translation>
+        <translation>Fel vid nedladdning %1</translation>
     </message>
 </context>
 <context>
@@ -1152,60 +1415,86 @@
 <context>
     <name>MeeGoHelper</name>
     <message>
+        <location filename="../apps/harmattan/meegohelper.cpp" line="192"/>
         <source>Incoming call</source>
-        <translation type="vanished">Inkommande samtal</translation>
+        <translation>Inkommande samtal</translation>
     </message>
 </context>
 <context>
     <name>Movies</name>
     <message>
+        <location filename="../libkodimote/movies.cpp" line="220"/>
         <source>Movies</source>
-        <translation type="vanished">Filmer</translation>
+        <translation>Filmer</translation>
+    </message>
+</context>
+<context>
+    <name>MprisApplication</name>
+    <message>
+        <location filename="../libkodimote/mpris2/mprisapplication.cpp" line="63"/>
+        <source>Kodi on %1</source>
+        <translation type="unfinished">Kodi på %1</translation>
     </message>
 </context>
 <context>
     <name>MusicVideos</name>
     <message>
+        <location filename="../libkodimote/musicvideos.cpp" line="175"/>
         <source>Music Videos</source>
-        <translation type="vanished">Musikvideor</translation>
+        <translation>Musikvideor</translation>
     </message>
 </context>
 <context>
     <name>NfcHandler</name>
     <message>
         <source>NFC tag is not compatible with Xbmcremote. In order to use it with Xbmcremote you need to write connection information to it.</source>
-        <translation type="vanished">NFC tag är inte kompatibel med Xmbcremote. För att funka med Xmbcremote måste du skriva anslutnings info till den</translation>
+        <translation type="obsolete">NFC tag är inte kompatibel med Xmbcremote. För att funka med Xmbcremote måste du skriva anslutnings info till den</translation>
     </message>
     <message>
         <source>NFC tag is outdated. In order to use it with Xbmcremote you need to update it by rewriting connection information to it.</source>
-        <translation type="vanished">NFC tag är utdaterad. För att använda den med Xmbcremote måste du uppdatera den genom att skriva anslutnings info till den.</translation>
+        <translation type="obsolete">NFC tag är utdaterad. För att använda den med Xmbcremote måste du uppdatera den genom att skriva anslutnings info till den.</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/nfchandler.cpp" line="110"/>
+        <location filename="../apps/harmattan/nfchandler.cpp" line="119"/>
+        <location filename="../apps/harmattan/nfchandler.cpp" line="136"/>
+        <source>NFC tag is not compatible with Kodimote. In order to use it with Kodimote you need to write connection information to it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/harmattan/nfchandler.cpp" line="117"/>
+        <source>NFC tag is outdated. In order to use it with Kodimote you need to update it by rewriting connection information to it.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/harmattan/nfchandler.cpp" line="152"/>
         <source>Tag written successfully. NOTE: This tag does not offer enough space to write all informations. Wake on LAN will not work with this tag.</source>
-        <translation type="vanished">Tag kodning färdig. OBS: Denna tag har inte tillräckligt med utrymme för att skriva all info. &quot;Wake in LAN&quot; kommer inte funka med denna tag.</translation>
+        <translation>Tag kodning färdig. OBS: Denna tag har inte tillräckligt med utrymme för att skriva all info. &quot;Wake in LAN&quot; kommer inte funka med denna tag.</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/nfchandler.cpp" line="154"/>
         <source>Tag written successfully.</source>
-        <translation type="vanished">Tag kodning lyckades.</translation>
+        <translation>Tag kodning lyckades.</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/nfchandler.cpp" line="164"/>
         <source>Error writing NFC tag.</source>
-        <translation type="vanished">Fel vid kodning av NFC tag</translation>
+        <translation>Fel vid kodning av NFC tag</translation>
     </message>
 </context>
 <context>
     <name>NoConnection</name>
     <message>
         <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="vanished">Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
+        <translation type="obsolete">Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
     </message>
     <message>
         <source>Allow control of XBMC via HTTP</source>
-        <translation type="vanished">Tillåt fjärrstyrning av Kodi via HTTP</translation>
+        <translation type="obsolete">Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation type="vanished">Tillåt program på andra system att styra Kodi</translation>
+        <translation type="obsolete">Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="67"/>
@@ -1236,8 +1525,9 @@
 <context>
     <name>NoConnectionPage</name>
     <message>
+        <location filename="../apps/harmattan/qml/NoConnectionPage.qml" line="47"/>
         <source>Connect...</source>
-        <translation type="vanished">Anslut...</translation>
+        <translation>Anslut...</translation>
     </message>
 </context>
 <context>
@@ -1266,98 +1556,118 @@
 <context>
     <name>NowPlayingDetails</name>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="98"/>
         <source>Rating:</source>
-        <translation type="vanished">Betyg:</translation>
+        <translation>Betyg:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="117"/>
         <source>Season:</source>
-        <translation type="vanished">Säsong:</translation>
+        <translation>Säsong:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="123"/>
         <source>Episode:</source>
-        <translation type="vanished">Episoder</translation>
+        <translation>Episoder</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="129"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="31"/>
         <source>First aired:</source>
         <translation>Första sändning:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="135"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="36"/>
         <source>Genre:</source>
         <translation>Genre:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="141"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="41"/>
         <source>Year:</source>
         <translation>År:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="147"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="46"/>
         <source>Director:</source>
         <translation>Regissör:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="153"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="51"/>
         <source>Tagline:</source>
         <translation>Slogan:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="159"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="56"/>
         <source>MPAA:</source>
         <translation>MPAA:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="165"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="61"/>
         <source>Instrument:</source>
         <translation>Instrument:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="171"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="66"/>
         <source>Style:</source>
         <translation>Stil:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="177"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="71"/>
         <source>Mood:</source>
         <translation>Humör:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="183"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="76"/>
         <source>Born:</source>
         <translation>Född:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="189"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="81"/>
         <source>Formed:</source>
         <translation>Bildades:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="195"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="86"/>
         <source>Died:</source>
         <translation>Död:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="201"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="91"/>
         <source>Disbanded:</source>
         <translation>Upplöstes:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="207"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="96"/>
         <source>Duration:</source>
         <translation>Varaktighet:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="213"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="101"/>
         <source>Comment:</source>
         <translation>Kommentera:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="219"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="106"/>
         <source>Playcount:</source>
         <translation>Spelningar:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="225"/>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="111"/>
         <source>Cast:</source>
         <translation>Rollista:</translation>
@@ -1366,15 +1676,18 @@
 <context>
     <name>NowPlayingPage</name>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="77"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="475"/>
         <source>Select audio track</source>
         <translation>Välj ljudspår</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="139"/>
         <source>Off</source>
-        <translation type="vanished">Av</translation>
+        <translation>Av</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="140"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="464"/>
         <source>Select subtitle</source>
         <translation>Välj undertext</translation>
@@ -1385,50 +1698,56 @@
         <translation>Spela YouTube-URL</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="178"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Season:</source>
         <translation>Säsong:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="184"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Episode:</source>
         <translation>Episod:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="304"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Rating:</source>
         <translation>Betyg:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="330"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="233"/>
         <source>Year:</source>
         <translation>År:</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="371"/>
         <source>Cancel</source>
-        <translation type="vanished">Avbryt</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="372"/>
         <source>OK</source>
-        <translation type="vanished">OK</translation>
+        <translation>OK</translation>
     </message>
     <message>
         <source>Media</source>
-        <translation type="vanished">Media</translation>
+        <translation type="obsolete">Media</translation>
     </message>
     <message>
         <source>Keypad</source>
-        <translation type="vanished">Tangentbord</translation>
+        <translation type="obsolete">Tangentbord</translation>
     </message>
     <message>
         <source>Now playing</source>
-        <translation type="vanished">Nu spelas</translation>
+        <translation type="obsolete">Nu spelas</translation>
     </message>
     <message>
         <source>Pause</source>
-        <translation type="vanished">Paus</translation>
+        <translation type="obsolete">Paus</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="404"/>
@@ -1437,15 +1756,15 @@
     </message>
     <message>
         <source>Next</source>
-        <translation type="vanished">Nästa</translation>
+        <translation type="obsolete">Nästa</translation>
     </message>
     <message>
         <source>Previous</source>
-        <translation type="vanished">Föregående</translation>
+        <translation type="obsolete">Föregående</translation>
     </message>
     <message>
         <source>Stop</source>
-        <translation type="vanished">Stopp</translation>
+        <translation type="obsolete">Stopp</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="83"/>
@@ -1497,12 +1816,22 @@
 <context>
     <name>NowPlayingView</name>
     <message>
+        <location filename="../apps/generic/qml/NowPlayingView.qml" line="218"/>
         <source>Now playing:</source>
-        <translation type="vanished">Nu spelas:</translation>
+        <translation>Nu spelas:</translation>
     </message>
     <message>
+        <location filename="../apps/generic/qml/NowPlayingView.qml" line="228"/>
         <source>Track:</source>
-        <translation type="vanished">Spår:</translation>
+        <translation>Spår:</translation>
+    </message>
+</context>
+<context>
+    <name>PlatformHelper</name>
+    <message>
+        <location filename="../libkodimote/platformhelper.cpp" line="41"/>
+        <source>Incoming call</source>
+        <translation type="unfinished">Inkommande samtal</translation>
     </message>
 </context>
 <context>
@@ -1518,16 +1847,19 @@
         <translation>Aktuell spellista</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="157"/>
         <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="91"/>
         <source>Play</source>
         <translation>Spela</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="163"/>
         <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="97"/>
         <source>Remove from playlist</source>
         <translation>Ta bort från spellista</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="169"/>
         <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="55"/>
         <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="58"/>
         <source>Clear playlist</source>
@@ -1591,23 +1923,23 @@
     </message>
     <message>
         <source>Quit XBMC</source>
-        <translation type="vanished">Avsluta Kodi</translation>
+        <translation type="obsolete">Avsluta Kodi</translation>
     </message>
     <message>
         <source>Shutdown XBMC host</source>
-        <translation type="vanished">Stäng av Kodi-värden</translation>
+        <translation type="obsolete">Stäng av Kodi-värden</translation>
     </message>
     <message>
         <source>Reboot XBMC host</source>
-        <translation type="vanished">Starta om Kodi-värden</translation>
+        <translation type="obsolete">Starta om Kodi-värden</translation>
     </message>
     <message>
         <source>Suspend XBMC host</source>
-        <translation type="vanished">Sätt Kodi-värden i vänteläge</translation>
+        <translation type="obsolete">Sätt Kodi-värden i vänteläge</translation>
     </message>
     <message>
         <source>Hibernate XBMC host</source>
-        <translation type="vanished">Sätt Kodi-värden i viloläge</translation>
+        <translation type="obsolete">Sätt Kodi-värden i viloläge</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="85"/>
@@ -1638,30 +1970,86 @@
     </message>
 </context>
 <context>
+    <name>Profiles</name>
+    <message>
+        <location filename="../libkodimote/profiles.cpp" line="37"/>
+        <source>Profiles</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>PvrMenu</name>
+    <message>
+        <location filename="../libkodimote/pvrmenu.cpp" line="32"/>
+        <source>TV Channels</source>
+        <translation type="unfinished">TV-kanaler</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/pvrmenu.cpp" line="37"/>
+        <source>Radio Channels</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/pvrmenu.cpp" line="42"/>
+        <source>Recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/pvrmenu.cpp" line="50"/>
+        <source>Live TV</source>
+        <translation type="unfinished">Live-TV</translation>
+    </message>
+</context>
+<context>
     <name>RecentItems</name>
     <message>
+        <location filename="../libkodimote/recentitems.cpp" line="38"/>
         <source>Albums</source>
-        <translation type="vanished">Album</translation>
+        <translation>Album</translation>
     </message>
     <message>
+        <location filename="../libkodimote/recentitems.cpp" line="44"/>
         <source>Songs</source>
-        <translation type="vanished">Sånger</translation>
+        <translation>Sånger</translation>
     </message>
     <message>
+        <location filename="../libkodimote/recentitems.cpp" line="50"/>
         <source>Movies</source>
-        <translation type="vanished">Filmer</translation>
+        <translation>Filmer</translation>
     </message>
     <message>
+        <location filename="../libkodimote/recentitems.cpp" line="56"/>
         <source>Episodes</source>
-        <translation type="vanished">Episoder</translation>
+        <translation>Episoder</translation>
     </message>
     <message>
+        <location filename="../libkodimote/recentitems.cpp" line="62"/>
         <source>Music Videos</source>
-        <translation type="vanished">Musikvideor</translation>
+        <translation>Musikvideor</translation>
     </message>
     <message>
+        <location filename="../libkodimote/recentitems.cpp" line="106"/>
         <source>Recently added</source>
-        <translation type="vanished">Nyligen tillagt</translation>
+        <translation>Nyligen tillagt</translation>
+    </message>
+</context>
+<context>
+    <name>Recordings</name>
+    <message>
+        <location filename="../libkodimote/recordings.cpp" line="40"/>
+        <source>Recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/recordings.cpp" line="148"/>
+        <location filename="../libkodimote/recordings.cpp" line="160"/>
+        <source>%1 recordings</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/recordings.cpp" line="188"/>
+        <source>All recordings</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -1691,14 +2079,15 @@
     <name>SailfishHelper</name>
     <message>
         <source>Incoming call</source>
-        <translation type="vanished">Inkommande samtal</translation>
+        <translation type="obsolete">Inkommande samtal</translation>
     </message>
 </context>
 <context>
     <name>Seasons</name>
     <message>
+        <location filename="../libkodimote/seasons.cpp" line="174"/>
         <source>Seasons</source>
-        <translation type="vanished">Säsonger</translation>
+        <translation>Säsonger</translation>
     </message>
 </context>
 <context>
@@ -1715,11 +2104,13 @@
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="55"/>
+        <location filename="../apps/generic/ui/settingsdialog.cpp" line="71"/>
         <source>Use Thumbnails</source>
         <translation>Använd miniatyrer</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="65"/>
+        <location filename="../apps/generic/ui/settingsdialog.cpp" line="75"/>
         <source>Ignore articles for sorting</source>
         <translation>Ignorera artiklar för sortering</translation>
     </message>
@@ -1755,7 +2146,7 @@
     </message>
     <message>
         <source>TV Channels</source>
-        <translation type="vanished">TV-kanaler</translation>
+        <translation type="obsolete">TV-kanaler</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="113"/>
@@ -1779,53 +2170,64 @@
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="143"/>
+        <location filename="../apps/generic/ui/settingsdialog.cpp" line="98"/>
         <source>Show call notifications</source>
         <translation>Visa samtals notiser</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/settingsdialog.cpp" line="40"/>
         <source>Settings</source>
-        <translation type="vanished">Inställningar</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/settingsdialog.cpp" line="79"/>
         <source>Change volume during calls</source>
-        <translation type="vanished">Ändra volym under samtal</translation>
+        <translation>Ändra volym under samtal</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/settingsdialog.cpp" line="88"/>
         <source>Pause video during calls</source>
-        <translation type="vanished">Pausa video under samtal</translation>
+        <translation>Pausa video under samtal</translation>
     </message>
     <message>
+        <location filename="../apps/generic/ui/settingsdialog.cpp" line="92"/>
         <source>Pause music during calls</source>
-        <translation type="vanished">Pausa musik under samtal</translation>
+        <translation>Pausa musik under samtal</translation>
     </message>
 </context>
 <context>
     <name>SettingsSheet</name>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="26"/>
         <source>Save</source>
-        <translation type="vanished">Spara</translation>
+        <translation>Spara</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="27"/>
         <source>Cancel</source>
-        <translation type="vanished">Avbryt</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="40"/>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="18"/>
         <source>Look and feel</source>
         <translation>Utseende och känsla</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="46"/>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="31"/>
         <source>Invert theme</source>
         <translation>Invertera tema</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="51"/>
         <source>Use Thumbnails</source>
-        <translation type="vanished">Använd miniatyrer</translation>
+        <translation>Använd miniatyrer</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="56"/>
         <source>Keep display on when charging</source>
-        <translation type="vanished">Display på vid laddning</translation>
+        <translation>Display på vid laddning</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="9"/>
@@ -1838,21 +2240,25 @@
         <translation>Behåll skärmen på</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="61"/>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="59"/>
         <source>Ignore articles for sorting</source>
         <translation>Ignorera artiklar för sortering</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="69"/>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="81"/>
         <source>Music</source>
         <translation>Musik</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="75"/>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="91"/>
         <source>Videos</source>
         <translation>Videor</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="85"/>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="101"/>
         <source>Pictures</source>
         <translation>Bilder</translation>
@@ -1863,32 +2269,38 @@
         <translation>Live-TV</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="91"/>
         <source>TV Channels</source>
-        <translation type="vanished">TV-kanaler</translation>
+        <translation>TV-kanaler</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="98"/>
         <source>Phone calls</source>
-        <translation type="vanished">Telefonsamtal</translation>
+        <translation>Telefonsamtal</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="104"/>
         <source>Change volume</source>
-        <translation type="vanished">Ändra volym</translation>
+        <translation>Ändra volym</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="117"/>
         <source>Pause video</source>
-        <translation type="vanished">Pausa video</translation>
+        <translation>Pausa video</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="122"/>
         <source>Pause music</source>
-        <translation type="vanished">Pausa volym</translation>
+        <translation>Pausa volym</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/SettingsSheet.qml" line="127"/>
         <source>Show call notifications</source>
-        <translation type="vanished">Visa samtals notiser</translation>
+        <translation>Visa samtals notiser</translation>
     </message>
     <message>
         <source>Media browser settings</source>
-        <translation type="vanished">Medialäsarinställningar</translation>
+        <translation type="obsolete">Medialäsarinställningar</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="65"/>
@@ -1897,7 +2309,7 @@
     </message>
     <message>
         <source>TV</source>
-        <translation type="vanished">TV</translation>
+        <translation type="obsolete">TV</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="169"/>
@@ -1908,35 +2320,42 @@
 <context>
     <name>Shares</name>
     <message>
+        <location filename="../libkodimote/shares.cpp" line="35"/>
         <source>Music</source>
-        <translation type="vanished">Musik</translation>
+        <translation>Musik</translation>
     </message>
     <message>
+        <location filename="../libkodimote/shares.cpp" line="41"/>
         <source>Videos</source>
-        <translation type="vanished">Videor</translation>
+        <translation>Videor</translation>
     </message>
     <message>
+        <location filename="../libkodimote/shares.cpp" line="117"/>
         <source>Music Files</source>
-        <translation type="vanished">Musikfiler</translation>
+        <translation>Musikfiler</translation>
     </message>
     <message>
+        <location filename="../libkodimote/shares.cpp" line="119"/>
         <source>Video Files</source>
-        <translation type="vanished">Videofiler</translation>
+        <translation>Videofiler</translation>
     </message>
     <message>
+        <location filename="../libkodimote/shares.cpp" line="121"/>
         <source>Picture Files</source>
-        <translation type="vanished">Bildfiler</translation>
+        <translation>Bildfiler</translation>
     </message>
     <message>
+        <location filename="../libkodimote/shares.cpp" line="123"/>
         <source>Shares</source>
-        <translation type="vanished">Delningar</translation>
+        <translation>Delningar</translation>
     </message>
 </context>
 <context>
     <name>Songs</name>
     <message>
+        <location filename="../libkodimote/songs.cpp" line="225"/>
         <source>Songs</source>
-        <translation type="vanished">Sånger</translation>
+        <translation>Sånger</translation>
     </message>
 </context>
 <context>
@@ -1960,134 +2379,167 @@
 <context>
     <name>TvShows</name>
     <message>
+        <location filename="../libkodimote/tvshows.cpp" line="203"/>
         <source>TV Shows</source>
-        <translation type="vanished">TV program</translation>
+        <translation>TV program</translation>
     </message>
 </context>
 <context>
     <name>VideoLibrary</name>
     <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="36"/>
         <source>Movies</source>
-        <translation type="vanished">Filmer</translation>
+        <translation>Filmer</translation>
     </message>
     <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="41"/>
         <source>TV Shows</source>
-        <translation type="vanished">TV-program</translation>
+        <translation>TV-program</translation>
     </message>
     <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="46"/>
         <source>Music Videos</source>
-        <translation type="vanished">Musikvideor</translation>
+        <translation>Musikvideor</translation>
     </message>
     <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="51"/>
         <source>Recently added</source>
-        <translation type="vanished">Nyligen tillagt</translation>
+        <translation>Nyligen tillagt</translation>
     </message>
     <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="56"/>
+        <source>Playlists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="61"/>
+        <location filename="../libkodimote/videolibrary.cpp" line="86"/>
+        <source>Video Add-ons</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="66"/>
+        <source>Files</source>
+        <translation type="unfinished">Filer</translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="84"/>
+        <source>Video playlists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../libkodimote/videolibrary.cpp" line="107"/>
         <source>Video Library</source>
-        <translation type="vanished">Videobibliotek</translation>
+        <translation>Videobibliotek</translation>
     </message>
 </context>
 <context>
     <name>VideoPlaylist</name>
     <message>
+        <location filename="../libkodimote/videoplaylist.cpp" line="166"/>
         <source>Now Playing</source>
-        <translation type="vanished">Nu spelas</translation>
+        <translation>Nu spelas</translation>
     </message>
     <message>
+        <location filename="../libkodimote/videoplaylist.cpp" line="166"/>
         <source>Videos</source>
-        <translation type="vanished">Videor</translation>
+        <translation>Videor</translation>
     </message>
 </context>
 <context>
     <name>WriteNfcTagSheet</name>
     <message>
+        <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="46"/>
         <source>Tap a NFC tag to write XBMC connection information to it. You can then use the tag to connect to this XBMC.</source>
-        <translation type="vanished">Vidrör en NFC tagg för att skriva XBMC anslutnings information till den. Du kan använda taggen för att ansluta till denna XBMC.</translation>
+        <translation>Vidrör en NFC tagg för att skriva XBMC anslutnings information till den. Du kan använda taggen för att ansluta till denna XBMC.</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="58"/>
         <source>Close</source>
-        <translation type="vanished">Stäng</translation>
+        <translation>Stäng</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="70"/>
         <source>Cancel</source>
-        <translation type="vanished">Avbryt</translation>
+        <translation>Avbryt</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="70"/>
         <source>Write NFC Tag</source>
-        <translation type="vanished">Skriv NFC tag</translation>
+        <translation>Skriv NFC tag</translation>
     </message>
 </context>
 <context>
     <name>Xbmc</name>
     <message>
         <source>Finished downloading %1</source>
-        <translation type="vanished">Avslutad nedladdning %1</translation>
+        <translation type="obsolete">Avslutad nedladdning %1</translation>
     </message>
     <message>
         <source>Error downloading %1</source>
-        <translation type="vanished">Fel vid nedladdning %1</translation>
+        <translation type="obsolete">Fel vid nedladdning %1</translation>
     </message>
 </context>
 <context>
     <name>XbmcConnection::XbmcConnectionPrivate</name>
     <message>
         <source>Connecting to %1...</source>
-        <translation type="vanished">Ansluter till %1</translation>
+        <translation type="obsolete">Ansluter till %1</translation>
     </message>
     <message>
         <source>The connection has been disconnected</source>
-        <translation type="vanished">Anlutningen har blivit bortkopplad</translation>
+        <translation type="obsolete">Anlutningen har blivit bortkopplad</translation>
     </message>
     <message>
         <source>Connection failed: %1</source>
-        <translation type="vanished">Anslutning misslyckades: %1</translation>
+        <translation type="obsolete">Anslutning misslyckades: %1</translation>
     </message>
     <message>
         <source>This version of Xbmcremote is designed to work with XBMC Frodo (v12.0). It seems you have connected to an older version of XMBC. Please upgrade XBMC in order to use Xbmcremote.</source>
-        <translation type="vanished">Denna version av Xbmcremote är ämnad att användas med XMBC Frodo (v.12.0). Det verkar som att du har anslutit till en äldre version av XBMC. Vänligen uppgradera XMBC för att använda XMBCremote.</translation>
+        <translation type="obsolete">Denna version av Xbmcremote är ämnad att användas med XMBC Frodo (v.12.0). Det verkar som att du har anslutit till en äldre version av XBMC. Vänligen uppgradera XMBC för att använda XMBCremote.</translation>
     </message>
     <message>
         <source>Connection to %1 timed out...</source>
-        <translation type="vanished">Anslutning tll %1 tog för länge...</translation>
+        <translation type="obsolete">Anslutning tll %1 tog för länge...</translation>
     </message>
 </context>
 <context>
     <name>XbmcPage</name>
     <message>
         <source>XBMC on %1</source>
-        <translation type="vanished">Kodi på %1</translation>
+        <translation type="obsolete">Kodi på %1</translation>
     </message>
     <message>
         <source>Quit</source>
-        <translation type="vanished">Avsluta</translation>
+        <translation type="obsolete">Avsluta</translation>
     </message>
     <message>
         <source>Shutdown</source>
-        <translation type="vanished">Stäng av</translation>
+        <translation type="obsolete">Stäng av</translation>
     </message>
     <message>
         <source>Reboot</source>
-        <translation type="vanished">Starta om</translation>
+        <translation type="obsolete">Starta om</translation>
     </message>
     <message>
         <source>Suspend</source>
-        <translation type="vanished">Vänteläge</translation>
+        <translation type="obsolete">Vänteläge</translation>
     </message>
     <message>
         <source>Hibernate</source>
-        <translation type="vanished">Viloläge</translation>
+        <translation type="obsolete">Viloläge</translation>
     </message>
     <message>
         <source>Media</source>
-        <translation type="vanished">Media</translation>
+        <translation type="obsolete">Media</translation>
     </message>
     <message>
         <source>Now Playing</source>
-        <translation type="vanished">Nu spelas</translation>
+        <translation type="obsolete">Nu spelas</translation>
     </message>
     <message>
         <source>Keypad</source>
-        <translation type="vanished">Tangentbord</translation>
+        <translation type="obsolete">Tangentbord</translation>
     </message>
 </context>
 <context>
@@ -2116,26 +2568,34 @@
 <context>
     <name>main</name>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="99"/>
         <source>Connect...</source>
-        <translation type="vanished">Anslut...</translation>
+        <translation>Anslut...</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="110"/>
         <source>Quit xbmc</source>
-        <translation type="vanished">Avsluta xbmc</translation>
+        <translation>Avsluta xbmc</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="117"/>
         <source>Write NFC Tag</source>
-        <translation type="vanished">Skriv NFC tag</translation>
+        <translation>Skriv NFC tag</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="129"/>
         <source>Settings</source>
-        <translation type="vanished">Inställningar</translation>
+        <translation>Inställningar</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="142"/>
         <source>About</source>
-        <translation type="vanished">Om</translation>
+        <translation>Om</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="210"/>
+        <location filename="../apps/harmattan/qml/main.qml" line="231"/>
+        <location filename="../apps/harmattan/qml/main.qml" line="253"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="473"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="599"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="658"/>
@@ -2143,6 +2603,10 @@
         <translation>OK</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="211"/>
+        <location filename="../apps/harmattan/qml/main.qml" line="232"/>
+        <location filename="../apps/harmattan/qml/main.qml" line="254"/>
+        <location filename="../apps/harmattan/qml/main.qml" line="359"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="287"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="464"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="594"/>
@@ -2151,40 +2615,49 @@
         <translation>Avbryt</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="333"/>
         <source>Quit</source>
-        <translation type="vanished">Avsluta</translation>
+        <translation>Avsluta</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="337"/>
         <source>Shutdown</source>
-        <translation type="vanished">Stäng av</translation>
+        <translation>Stäng av</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="342"/>
         <source>Reboot</source>
-        <translation type="vanished">Starta om</translation>
+        <translation>Starta om</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="347"/>
         <source>Suspend</source>
-        <translation type="vanished">Vänteläge</translation>
+        <translation>Vänteläge</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="352"/>
         <source>Hibernate</source>
-        <translation type="vanished">Viloläge</translation>
+        <translation>Viloläge</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="398"/>
         <source>Copyright</source>
-        <translation type="vanished">Copyright</translation>
+        <translation>Copyright</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="405"/>
         <source>Close</source>
-        <translation type="vanished">Stäng</translation>
+        <translation>Stäng</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="412"/>
         <source>Donate</source>
-        <translation type="vanished">Donera</translation>
+        <translation>Donera</translation>
     </message>
     <message>
+        <location filename="../apps/harmattan/qml/main.qml" line="418"/>
         <source>Flattr</source>
-        <translation type="vanished">Flattr</translation>
+        <translation>Flattr</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="134"/>
@@ -2198,19 +2671,19 @@
     </message>
     <message>
         <source>Searching for XBMC hosts.</source>
-        <translation type="vanished">Säker efter Kodi-värdar.</translation>
+        <translation type="obsolete">Säker efter Kodi-värdar.</translation>
     </message>
     <message>
         <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="vanished">Vänligen aktivera följande val i Service inställningar på XBMC:</translation>
+        <translation type="obsolete">Vänligen aktivera följande val i Service inställningar på XBMC:</translation>
     </message>
     <message>
         <source>Allow control of XBMC via HTTP</source>
-        <translation type="vanished">Tillåt fjärrstyrning av Kodi via HTTP</translation>
+        <translation type="obsolete">Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <source>Allow programs on other systems to control XBMC</source>
-        <translation type="vanished">Tillåt program på andra system att styra Kodi</translation>
+        <translation type="obsolete">Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="232"/>
@@ -2324,7 +2797,7 @@
     </message>
     <message>
         <source>XBMC on %1 requires authentication:</source>
-        <translation type="vanished">Kodi på %1 kräver autentisering:</translation>
+        <translation type="obsolete">Kodi på %1 kräver autentisering:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="576"/>
