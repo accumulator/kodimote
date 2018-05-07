@@ -88,14 +88,14 @@ Page {
             }
 
             MenuItem {
-                text: filterModel.sortOrder == Qt.AscendingOrder ? "Sort ▲" : "Sort ▼"
+                text: filterModel.sortOrder == Qt.AscendingOrder ? qsTr("Sort ▲") : qsTr("Sort ▼")
                 onClicked: {
                     filterModel.sortOrder = filterModel.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
                 }
             }
 
             MenuItem {
-                text: "Search"
+                text: qsTr("Search")
                 enabled: !browserPage.showSearch
                 onClicked: {
                     browserPage.showSearch = !browserPage.showSearch
