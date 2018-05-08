@@ -1,5 +1,12 @@
-lupdate -recursive . -ts i18n/kodimote.ts -no-obsolete
+#!/bin/bash
+#
+# update translation file content
+for FILE in i18n/kodimote_*.ts
+do
+    lupdate -recursive . -ts ${FILE} -no-obsolete
+done
 
+# release
 lrelease i18n/kodimote_*.ts
 
 cd i18n

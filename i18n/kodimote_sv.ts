@@ -223,10 +223,6 @@
         <translation>Autenticera</translation>
     </message>
     <message>
-        <source>XBMC on %1 requires authentication:</source>
-        <translation type="obsolete">XBMC på %1 kräver autensiering:</translation>
-    </message>
-    <message>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="49"/>
         <location filename="../apps/generic/ui/authenticationdialog.cpp" line="47"/>
         <source>Kodi on %1 requires authentication:</source>
@@ -335,18 +331,6 @@
         <translation>Lägg till i spellista</translation>
     </message>
     <message>
-        <source>Keypad</source>
-        <translation type="obsolete">Tangentbord</translation>
-    </message>
-    <message>
-        <source>Now playing</source>
-        <translation type="obsolete">Nu spelas</translation>
-    </message>
-    <message>
-        <source>Show watched</source>
-        <translation type="obsolete">Visa visade</translation>
-    </message>
-    <message>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="583"/>
         <source>Hide watched</source>
         <translation>Dölj visade</translation>
@@ -385,26 +369,6 @@
 </context>
 <context>
     <name>ConnectDialog</name>
-    <message>
-        <source>Connect to XBMC</source>
-        <translation type="obsolete">Anslut till XBMC</translation>
-    </message>
-    <message>
-        <source>Searching for XBMC hosts.</source>
-        <translation type="obsolete">Söker efter XBMC värdar.</translation>
-    </message>
-    <message>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="obsolete">Vänligen aktivera följande val i Service inställningar på XBMC:</translation>
-    </message>
-    <message>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation type="obsolete">Tillåt fjärrstyrning av Kodi via HTTP</translation>
-    </message>
-    <message>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation type="obsolete">Tillåt program på andra system att styra Kodi</translation>
-    </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="41"/>
         <source>Connect to Kodi</source>
@@ -493,22 +457,6 @@
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="64"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
-    </message>
-    <message>
-        <source>Searching for XBMC hosts.</source>
-        <translation type="obsolete">Söker efter Kodi-värdar.</translation>
-    </message>
-    <message>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="obsolete">Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
-    </message>
-    <message>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation type="obsolete">Tillåt fjärrstyrning av Kodi via HTTP</translation>
-    </message>
-    <message>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation type="obsolete">Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="91"/>
@@ -669,14 +617,6 @@
 </context>
 <context>
     <name>CoverPage</name>
-    <message>
-        <source>XBMC on</source>
-        <translation type="obsolete">Kodi på</translation>
-    </message>
-    <message>
-        <source>XBMC remote</source>
-        <translation type="obsolete">Kodi fjärr</translation>
-    </message>
     <message>
         <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="173"/>
         <source>Kodi on</source>
@@ -1105,18 +1045,6 @@
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
         <translation>Du kan tilldela dem till vad du vill, i Kodis Lircmap.xml</translation>
     </message>
-    <message>
-        <source>Media</source>
-        <translation type="obsolete">Media</translation>
-    </message>
-    <message>
-        <source>Now playing</source>
-        <translation type="obsolete">Nu spelas</translation>
-    </message>
-    <message>
-        <source>Pictures</source>
-        <translation type="obsolete">Bilder</translation>
-    </message>
 </context>
 <context>
     <name>Kodi</name>
@@ -1335,22 +1263,6 @@
         <translation>Bläddra %1</translation>
     </message>
     <message>
-        <source>Keypad</source>
-        <translation type="obsolete">Tangentbord</translation>
-    </message>
-    <message>
-        <source>Now playing</source>
-        <translation type="obsolete">Nu spelas</translation>
-    </message>
-    <message>
-        <source>Change connection...</source>
-        <translation type="obsolete">Byt anslutning</translation>
-    </message>
-    <message>
-        <source>Settings</source>
-        <translation type="obsolete">Inställningar</translation>
-    </message>
-    <message>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="297"/>
         <source>About</source>
         <translation>Om</translation>
@@ -1447,14 +1359,6 @@
 <context>
     <name>NfcHandler</name>
     <message>
-        <source>NFC tag is not compatible with Xbmcremote. In order to use it with Xbmcremote you need to write connection information to it.</source>
-        <translation type="obsolete">NFC tag är inte kompatibel med Xmbcremote. För att funka med Xmbcremote måste du skriva anslutnings info till den</translation>
-    </message>
-    <message>
-        <source>NFC tag is outdated. In order to use it with Xbmcremote you need to update it by rewriting connection information to it.</source>
-        <translation type="obsolete">NFC tag är utdaterad. För att använda den med Xmbcremote måste du uppdatera den genom att skriva anslutnings info till den.</translation>
-    </message>
-    <message>
         <location filename="../apps/harmattan/nfchandler.cpp" line="110"/>
         <location filename="../apps/harmattan/nfchandler.cpp" line="119"/>
         <location filename="../apps/harmattan/nfchandler.cpp" line="136"/>
@@ -1484,18 +1388,6 @@
 </context>
 <context>
     <name>NoConnection</name>
-    <message>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="obsolete">Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
-    </message>
-    <message>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation type="obsolete">Tillåt fjärrstyrning av Kodi via HTTP</translation>
-    </message>
-    <message>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation type="obsolete">Tillåt program på andra system att styra Kodi</translation>
-    </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="67"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
@@ -1734,37 +1626,9 @@
         <translation>OK</translation>
     </message>
     <message>
-        <source>Media</source>
-        <translation type="obsolete">Media</translation>
-    </message>
-    <message>
-        <source>Keypad</source>
-        <translation type="obsolete">Tangentbord</translation>
-    </message>
-    <message>
-        <source>Now playing</source>
-        <translation type="obsolete">Nu spelas</translation>
-    </message>
-    <message>
-        <source>Pause</source>
-        <translation type="obsolete">Paus</translation>
-    </message>
-    <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="404"/>
         <source>Play</source>
         <translation>Spela</translation>
-    </message>
-    <message>
-        <source>Next</source>
-        <translation type="obsolete">Nästa</translation>
-    </message>
-    <message>
-        <source>Previous</source>
-        <translation type="obsolete">Föregående</translation>
-    </message>
-    <message>
-        <source>Stop</source>
-        <translation type="obsolete">Stopp</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="83"/>
@@ -1922,26 +1786,6 @@
         <translation>Sätt Kodi-värden i viloläge</translation>
     </message>
     <message>
-        <source>Quit XBMC</source>
-        <translation type="obsolete">Avsluta Kodi</translation>
-    </message>
-    <message>
-        <source>Shutdown XBMC host</source>
-        <translation type="obsolete">Stäng av Kodi-värden</translation>
-    </message>
-    <message>
-        <source>Reboot XBMC host</source>
-        <translation type="obsolete">Starta om Kodi-värden</translation>
-    </message>
-    <message>
-        <source>Suspend XBMC host</source>
-        <translation type="obsolete">Sätt Kodi-värden i vänteläge</translation>
-    </message>
-    <message>
-        <source>Hibernate XBMC host</source>
-        <translation type="obsolete">Sätt Kodi-värden i viloläge</translation>
-    </message>
-    <message>
         <location filename="../apps/ubuntu/qml/components/PowerMenu.qml" line="85"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
@@ -2076,13 +1920,6 @@
     </message>
 </context>
 <context>
-    <name>SailfishHelper</name>
-    <message>
-        <source>Incoming call</source>
-        <translation type="obsolete">Inkommande samtal</translation>
-    </message>
-</context>
-<context>
     <name>Seasons</name>
     <message>
         <location filename="../libkodimote/seasons.cpp" line="174"/>
@@ -2143,10 +1980,6 @@
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="105"/>
         <source>Live TV</source>
         <translation>Live-TV</translation>
-    </message>
-    <message>
-        <source>TV Channels</source>
-        <translation type="obsolete">TV-kanaler</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="113"/>
@@ -2299,17 +2132,9 @@
         <translation>Visa samtals notiser</translation>
     </message>
     <message>
-        <source>Media browser settings</source>
-        <translation type="obsolete">Medialäsarinställningar</translation>
-    </message>
-    <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="65"/>
         <source>Used media</source>
         <translation>Använt media</translation>
-    </message>
-    <message>
-        <source>TV</source>
-        <translation type="obsolete">TV</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/SettingsSheet.qml" line="169"/>
@@ -2470,79 +2295,6 @@
     </message>
 </context>
 <context>
-    <name>Xbmc</name>
-    <message>
-        <source>Finished downloading %1</source>
-        <translation type="obsolete">Avslutad nedladdning %1</translation>
-    </message>
-    <message>
-        <source>Error downloading %1</source>
-        <translation type="obsolete">Fel vid nedladdning %1</translation>
-    </message>
-</context>
-<context>
-    <name>XbmcConnection::XbmcConnectionPrivate</name>
-    <message>
-        <source>Connecting to %1...</source>
-        <translation type="obsolete">Ansluter till %1</translation>
-    </message>
-    <message>
-        <source>The connection has been disconnected</source>
-        <translation type="obsolete">Anlutningen har blivit bortkopplad</translation>
-    </message>
-    <message>
-        <source>Connection failed: %1</source>
-        <translation type="obsolete">Anslutning misslyckades: %1</translation>
-    </message>
-    <message>
-        <source>This version of Xbmcremote is designed to work with XBMC Frodo (v12.0). It seems you have connected to an older version of XMBC. Please upgrade XBMC in order to use Xbmcremote.</source>
-        <translation type="obsolete">Denna version av Xbmcremote är ämnad att användas med XMBC Frodo (v.12.0). Det verkar som att du har anslutit till en äldre version av XBMC. Vänligen uppgradera XMBC för att använda XMBCremote.</translation>
-    </message>
-    <message>
-        <source>Connection to %1 timed out...</source>
-        <translation type="obsolete">Anslutning tll %1 tog för länge...</translation>
-    </message>
-</context>
-<context>
-    <name>XbmcPage</name>
-    <message>
-        <source>XBMC on %1</source>
-        <translation type="obsolete">Kodi på %1</translation>
-    </message>
-    <message>
-        <source>Quit</source>
-        <translation type="obsolete">Avsluta</translation>
-    </message>
-    <message>
-        <source>Shutdown</source>
-        <translation type="obsolete">Stäng av</translation>
-    </message>
-    <message>
-        <source>Reboot</source>
-        <translation type="obsolete">Starta om</translation>
-    </message>
-    <message>
-        <source>Suspend</source>
-        <translation type="obsolete">Vänteläge</translation>
-    </message>
-    <message>
-        <source>Hibernate</source>
-        <translation type="obsolete">Viloläge</translation>
-    </message>
-    <message>
-        <source>Media</source>
-        <translation type="obsolete">Media</translation>
-    </message>
-    <message>
-        <source>Now Playing</source>
-        <translation type="obsolete">Nu spelas</translation>
-    </message>
-    <message>
-        <source>Keypad</source>
-        <translation type="obsolete">Tangentbord</translation>
-    </message>
-</context>
-<context>
     <name>YouTubeSendPage</name>
     <message>
         <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="38"/>
@@ -2670,22 +2422,6 @@
         <translation>Välj värd</translation>
     </message>
     <message>
-        <source>Searching for XBMC hosts.</source>
-        <translation type="obsolete">Säker efter Kodi-värdar.</translation>
-    </message>
-    <message>
-        <source>Please enable the following options in the Services settings of XBMC:</source>
-        <translation type="obsolete">Vänligen aktivera följande val i Service inställningar på XBMC:</translation>
-    </message>
-    <message>
-        <source>Allow control of XBMC via HTTP</source>
-        <translation type="obsolete">Tillåt fjärrstyrning av Kodi via HTTP</translation>
-    </message>
-    <message>
-        <source>Allow programs on other systems to control XBMC</source>
-        <translation type="obsolete">Tillåt program på andra system att styra Kodi</translation>
-    </message>
-    <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="232"/>
         <source>Searching for Kodi hosts.</source>
         <translation>Söker efter Kodi-värdar.</translation>
@@ -2794,10 +2530,6 @@
         <location filename="../apps/ubuntu/qml/main.qml" line="572"/>
         <source>Kodi on %1 requires authentication:</source>
         <translation>Kodi på %1 kräver autentisering:</translation>
-    </message>
-    <message>
-        <source>XBMC on %1 requires authentication:</source>
-        <translation type="obsolete">Kodi på %1 kräver autentisering:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="576"/>

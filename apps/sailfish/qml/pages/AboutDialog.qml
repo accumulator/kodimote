@@ -39,7 +39,7 @@ Dialog {
                 family: Theme.fontFamilyHeading
             }
             color: Theme.highlightColor
-            text: "Kodimote 2.1.2"
+            text: "Kodimote 2.1.3"
         }
 
         Label {

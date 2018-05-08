@@ -133,7 +133,7 @@ Page {
             cacheBuffer: itemHeight * 3
 
             property bool useThumbnails: settings.useThumbnails
-            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallestScreen? 126 : 126*2) : (appWindow.smallestScreen? 92 : 92*2)
+            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (126 * appWindow.sizeRatio) : (92 * appWindow.sizeRatio)
 
             header: PageHeader {
                 title: model ? model.title : ""
