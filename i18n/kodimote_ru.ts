@@ -256,15 +256,15 @@
     </message>
     <message>
         <source>Sort ▲</source>
-        <translation type="unfinished"></translation>
+        <translation>Сортировка ▲</translation>
     </message>
     <message>
         <source>Sort ▼</source>
-        <translation type="unfinished"></translation>
+        <translation>Сортировка ▼</translation>
     </message>
     <message>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Поиск</translation>
     </message>
 </context>
 <context>
