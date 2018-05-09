@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="sv">
+<TS version="2.1" language="sv">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -142,7 +142,7 @@
     <message>
         <location filename="../libkodimote/audiolibrary.cpp" line="52"/>
         <source>Genres</source>
-        <translation type="unfinished"></translation>
+        <translation>Genrer</translation>
     </message>
     <message>
         <location filename="../libkodimote/audiolibrary.cpp" line="57"/>
@@ -157,23 +157,23 @@
     <message>
         <location filename="../libkodimote/audiolibrary.cpp" line="67"/>
         <source>Playlists</source>
-        <translation type="unfinished"></translation>
+        <translation>Spellistor</translation>
     </message>
     <message>
         <location filename="../libkodimote/audiolibrary.cpp" line="72"/>
         <location filename="../libkodimote/audiolibrary.cpp" line="101"/>
         <source>Music Add-ons</source>
-        <translation type="unfinished"></translation>
+        <translation>Musiktillägg</translation>
     </message>
     <message>
         <location filename="../libkodimote/audiolibrary.cpp" line="77"/>
         <source>Files</source>
-        <translation type="unfinished">Filer</translation>
+        <translation>Filer</translation>
     </message>
     <message>
         <location filename="../libkodimote/audiolibrary.cpp" line="99"/>
         <source>Audio playlists</source>
-        <translation type="unfinished"></translation>
+        <translation>Ljudspellistor</translation>
     </message>
     <message>
         <location filename="../libkodimote/audiolibrary.cpp" line="122"/>
@@ -308,17 +308,17 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
         <source>Sort ▲</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortera ▲</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
         <source>Sort ▼</source>
-        <translation type="unfinished"></translation>
+        <translation>Sortera ▼</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="98"/>
         <source>Search</source>
-        <translation type="unfinished"></translation>
+        <translation>Sök</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="241"/>
@@ -351,7 +351,7 @@
     <message>
         <location filename="../libkodimote/channelgroups.cpp" line="39"/>
         <source>Radio Channels</source>
-        <translation type="unfinished"></translation>
+        <translation>Radiokanaler</translation>
     </message>
 </context>
 <context>
@@ -364,7 +364,7 @@
     <message>
         <location filename="../libkodimote/channels.cpp" line="43"/>
         <source>Radio Channels</source>
-        <translation type="unfinished"></translation>
+        <translation>Radiokanaler</translation>
     </message>
 </context>
 <context>
@@ -372,27 +372,27 @@
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="41"/>
         <source>Connect to Kodi</source>
-        <translation type="unfinished"></translation>
+        <translation>Anslut till Kodi</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="52"/>
         <source>Searching for Kodi hosts.</source>
-        <translation type="unfinished">Söker efter Kodi-värdar.</translation>
+        <translation>Söker efter Kodi-värdar.</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="53"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
-        <translation type="unfinished">Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
+        <translation>Aktivera följande alternativ i Kodis tjänstinställningar:</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="54"/>
         <source>Allow control of Kodi via HTTP</source>
-        <translation type="unfinished">Tillåt fjärrstyrning av Kodi via HTTP</translation>
+        <translation>Tillåt fjärrstyrning av Kodi via HTTP</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="55"/>
         <source>Allow programs on other systems to control Kodi</source>
-        <translation type="unfinished">Tillåt program på andra system att styra Kodi</translation>
+        <translation>Tillåt program på andra system att styra Kodi</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="56"/>
@@ -692,7 +692,7 @@
     <message>
         <location filename="../libkodimote/genres.cpp" line="99"/>
         <source>Genres</source>
-        <translation type="unfinished"></translation>
+        <translation>Genrer</translation>
     </message>
 </context>
 <context>
@@ -1051,12 +1051,12 @@
     <message>
         <location filename="../libkodimote/kodi.cpp" line="258"/>
         <source>Finished downloading %1</source>
-        <translation type="unfinished">Avslutad nedladdning %1</translation>
+        <translation>Avslutad nedladdning: %1</translation>
     </message>
     <message>
         <location filename="../libkodimote/kodi.cpp" line="260"/>
         <source>Error downloading %1</source>
-        <translation type="unfinished">Fel vid nedladdning %1</translation>
+        <translation>Fel vid nedladdning: %1</translation>
     </message>
 </context>
 <context>
@@ -1064,28 +1064,28 @@
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="230"/>
         <source>Connecting to %1...</source>
-        <translation type="unfinished">Ansluter till %1</translation>
+        <translation>Ansluter till %1</translation>
     </message>
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="295"/>
         <source>This version of Kodimote is designed to work with XBMC Frodo (v12) or above (XBMC Gotham (v13), Kodi Helix (v14)). It seems you have connected to an older version of XBMC. Please upgrade XBMC to Kodi in order to use Kodimote.</source>
-        <translation type="unfinished"></translation>
+        <translation>Denna version av Kodimote är avsedd att fungera med XBMC Frodo (v12) eller nyare (XBMC Gotham (v13), Kodi Helix (v14)). Det verkar som du har anslutit en äldre version av XBMC. Uppgradera XBMC till Kodi för att använda Kodimote.</translation>
     </message>
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="311"/>
         <source>The connection has been disconnected</source>
-        <translation type="unfinished">Anlutningen har blivit bortkopplad</translation>
+        <translation>Anlutningen har blivit bortkopplad</translation>
     </message>
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="322"/>
         <location filename="../libkodimote/kodiconnection.cpp" line="389"/>
         <source>Connection failed: %1</source>
-        <translation type="unfinished">Anslutning misslyckades: %1</translation>
+        <translation>Anslutning misslyckades: %1</translation>
     </message>
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="546"/>
         <source>Connection to %1 timed out...</source>
-        <translation type="unfinished">Anslutning tll %1 tog för länge...</translation>
+        <translation>Anslutning tll %1 tog för lång tid...</translation>
     </message>
 </context>
 <context>
@@ -1345,7 +1345,7 @@
     <message>
         <location filename="../libkodimote/mpris2/mprisapplication.cpp" line="63"/>
         <source>Kodi on %1</source>
-        <translation type="unfinished">Kodi på %1</translation>
+        <translation>Kodi på %1</translation>
     </message>
 </context>
 <context>
@@ -1363,12 +1363,12 @@
         <location filename="../apps/harmattan/nfchandler.cpp" line="119"/>
         <location filename="../apps/harmattan/nfchandler.cpp" line="136"/>
         <source>NFC tag is not compatible with Kodimote. In order to use it with Kodimote you need to write connection information to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>NFC-tagg är inte kompatibel med Kodimote. För att kunna använda den med Kodimote, för att kunna använda den med Kodimote, måste du skriva anslutningsuppgifter till den.</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/nfchandler.cpp" line="117"/>
         <source>NFC tag is outdated. In order to use it with Kodimote you need to update it by rewriting connection information to it.</source>
-        <translation type="unfinished"></translation>
+        <translation>NFC taggen är utdaterad. För att använda den med Kodimote, måste du uppdatera den, genom att skriva om anslutningsuppgifterna till den.</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/nfchandler.cpp" line="152"/>
@@ -1695,7 +1695,7 @@
     <message>
         <location filename="../libkodimote/platformhelper.cpp" line="41"/>
         <source>Incoming call</source>
-        <translation type="unfinished">Inkommande samtal</translation>
+        <translation>Inkommande samtal</translation>
     </message>
 </context>
 <context>
@@ -1818,7 +1818,7 @@
     <message>
         <location filename="../libkodimote/profiles.cpp" line="37"/>
         <source>Profiles</source>
-        <translation type="unfinished"></translation>
+        <translation>Profiler</translation>
     </message>
 </context>
 <context>
@@ -1826,22 +1826,22 @@
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="32"/>
         <source>TV Channels</source>
-        <translation type="unfinished">TV-kanaler</translation>
+        <translation>TV-kanaler</translation>
     </message>
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="37"/>
         <source>Radio Channels</source>
-        <translation type="unfinished"></translation>
+        <translation>Radiokanaler</translation>
     </message>
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="42"/>
         <source>Recordings</source>
-        <translation type="unfinished"></translation>
+        <translation>Inspelningar</translation>
     </message>
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="50"/>
         <source>Live TV</source>
-        <translation type="unfinished">Live-TV</translation>
+        <translation>Live-TV</translation>
     </message>
 </context>
 <context>
@@ -1882,18 +1882,18 @@
     <message>
         <location filename="../libkodimote/recordings.cpp" line="40"/>
         <source>Recordings</source>
-        <translation type="unfinished"></translation>
+        <translation>Inspelningar</translation>
     </message>
     <message>
         <location filename="../libkodimote/recordings.cpp" line="148"/>
         <location filename="../libkodimote/recordings.cpp" line="160"/>
         <source>%1 recordings</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 inspelningar</translation>
     </message>
     <message>
         <location filename="../libkodimote/recordings.cpp" line="188"/>
         <source>All recordings</source>
-        <translation type="unfinished"></translation>
+        <translation>Alla inspelningar</translation>
     </message>
 </context>
 <context>
@@ -2234,23 +2234,23 @@
     <message>
         <location filename="../libkodimote/videolibrary.cpp" line="56"/>
         <source>Playlists</source>
-        <translation type="unfinished"></translation>
+        <translation>Spellistor</translation>
     </message>
     <message>
         <location filename="../libkodimote/videolibrary.cpp" line="61"/>
         <location filename="../libkodimote/videolibrary.cpp" line="86"/>
         <source>Video Add-ons</source>
-        <translation type="unfinished"></translation>
+        <translation>Video-tillägg</translation>
     </message>
     <message>
         <location filename="../libkodimote/videolibrary.cpp" line="66"/>
         <source>Files</source>
-        <translation type="unfinished">Filer</translation>
+        <translation>Filer</translation>
     </message>
     <message>
         <location filename="../libkodimote/videolibrary.cpp" line="84"/>
         <source>Video playlists</source>
-        <translation type="unfinished"></translation>
+        <translation>Video-spellistor</translation>
     </message>
     <message>
         <location filename="../libkodimote/videolibrary.cpp" line="107"/>
