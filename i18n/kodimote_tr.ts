@@ -1056,7 +1056,7 @@
     <message>
         <location filename="../libkodimote/kodi.cpp" line="260"/>
         <source>Error downloading %1</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Indirmede hata %1</translation>
     </message>
 </context>
 <context>

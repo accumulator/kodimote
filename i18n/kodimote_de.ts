@@ -1128,7 +1128,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="140"/>
         <source>Reboot</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Neustart</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="143"/>
@@ -1138,7 +1138,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="146"/>
         <source>Hibernate</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Ruhezustand</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="24"/>
