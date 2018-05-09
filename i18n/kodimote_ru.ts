@@ -171,7 +171,7 @@
     <name>AuthenticationDialog</name>
     <message>
         <source>Authenticate</source>
-        <translation>ВойтиВойти</translation>
+        <translation>Войти</translation>
     </message>
     <message>
         <source>Kodi on %1 requires authentication:</source>
