@@ -41,6 +41,7 @@ public slots:
     void osd();
     void contextMenu();
     void info();
+    void procinfo();
     void fullscreen();
     void backspace();
     void previousMenu();

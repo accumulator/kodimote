@@ -75,6 +75,11 @@ void Keys::info()
     KodiConnection::sendCommand("Input.Info");
 }
 
+void Keys::procinfo()
+{
+    KodiConnection::sendCommand("Input.ShowPlayerProcessInfo");
+}
+
 void Keys::fullscreen()
 {
     executeAction("fullscreen");
