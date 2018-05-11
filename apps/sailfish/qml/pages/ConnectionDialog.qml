@@ -24,6 +24,8 @@ import Sailfish.Silica 1.0
 import harbour.kodimote 1.0
 
 Dialog {
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
     id: connectionDialog
     canAccept: hostList.currentIndex >= 0
 

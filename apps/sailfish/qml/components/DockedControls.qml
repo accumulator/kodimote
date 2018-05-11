@@ -30,6 +30,7 @@ DockedPanel {
     property bool _opened
     property bool _dialogOpen
 
+    property int iconResize: appWindow.largeScreen? 140 : appWindow.mediumScreen ? 128 : appWindow.smallScreen ? 96 : 64
     open: player
     width: parent.width
     height: column.height + (2 * Theme.paddingLarge)
@@ -101,9 +102,10 @@ DockedPanel {
         width:parent.width
         height: childrenRect.height
         anchors.verticalCenter: parent.verticalCenter
-        spacing: Theme.paddingLarge
+        spacing: Theme.paddingMedium
 
         Item {
+            visible: appWindow.orientation === Orientation.Portrait || appWindow.largeScreen
             anchors {
                 left: parent.left
                 right: parent.right
@@ -111,15 +113,15 @@ DockedPanel {
                 rightMargin: Theme.paddingLarge
             }
 
-            height: 64
+            height: iconResize
 
             IconButton {
                 id: volumeDownButton
-                height: 64
+                height: iconResize
                 width: height
+                icon.height: iconResize; icon.width: iconResize
                 anchors.left: parent.left
                 icon.source: "../icons/icon-m-volume-down.png"
-                icon.height: volumeUpButton.icon.height; icon.width: volumeUpButton.icon.width
                 onClicked: {
                     if (settings.hapticsEnabled) {
                         rumbleEffect.start(2);
@@ -154,8 +156,9 @@ DockedPanel {
 
             IconButton {
                 id: volumeUpButton
-                height: 64
+                height: iconResize
                 width: height
+                icon.height: iconResize; icon.width: iconResize
                 anchors.right: parent.right
                 icon.source: "image://theme/icon-m-speaker"
                 onClicked: {
@@ -188,14 +191,15 @@ DockedPanel {
             }
 
             Switch {
-                icon.source: "image://theme/icon-l-shuffle"
+                icon.source: "image://theme/icon-m-shuffle"
                 visible: kodi.state == "audio"
                 checked: player && player.shuffle
                 onClicked: player.shuffle = ! player.shuffle
             }
 
             Switch {
-                icon.source: player && player.repeat === Player.RepeatOne ? "../icons/icon-l-repeat-one.png" : "image://theme/icon-l-repeat"
+                icon.source: player && player.repeat === Player.RepeatOne ? "../icons/icon-l-repeat-one.png" : "image://theme/icon-m-repeat"
+                icon.scale: player && player.repeat === Player.RepeatOne ? appWindow.sizeRatio : 1
                 visible: kodi.state == "audio"
                 checked: player && player.repeat !== Player.RepeatNone
                 automaticCheck: false

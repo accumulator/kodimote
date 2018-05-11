@@ -29,7 +29,8 @@ Row {
     id: playerControls
 
     property QtObject player
-    spacing: Theme.paddingSmall
+    spacing: (appWindow.mediumScreen || appWindow.largeScreen) ? Theme.paddingLarge : appWindow.smallScreen ? Theme.paddingMedium : Theme.paddingSmall
+    property int iconResize: appWindow.largeScreen? 200 : appWindow.mediumScreen ? 128 : appWindow.smallScreen ? 100 : 75
 
     HapticsEffect {
         id: rumbleEffect
@@ -40,6 +41,8 @@ Row {
     IconButton {
         id: referenceIcon
         icon.source: "image://theme/icon-m-previous"
+        icon.height: iconResize; icon.width: iconResize
+        height: iconResize; width: iconResize
         enabled: !!player
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -51,7 +54,8 @@ Row {
 
     IconButton {
         icon.source: "../icons/icon-m-backwards.png"
-        icon.height: referenceIcon.icon.height; icon.width: referenceIcon.icon.width
+        icon.height: iconResize; icon.width: iconResize
+        height: iconResize; width: iconResize
         enabled: player ? player.state == "playing" && player.type !== Player.PlayerTypePictures : false
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -64,7 +68,8 @@ Row {
 
     IconButton {
         icon.source: "../icons/icon-m-stop.png"
-        icon.height: referenceIcon.icon.height; icon.width: referenceIcon.icon.width
+        icon.height: iconResize; icon.width: iconResize
+        height: iconResize; width: iconResize
         enabled: player ? player.state !== "stopped" : false
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -75,7 +80,9 @@ Row {
     }
 
     IconButton {
-        icon.source: "image://theme/icon-m-" + (player && player.speed === 1 && player.state === "playing" ? "pause" : "play")
+        icon.source: "image://theme/icon-" + (appWindow.largeScreen ? "l-" : "m-") + (player && player.speed === 1 && player.state === "playing" ? "pause" : "play")
+        icon.height: iconResize; icon.width: iconResize
+        height: iconResize; width: iconResize
         enabled: !!player
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -87,7 +94,8 @@ Row {
 
     IconButton {
         icon.source: "../icons/icon-m-forward.png"
-        icon.height: referenceIcon.icon.height; icon.width: referenceIcon.icon.width
+        icon.height: iconResize; icon.width: iconResize
+        height: iconResize; width: iconResize
         enabled: player ? player.state == "playing" && player.type !== Player.PlayerTypePictures : false
         onClicked: {
             if (settings.hapticsEnabled) {
@@ -100,6 +108,8 @@ Row {
 
     IconButton {
         icon.source: "image://theme/icon-m-next"
+        icon.height: iconResize; icon.width: iconResize
+        height: iconResize; width: iconResize
         enabled: !!player
         onClicked: {
             if (settings.hapticsEnabled) {

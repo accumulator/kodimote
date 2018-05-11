@@ -27,6 +27,8 @@ import "../components/"
 
 Page {
     id: keypad
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
 
     property QtObject picturePlayer: kodi.picturePlayer()
 
@@ -65,10 +67,12 @@ Page {
         anchors.fill: parent
         pressDelay: 0
 
+        VerticalScrollDecorator {
+        }
+
         PullDownMenu {
             visible: kodi.activePlayer || kodi.picturePlayerActive
             ControlsMenuItem {
-
             }
 
             MenuItem {
@@ -91,7 +95,7 @@ Page {
             anchors.leftMargin: Theme.paddingLarge
             anchors.rightMargin: Theme.paddingLarge
 
-            spacing: Theme.paddingLarge * 1.5
+            spacing: appWindow.smallestScreen ? Theme.paddingLarge : Theme.paddingLarge * 1.5
 
             PageHeader {
                 id: header
@@ -145,7 +149,7 @@ Page {
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity { NumberAnimation { duration: 500 } }
                     anchors.centerIn: parent
-                    spacing: Theme.paddingMedium
+                    spacing: appWindow.smallestScreen ? Theme.paddingMedium : appWindow.smallScreen ? 25 : 50
 
                     IconButton {
                         id: referenceIcon
@@ -204,7 +208,8 @@ Page {
 
             GesturePad {
                 id: gesturePad
-                width: parent.width
+                width: isPortrait ? (appWindow.bigScreen ? parent.width * 0.75 : parent.width) : parent.width / 2
+                anchors.horizontalCenter: parent.horizontalCenter
 
                 IconButton {
                     id: backButton

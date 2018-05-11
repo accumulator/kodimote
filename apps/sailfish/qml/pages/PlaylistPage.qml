@@ -27,6 +27,8 @@ import "../components/"
 Page {
     id: playlistPage
 
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player.playlist()
 
@@ -43,6 +45,12 @@ Page {
 
             }
 
+            MenuItem {
+                text: qsTr("Play YouTube URL")
+                onClicked: {
+                    pageStack.push(Qt.resolvedUrl("YouTubeSendPage.qml"))
+                }
+            }
             MenuItem {
                 text: qsTr("Clear playlist")
                 enabled: playlist.count > 0
@@ -65,14 +73,14 @@ Page {
             clip: true
 
             header: PageHeader {
-                title: "Current Playlist" // playlist.title
+                title: qsTr("Current Playlist") // playlist.title
             }
 
             delegate: ListItem {
                 id: listItem
 
                 width: parent.width
-                contentHeight: Theme.itemSizeSmall
+                contentHeight: Theme.itemSizeMedium
 
                 onClicked: {
                     player.playItem(index);
@@ -105,7 +113,7 @@ Page {
                         id: mainText
                         text: title
                         font.weight: Font.Bold
-                        font.pixelSize: 26
+                        font.pixelSize: 26 * appWindow.sizeRatio
                         width: listView.width - durationLabel.width
                         truncationMode: TruncationMode.Fade
                         color: listItem.highlighted ? Theme.highlightColor : Theme.primaryColor
@@ -125,7 +133,7 @@ Page {
                         id: subText
                         text: subtitle ? subtitle : ""
                         font.weight: Font.Light
-                        font.pixelSize: 24
+                        font.pixelSize: 24 * appWindow.sizeRatio
                         color: Theme.secondaryColor
                         width: listView.width - durationLabel.width
                         truncationMode: TruncationMode.Fade

@@ -26,6 +26,9 @@ import "../components/"
 
 Page {
     id: browserPage
+
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
     property variant model
     property bool showSearch: !model.busy && browserPage.model && browserPage.model.allowSearch
 
@@ -85,14 +88,14 @@ Page {
             }
 
             MenuItem {
-                text: filterModel.sortOrder == Qt.AscendingOrder ? "Sort (asc)" : "Sort (desc)"
+                text: filterModel.sortOrder == Qt.AscendingOrder ? qsTr("Sort ▲") : qsTr("Sort ▼")
                 onClicked: {
                     filterModel.sortOrder = filterModel.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
                 }
             }
 
             MenuItem {
-                text: "Search"
+                text: qsTr("Search")
                 enabled: !browserPage.showSearch
                 onClicked: {
                     browserPage.showSearch = !browserPage.showSearch
@@ -130,7 +133,7 @@ Page {
             cacheBuffer: itemHeight * 3
 
             property bool useThumbnails: settings.useThumbnails
-            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? 126 : 92
+            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallScreen ? 200 : 126 * appWindow.sizeRatio) : (appWindow.smallScreen ? 320 : 92 * appWindow.sizeRatio)
 
             header: PageHeader {
                 title: model ? model.title : ""
@@ -247,8 +250,8 @@ Page {
 
                     Thumbnail {
                         id: thumbnailImage
-                        height: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? 120 : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatNone ? 0 : 86 )
-                        width: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? 80 : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatLandscape ? 152 : height)
+                        height: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (120 * appWindow.sizeRatio) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatNone ? 0 : (86 * appWindow.sizeRatio))
+                        width: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (80 * appWindow.sizeRatio) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatLandscape ? (152 * appWindow.sizeRatio ) : height)
 
                         anchors.left: parent.left
                         anchors.leftMargin: Theme.paddingLarge

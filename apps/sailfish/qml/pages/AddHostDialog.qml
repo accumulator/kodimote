@@ -25,6 +25,8 @@ import harbour.kodimote 1.0
 
 Dialog {
     id: addHostDialog
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
     property QtObject host
     property alias title: dialogHeader.acceptText
 

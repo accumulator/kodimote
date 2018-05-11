@@ -24,6 +24,8 @@ import Sailfish.Silica 1.0
 
 Dialog {
     property variant item
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
 
     DialogHeader {
         id: header

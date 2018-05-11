@@ -26,6 +26,8 @@ import "../components/"
 
 Page {
     id: mainPage
+    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
+                         | Orientation.LandscapeInverted : Orientation.Portrait
 
     property bool connected: kodi.connected
 

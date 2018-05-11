@@ -72,6 +72,7 @@ int main(int argc, char *argv[])
     view->engine()->setNetworkAccessManagerFactory(new NetworkAccessManagerFactory());
     view->engine()->rootContext()->setContextProperty("kodi", Kodi::instance());
     view->engine()->rootContext()->setContextProperty("settings", &settings);
+    view->engine()->rootContext()->setContextProperty("protocolManager", &protocols);
     view->setSource(SailfishApp::pathTo("qml/main.qml"));
 
     view->show();

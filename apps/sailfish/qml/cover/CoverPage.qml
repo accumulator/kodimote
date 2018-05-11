@@ -28,6 +28,11 @@ CoverBackground {
     property QtObject player: kodi.activePlayer
     property QtObject currentItem: player ? player.currentItem : null
     property bool hasThumbnail: cover.currentItem && cover.currentItem.thumbnail.length
+    property bool timerActive: cover.status === PageStatus.Active
+
+    onTimerActiveChanged: {
+        player.timerActive = timerActive
+    }
 
     function addHost() {
         pageStack.clear();
@@ -103,6 +108,49 @@ CoverBackground {
         height: lineCount * font.pixelSize
     }
 
+    Label {
+        id: subdescription
+        anchors.top: description.bottom
+        anchors.verticalCenter: cover.verticalCenter
+        anchors.left: cover.left
+        anchors.right: cover.right
+        anchors.leftMargin: Theme.paddingLarge
+        anchors.rightMargin: Theme.paddingLarge
+        color: Theme.primaryColor
+        horizontalAlignment: Text.AlignHCenter
+        wrapMode: Text.Wrap
+        fontSizeMode: Text.HorizontalFit
+        height: lineCount * font.pixelSize
+    }
+
+    SilicaFlickable {
+        width: parent.width
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.top: parent.top
+        anchors.topMargin: parent.height / 1.8
+
+        ProgressBar {
+            id: progressBar
+            width: parent.width
+            minimumValue: 0
+            maximumValue: 100
+            value: cover.player ? cover.player.percentage : 0
+            visible: cover.player
+            anchors.bottomMargin: 0
+        }
+        Label {
+            id: elapsed
+            anchors.top: progressBar.bottom
+            width: parent.width
+            anchors.topMargin: -Theme.paddingLarge
+            horizontalAlignment: Text.AlignHCenter
+            color: Theme.highlightColor
+            font.pixelSize: Theme.fontSizeSmall
+            text: player ? player.timeString  + " - " + player.totalTimeString : "00:00"
+            visible: cover.player
+        }
+    }
+
     CoverActionList {
         id: actions
 
@@ -120,7 +168,11 @@ CoverBackground {
             when: cover.player && (cover.player.state === "playing" || cover.player.state === "paused")
             PropertyChanges {
                 target: description
-                text: cover.currentItem ? (cover.currentItem.title + "\n" + cover.currentItem.subtitle) : ""
+                text: cover.currentItem ? (cover.currentItem.title) : ""
+            }
+            PropertyChanges {
+                target: subdescription
+                text: cover.currentItem ? (cover.currentItem.subtitle) : ""
             }
             PropertyChanges {
                 target: leftAction
@@ -170,5 +222,3 @@ CoverBackground {
         }
     ]
 }
-
-
