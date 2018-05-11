@@ -307,13 +307,13 @@
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
-        <source>Sort ▲</source>
-        <translation>Sorteren ▲</translation>
+        <source>Sort (asc)</source>
+        <translation>Oplopend sorteren</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
-        <source>Sort ▼</source>
-        <translation>Sorteren ▼</translation>
+        <source>Sort (desc)</source>
+        <translation>Aflopend sorteren</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="98"/>
@@ -618,17 +618,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="173"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="192"/>
         <source>Kodi on</source>
         <translation>Kodi op</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="190"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="209"/>
         <source>Kodimote</source>
         <translation>Kodimote</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="210"/>
         <source>Disconnected</source>
         <translation>Verbinding verbroken</translation>
     </message>
@@ -1022,10 +1022,10 @@
         <translation>Drup op de pad om de handleiding af te ronden.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="307"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="325"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="343"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="361"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="316"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="334"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="352"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="370"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="278"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="291"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
@@ -1034,13 +1034,13 @@
         <translation>Remote naam: %1&lt;br&gt;Knop naam: %2</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="387"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="396"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
         <translation>Hoe verder je beweegt, hoe sneller je verplaatst.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="389"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="398"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
         <translation>You can map them to anything you want in Kodi&apos;s Lircmap.xml</translation>

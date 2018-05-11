@@ -255,12 +255,12 @@
         <translation>Сортировка</translation>
     </message>
     <message>
-        <source>Sort ▲</source>
-        <translation>Сортировка ▲</translation>
+        <source>Sort (asc)</source>
+        <translation>Сортировка (Восходящий)</translation>
     </message>
     <message>
-        <source>Sort ▼</source>
-        <translation>Сортировка ▼</translation>
+        <source>Sort (desc)</source>
+        <translation>Сортировка (нисходящий)</translation>
     </message>
     <message>
         <source>Search</source>
