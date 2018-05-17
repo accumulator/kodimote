@@ -105,6 +105,7 @@ CoverBackground {
         horizontalAlignment: Text.AlignHCenter
         wrapMode: Text.Wrap
         fontSizeMode: Text.HorizontalFit
+        minimumPixelSize: subdescription.text === "" ? (20 * appWindow.sizeRatio) : -1
         height: lineCount * font.pixelSize
     }
 
