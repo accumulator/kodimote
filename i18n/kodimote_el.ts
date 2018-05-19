@@ -618,17 +618,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="192"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="193"/>
         <source>Kodi on</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="209"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="210"/>
         <source>Kodimote</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="210"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="211"/>
         <source>Disconnected</source>
         <translation type="unfinished"></translation>
     </message>
@@ -2297,22 +2297,22 @@
 <context>
     <name>YouTubeSendPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="38"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="55"/>
         <source>YouTube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="41"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="58"/>
         <source>YouTube URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="48"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="65"/>
         <source>Enter YouTube URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="59"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="72"/>
         <source>Play</source>
         <translation type="unfinished">Αναπαραγωγή</translation>
     </message>

@@ -618,17 +618,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="192"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="193"/>
         <source>Kodi on</source>
         <translation>Kodi på</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="209"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="210"/>
         <source>Kodimote</source>
         <translation>Kodimote</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="210"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="211"/>
         <source>Disconnected</source>
         <translation>Bortkopplad</translation>
     </message>
@@ -2297,22 +2297,22 @@
 <context>
     <name>YouTubeSendPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="38"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="55"/>
         <source>YouTube</source>
         <translation>YouTube</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="41"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="58"/>
         <source>YouTube URL</source>
         <translation>YouTube-URL</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="48"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="65"/>
         <source>Enter YouTube URL</source>
         <translation>Ange YouTube-URL</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="59"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="72"/>
         <source>Play</source>
         <translation>Spela</translation>
     </message>
