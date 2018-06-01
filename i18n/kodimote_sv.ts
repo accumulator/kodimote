@@ -618,17 +618,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="193"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
         <source>Kodi on</source>
         <translation>Kodi på</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="210"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="208"/>
         <source>Kodimote</source>
         <translation>Kodimote</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="211"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="209"/>
         <source>Disconnected</source>
         <translation>Bortkopplad</translation>
     </message>
