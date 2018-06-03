@@ -259,6 +259,15 @@ Page {
                             keys.info();
                         }
                     }
+                    onPressAndHold: {
+                        if (settings.hapticsEnabled) {
+                            rumbleEffect.start(2);
+                        }
+
+                        if (!usePictureControls) {
+                            keys.procinfo();
+                        }
+                    }
                 }
                 IconButton {
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1

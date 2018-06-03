@@ -307,12 +307,12 @@
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
-        <source>Sort ▲</source>
+        <source>Sort (asc)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="91"/>
-        <source>Sort ▼</source>
+        <source>Sort (desc)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -618,17 +618,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="173"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
         <source>Kodi on</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="190"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="208"/>
         <source>Kodimote</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="209"/>
         <source>Disconnected</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1022,10 +1022,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="307"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="325"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="343"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="361"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="316"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="334"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="352"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="370"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="278"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="291"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
@@ -1034,13 +1034,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="387"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="396"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="389"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="398"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
         <translation type="unfinished"></translation>
@@ -2297,22 +2297,22 @@
 <context>
     <name>YouTubeSendPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="38"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="55"/>
         <source>YouTube</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="41"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="58"/>
         <source>YouTube URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="48"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="65"/>
         <source>Enter YouTube URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="59"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="72"/>
         <source>Play</source>
         <translation type="unfinished">播放</translation>
     </message>

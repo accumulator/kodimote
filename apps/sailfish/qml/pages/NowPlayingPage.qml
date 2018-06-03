@@ -212,6 +212,7 @@ Page {
                         minimumValue: 0
                         maximumValue: 100
                         value: player ? player.percentage : 0
+                        height: Theme.paddingLarge * 2.5
 
                         Label {
                             anchors.left: parent.left

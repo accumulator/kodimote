@@ -26,6 +26,23 @@ Page {
     id: youTubePage
     allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
                                                | Orientation.LandscapeInverted : Orientation.Portrait
+    property bool menuDockOpen
+
+
+    Component.onCompleted: {
+        menuDockOpen = dockedControls.open
+    }
+
+    onStatusChanged: {
+        switch (status) {
+        case PageStatus.Deactivating:
+            if (menuDockOpen && !dockedControls.open) {
+                // restore menu Dock panel if vkb closed it
+                dockedControls.open = true
+            }
+            break
+        }
+    }
 
     SilicaFlickable {
         id: flickable
@@ -49,10 +66,6 @@ Page {
                 text: Clipboard.text
                 width: column.width - (2 * Theme.paddingLarge)
                 EnterKey.enabled: text.trim().length > 0
-                // EnterKey.onClicked: {
-                //     protocolManager.execute(youtubeUrl.text)
-                //     pageStack.pop()
-                // }
             }
             Button {
                 anchors.horizontalCenter: parent.horizontalCenter

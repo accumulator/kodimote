@@ -84,7 +84,7 @@ CoverBackground {
         width: cover.hasThumbnail > 0 ? parent.width - 2*Theme.paddingLarge : 80
 
         anchors.top: parent.top
-        anchors.bottom: description.top
+        anchors.bottom: desc_col.top
         anchors.topMargin: Theme.paddingLarge
         anchors.bottomMargin: Theme.paddingLarge
         anchors.horizontalCenter: parent.horizontalCenter
@@ -94,53 +94,52 @@ CoverBackground {
         fillMode: Image.PreserveAspectFit
     }
 
-    Label {
-        id: description
-        anchors.verticalCenter: cover.verticalCenter
-        anchors.left: cover.left
-        anchors.right: cover.right
-        anchors.leftMargin: Theme.paddingLarge
-        anchors.rightMargin: Theme.paddingLarge
-        color: Theme.primaryColor
-        horizontalAlignment: Text.AlignHCenter
-        wrapMode: Text.Wrap
-        fontSizeMode: Text.HorizontalFit
-        height: lineCount * font.pixelSize
-    }
-
-    Label {
-        id: subdescription
-        anchors.top: description.bottom
-        anchors.verticalCenter: cover.verticalCenter
-        anchors.left: cover.left
-        anchors.right: cover.right
-        anchors.leftMargin: Theme.paddingLarge
-        anchors.rightMargin: Theme.paddingLarge
-        color: Theme.primaryColor
-        horizontalAlignment: Text.AlignHCenter
-        wrapMode: Text.Wrap
-        fontSizeMode: Text.HorizontalFit
-        height: lineCount * font.pixelSize
-    }
-
-    SilicaFlickable {
-        width: parent.width
+    Column {
+        id: desc_col
         anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width - 2 * Theme.paddingLarge
         anchors.top: parent.top
-        anchors.topMargin: parent.height / 1.8
+        anchors.topMargin: thumbnail.visible ? (subdescription.text !== "" ? parent.height / 2  : parent.height / 1.8 ) : parent.height / 3
+        spacing: 0
 
+        Label {
+            id: description
+            color: Theme.primaryColor
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.Wrap
+            width: parent.width
+            fontSizeMode: Text.HorizontalFit
+            minimumPixelSize: subdescription.text === "" ? (20 * appWindow.sizeRatio) : -1
+            height: lineCount * font.pixelSize
+        }
+
+        Label {
+            id: subdescription
+            color: Theme.primaryColor
+            horizontalAlignment: Text.AlignHCenter
+            wrapMode: Text.Wrap
+            fontSizeMode: Text.HorizontalFit
+            width: parent.width
+            height: lineCount * font.pixelSize
+        }
+    }
+
+    Column {
+        anchors.horizontalCenter: parent.horizontalCenter
+        width: parent.width
+        anchors.top: parent.top
+        anchors.topMargin: parent.height / 1.5
+        spacing: 0
         ProgressBar {
             id: progressBar
             width: parent.width
             minimumValue: 0
             maximumValue: 100
             value: cover.player ? cover.player.percentage : 0
-            visible: cover.player
-            anchors.bottomMargin: 0
+            visible: cover.player && !appWindow.bigScreen
         }
         Label {
             id: elapsed
-            anchors.top: progressBar.bottom
             width: parent.width
             anchors.topMargin: -Theme.paddingLarge
             horizontalAlignment: Text.AlignHCenter

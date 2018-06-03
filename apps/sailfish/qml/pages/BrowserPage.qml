@@ -88,7 +88,7 @@ Page {
             }
 
             MenuItem {
-                text: filterModel.sortOrder == Qt.AscendingOrder ? qsTr("Sort ▲") : qsTr("Sort ▼")
+                text: filterModel.sortOrder == Qt.AscendingOrder ? qsTr("Sort (asc)") + " ▲" : qsTr("Sort (desc)") + " ▼"
                 onClicked: {
                     filterModel.sortOrder = filterModel.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
                 }
@@ -133,7 +133,7 @@ Page {
             cacheBuffer: itemHeight * 3
 
             property bool useThumbnails: settings.useThumbnails
-            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallScreen ? 200 : 126 * appWindow.sizeRatio) : (appWindow.smallScreen ? 320 : 92 * appWindow.sizeRatio)
+            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallScreen ? 200 : 126 * appWindow.sizeRatio) : (appWindow.smallScreen ? 148 : 92 * appWindow.sizeRatio)
 
             header: PageHeader {
                 title: model ? model.title : ""
