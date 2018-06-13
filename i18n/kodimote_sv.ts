@@ -1590,6 +1590,11 @@
         <translation>Spela YouTube-URL</translation>
     </message>
     <message>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="230"/>
+        <source>ends at </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="178"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
@@ -2312,7 +2317,7 @@
         <translation>Ange YouTube-URL</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="72"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="73"/>
         <source>Play</source>
         <translation>Spela</translation>
     </message>

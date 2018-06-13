@@ -1637,6 +1637,11 @@
         <translation type="unfinished">Αναπαράγεται τώρα</translation>
     </message>
     <message>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="230"/>
+        <source>ends at </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="70"/>
         <source>No active playback. Please select some content from the media tab.</source>
         <translation type="unfinished"></translation>
@@ -2312,7 +2317,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="72"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="73"/>
         <source>Play</source>
         <translation type="unfinished">Αναπαραγωγή</translation>
     </message>

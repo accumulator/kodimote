@@ -45,6 +45,7 @@ class Player : public QObject
     Q_PROPERTY(QString timeString READ timeString NOTIFY timeChanged)
     Q_PROPERTY(QTime totalTime READ totalTime NOTIFY currentItemChanged)
     Q_PROPERTY(QString totalTimeString READ totalTimeString NOTIFY currentItemChanged)
+    Q_PROPERTY(QString endTimeString READ endTimeString NOTIFY currentItemChanged)
     Q_PROPERTY(bool timerActive READ timerActive WRITE setTimerActive)
     Q_PROPERTY(bool shuffle READ shuffle WRITE setShuffle NOTIFY shuffleChanged)
     Q_PROPERTY(Repeat repeat READ repeat WRITE setRepeat NOTIFY repeatChanged)
@@ -80,6 +81,7 @@ public:
     QString timeString() const;
     QTime totalTime() const;
     QString totalTimeString() const;
+    QString endTimeString() const;
 
     void detach();
 

@@ -450,6 +450,15 @@ QString Player::timeString() const
     return time().toString(format);
 }
 
+QString Player::endTimeString() const
+{
+    QString format = "hh:mm";
+    QDateTime timeNow = QDateTime::currentDateTime();
+    QDateTime endTime = timeNow.addMSecs(QTime(0, 0, 0).msecsTo(m_totalTime) - QTime(0, 0, 0).msecsTo(time()));
+
+    return endTime.toString(format);
+}
+
 QTime Player::totalTime() const
 {
     return m_totalTime;

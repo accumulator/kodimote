@@ -63,6 +63,7 @@ Page {
                 y: Theme.paddingLarge
                 font.pixelSize: Theme.fontSizeMedium
                 placeholderText: qsTr('Enter YouTube URL')
+                inputMethodHints: Qt.ImhUrlCharactersOnly
                 text: Clipboard.text
                 width: column.width - (2 * Theme.paddingLarge)
                 EnterKey.enabled: text.trim().length > 0

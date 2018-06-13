@@ -1254,6 +1254,10 @@
         <source>Select audio track</source>
         <translation>Выбрать звуковую дорожку</translation>
     </message>
+    <message>
+        <source>ends at </source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>NowPlayingView</name>
