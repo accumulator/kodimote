@@ -1256,7 +1256,7 @@
     </message>
     <message>
         <source>ends at </source>
-        <translation type="unfinished"></translation>
+        <translation>кончается в </translation>
     </message>
 </context>
 <context>
