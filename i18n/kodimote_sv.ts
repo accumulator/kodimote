@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="sv">
+<TS version="2.1" language="sv">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -417,7 +417,7 @@
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="88"/>
         <source>MAC Address (optional):</source>
-        <translation>MAC adress (valfri)</translation>
+        <translation>MAC adress (valfri):</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="112"/>
@@ -594,7 +594,7 @@
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="206"/>
         <source>MAC Address for WakeOnLan (optional):</source>
-        <translation>MAC adress för WakeOnLan (valfritt)</translation>
+        <translation>MAC adress för WakeOnLan (valfritt):</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="217"/>
@@ -753,7 +753,7 @@
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="165"/>
         <source>MAC Address for WakeOnLan (optional):</source>
-        <translation>MAC adress för WakeOnLan (valfritt)</translation>
+        <translation>MAC adress för WakeOnLan (valfritt):</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="181"/>
@@ -1064,7 +1064,7 @@
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="230"/>
         <source>Connecting to %1...</source>
-        <translation>Ansluter till %1</translation>
+        <translation>Ansluter till %1...</translation>
     </message>
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="295"/>
@@ -1383,7 +1383,7 @@
     <message>
         <location filename="../apps/harmattan/nfchandler.cpp" line="164"/>
         <source>Error writing NFC tag.</source>
-        <translation>Fel vid kodning av NFC tag</translation>
+        <translation>Kunde inte skriva NFC-tagg.</translation>
     </message>
 </context>
 <context>
@@ -1460,7 +1460,7 @@
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="123"/>
         <source>Episode:</source>
-        <translation>Episoder</translation>
+        <translation>Episod:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="129"/>
@@ -1592,7 +1592,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="230"/>
         <source>ends at </source>
-        <translation type="unfinished"></translation>
+        <translation>slutar vid </translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
