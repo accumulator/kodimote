@@ -618,17 +618,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="189"/>
         <source>Kodi on</source>
         <translation>Kodi på</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="208"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="206"/>
         <source>Kodimote</source>
         <translation>Kodimote</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="209"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="207"/>
         <source>Disconnected</source>
         <translation>Bortkopplad</translation>
     </message>
@@ -1193,27 +1193,27 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="91"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="250"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="251"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="70"/>
         <source>Music</source>
         <translation>Musik</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="94"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="253"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="254"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="73"/>
         <source>Videos</source>
         <translation>Videor</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="97"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="256"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="257"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="76"/>
         <source>Pictures</source>
         <translation>Bilder</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="259"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="260"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="79"/>
         <source>Live TV</source>
         <translation>Live-TV</translation>
@@ -1245,25 +1245,25 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="293"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="161"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="257"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="162"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="267"/>
         <source>Rescan library</source>
         <translation>Skanna bibliotek</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="309"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="169"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="258"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="170"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="268"/>
         <source>Clean library</source>
         <translation>Rensa bibliotek</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="97"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="98"/>
         <source>Browse %1</source>
         <translation>Bläddra %1</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="297"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="307"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
@@ -1273,7 +1273,7 @@
         <translation>Medialäsare</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="289"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="299"/>
         <source>Options</source>
         <translation>Alternativ</translation>
     </message>

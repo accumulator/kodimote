@@ -105,6 +105,17 @@ ApplicationWindow
         value: Qt.application.active || cover.status !== Cover.Inactive
     }
 
+    function addHost() {
+        var connectionPage = pageStack.push("pages/ConnectionDialog.qml")
+        pageStack.completeAnimation()
+        connectionPage.addHost()
+    }
+
+    function showMedia(mediatype) {
+        var mediaPage = pageStack.push("pages/MainPage.qml")
+        mediaPage.browse(mediatype)
+    }
+
     function showAuthenticate(hostname) {
         var component = Qt.createComponent("pages/AuthenticationDialog.qml")
         if (component.status == Component.Ready) {

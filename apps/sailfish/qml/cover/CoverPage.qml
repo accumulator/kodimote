@@ -35,40 +35,36 @@ CoverBackground {
     }
 
     function addHost() {
-        pageStack.clear();
-        pageStack.push(appWindow.initialPage);
-        pageStack.currentPage.showConnect(PageStackAction.Immediate);
-        pageStack.currentPage.addHost();
-        appWindow.activate();
+        pageStack.completeAnimation()
+        appWindow.activate()
+        appWindow.addHost()
     }
 
     function browseMusic() {
-        pageStack.clear();
-        pageStack.push(appWindow.initialPage);
-        pageStack.currentPage.browse("music");
-        appWindow.activate();
+        pageStack.completeAnimation()
+        appWindow.activate()
+        appWindow.showMedia("music")
     }
 
     function browseVideo() {
-        pageStack.clear();
-        pageStack.push(appWindow.initialPage);
-        pageStack.currentPage.browse("video");
-        appWindow.activate();
+        pageStack.completeAnimation()
+        appWindow.activate()
+        appWindow.showMedia("video")
     }
 
     function connectToHost() {
-        pageStack.clear();
-        pageStack.push(appWindow.initialPage);
-        pageStack.currentPage.showConnect();
-        appWindow.activate();
+        pageStack.clear()
+        pageStack.completeAnimation()
+        appWindow.activate()
+        appWindow.showConnect()
     }
 
     function playPause() {
-        cover.player.playPause();
+        cover.player.playPause()
     }
 
     function stop() {
-        cover.player.stop();
+        cover.player.stop()
     }
 
     Image {
