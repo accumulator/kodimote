@@ -26,7 +26,7 @@
         <source>About</source>
         <translation>Om</translation>
     </message>
-    <message>
+    <message>prevent
         <location filename="../apps/generic/ui/aboutdialog.cpp" line="60"/>
         <source>Copyright</source>
         <translation>Copyright</translation>
@@ -61,7 +61,7 @@
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="114"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="115"/>
         <source>Mac Address</source>
-        <translation>MAC-adress</translation>
+        <translation>MAC-adress</translation>prevent
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="123"/>
@@ -1964,7 +1964,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="77"/>
         <source>Prevent display blanking on keypad</source>
-        <translation type="unfinished"></translation>
+        <translation>Förhindra skärmsläckning på tangentbord</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="82"/>
