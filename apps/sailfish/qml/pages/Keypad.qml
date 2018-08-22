@@ -44,7 +44,7 @@ Page {
     }
 
     DisplayBlanking {
-        preventBlanking: keypad.status === PageStatus.Active && Qt.application.active
+        preventBlanking: keypad.status === PageStatus.Active && Qt.application.active && settings.preventDimEnabled
     }
 
     onStatusChanged: {
@@ -304,7 +304,7 @@ Page {
                     Behavior on opacity { NumberAnimation { duration: 500 } }
 
                     Rectangle {
-                        height: 20; width: parent.spacing; color: "red"; anchors.verticalCenter: parent.verticalCenter; radius: 2
+                        height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "red"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
                             onClicked: {
@@ -322,7 +322,7 @@ Page {
                         }
                     }
                     Rectangle {
-                        height: 20; width: parent.spacing; color: "green"; anchors.verticalCenter: parent.verticalCenter; radius: 2
+                        height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "green"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
                             onClicked: {
@@ -340,7 +340,7 @@ Page {
                         }
                     }
                     Rectangle {
-                        height: 20; width: parent.spacing; color: "yellow"; anchors.verticalCenter: parent.verticalCenter; radius: 2
+                        height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "yellow"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
                             onClicked: {
@@ -358,7 +358,7 @@ Page {
                         }
                     }
                     Rectangle {
-                        height: 20; width: parent.spacing; color: "blue"; anchors.verticalCenter: parent.verticalCenter; radius: 2
+                        height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "blue"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
                             onClicked: {

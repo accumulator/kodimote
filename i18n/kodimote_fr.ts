@@ -1962,52 +1962,57 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="76"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="77"/>
+        <source>Prevent display blanking on keypad</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="82"/>
         <source>Used media</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="83"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="89"/>
         <source>Music</source>
         <translation type="unfinished">musique</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="89"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="95"/>
         <source>Videos</source>
         <translation type="unfinished">Vidéos</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="99"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="105"/>
         <source>Pictures</source>
         <translation type="unfinished">Photos</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="105"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="111"/>
         <source>Live TV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="113"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="119"/>
         <source>Phone calls</source>
         <translation type="unfinished">Appel téléphonique</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="118"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="124"/>
         <source>Change volume</source>
         <translation type="unfinished">Changer le volume </translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="133"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="139"/>
         <source>Pause video</source>
         <translation type="unfinished">Mettre la vidéo en pause</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="138"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="144"/>
         <source>Pause music</source>
         <translation type="unfinished">Mettre la musique en pause</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="143"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="149"/>
         <location filename="../apps/generic/ui/settingsdialog.cpp" line="98"/>
         <source>Show call notifications</source>
         <translation>Montrer les notifications d&apos;appels</translation>

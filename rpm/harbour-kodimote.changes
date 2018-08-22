@@ -1,3 +1,10 @@
+* Wed aug 22 2018 Arno Dekker <email@me.com> 2.1.3-14
+- Blanking of keypad screen made configurable
+- Greater height on color buttons in keypad screen on non-J1 devices
+- Better alignment of arrows in keypad screen on non-J1 devices
+- Moved volume slider to pushUpMenu to make more space available on default screen
+* Sun Jun 24 2018 Arno Dekker <email@me.com> 2.1.3-13
+- typo prevented searching from working
 * Sat Jun 23 2018 Arno Dekker <email@me.com> 2.1.3-12
 - Cover actions browse music/browse video/connect/add connection should be working
 - Small translation updates

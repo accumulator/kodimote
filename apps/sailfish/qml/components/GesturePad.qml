@@ -81,6 +81,7 @@ Item {
         id: arrows
         Row {
             id: arrowsRoot
+            spacing: smallestScreen ? 0 : smallScreen ? 25 : 50
 
             function animate() {
                 if (!isRunning) {

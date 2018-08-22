@@ -72,6 +72,12 @@ Dialog {
                 checked: settings.hapticsEnabled
             }
 
+            TextSwitch {
+                id: preventDimEnabled
+                text: qsTr("Prevent display blanking on keypad")
+                checked: settings.preventDimEnabled
+            }
+
             SectionHeader {
                 text: qsTr("Used media")
             }
@@ -160,5 +166,6 @@ Dialog {
         settings.picturesEnabled = picturesEnabled.checked
         settings.pvrEnabled = pvrEnabled.checked
         settings.hapticsEnabled = hapticsEnabled.checked
+        settings.preventDimEnabled = preventDimEnabled.checked
     }
 }

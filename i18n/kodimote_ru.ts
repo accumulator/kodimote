@@ -1537,6 +1537,10 @@
         <source>Pause music during calls</source>
         <translation>Приостанавливать музыку во время звонка</translation>
     </message>
+    <message>
+        <source>Prevent display blanking on keypad</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SettingsSheet</name>
