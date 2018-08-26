@@ -326,6 +326,7 @@ void Player::refreshReceived(const QVariantMap &rsp)
     updatePlaytime(result.value("time").toMap());
     if (m_timerActivated && !m_playtimeTimer.isActive()) {
         m_playtimeTimer.start();
+        emit timerActiveChanged();
     }
 
     playlist()->setCurrentIndex(result.value("position").toInt());
@@ -639,6 +640,7 @@ void Player::setTimerActive(bool active)
         qDebug() << "timer stopped";
         m_playtimeTimer.stop();
     }
+    emit timerActiveChanged();
 }
 
 void Player::seek(double percentage)

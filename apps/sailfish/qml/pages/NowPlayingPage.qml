@@ -32,6 +32,8 @@ Page {
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player ? player.playlist() : null
     property QtObject currentItem: player ? player.currentItem : null
+    property bool timerActive: (( Qt.application.active && nowPlayingPage.status == PageStatus.Active ) ||
+    cover.status === Cover.Active) && cover.status !== Cover.Deactivating
 
     onPlayerChanged: {
         if(player === null) {
@@ -45,9 +47,6 @@ Page {
             pageStack.pushAttached(Qt.resolvedUrl("PlaylistPage.qml"));
         }
     }
-
-    property bool timerActive: (( Qt.application.active && nowPlayingPage.status == PageStatus.Active ) ||
-    cover.status === Cover.Active) && cover.status !== Cover.Deactivating
 
     onTimerActiveChanged: { player.timerActive = timerActive }
 

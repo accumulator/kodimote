@@ -1,4 +1,8 @@
-* Wed aug 22 2018 Arno Dekker <email@me.com> 2.1.3-14
+* Wed Aug 22 2018 Arno Dekker <email@me.com> 2.1.3-15
+- Better scaling thumbnails in music/video library details for non-J1 devices
+- Switched to detailItem view for media details
+- Unplayer like progressline above mediabuttons (on certain screens)
+* Wed Aug 22 2018 Arno Dekker <email@me.com> 2.1.3-14
 - Blanking of keypad screen made configurable
 - Greater height on color buttons in keypad screen on non-J1 devices
 - Better alignment of arrows in keypad screen on non-J1 devices

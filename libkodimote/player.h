@@ -46,7 +46,7 @@ class Player : public QObject
     Q_PROPERTY(QTime totalTime READ totalTime NOTIFY currentItemChanged)
     Q_PROPERTY(QString totalTimeString READ totalTimeString NOTIFY currentItemChanged)
     Q_PROPERTY(QString endTimeString READ endTimeString NOTIFY currentItemChanged)
-    Q_PROPERTY(bool timerActive READ timerActive WRITE setTimerActive)
+    Q_PROPERTY(bool timerActive READ timerActive WRITE setTimerActive NOTIFY timerActiveChanged)
     Q_PROPERTY(bool shuffle READ shuffle WRITE setShuffle NOTIFY shuffleChanged)
     Q_PROPERTY(Repeat repeat READ repeat WRITE setRepeat NOTIFY repeatChanged)
     Q_PROPERTY(QStringList subtitles READ subtitles NOTIFY subtitlesChanged)
@@ -109,7 +109,7 @@ public:
     int currentAudiostream() const;
     void setCurrentAudiostream(int index);
 
-    bool timerActive() const;
+    Q_INVOKABLE bool timerActive() const;
     void setTimerActive(bool active);
 
     Q_INVOKABLE void seek(double percentage);
@@ -128,6 +128,7 @@ signals:
     void timeChanged();
     void shuffleChanged();
     void repeatChanged();
+    void timerActiveChanged();
     void currentItemChanged();
     void subtitlesChanged();
     void currentSubtitleChanged();

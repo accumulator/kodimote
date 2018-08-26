@@ -212,6 +212,19 @@ void Settings::setHapticsEnabled(bool enabled)
     emit hapticsEnabledChanged();
 }
 
+bool Settings::preventDimEnabled() const
+{
+    QSettings settings;
+    return settings.value("PreventDimEnabled", true).toBool();
+}
+
+void Settings::setPreventDimEnabled(bool enabled)
+{
+    QSettings settings;
+    settings.setValue("PreventDimEnabled", enabled);
+    emit preventDimEnabledChanged();
+}
+
 Settings::IntroStep Settings::introStep() const
 {
     QSettings settings;

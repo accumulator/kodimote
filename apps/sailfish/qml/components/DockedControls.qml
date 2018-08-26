@@ -97,6 +97,35 @@ DockedPanel {
         }
     }
 
+    Item {
+        id: progressBarItem
+
+        height: Theme.paddingSmall
+        width: parent.width
+        visible: player.timerActive
+
+        Rectangle {
+            id: progressBar
+
+            // property int duration: 50
+
+            height: parent.height
+            width: player ? parent.width * (player.percentage / 100 ) : 0
+            color: Theme.highlightColor
+            opacity: 0.5
+        }
+
+        Rectangle {
+            anchors {
+                left: progressBar.right
+                right: parent.right
+            }
+            height: parent.height
+            color: "black"
+            opacity: Theme.highlightBackgroundOpacity
+        }
+    }
+
     Column {
         id: column
         width:parent.width
