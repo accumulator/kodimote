@@ -898,145 +898,145 @@
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="64"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="76"/>
         <source>Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Betyg:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="119"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="83"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="94"/>
         <source>Season:</source>
-        <translation type="unfinished"></translation>
+        <translation>Säsong:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="125"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="89"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="100"/>
         <source>Episode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Episod:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="131"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="95"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="106"/>
         <source>First aired:</source>
-        <translation type="unfinished"></translation>
+        <translation>Först sänd:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="137"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="101"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="112"/>
         <source>Genre:</source>
-        <translation type="unfinished"></translation>
+        <translation>Genre:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="143"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="107"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="118"/>
         <source>Year:</source>
-        <translation type="unfinished"></translation>
+        <translation>År:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="149"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="113"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="124"/>
         <source>Director:</source>
-        <translation type="unfinished"></translation>
+        <translation>Regissör:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="155"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="119"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="130"/>
         <source>Tagline:</source>
-        <translation type="unfinished"></translation>
+        <translation>Slogan:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="161"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="125"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="136"/>
         <source>MPAA:</source>
-        <translation type="unfinished"></translation>
+        <translation>MPAA:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="167"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="131"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="142"/>
         <source>Instrument:</source>
-        <translation type="unfinished"></translation>
+        <translation>Instrument:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="173"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="137"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="148"/>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="179"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="143"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="154"/>
         <source>Mood:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stämning:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="185"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="149"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="160"/>
         <source>Born:</source>
-        <translation type="unfinished"></translation>
+        <translation>Född:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="191"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="155"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="166"/>
         <source>Formed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildades:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="197"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="161"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="172"/>
         <source>Died:</source>
-        <translation type="unfinished"></translation>
+        <translation>Död:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="203"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="167"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="178"/>
         <source>Disbanded:</source>
-        <translation type="unfinished"></translation>
+        <translation>Upplöst:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="209"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="173"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="184"/>
         <source>Duration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Varaktighet:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="215"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="179"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="190"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentar:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="221"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="185"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="196"/>
         <source>Playcount:</source>
-        <translation type="unfinished"></translation>
+        <translation>Antal spelningar:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="227"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="191"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="202"/>
         <source>Cast:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sänd:</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="88"/>
         <source>Title:</source>
-        <translation type="unfinished"></translation>
+        <translation>Titel:</translation>
     </message>
 </context>
 <context>
@@ -1511,22 +1511,22 @@
     <message>
         <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="78"/>
         <source>Year:</source>
-        <translation type="unfinished"></translation>
+        <translation>År:</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
         <source>Season:</source>
-        <translation type="unfinished"></translation>
+        <translation>Säsong:</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
         <source>Episode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Episod:</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
         <source>Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Betyg:</translation>
     </message>
 </context>
 <context>
@@ -1619,102 +1619,102 @@
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="98"/>
         <source>Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Betyg:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="117"/>
         <source>Season:</source>
-        <translation type="unfinished"></translation>
+        <translation>Säsong:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="123"/>
         <source>Episode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Episod:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="129"/>
         <source>First aired:</source>
-        <translation type="unfinished"></translation>
+        <translation>Först sänd:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="135"/>
         <source>Genre:</source>
-        <translation type="unfinished"></translation>
+        <translation>Genre:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="141"/>
         <source>Year:</source>
-        <translation type="unfinished"></translation>
+        <translation>År:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="147"/>
         <source>Director:</source>
-        <translation type="unfinished"></translation>
+        <translation>Regissör:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="153"/>
         <source>Tagline:</source>
-        <translation type="unfinished"></translation>
+        <translation>Slogan:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="159"/>
         <source>MPAA:</source>
-        <translation type="unfinished"></translation>
+        <translation>MPAA:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="165"/>
         <source>Instrument:</source>
-        <translation type="unfinished"></translation>
+        <translation>Instrument:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="171"/>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stil:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="177"/>
         <source>Mood:</source>
-        <translation type="unfinished"></translation>
+        <translation>Stämning:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="183"/>
         <source>Born:</source>
-        <translation type="unfinished"></translation>
+        <translation>Född:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="189"/>
         <source>Formed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bildades:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="195"/>
         <source>Died:</source>
-        <translation type="unfinished"></translation>
+        <translation>Död:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="201"/>
         <source>Disbanded:</source>
-        <translation type="unfinished"></translation>
+        <translation>Upplöst:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="207"/>
         <source>Duration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Varaktighet:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="213"/>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kommentar:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="219"/>
         <source>Playcount:</source>
-        <translation type="unfinished"></translation>
+        <translation>Antal spelningar:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="225"/>
         <source>Cast:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sänd:</translation>
     </message>
 </context>
 <context>
@@ -1741,26 +1741,26 @@
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="177"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Season:</source>
-        <translation type="unfinished"></translation>
+        <translation>Säsong:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="183"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Episode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Episod:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="304"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Betyg:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="330"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="233"/>
         <source>Year:</source>
-        <translation type="unfinished"></translation>
+        <translation>År:</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="67"/>
@@ -1839,12 +1839,12 @@
     <message>
         <location filename="../apps/generic/qml/NowPlayingView.qml" line="218"/>
         <source>Now playing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Nu spelas:</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/NowPlayingView.qml" line="228"/>
         <source>Track:</source>
-        <translation type="unfinished"></translation>
+        <translation>Spår:</translation>
     </message>
 </context>
 <context>
