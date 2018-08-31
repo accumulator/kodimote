@@ -66,14 +66,21 @@ Item {
             Thumbnail {
                 visible: largeThumbnail.length > 0 && largeThumbnail !== "loading"
                 width: parent.width
-                height: artworkSize && artworkSize.width > artworkSize.height ? artworkSize.height / (artworkSize.width / width) : 400
+                height: artworkSize && artworkSize.width > artworkSize.height ? artworkSize.height / (artworkSize.width / width) : 400 * sizeRatio
                 artworkSource: largeThumbnail
                 fillMode: Image.PreserveAspectFit
             }
 
             Row {
-                width: parent.width; spacing: 10; visible: rating > -1
-                Label { text: qsTr("Rating:"); font.bold: true; color: Theme.highlightColor }
+                spacing: 10
+                width: parent.width
+                visible: rating > -1
+                Label {
+                    width: parent.width * 0.5
+                    horizontalAlignment: Text.AlignRight
+                    text: qsTr("Rating")
+                    color: Theme.secondaryHighlightColor
+                }
                 property int starCount: rating > 10 ? Math.round(rating / 20) : Math.round(rating / 2)
                 Repeater {
                     model: parent.starCount
@@ -97,105 +104,105 @@ Item {
 
             ItemDetailRow {
                 visible: title.length > 0
-                title: qsTr("Title:")
+                title: qsTr("Title")
                 text: model.title
             }
 
             ItemDetailRow {
                 visible: season > -1
-                title: qsTr("Season:")
+                title: qsTr("Season")
                 text: season
             }
 
             ItemDetailRow {
                 visible: episode > -1
-                title: qsTr("Episode:")
+                title: qsTr("Episode")
                 text: episode
             }
 
             ItemDetailRow {
-                title: qsTr("First aired:")
+                title: qsTr("First aired")
                 text: firstaired
             }
 
             ItemDetailRow {
-                title: qsTr("Genre:")
+                title: qsTr("Genre")
                 text: genre
             }
 
             ItemDetailRow {
-                title: qsTr("Year:")
+                title: qsTr("Year")
                 text: year
             }
 
             ItemDetailRow {
-                title: qsTr("Director:")
+                title: qsTr("Director")
                 text: director
             }
 
             ItemDetailRow {
-                title: qsTr("Tagline:")
+                title: qsTr("Tagline")
                 text: tagline
             }
 
             ItemDetailRow {
-                title: qsTr("MPAA:")
+                title: qsTr("MPAA")
                 text: mpaa
             }
 
             ItemDetailRow {
-                title: qsTr("Instrument:")
+                title: qsTr("Instrument")
                 text: instrument
             }
 
             ItemDetailRow {
-                title: qsTr("Style:")
+                title: qsTr("Style")
                 text: model.style
             }
 
             ItemDetailRow {
-                title: qsTr("Mood:")
+                title: qsTr("Mood")
                 text: mood
             }
 
             ItemDetailRow {
-                title: qsTr("Born:")
+                title: qsTr("Born")
                 text: born
             }
 
             ItemDetailRow {
-                title: qsTr("Formed:")
+                title: qsTr("Formed")
                 text: formed
             }
 
             ItemDetailRow {
-                title: qsTr("Died:")
+                title: qsTr("Died")
                 text: died
             }
 
             ItemDetailRow {
-                title: qsTr("Disbanded:")
+                title: qsTr("Disbanded")
                 text: disbanded
             }
 
             ItemDetailRow {
-                title: qsTr("Duration:")
+                title: qsTr("Duration")
                 text: duration
             }
 
             ItemDetailRow {
-                title: qsTr("Comment:")
+                title: qsTr("Comment")
                 text: comment
             }
 
             ItemDetailRow {
                 visible: playcount >= 0
-                title: qsTr("Playcount:")
+                title: qsTr("Playcount")
                 text: playcount
             }
 
             ItemDetailRow {
-                title: qsTr("Cast:")
+                title: qsTr("Cast")
                 text: cast
             }
 
@@ -203,7 +210,7 @@ Item {
                 id: plotLabel; width: parent.width; visible: plot.length > 0
                 text: plot;
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                color: Theme.highlightColor
+                // color: Theme.highlightColor
             }
             Label {
                 id: descriptionLabel; width: parent.width; visible: description.length > 0

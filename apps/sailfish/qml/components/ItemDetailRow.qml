@@ -30,16 +30,21 @@ Row {
     spacing: Theme.paddingSmall
     visible: text.length > 0
 
+
     Label {
         id: titleText
-        font.bold: true
-        color: Theme.highlightColor
+        width: parent.width * 0.5
+        horizontalAlignment: Text.AlignRight
+        // font.bold: true
+        color: Theme.secondaryHighlightColor
+        wrapMode: Text.Wrap
     }
 
     Label {
+        width: parent.width * 0.5
         id: textText
         color: Theme.highlightColor
-        width: parent.width - titleText.width - parent.spacing
-        wrapMode: Text.WordWrap
+        // width: parent.width - titleText.width - parent.spacing
+        wrapMode: Text.Wrap
     }
 }

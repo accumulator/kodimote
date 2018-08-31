@@ -35,40 +35,36 @@ CoverBackground {
     }
 
     function addHost() {
-        pageStack.clear();
-        pageStack.push(appWindow.initialPage);
-        pageStack.currentPage.showConnect(PageStackAction.Immediate);
-        pageStack.currentPage.addHost();
-        appWindow.activate();
+        pageStack.completeAnimation()
+        appWindow.activate()
+        appWindow.addHost()
     }
 
     function browseMusic() {
-        pageStack.clear();
-        pageStack.push(appWindow.initialPage);
-        pageStack.currentPage.browse("music");
-        appWindow.activate();
+        pageStack.completeAnimation()
+        appWindow.activate()
+        appWindow.showMedia("music")
     }
 
     function browseVideo() {
-        pageStack.clear();
-        pageStack.push(appWindow.initialPage);
-        pageStack.currentPage.browse("video");
-        appWindow.activate();
+        pageStack.completeAnimation()
+        appWindow.activate()
+        appWindow.showMedia("video")
     }
 
     function connectToHost() {
-        pageStack.clear();
-        pageStack.push(appWindow.initialPage);
-        pageStack.currentPage.showConnect();
-        appWindow.activate();
+        pageStack.clear()
+        pageStack.completeAnimation()
+        appWindow.activate()
+        appWindow.showConnect()
     }
 
     function playPause() {
-        cover.player.playPause();
+        cover.player.playPause()
     }
 
     function stop() {
-        cover.player.stop();
+        cover.player.stop()
     }
 
     Image {
@@ -86,7 +82,7 @@ CoverBackground {
         anchors.top: parent.top
         anchors.bottom: desc_col.top
         anchors.topMargin: Theme.paddingLarge
-        anchors.bottomMargin: Theme.paddingLarge
+        anchors.bottomMargin: Theme.paddingMedium
         anchors.horizontalCenter: parent.horizontalCenter
 
         visible: cover.hasThumbnail
@@ -110,7 +106,8 @@ CoverBackground {
             width: parent.width
             fontSizeMode: Text.HorizontalFit
             minimumPixelSize: subdescription.text === "" ? (20 * appWindow.sizeRatio) : -1
-            height: lineCount * font.pixelSize
+            height: thumbnail.visible && lineCount > 2 ? 2 * font.pixelSize : lineCount * font.pixelSize
+            elide: thumbnail.visible && lineCount > 2 ? Text.ElideRight : Text.ElideNone
         }
 
         Label {
@@ -124,30 +121,31 @@ CoverBackground {
         }
     }
 
-    Column {
+    Item {
+        id: progBar
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width
         anchors.top: parent.top
         anchors.topMargin: parent.height / 1.5
-        spacing: 0
+        height: Theme.paddingLarge
         ProgressBar {
-            id: progressBar
             width: parent.width
             minimumValue: 0
             maximumValue: 100
             value: cover.player ? cover.player.percentage : 0
             visible: cover.player && !appWindow.bigScreen
         }
-        Label {
-            id: elapsed
-            width: parent.width
-            anchors.topMargin: -Theme.paddingLarge
-            horizontalAlignment: Text.AlignHCenter
-            color: Theme.highlightColor
-            font.pixelSize: Theme.fontSizeSmall
-            text: player ? player.timeString  + " - " + player.totalTimeString : "00:00"
-            visible: cover.player
-        }
+    }
+    Label {
+        id: elapsed
+        anchors.top: progBar.bottom
+        width: parent.width
+        anchors.topMargin: -Theme.paddingSmall
+        horizontalAlignment: Text.AlignHCenter
+        color: Theme.highlightColor
+        font.pixelSize: Theme.fontSizeSmall
+        text: player ? player.timeString  + " - " + player.totalTimeString : "00:00"
+        visible: cover.player
     }
 
     CoverActionList {
@@ -167,11 +165,11 @@ CoverBackground {
             when: cover.player && (cover.player.state === "playing" || cover.player.state === "paused")
             PropertyChanges {
                 target: description
-                text: cover.currentItem ? (cover.currentItem.title) : ""
+                text: cover.currentItem ? cover.currentItem.title : ""
             }
             PropertyChanges {
                 target: subdescription
-                text: cover.currentItem ? (cover.currentItem.subtitle) : ""
+                text: cover.currentItem ? cover.currentItem.subtitle : ""
             }
             PropertyChanges {
                 target: leftAction

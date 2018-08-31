@@ -100,7 +100,7 @@ Page {
                 onClicked: {
                     browserPage.showSearch = !browserPage.showSearch
                     if (browserPage.showSearch)
-                        earchField.forceActiveFocus();
+                        searchField.forceActiveFocus();
                 }
             }
 

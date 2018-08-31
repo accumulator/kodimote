@@ -28,87 +28,87 @@ Column {
     property QtObject currentItem: player.currentItem
 
     ItemDetailRow {
-        title: qsTr("First aired:")
+        title: qsTr("First aired")
         text: currentItem.firstAired
     }
 
     ItemDetailRow {
-        title: qsTr("Genre:")
+        title: qsTr("Genre")
         text: currentItem.genre
     }
 
     ItemDetailRow {
-        title: qsTr("Year:")
+        title: qsTr("Year")
         text: currentItem.year
     }
 
     ItemDetailRow {
-        title: qsTr("Director:")
+        title: qsTr("Director")
         text: currentItem.director
     }
 
     ItemDetailRow {
-        title: qsTr("Tagline:")
+        title: qsTr("Tagline")
         text: currentItem.tagline
     }
 
     ItemDetailRow {
-        title: qsTr("MPAA:")
+        title: qsTr("MPAA")
         text: currentItem.mpaa
     }
 
     ItemDetailRow {
-        title: qsTr("Instrument:")
+        title: qsTr("Instrument")
         text: currentItem.instrument
     }
 
     ItemDetailRow {
-        title: qsTr("Style:")
+        title: qsTr("Style")
         text: currentItem.style
     }
 
     ItemDetailRow {
-        title: qsTr("Mood:")
+        title: qsTr("Mood")
         text: currentItem.mood
     }
 
     ItemDetailRow {
-        title: qsTr("Born:")
+        title: qsTr("Born")
         text: currentItem.born
     }
 
     ItemDetailRow {
-        title: qsTr("Formed:")
+        title: qsTr("Formed")
         text: currentItem.formed
     }
 
     ItemDetailRow {
-        title: qsTr("Died:")
+        title: qsTr("Died")
         text: currentItem.died
     }
 
     ItemDetailRow {
-        title: qsTr("Disbanded:")
+        title: qsTr("Disbanded")
         text: currentItem.disbanded
     }
 
     ItemDetailRow {
-        title: qsTr("Duration:")
+        title: qsTr("Duration")
         text: currentItem.durationString
     }
 
     ItemDetailRow {
-        title: qsTr("Comment:")
+        title: qsTr("Comment")
         text: currentItem.comment
     }
 
     ItemDetailRow {
-        title: qsTr("Playcount:")
+        title: qsTr("Playcount")
         text: currentItem.playcount
     }
 
     ItemDetailRow {
-        title: qsTr("Cast:")
+        title: qsTr("Cast")
         text: currentItem.cast
     }
 

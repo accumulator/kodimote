@@ -42,6 +42,7 @@ class Settings : public QObject
     Q_PROPERTY(bool picturesEnabled READ picturesEnabled WRITE setPicturesEnabled NOTIFY picturesEnabledChanged)
     Q_PROPERTY(bool pvrEnabled READ pvrEnabled WRITE setPvrEnabled NOTIFY pvrEnabledChanged)
     Q_PROPERTY(bool hapticsEnabled READ hapticsEnabled WRITE setHapticsEnabled NOTIFY hapticsEnabledChanged)
+    Q_PROPERTY(bool preventDimEnabled READ preventDimEnabled WRITE setPreventDimEnabled NOTIFY preventDimEnabledChanged)
     Q_PROPERTY(IntroStep introStep READ introStep WRITE setIntroStep NOTIFY introStepChanged)
     Q_PROPERTY(bool showWatchedMovies READ showWatchedMovies WRITE setShowWatchedMovies NOTIFY showWatchedMoviesChanged)
     Q_PROPERTY(bool showWatchedTvShows READ showWatchedTvShows WRITE setShowWatchedTvShows NOTIFY showWatchedTvShowsChanged)
@@ -101,6 +102,9 @@ public:
     bool hapticsEnabled() const;
     void setHapticsEnabled(bool enabled);
 
+    bool preventDimEnabled() const;
+    void setPreventDimEnabled(bool enabled);
+
     IntroStep introStep() const;
     void setIntroStep(IntroStep introStep);
 
@@ -127,6 +131,7 @@ signals:
     void picturesEnabledChanged();
     void pvrEnabledChanged();
     void hapticsEnabledChanged();
+    void preventDimEnabledChanged();
     void introStepChanged();
     void showWatchedMoviesChanged();
     void showWatchedTvShowsChanged();

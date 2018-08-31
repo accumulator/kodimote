@@ -32,6 +32,8 @@ Page {
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player ? player.playlist() : null
     property QtObject currentItem: player ? player.currentItem : null
+    property bool timerActive: (( Qt.application.active && nowPlayingPage.status == PageStatus.Active ) ||
+    cover.status === Cover.Active) && cover.status !== Cover.Deactivating
 
     onPlayerChanged: {
         if(player === null) {
@@ -45,9 +47,6 @@ Page {
             pageStack.pushAttached(Qt.resolvedUrl("PlaylistPage.qml"));
         }
     }
-
-    property bool timerActive: (( Qt.application.active && nowPlayingPage.status == PageStatus.Active ) ||
-    cover.status === Cover.Active) && cover.status !== Cover.Deactivating
 
     onTimerActiveChanged: { player.timerActive = timerActive }
 
@@ -218,15 +217,23 @@ Page {
                             anchors.left: parent.left
                             anchors.bottom: parent.bottom
                             color: Theme.highlightColor
-                            font.pixelSize: Theme.fontSizeExtraSmall
+                            font.pixelSize: appWindow.smallScreen ? Theme.fontSizeExtraSmall : Theme.fontSizeSmall
                             text: player ? player.timeString : "00:00"
+                        }
+
+                        Label {
+                            anchors.horizontalCenter: parent.horizontalCenter
+                            anchors.bottom: parent.bottom
+                            color: Theme.secondaryHighlightColor
+                            font.pixelSize: appWindow.smallScreen ? Theme.fontSizeExtraSmall : Theme.fontSizeSmall
+                            text: "[" + qsTr("ends at ") + player.endTimeString + "]"
                         }
 
                         Label {
                             anchors.right: parent.right
                             anchors.bottom: parent.bottom
                             color: Theme.highlightColor
-                            font.pixelSize: Theme.fontSizeExtraSmall
+                            font.pixelSize: appWindow.smallScreen ? Theme.fontSizeExtraSmall : Theme.fontSizeSmall
                             text: player.totalTimeString
                         }
 

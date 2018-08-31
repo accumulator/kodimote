@@ -97,6 +97,35 @@ DockedPanel {
         }
     }
 
+    Item {
+        id: progressBarItem
+
+        height: Theme.paddingSmall
+        width: parent.width
+        visible: player.timerActive
+
+        Rectangle {
+            id: progressBar
+
+            // property int duration: 50
+
+            height: parent.height
+            width: player ? parent.width * (player.percentage / 100 ) : 0
+            color: Theme.highlightColor
+            opacity: 0.5
+        }
+
+        Rectangle {
+            anchors {
+                left: progressBar.right
+                right: parent.right
+            }
+            height: parent.height
+            color: "black"
+            opacity: Theme.highlightBackgroundOpacity
+        }
+    }
+
     Column {
         id: column
         width:parent.width
@@ -104,71 +133,6 @@ DockedPanel {
         anchors.verticalCenter: parent.verticalCenter
         spacing: Theme.paddingMedium
 
-        Item {
-            visible: appWindow.orientation === Orientation.Portrait || appWindow.largeScreen
-            anchors {
-                left: parent.left
-                right: parent.right
-                leftMargin: Theme.paddingLarge
-                rightMargin: Theme.paddingLarge
-            }
-
-            height: iconResize
-
-            IconButton {
-                id: volumeDownButton
-                height: iconResize
-                width: height
-                icon.height: iconResize; icon.width: iconResize
-                anchors.left: parent.left
-                icon.source: "../icons/icon-m-volume-down.png"
-                onClicked: {
-                    if (settings.hapticsEnabled) {
-                        rumbleEffect.start(2);
-                    }
-                    kodi.volumeDown()
-                }
-            }
-
-            Slider {
-                id: volumeSlider
-                anchors.left: volumeDownButton.right
-                anchors.right: volumeUpButton.left
-                anchors.verticalCenter: parent.verticalCenter
-                enabled: kodi.connectedHost.volumeControlType !== KodiHost.VolumeControlTypeRelative
-                visible: enabled
-                leftMargin: Theme.paddingSmall
-                rightMargin: Theme.paddingLarge
-
-                minimumValue: 0
-                maximumValue: 100
-
-                onValueChanged: {
-                    kodi.volume = value
-                }
-
-                Binding {
-                    target: volumeSlider
-                    property: "value"
-                    value: kodi.volume
-                }
-            }
-
-            IconButton {
-                id: volumeUpButton
-                height: iconResize
-                width: height
-                icon.height: iconResize; icon.width: iconResize
-                anchors.right: parent.right
-                icon.source: "image://theme/icon-m-speaker"
-                onClicked: {
-                    if (settings.hapticsEnabled) {
-                        rumbleEffect.start(2);
-                    }
-                    kodi.volumeUp()
-                }
-            }
-        }
 
         PlayerControls {
             anchors.horizontalCenter: parent.horizontalCenter
@@ -257,6 +221,70 @@ DockedPanel {
                         });
                         pageStack.push(dialog);
                     }
+                }
+            }
+        }
+        Item {
+            anchors {
+                left: parent.left
+                right: parent.right
+                leftMargin: Theme.paddingLarge
+                rightMargin: Theme.paddingLarge
+            }
+
+            height: iconResize
+
+            IconButton {
+                id: volumeDownButton
+                height: iconResize
+                width: height
+                icon.height: iconResize; icon.width: iconResize
+                anchors.left: parent.left
+                icon.source: "../icons/icon-m-volume-down.png"
+                onClicked: {
+                    if (settings.hapticsEnabled) {
+                        rumbleEffect.start(2);
+                    }
+                    kodi.volumeDown()
+                }
+            }
+
+            Slider {
+                id: volumeSlider
+                anchors.left: volumeDownButton.right
+                anchors.right: volumeUpButton.left
+                anchors.verticalCenter: parent.verticalCenter
+                enabled: kodi.connectedHost.volumeControlType !== KodiHost.VolumeControlTypeRelative
+                visible: enabled
+                leftMargin: Theme.paddingSmall
+                rightMargin: Theme.paddingLarge
+
+                minimumValue: 0
+                maximumValue: 100
+
+                onValueChanged: {
+                    kodi.volume = value
+                }
+
+                Binding {
+                    target: volumeSlider
+                    property: "value"
+                    value: kodi.volume
+                }
+            }
+
+            IconButton {
+                id: volumeUpButton
+                height: iconResize
+                width: height
+                icon.height: iconResize; icon.width: iconResize
+                anchors.right: parent.right
+                icon.source: "image://theme/icon-m-speaker"
+                onClicked: {
+                    if (settings.hapticsEnabled) {
+                        rumbleEffect.start(2);
+                    }
+                    kodi.volumeUp()
                 }
             }
         }

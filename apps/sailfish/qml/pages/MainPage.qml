@@ -47,42 +47,43 @@ Page {
         if (connected) {
             // reconnected to same host? do nothing
             if (appWindow.lastConnectedHostName === kodi.connectedHostName)
-                return;
+                return
 
             // new or different host? reinit
             appWindow.lastConnectedHostName = kodi.connectedHostName
-            pageStack.pop(mainPage, PageStackAction.Immediate);
-            populateMainMenu();
+            pageStack.pop(mainPage, PageStackAction.Immediate)
+            populateMainMenu()
         }
     }
 
     function browse(target) {
-        var menuModel = null;
+        var menuModel = null
 
         for (var i = mainMenuModel.count; i--;) {
-            menuModel = mainMenuModel.get(i);
+            menuModel = mainMenuModel.get(i)
             if (menuModel.target === target) {
-                break;
+                break
             }
         }
 
         if (menuModel < 0) {
-            return;
+            return
         }
 
-        var newModel;
+        var newModel
         if (menuModel.mode === "library") {
-            newModel = kodi[menuModel.libraryTarget]();
+            newModel = kodi[menuModel.libraryTarget]()
         } else {
-            newModel = kodi.shares(menuModel.target);
+            newModel = kodi.shares(menuModel.target)
         }
 
 
-        console.log("setting model: " + newModel);
-        var browser = pageStack.push("BrowserPage.qml", {model: newModel});
+        console.log("setting model: " + newModel)
+        pageStack.completeAnimation()
+        var browser = pageStack.push("BrowserPage.qml", {model: newModel})
         browser.home.connect(function() {
-            pageStack.pop(mainPage);
-        });
+            pageStack.pop(mainPage)
+        })
     }
 
     SilicaListView {
@@ -145,7 +146,7 @@ Page {
                 }
             }
 
-            onPressed: listView.currentSelected = index;
+            onPressed: listView.currentSelected = index
 
             showMenuOnPressAndHold: hasMenu
 
@@ -160,17 +161,17 @@ Page {
                     MenuItem {
                         text: qsTr("Rescan library")
                         onClicked: {
-                            var lib = kodi[libraryTarget]();
-                            lib.scanForContent();
-                            lib.exit();
+                            var lib = kodi[libraryTarget]()
+                            lib.scanForContent()
+                            lib.exit()
                         }
                     }
                     MenuItem {
                         text: qsTr("Clean library")
                         onClicked: {
-                            var lib = kodi[libraryTarget]();
-                            lib.clean();
-                            lib.exit();
+                            var lib = kodi[libraryTarget]()
+                            lib.clean()
+                            lib.exit()
                         }
                     }
                 }
@@ -181,21 +182,21 @@ Page {
     onStatusChanged: {
         if (status === PageStatus.Active) {
             if (!kodi.connected && !kodi.connecting) {
-                showConnect();
+                showConnect()
             }
 
-            pageStack.pushAttached("Keypad.qml");
+            pageStack.pushAttached("Keypad.qml")
 
 //            if (kodi.connected) {
-//                pageStack.pushAttached("KodiPage.qml");
+//                pageStack.pushAttached("KodiPage.qml")
 //            } else {
-//                pageStack.popAttached();
+//                pageStack.popAttached()
 //            }
         }
     }
 
     Component.onCompleted: {
-        populateMainMenu();
+        populateMainMenu()
     }
 
     IconButton {
@@ -242,53 +243,53 @@ Page {
         id: mainMenuModel
         // workaround: its not possible to have qsTr() in ListElements for now...
         function title(index) {
-            var item = mainMenuModel.get(index);
+            var item = mainMenuModel.get(index)
 
             if (item) {
-                var target = mainMenuModel.get(index).target;
+                var target = mainMenuModel.get(index).target
                 if (target === "music") {
-                    return qsTr("Music");
+                    return qsTr("Music")
                 }
                 if (target === "video") {
-                    return qsTr("Videos");
+                    return qsTr("Videos")
                 }
                 if (target === "pictures") {
-                    return qsTr("Pictures");
+                    return qsTr("Pictures")
                 }
                 if (target === "tv") {
-                    return qsTr("Live TV");
+                    return qsTr("Live TV")
                 }
             }
-            return "";
+            return ""
         }
     }
 
     function populateMainMenu() {
-        mainMenuModel.clear();
+        mainMenuModel.clear()
         if (settings.musicEnabled) {
-            mainMenuModel.append(mainMenuModelTemplate.get(0));
+            mainMenuModel.append(mainMenuModelTemplate.get(0))
         }
         if (settings.videosEnabled) {
-            mainMenuModel.append(mainMenuModelTemplate.get(1));
+            mainMenuModel.append(mainMenuModelTemplate.get(1))
         }
         if (settings.picturesEnabled) {
-            mainMenuModel.append(mainMenuModelTemplate.get(2));
+            mainMenuModel.append(mainMenuModelTemplate.get(2))
         }
         if (settings.pvrEnabled && kodi.pvrAvailable) {
-            mainMenuModel.append(mainMenuModelTemplate.get(3));
+            mainMenuModel.append(mainMenuModelTemplate.get(3))
         }
     }
 
     Connections {
         target: settings
-        onMusicEnabledChanged: populateMainMenu();
-        onVideosEnabledChanged: populateMainMenu();
-        onPicturesEnabledChanged: populateMainMenu();
-        onPvrEnabledChanged: populateMainMenu();
+        onMusicEnabledChanged: populateMainMenu()
+        onVideosEnabledChanged: populateMainMenu()
+        onPicturesEnabledChanged: populateMainMenu()
+        onPvrEnabledChanged: populateMainMenu()
     }
 
     Connections {
         target: kodi
-        onPvrAvailableChanged: populateMainMenu();
+        onPvrAvailableChanged: populateMainMenu()
     }
 }

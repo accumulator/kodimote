@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="sv">
+<TS version="2.1" language="sv">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -417,7 +417,7 @@
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="88"/>
         <source>MAC Address (optional):</source>
-        <translation>MAC adress (valfri)</translation>
+        <translation>MAC adress (valfri):</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="112"/>
@@ -594,7 +594,7 @@
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="206"/>
         <source>MAC Address for WakeOnLan (optional):</source>
-        <translation>MAC adress för WakeOnLan (valfritt)</translation>
+        <translation>MAC adress för WakeOnLan (valfritt):</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="217"/>
@@ -618,17 +618,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="191"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="189"/>
         <source>Kodi on</source>
         <translation>Kodi på</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="208"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="206"/>
         <source>Kodimote</source>
         <translation>Kodimote</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="209"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="207"/>
         <source>Disconnected</source>
         <translation>Bortkopplad</translation>
     </message>
@@ -753,7 +753,7 @@
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="165"/>
         <source>MAC Address for WakeOnLan (optional):</source>
-        <translation>MAC adress för WakeOnLan (valfritt)</translation>
+        <translation>MAC adress för WakeOnLan (valfritt):</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/HostList.qml" line="181"/>
@@ -769,164 +769,104 @@
 <context>
     <name>ItemDetails</name>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="113"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="64"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="76"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="76"/>
-        <source>Rating:</source>
-        <translation>Betyg:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="81"/>
+        <source>Rating</source>
+        <translation>Betyg</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="119"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="83"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="106"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="94"/>
-        <source>Season:</source>
-        <translation>Säsong:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="113"/>
+        <source>Season</source>
+        <translation>Säsong</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="125"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="89"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="112"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="100"/>
-        <source>Episode:</source>
-        <translation>Episoder:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="119"/>
+        <source>Episode</source>
+        <translation>Episoder</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="131"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="95"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="117"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="106"/>
-        <source>First aired:</source>
-        <translation>Första sändning:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="124"/>
+        <source>First aired</source>
+        <translation>Första sändning</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="137"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="101"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="122"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="112"/>
-        <source>Genre:</source>
-        <translation>Genre:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="129"/>
+        <source>Genre</source>
+        <translation>Genre</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="143"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="107"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="127"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="118"/>
-        <source>Year:</source>
-        <translation>År:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="134"/>
+        <source>Year</source>
+        <translation>År</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="149"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="113"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="132"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="124"/>
-        <source>Director:</source>
-        <translation>Regissör:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="139"/>
+        <source>Director</source>
+        <translation>Regissör</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="155"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="119"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="137"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="130"/>
-        <source>Tagline:</source>
-        <translation>Slogan:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="144"/>
+        <source>Tagline</source>
+        <translation>Slogan</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="161"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="125"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="142"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="136"/>
-        <source>MPAA:</source>
-        <translation>MPAA:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="149"/>
+        <source>MPAA</source>
+        <translation>MPAA</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="167"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="131"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="147"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="142"/>
-        <source>Instrument:</source>
-        <translation>Instrument:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="154"/>
+        <source>Instrument</source>
+        <translation>Instrument</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="173"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="137"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="152"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="148"/>
-        <source>Style:</source>
-        <translation>Stil:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="159"/>
+        <source>Style</source>
+        <translation>Stil</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="179"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="143"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="157"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="154"/>
-        <source>Mood:</source>
-        <translation>Humör:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="164"/>
+        <source>Mood</source>
+        <translation>Humör</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="185"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="149"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="162"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="160"/>
-        <source>Born:</source>
-        <translation>Född:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="169"/>
+        <source>Born</source>
+        <translation>Född</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="191"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="155"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="167"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="166"/>
-        <source>Formed:</source>
-        <translation>Bildades:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="174"/>
+        <source>Formed</source>
+        <translation>Bildades</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="197"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="161"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="172"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="172"/>
-        <source>Died:</source>
-        <translation>Död:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="179"/>
+        <source>Died</source>
+        <translation>Död</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="203"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="167"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="177"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="178"/>
-        <source>Disbanded:</source>
-        <translation>Upplöstes:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="184"/>
+        <source>Disbanded</source>
+        <translation>Upplöstes</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="209"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="173"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="182"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="184"/>
-        <source>Duration:</source>
-        <translation>Varaktighet:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="189"/>
+        <source>Duration</source>
+        <translation>Varaktighet</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="215"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="179"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="187"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="190"/>
-        <source>Comment:</source>
-        <translation>Kommentera:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="194"/>
+        <source>Comment</source>
+        <translation>Kommentera</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="221"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="185"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="193"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="196"/>
-        <source>Playcount:</source>
-        <translation>Spelningar:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="200"/>
+        <source>Playcount</source>
+        <translation>Spelningar</translation>
     </message>
     <message>
-        <location filename="../apps/generic/qml/ItemDetails.qml" line="227"/>
-        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="191"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="198"/>
-        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="202"/>
-        <source>Cast:</source>
-        <translation>Rollista:</translation>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="205"/>
+        <source>Cast</source>
+        <translation>Rollista</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="249"/>
@@ -949,7 +889,151 @@
         <translation>Ladda ned</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="100"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="107"/>
+        <source>Title</source>
+        <translation>Titel</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="113"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="64"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="76"/>
+        <source>Rating:</source>
+        <translation>Betyg:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="119"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="83"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="94"/>
+        <source>Season:</source>
+        <translation>Säsong:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="125"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="89"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="100"/>
+        <source>Episode:</source>
+        <translation>Episod:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="131"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="95"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="106"/>
+        <source>First aired:</source>
+        <translation>Först sänd:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="137"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="101"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="112"/>
+        <source>Genre:</source>
+        <translation>Genre:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="143"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="107"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="118"/>
+        <source>Year:</source>
+        <translation>År:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="149"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="113"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="124"/>
+        <source>Director:</source>
+        <translation>Regissör:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="155"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="119"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="130"/>
+        <source>Tagline:</source>
+        <translation>Slogan:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="161"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="125"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="136"/>
+        <source>MPAA:</source>
+        <translation>MPAA:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="167"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="131"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="142"/>
+        <source>Instrument:</source>
+        <translation>Instrument:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="173"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="137"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="148"/>
+        <source>Style:</source>
+        <translation>Stil:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="179"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="143"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="154"/>
+        <source>Mood:</source>
+        <translation>Stämning:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="185"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="149"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="160"/>
+        <source>Born:</source>
+        <translation>Född:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="191"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="155"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="166"/>
+        <source>Formed:</source>
+        <translation>Bildades:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="197"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="161"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="172"/>
+        <source>Died:</source>
+        <translation>Död:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="203"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="167"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="178"/>
+        <source>Disbanded:</source>
+        <translation>Upplöst:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="209"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="173"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="184"/>
+        <source>Duration:</source>
+        <translation>Varaktighet:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="215"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="179"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="190"/>
+        <source>Comment:</source>
+        <translation>Kommentar:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="221"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="185"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="196"/>
+        <source>Playcount:</source>
+        <translation>Antal spelningar:</translation>
+    </message>
+    <message>
+        <location filename="../apps/generic/qml/ItemDetails.qml" line="227"/>
+        <location filename="../apps/harmattan/qml/ItemDetails.qml" line="191"/>
+        <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="202"/>
+        <source>Cast:</source>
+        <translation>Sänd:</translation>
+    </message>
+    <message>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="88"/>
         <source>Title:</source>
         <translation>Titel:</translation>
@@ -958,74 +1042,74 @@
 <context>
     <name>Keypad</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="80"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="85"/>
         <source>Pictures Mode (off)</source>
         <translation>Bildläge (av)</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="80"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="85"/>
         <source>Pictures Mode (on)</source>
         <translation>Bildläge (på)</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="102"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="107"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="29"/>
         <source>Keypad</source>
         <translation>Knappsats</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="125"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="130"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="70"/>
         <source>To move left or right, swipe horizontally anywhere on the pad.</source>
         <translation>Svep horisontellt, för att flytta åt höger eller vänster.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="127"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="132"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="72"/>
         <source>To move up or down, swipe vertically.</source>
         <translation>Svep vertikalt för att flytta uppåt eller neråt.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="131"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="136"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="76"/>
         <source>To scroll through lists keep holding after swiping.</source>
         <translation>Håll kvar efter svep för att skrolla genom listor.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="133"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="138"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="78"/>
         <source>You&apos;ve scrolled 1 time, keep holding to scroll another 9 times.</source>
         <translation>Du har skrollat en gång, håll kvar för att skrolla 9 gånger till.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="135"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="140"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="80"/>
         <source>You&apos;ve scrolled %1 times, keep holding to scroll another %2 times.</source>
         <translation>Du har skrollat %1 gånger, håll kvar för att skrolla %2 gånger till.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="138"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="143"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="83"/>
         <source>To select an item, tap anywhere on the pad.</source>
         <translation>Tryck var som helst för att välja ett objekt.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="140"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="145"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="85"/>
         <source>Pro tip: The color buttons at the bottom simulate an infrared remote.</source>
         <translation>Proffstips: De färgade knapparna i botten simulerar en infraröd fjärrkontroll.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="142"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="147"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="87"/>
         <source>Tap the pad to finish the tutorial.</source>
         <translation>Tryck för att avsluta guiden.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="316"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="334"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="352"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="370"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="321"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="339"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="357"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="375"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="278"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="291"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
@@ -1034,13 +1118,13 @@
         <translation>Fjärrnamn: %1&lt;br&gt;Knappnamn: %2</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="396"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="401"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
         <translation>Ju längre du flyttar, desto snabbare skrollar du.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="398"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="403"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
         <translation>Du kan tilldela dem till vad du vill, i Kodis Lircmap.xml</translation>
@@ -1064,7 +1148,7 @@
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="230"/>
         <source>Connecting to %1...</source>
-        <translation>Ansluter till %1</translation>
+        <translation>Ansluter till %1...</translation>
     </message>
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="295"/>
@@ -1193,27 +1277,27 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="91"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="250"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="251"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="70"/>
         <source>Music</source>
         <translation>Musik</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="94"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="253"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="254"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="73"/>
         <source>Videos</source>
         <translation>Videor</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="97"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="256"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="257"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="76"/>
         <source>Pictures</source>
         <translation>Bilder</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="259"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="260"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="79"/>
         <source>Live TV</source>
         <translation>Live-TV</translation>
@@ -1245,25 +1329,25 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="293"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="161"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="257"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="162"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="267"/>
         <source>Rescan library</source>
         <translation>Skanna bibliotek</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="309"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="169"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="258"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="170"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="268"/>
         <source>Clean library</source>
         <translation>Rensa bibliotek</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="97"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="98"/>
         <source>Browse %1</source>
         <translation>Bläddra %1</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="297"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="307"/>
         <source>About</source>
         <translation>Om</translation>
     </message>
@@ -1273,7 +1357,7 @@
         <translation>Medialäsare</translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="289"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="299"/>
         <source>Options</source>
         <translation>Alternativ</translation>
     </message>
@@ -1383,7 +1467,7 @@
     <message>
         <location filename="../apps/harmattan/nfchandler.cpp" line="164"/>
         <source>Error writing NFC tag.</source>
-        <translation>Fel vid kodning av NFC tag</translation>
+        <translation>Kunde inte skriva NFC-tagg.</translation>
     </message>
 </context>
 <context>
@@ -1437,7 +1521,7 @@
     <message>
         <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
         <source>Episode:</source>
-        <translation>Episoder:</translation>
+        <translation>Episod:</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
@@ -1447,6 +1531,91 @@
 </context>
 <context>
     <name>NowPlayingDetails</name>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="31"/>
+        <source>First aired</source>
+        <translation>Första sändning</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="36"/>
+        <source>Genre</source>
+        <translation>Genre</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="41"/>
+        <source>Year</source>
+        <translation>År</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="46"/>
+        <source>Director</source>
+        <translation>Regissör</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="51"/>
+        <source>Tagline</source>
+        <translation>Slogan</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="56"/>
+        <source>MPAA</source>
+        <translation>MPAA</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="61"/>
+        <source>Instrument</source>
+        <translation>Instrument</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="66"/>
+        <source>Style</source>
+        <translation>Stil</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="71"/>
+        <source>Mood</source>
+        <translation>Humör</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="76"/>
+        <source>Born</source>
+        <translation>Född</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="81"/>
+        <source>Formed</source>
+        <translation>Bildades</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="86"/>
+        <source>Died</source>
+        <translation>Död</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="91"/>
+        <source>Disbanded</source>
+        <translation>Upplöstes</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="96"/>
+        <source>Duration</source>
+        <translation>Varaktighet</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="101"/>
+        <source>Comment</source>
+        <translation>Kommentera</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="106"/>
+        <source>Playcount</source>
+        <translation>Spelningar</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="111"/>
+        <source>Cast</source>
+        <translation>Rollista</translation>
+    </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="98"/>
         <source>Rating:</source>
@@ -1460,109 +1629,92 @@
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="123"/>
         <source>Episode:</source>
-        <translation>Episoder</translation>
+        <translation>Episod:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="129"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="31"/>
         <source>First aired:</source>
-        <translation>Första sändning:</translation>
+        <translation>Först sänd:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="135"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="36"/>
         <source>Genre:</source>
         <translation>Genre:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="141"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="41"/>
         <source>Year:</source>
         <translation>År:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="147"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="46"/>
         <source>Director:</source>
         <translation>Regissör:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="153"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="51"/>
         <source>Tagline:</source>
         <translation>Slogan:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="159"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="56"/>
         <source>MPAA:</source>
         <translation>MPAA:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="165"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="61"/>
         <source>Instrument:</source>
         <translation>Instrument:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="171"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="66"/>
         <source>Style:</source>
         <translation>Stil:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="177"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="71"/>
         <source>Mood:</source>
-        <translation>Humör:</translation>
+        <translation>Stämning:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="183"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="76"/>
         <source>Born:</source>
         <translation>Född:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="189"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="81"/>
         <source>Formed:</source>
         <translation>Bildades:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="195"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="86"/>
         <source>Died:</source>
         <translation>Död:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="201"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="91"/>
         <source>Disbanded:</source>
-        <translation>Upplöstes:</translation>
+        <translation>Upplöst:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="207"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="96"/>
         <source>Duration:</source>
         <translation>Varaktighet:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="213"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="101"/>
         <source>Comment:</source>
-        <translation>Kommentera:</translation>
+        <translation>Kommentar:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="219"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="106"/>
         <source>Playcount:</source>
-        <translation>Spelningar:</translation>
+        <translation>Antal spelningar:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="225"/>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="111"/>
         <source>Cast:</source>
-        <translation>Rollista:</translation>
+        <translation>Sänd:</translation>
     </message>
 </context>
 <context>
@@ -1585,20 +1737,15 @@
         <translation>Välj undertext</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="68"/>
-        <source>Play YouTube URL</source>
-        <translation>Spela YouTube-URL</translation>
-    </message>
-    <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="178"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="177"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Season:</source>
         <translation>Säsong:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="184"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="183"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Episode:</source>
         <translation>Episod:</translation>
@@ -1616,6 +1763,16 @@
         <translation>År:</translation>
     </message>
     <message>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="67"/>
+        <source>Play YouTube URL</source>
+        <translation>Spela YouTube-URL</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="229"/>
+        <source>ends at </source>
+        <translation>slutar vid </translation>
+    </message>
+    <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="371"/>
         <source>Cancel</source>
         <translation>Avbryt</translation>
@@ -1631,7 +1788,7 @@
         <translation>Spela</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="83"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="82"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="31"/>
         <source>Now Playing</source>
         <translation>Nu spelas</translation>
@@ -1701,31 +1858,31 @@
 <context>
     <name>PlaylistPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="49"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="53"/>
         <source>Play YouTube URL</source>
         <translation>Spela YouTube-URL</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="76"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="80"/>
         <source>Current Playlist</source>
         <translation>Aktuell spellista</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="157"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="91"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="95"/>
         <source>Play</source>
         <translation>Spela</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="163"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="97"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="101"/>
         <source>Remove from playlist</source>
         <translation>Ta bort från spellista</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="169"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="55"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="58"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="59"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="62"/>
         <source>Clear playlist</source>
         <translation>Rensa spellista</translation>
     </message>
@@ -1957,52 +2114,57 @@
         <translation>Aktivera haptik på knappsatsen</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="76"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="77"/>
+        <source>Prevent display blanking on keypad</source>
+        <translation>Förhindra skärmsläckning på tangentbord</translation>
+    </message>
+    <message>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="82"/>
         <source>Used media</source>
         <translation>Använt media</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="83"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="89"/>
         <source>Music</source>
         <translation>Musik</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="89"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="95"/>
         <source>Videos</source>
         <translation>Videor</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="99"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="105"/>
         <source>Pictures</source>
         <translation>Bilder</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="105"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="111"/>
         <source>Live TV</source>
         <translation>Live-TV</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="113"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="119"/>
         <source>Phone calls</source>
         <translation>Telefonsamtal</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="118"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="124"/>
         <source>Change volume</source>
         <translation>Ändra volym</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="133"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="139"/>
         <source>Pause video</source>
         <translation>Pausa video</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="138"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="144"/>
         <source>Pause music</source>
         <translation>Pausa musik</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="143"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="149"/>
         <location filename="../apps/generic/ui/settingsdialog.cpp" line="98"/>
         <source>Show call notifications</source>
         <translation>Visa samtals notiser</translation>
@@ -2312,7 +2474,7 @@
         <translation>Ange YouTube-URL</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="72"/>
+        <location filename="../apps/sailfish/qml/pages/YouTubeSendPage.qml" line="73"/>
         <source>Play</source>
         <translation>Spela</translation>
     </message>

@@ -31,6 +31,10 @@ Page {
                          | Orientation.LandscapeInverted : Orientation.Portrait
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player.playlist()
+    property bool timerActive: (( Qt.application.active && playlistPage.status == PageStatus.Active ) ||
+    cover.status === Cover.Active) && cover.status !== Cover.Deactivating && dockedControls.open
+
+    onTimerActiveChanged: { player.timerActive = timerActive }
 
     SilicaFlickable {
         id: flickable

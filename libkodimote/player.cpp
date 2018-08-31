@@ -326,6 +326,7 @@ void Player::refreshReceived(const QVariantMap &rsp)
     updatePlaytime(result.value("time").toMap());
     if (m_timerActivated && !m_playtimeTimer.isActive()) {
         m_playtimeTimer.start();
+        emit timerActiveChanged();
     }
 
     playlist()->setCurrentIndex(result.value("position").toInt());
@@ -448,6 +449,15 @@ QString Player::timeString() const
             ? "hh:mm:ss"
             : "mm:ss";
     return time().toString(format);
+}
+
+QString Player::endTimeString() const
+{
+    QString format = "hh:mm";
+    QDateTime timeNow = QDateTime::currentDateTime();
+    QDateTime endTime = timeNow.addMSecs(QTime(0, 0, 0).msecsTo(m_totalTime) - QTime(0, 0, 0).msecsTo(time()));
+
+    return endTime.toString(format);
 }
 
 QTime Player::totalTime() const
@@ -630,6 +640,7 @@ void Player::setTimerActive(bool active)
         qDebug() << "timer stopped";
         m_playtimeTimer.stop();
     }
+    emit timerActiveChanged();
 }
 
 void Player::seek(double percentage)

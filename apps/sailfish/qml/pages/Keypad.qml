@@ -30,12 +30,15 @@ Page {
     allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
                          | Orientation.LandscapeInverted : Orientation.Portrait
 
+    property QtObject player: kodi.activePlayer
     property QtObject picturePlayer: kodi.picturePlayer()
 
     property bool usePictureControls: kodi.picturePlayerActive && !pictureControlsOverride
     property bool pictureControlsOverride: false
 
     property QtObject keys: kodi.keys()
+    property bool timerActive: (( Qt.application.active && keypad.status == PageStatus.Active ) ||
+    cover.status === Cover.Active) && cover.status !== Cover.Deactivating && dockedControls.open
 
     HapticsEffect {
         id: rumbleEffect
@@ -44,7 +47,7 @@ Page {
     }
 
     DisplayBlanking {
-        preventBlanking: keypad.status === PageStatus.Active && Qt.application.active
+        preventBlanking: keypad.status === PageStatus.Active && Qt.application.active && settings.preventDimEnabled
     }
 
     onStatusChanged: {
@@ -55,6 +58,8 @@ Page {
             dockedControls.hideTemporary = false
         }
     }
+
+    onTimerActiveChanged: { player.timerActive = timerActive }
 
     Connections {
         target: settings
@@ -304,7 +309,7 @@ Page {
                     Behavior on opacity { NumberAnimation { duration: 500 } }
 
                     Rectangle {
-                        height: 20; width: parent.spacing; color: "red"; anchors.verticalCenter: parent.verticalCenter; radius: 2
+                        height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "red"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
                             onClicked: {
@@ -322,7 +327,7 @@ Page {
                         }
                     }
                     Rectangle {
-                        height: 20; width: parent.spacing; color: "green"; anchors.verticalCenter: parent.verticalCenter; radius: 2
+                        height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "green"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
                             onClicked: {
@@ -340,7 +345,7 @@ Page {
                         }
                     }
                     Rectangle {
-                        height: 20; width: parent.spacing; color: "yellow"; anchors.verticalCenter: parent.verticalCenter; radius: 2
+                        height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "yellow"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
                             onClicked: {
@@ -358,7 +363,7 @@ Page {
                         }
                     }
                     Rectangle {
-                        height: 20; width: parent.spacing; color: "blue"; anchors.verticalCenter: parent.verticalCenter; radius: 2
+                        height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "blue"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
                             onClicked: {
