@@ -27,8 +27,6 @@ import harbour.kodimote 1.0
 Page {
     id: nowPlayingPage
 
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player ? player.playlist() : null
     property QtObject currentItem: player ? player.currentItem : null

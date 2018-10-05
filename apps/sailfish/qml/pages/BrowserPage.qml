@@ -27,8 +27,6 @@ import "../components/"
 Page {
     id: browserPage
 
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
     property variant model
     property bool showSearch: !model.busy && browserPage.model && browserPage.model.allowSearch
 

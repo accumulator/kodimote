@@ -27,8 +27,6 @@ import "../components/"
 Page {
     id: playlistPage
 
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player.playlist()
     property bool timerActive: (( Qt.application.active && playlistPage.status == PageStatus.Active ) ||

@@ -25,8 +25,6 @@ import harbour.kodimote 1.0
 
 Dialog {
     id: dialog
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
 
     property string lockCode
 

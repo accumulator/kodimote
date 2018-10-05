@@ -27,8 +27,6 @@ import "../components/"
 
 Page {
     id: keypad
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
 
     property QtObject player: kodi.activePlayer
     property QtObject picturePlayer: kodi.picturePlayer()
@@ -309,6 +307,7 @@ Page {
                     Behavior on opacity { NumberAnimation { duration: 500 } }
 
                     Rectangle {
+                        visible: ! usePictureControls
                         height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "red"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
@@ -326,7 +325,20 @@ Page {
                             }
                         }
                     }
+                    IconButton {
+                        visible: usePictureControls
+                        opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
+                        Behavior on opacity { NumberAnimation { duration: 500 } }
+                        icon.source: "image://theme/icon-m-repeat"
+                        onClicked: {
+                            if (settings.hapticsEnabled) {
+                                rumbleEffect.start(2);
+                            }
+                            picturePlayer.playPause();
+                        }
+                    }
                     Rectangle {
+                        visible: ! usePictureControls
                         height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "green"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
@@ -339,12 +351,12 @@ Page {
                                     introLabel2.text = qsTr("Remote name: %1<br>Button name: %2").arg("kodimote").arg("green")
                                     settings.introStep = Settings.IntroStepExit;
                                 }
-
                                 keys.green()
                             }
                         }
                     }
                     Rectangle {
+                        visible: ! usePictureControls
                         height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "yellow"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;
@@ -363,6 +375,7 @@ Page {
                         }
                     }
                     Rectangle {
+                        visible: ! usePictureControls
                         height: 20 * appWindow.sizeRatio; width: parent.spacing; color: "blue"; anchors.verticalCenter: parent.verticalCenter; radius: 2
                         MouseArea {
                             anchors.fill: parent; anchors.margins: -10;

@@ -32,11 +32,15 @@ ApplicationWindow
     property string lastConnectedHostName
     property bool bigScreen: Screen.sizeCategory === Screen.Large
                                || Screen.sizeCategory === Screen.ExtraLarge
-    property bool largeScreen: screen.width > 1080
-    property bool mediumScreen: (screen.width > 720 && screen.width <= 1080)
-    property bool smallScreen: (screen.width  >= 720 && screen.width < 1080)
-    property bool smallestScreen: screen.width  < 720
+    property bool largeScreen: Screen.width > 1080
+    property bool mediumScreen: (Screen.width > 720 && Screen.width <= 1080)
+    property bool smallScreen: (Screen.width  >= 720 && Screen.width < 1080)
+    property bool smallestScreen: Screen.width  < 720
     property int sizeRatio: smallestScreen ? 1 : smallScreen ? 1.5 : 2
+    allowedOrientations: (bigScreen ? Orientation.Portrait | Orientation.Landscape
+                                     | Orientation.LandscapeInverted : Orientation.Portrait)
+    _defaultPageOrientations: (bigScreen ? Orientation.Portrait | Orientation.Landscape
+                                     | Orientation.LandscapeInverted : Orientation.Portrait)
 
     cover: CoverPage {
         id: cover
@@ -84,18 +88,33 @@ ApplicationWindow
         }
     }
 
-    Component.onCompleted: pageStack.push("pages/MainPage.qml");
+    Component.onCompleted: {
+        pageStack.push("pages/MainPage.qml")
+        // This binds the setting for allowed orientations to the property which is used on all sub-pages
+        orientationSetting = Qt.binding(function() {
+            switch (parseInt(settings.orientation)) {
+                case 0:
+                    return Orientation.Portrait
+                case 1:
+                    return Orientation.Landscape
+                case 2:
+                    return (Orientation.Portrait | Orientation.Landscape | Orientation.LandscapeInverted)
+                default:
+                    return Orientation.Portrait
+            }
+        })
+    }
 
     DockedControls {
         id: dockedControls
     }
 
     Keys.onVolumeDownPressed: {
-        kodi.volumeDown();
+        kodi.volumeDown()
     }
 
     Keys.onVolumeUpPressed: {
-        kodi.volumeUp();
+        kodi.volumeUp()
     }
 
     Binding {

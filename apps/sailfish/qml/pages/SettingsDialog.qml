@@ -23,8 +23,6 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Dialog {
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
     Component.onCompleted: {
         console.log("settings: " + settings);
         console.log("use thumbnail: " + settings.useThumbnails);
@@ -49,6 +47,24 @@ Dialog {
             SectionHeader {
                 text: qsTr("Look and feel")
             }
+
+            // ComboBox {
+            //     id: orientation
+            //     label: qsTr("Orientation:")
+            //     description: qsTr("Sets the preferred screen orientation.")
+            //     currentIndex: settings.orientation
+            //     menu: ContextMenu {
+            //         MenuItem {
+            //             text: qsTr("Portrait")
+            //         } // 1
+            //         MenuItem {
+            //             text: qsTr("Landscape")
+            //         } // 2
+            //         MenuItem {
+            //             text: qsTr("Dynamic")
+            //         } // 3
+            //     }
+            // }
 
             TextSwitch {
                 id: useThumbnails
@@ -167,5 +183,6 @@ Dialog {
         settings.pvrEnabled = pvrEnabled.checked
         settings.hapticsEnabled = hapticsEnabled.checked
         settings.preventDimEnabled = preventDimEnabled.checked
+        // settings.orientation = orientation.currentIndex
     }
 }
