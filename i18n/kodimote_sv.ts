@@ -1043,74 +1043,74 @@
 <context>
     <name>Keypad</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="84"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="83"/>
         <source>Pictures Mode (off)</source>
         <translation>Bildläge (av)</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="84"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="83"/>
         <source>Pictures Mode (on)</source>
         <translation>Bildläge (på)</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="106"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="105"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="29"/>
         <source>Keypad</source>
         <translation>Knappsats</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="129"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="128"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="70"/>
         <source>To move left or right, swipe horizontally anywhere on the pad.</source>
         <translation>Svep horisontellt, för att flytta åt höger eller vänster.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="131"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="130"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="72"/>
         <source>To move up or down, swipe vertically.</source>
         <translation>Svep vertikalt för att flytta uppåt eller neråt.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="135"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="134"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="76"/>
         <source>To scroll through lists keep holding after swiping.</source>
         <translation>Håll kvar efter svep för att skrolla genom listor.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="137"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="136"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="78"/>
         <source>You&apos;ve scrolled 1 time, keep holding to scroll another 9 times.</source>
         <translation>Du har skrollat en gång, håll kvar för att skrolla 9 gånger till.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="139"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="138"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="80"/>
         <source>You&apos;ve scrolled %1 times, keep holding to scroll another %2 times.</source>
         <translation>Du har skrollat %1 gånger, håll kvar för att skrolla %2 gånger till.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="142"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="141"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="83"/>
         <source>To select an item, tap anywhere on the pad.</source>
         <translation>Tryck var som helst för att välja ett objekt.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="144"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="143"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="85"/>
         <source>Pro tip: The color buttons at the bottom simulate an infrared remote.</source>
         <translation>Proffstips: De färgade knapparna i botten simulerar en infraröd fjärrkontroll.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="146"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="145"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="87"/>
         <source>Tap the pad to finish the tutorial.</source>
         <translation>Tryck för att avsluta guiden.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="321"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="352"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="370"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="389"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="320"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="351"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="369"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="388"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="278"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="291"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
@@ -1119,13 +1119,13 @@
         <translation>Fjärrnamn: %1&lt;br&gt;Knappnamn: %2</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="415"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="414"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
         <translation>Ju längre du flyttar, desto snabbare skrollar du.</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="417"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="416"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
         <translation>Du kan tilldela dem till vad du vill, i Kodis Lircmap.xml</translation>

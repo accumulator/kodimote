@@ -81,7 +81,6 @@ Item {
         id: arrows
         Row {
             id: arrowsRoot
-            spacing: smallestScreen ? 0 : smallScreen ? 25 : 50
 
             function animate() {
                 if (!isRunning) {
@@ -110,7 +109,8 @@ Item {
                     id: arrowImage
                     opacity: 0.3
                     source: "../icons/pad-arrow.png"
-                    scale: appWindow.sizeRatio
+                    width: 38 * appWindow.sizeRatio
+                    height: 50 * appWindow.sizeRatio
 
                     Connections {
                         target: arrowsRoot
@@ -287,9 +287,20 @@ Item {
                 return;
             }
 
-            // Did we not move more than minSwipeDistance? => do nothing.
+            // Did we not move more than minSwipeDistance?
             if (dxAbs < minSwipeDistance && dyAbs < minSwipeDistance) {
-                print("Only moved " + dx + "x" + dy + " pixels. Not activating gesture");
+                if (dxAbs < (minSwipeDistance / 2) && dyAbs < (minSwipeDistance / 2)) {
+                    // It is probably meant as a small touch of the keypad,
+                    // so let's just treat it as such
+                    print("Moved only " + dx + "x" + dy + " pixels. But still activating gesture");
+                    if (settings.hapticsEnabled) {
+                        rumbleEffectPress.start(1);
+                    }
+                    keys.select();
+                    animateAll();
+                } else {
+                    print("Only moved " + dx + "x" + dy + " pixels. Not activating gesture");
+                }
                 return;
             }
 

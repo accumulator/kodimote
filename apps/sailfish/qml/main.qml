@@ -88,23 +88,6 @@ ApplicationWindow
         }
     }
 
-    Component.onCompleted: {
-        pageStack.push("pages/MainPage.qml")
-        // This binds the setting for allowed orientations to the property which is used on all sub-pages
-        orientationSetting = Qt.binding(function() {
-            switch (parseInt(settings.orientation)) {
-                case 0:
-                    return Orientation.Portrait
-                case 1:
-                    return Orientation.Landscape
-                case 2:
-                    return (Orientation.Portrait | Orientation.Landscape | Orientation.LandscapeInverted)
-                default:
-                    return Orientation.Portrait
-            }
-        })
-    }
-
     DockedControls {
         id: dockedControls
     }

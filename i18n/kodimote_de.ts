@@ -1043,74 +1043,74 @@
 <context>
     <name>Keypad</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="84"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="83"/>
         <source>Pictures Mode (off)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="84"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="83"/>
         <source>Pictures Mode (on)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="106"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="105"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="29"/>
         <source>Keypad</source>
         <translation>Tastenfeld</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="129"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="128"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="70"/>
         <source>To move left or right, swipe horizontally anywhere on the pad.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="131"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="130"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="72"/>
         <source>To move up or down, swipe vertically.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="135"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="134"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="76"/>
         <source>To scroll through lists keep holding after swiping.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="137"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="136"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="78"/>
         <source>You&apos;ve scrolled 1 time, keep holding to scroll another 9 times.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="139"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="138"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="80"/>
         <source>You&apos;ve scrolled %1 times, keep holding to scroll another %2 times.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="142"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="141"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="83"/>
         <source>To select an item, tap anywhere on the pad.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="144"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="143"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="85"/>
         <source>Pro tip: The color buttons at the bottom simulate an infrared remote.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="146"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="145"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="87"/>
         <source>Tap the pad to finish the tutorial.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="321"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="352"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="370"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="389"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="320"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="351"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="369"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="388"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="278"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="291"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
@@ -1119,13 +1119,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="415"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="414"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="417"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="416"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
         <translation type="unfinished"></translation>
