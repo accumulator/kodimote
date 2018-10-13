@@ -424,6 +424,12 @@ QString LibraryItem::plot() const
 void LibraryItem::setPlot(const QString &plot)
 {
     m_plot = plot;
+    /* fix some markup found on e.g. youtube */
+    m_plot.replace("[B]","<b>");
+    m_plot.replace("[/B]","</b>");
+    m_plot.replace("[UPPERCASE]","");
+    m_plot.replace("[/UPPERCASE]","");
+    m_plot.replace("[CR]","<br>");
     emit plotChanged();
 }
 
