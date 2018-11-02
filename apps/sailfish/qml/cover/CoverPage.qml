@@ -126,7 +126,7 @@ CoverBackground {
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width
         anchors.top: parent.top
-        anchors.topMargin: parent.height / 1.5
+        anchors.topMargin: parent.height / 1.6
         height: Theme.paddingLarge
         ProgressBar {
             width: parent.width
@@ -140,7 +140,7 @@ CoverBackground {
         id: elapsed
         anchors.top: progBar.bottom
         width: parent.width
-        anchors.topMargin: -Theme.paddingSmall
+        anchors.topMargin: Theme.paddingSmall
         horizontalAlignment: Text.AlignHCenter
         color: Theme.highlightColor
         font.pixelSize: Theme.fontSizeSmall
