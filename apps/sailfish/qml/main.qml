@@ -41,6 +41,10 @@ ApplicationWindow
                                      | Orientation.LandscapeInverted : Orientation.Portrait)
     _defaultPageOrientations: (bigScreen ? Orientation.Portrait | Orientation.Landscape
                                      | Orientation.LandscapeInverted : Orientation.Portrait)
+    property bool isLightTheme: {
+        if (Theme.colorScheme == Theme.LightOnDark) return false
+        else return true
+    }
 
     cover: CoverPage {
         id: cover

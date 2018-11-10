@@ -156,7 +156,7 @@ DockedPanel {
                 width: height
                 icon.height: iconResize; icon.width: iconResize
                 anchors.left: parent.left
-                icon.source: "../icons/icon-m-volume-down.png"
+                icon.source: "image://theme/icon-m-speaker-mute"
                 onClicked: {
                     if (settings.hapticsEnabled) {
                         rumbleEffect.start(2);
@@ -223,7 +223,7 @@ DockedPanel {
             }
 
             Switch {
-                icon.source: player && player.repeat === Player.RepeatOne ? "../icons/icon-l-repeat-one.png" : "image://theme/icon-m-repeat"
+                icon.source: player && player.repeat === Player.RepeatOne ? (appWindow.isLightTheme ? "../icons/icon-l-repeat-one-rev.png" : "../icons/icon-l-repeat-one.png") : "image://theme/icon-m-repeat"
                 icon.scale: player && player.repeat === Player.RepeatOne ? appWindow.sizeRatio : 1
                 visible: kodi.state == "audio"
                 checked: player && player.repeat !== Player.RepeatNone
@@ -237,6 +237,22 @@ DockedPanel {
                         player.repeat = Player.RepeatNone;
                     }
                 }
+                layer.effect: ShaderEffect {
+                    property color color: Theme.primaryColor
+
+                    fragmentShader: "
+                    varying mediump vec2 qt_TexCoord0;
+                    uniform highp float qt_Opacity;
+                    uniform lowp sampler2D source;
+                    uniform highp vec4 color;
+                    void main() {
+                        highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
+                        gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
+                    }
+                    "
+                }
+                layer.enabled: true
+                layer.samplerName: "source"
             }
 
             Switch {

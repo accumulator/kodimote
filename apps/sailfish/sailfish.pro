@@ -34,6 +34,7 @@ OTHER_FILES += \
     qml/pages/BrowserPage.qml \
     qml/components/Thumbnail.qml \
     qml/icons/icon-cover-stop.png \
+    qml/icons/icon-cover-stop-rev.png \
     qml/pages/ConnectionDialog.qml \
     qml/pages/AboutDialog.qml \
     qml/pages/AuthenticationDialog.qml \
