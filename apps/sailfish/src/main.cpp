@@ -37,6 +37,14 @@
 int main(int argc, char *argv[])
 {
     QGuiApplication *application = SailfishApp::application(argc, argv);
+    QProcess appinfo;
+    QString appversion;
+    // read app version from rpm database on startup
+    appinfo.start("/bin/rpm", QStringList() << "-qa" << "--queryformat" << "%{version}-%{RELEASE}" << "harbour-kodimote");
+    appinfo.waitForFinished(-1);
+    if (appinfo.bytesAvailable() > 0) {
+        appversion = appinfo.readAll();
+    }
 
     // Load language file
     QString language = QLocale::system().bcp47Name();
@@ -70,6 +78,7 @@ int main(int argc, char *argv[])
     Q_UNUSED(controller)
 
     view->engine()->setNetworkAccessManagerFactory(new NetworkAccessManagerFactory());
+    view->rootContext()->setContextProperty("version", appversion);
     view->engine()->rootContext()->setContextProperty("kodi", Kodi::instance());
     view->engine()->rootContext()->setContextProperty("settings", &settings);
     view->engine()->rootContext()->setContextProperty("protocolManager", &protocols);
@@ -79,4 +88,3 @@ int main(int argc, char *argv[])
 
     return application->exec();
 }
-
