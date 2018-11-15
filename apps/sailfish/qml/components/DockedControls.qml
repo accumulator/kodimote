@@ -271,6 +271,9 @@ DockedPanel {
                         dialog.rejected.connect(function () {
 
                         });
+                        dialog.accepted.connect(function () {
+                            player.currentAudiostream = dialog.currentIndex;
+                        });
                         pageStack.push(dialog);
                     }
                 }
