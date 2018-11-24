@@ -143,7 +143,7 @@ CoverBackground {
         width: parent.width
         anchors.top: parent.top
         anchors.topMargin: parent.height / 1.6
-        height: Theme.paddingLarge
+        height: appWindow.isLightTheme ? Theme.paddingLarge * 2 : Theme.paddingLarge
         ProgressBar {
             width: parent.width
             minimumValue: 0

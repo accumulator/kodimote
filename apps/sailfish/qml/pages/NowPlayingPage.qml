@@ -209,7 +209,8 @@ Page {
                         minimumValue: 0
                         maximumValue: 100
                         value: player ? player.percentage : 0
-                        height: Theme.paddingLarge * 3
+                        // Why is the progressbar position lower in light ambiences?
+                        height: appWindow.isLightTheme ? Theme.paddingLarge * 4 : Theme.paddingLarge * 3
 
                         Label {
                             anchors.left: parent.left
@@ -238,8 +239,8 @@ Page {
                         Rectangle {
                             color: Theme.primaryColor
                             rotation: 45
-                            width: 10
-                            height: 10
+                            width: 10 * appWindow.sizeRatio
+                            height: 10 * appWindow.sizeRatio
                             anchors.horizontalCenter: progressBarLabel.horizontalCenter
                             anchors.verticalCenter: progressBarLabel.bottom
                             visible: progressBarLabel.visible
@@ -250,7 +251,7 @@ Page {
                             color: Theme.primaryColor
                             anchors.bottom: parent.bottom
                             anchors.bottomMargin: (Theme.paddingLarge * 2) + Theme.fontSizeSmall
-                            height: 40
+                            height: appWindow.sizeRatio * 40
                             width: progressBarLabelText.width + 20
                             radius: 5
                             visible: progressBarMouseArea.pressed
