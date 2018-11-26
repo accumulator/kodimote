@@ -61,7 +61,7 @@ Page {
 
             contentHeight: Theme.itemSizeExtraLarge
 
-            onClicked: kodiMenuModel.click(index)
+            onClicked: Remorse.itemAction(listItem, kodiMenuModel.get(index).target, function() { kodiMenuModel.click(index) })
 
             Image {
                 id: img
