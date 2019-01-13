@@ -26,6 +26,7 @@ import harbour.kodimote 1.0
 
 Page {
     id: nowPlayingPage
+    allowedOrientations: appWindow.orientationSetting
 
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player ? player.playlist() : null

@@ -26,6 +26,7 @@ import "../components/"
 
 Page {
     id: playlistPage
+    allowedOrientations: appWindow.orientationSetting
 
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player.playlist()

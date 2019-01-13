@@ -29,6 +29,7 @@ Page {
 
     property variant model
     property bool showSearch: !model.busy && browserPage.model && browserPage.model.allowSearch
+    allowedOrientations: appWindow.orientationSetting
 
     signal home();
 
@@ -339,7 +340,7 @@ Page {
                     ProgressBar {
                         minimumValue: 0
                         maximumValue: 100
-                        value: model.progressPercentage != undefined ? progressPercentage : 0
+                        value: model.progressPercentage !== undefined ? progressPercentage : 0
                         visible: index >= 0 && browserPage.model.getItem(filterModel.mapToSourceIndex(index)).type === "channel"
 
                         leftMargin: 10

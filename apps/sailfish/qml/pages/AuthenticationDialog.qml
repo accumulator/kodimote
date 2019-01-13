@@ -24,6 +24,7 @@ import Sailfish.Silica 1.0
 
 Dialog {
     id: authenticationDialog
+    allowedOrientations: appWindow.orientationSetting
 
     property string hostname
 

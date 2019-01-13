@@ -25,6 +25,7 @@ import harbour.kodimote 1.0
 
 Dialog {
     id: dialog
+    allowedOrientations: appWindow.orientationSetting
 
     property string lockCode
 

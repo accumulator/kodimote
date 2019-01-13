@@ -64,7 +64,7 @@ KodiPage {
         id: mainMenuModel
         // workaround: its not possible to have qsTr() in ListElements for now...
         function title(index) {
-            if (index == -1) return "";
+            if (index === -1) return "";
             var target = mainMenuModel.get(index).target;
             if (target === "music") {
                 return qsTr("Music");

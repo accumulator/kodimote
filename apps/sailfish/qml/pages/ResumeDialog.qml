@@ -24,6 +24,7 @@ import Sailfish.Silica 1.0
 
 Dialog {
     property variant item
+    allowedOrientations: appWindow.orientationSetting
 
     DialogHeader {
         id: header

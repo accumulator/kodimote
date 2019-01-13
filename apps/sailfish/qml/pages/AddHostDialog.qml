@@ -27,6 +27,7 @@ Dialog {
     id: addHostDialog
     property QtObject host
     property alias title: dialogHeader.acceptText
+    allowedOrientations: appWindow.orientationSetting
 
     canAccept: nameTextField.text.length > 0 && addressTextField.text.length > 0 && portTextField.text.length > 0
 
@@ -58,7 +59,7 @@ Dialog {
 
                 onTextChanged: {
                     for (var i = 0; i < kodi.hostModel().count; ++i) {
-                        if (kodi.hostModel().host(i).hostname == text && kodi.hostModel().host(i) != host) {
+                        if (kodi.hostModel().host(i).hostname === text && kodi.hostModel().host(i) != host) {
                             conflicting = true;
                             return;
                         }

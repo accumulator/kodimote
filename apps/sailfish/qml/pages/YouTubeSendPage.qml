@@ -24,6 +24,7 @@ import Sailfish.Silica 1.0
 
 Page {
     id: youTubePage
+    allowedOrientations: appWindow.orientationSetting
     property bool menuDockOpen
 
 

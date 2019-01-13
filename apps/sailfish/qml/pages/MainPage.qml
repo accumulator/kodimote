@@ -26,6 +26,7 @@ import "../components/"
 
 Page {
     id: mainPage
+    allowedOrientations: appWindow.orientationSetting
 
     property bool connected: kodi.connected
 

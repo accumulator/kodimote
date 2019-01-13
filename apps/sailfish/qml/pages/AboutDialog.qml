@@ -25,6 +25,7 @@ import Sailfish.Silica 1.0
 Dialog {
 
     property bool largeScreen: Screen.width > 540
+    allowedOrientations: appWindow.orientationSetting
 
     SilicaFlickable {
         anchors.fill: parent

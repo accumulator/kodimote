@@ -23,6 +23,7 @@ import QtQuick 2.0
 import Sailfish.Silica 1.0
 
 Page {
+    allowedOrientations: appWindow.orientationSetting
 
     SilicaListView {
         id: listView
@@ -61,7 +62,7 @@ Page {
 
             contentHeight: Theme.itemSizeExtraLarge
 
-            onClicked: Remorse.itemAction(listItem, kodiMenuModel.get(index).target, function() { kodiMenuModel.click(index) })
+            onClicked: Remorse.itemAction(listItem, listView.model.title(index), function() { kodiMenuModel.click(index) })
 
             Image {
                 id: img
@@ -103,6 +104,7 @@ Page {
                     font.pixelSize: Theme.fontSizeLarge
                 }
             }
+            VerticalScrollDecorator {}
         }
 
         ListModel {

@@ -25,6 +25,7 @@ import harbour.kodimote 1.0
 
 Dialog {
     id: connectionDialog
+    allowedOrientations: appWindow.orientationSetting
     canAccept: hostList.currentIndex >= 0
 
     onAccepted: {

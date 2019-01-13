@@ -37,12 +37,11 @@ ApplicationWindow
     property bool smallScreen: (Screen.width  >= 720 && Screen.width < 1080)
     property bool smallestScreen: Screen.width  < 720
     property int sizeRatio: smallestScreen ? 1 : smallScreen ? 1.5 : 2
-    allowedOrientations: (bigScreen ? Orientation.Portrait | Orientation.Landscape
-                                     | Orientation.LandscapeInverted : Orientation.Portrait)
-    _defaultPageOrientations: (bigScreen ? Orientation.Portrait | Orientation.Landscape
-                                     | Orientation.LandscapeInverted : Orientation.Portrait)
+    property int orientationSetting: (Orientation.Portrait | Orientation.Landscape | Orientation.LandscapeInverted)
+    _defaultPageOrientations: (Orientation.Portrait | Orientation.Landscape
+                                     | Orientation.LandscapeInverted)
     property bool isLightTheme: {
-        if (Theme.colorScheme == Theme.LightOnDark) return false
+        if (Theme.colorScheme === Theme.LightOnDark) return false
         else return true
     }
 
@@ -284,6 +283,21 @@ ApplicationWindow
             appWindow.inputDialog = null;
         });
         appWindow.inputDialog.open();
+    }
+    Component.onCompleted: {
+        // This binds the setting for allowed orientations to the property which is used on all sub-pages
+        orientationSetting = Qt.binding(function() {
+            switch (parseInt(settings.orientation)) {
+                case 0:
+                    return Orientation.Portrait
+                case 1:
+                    return Orientation.Landscape
+                case 2:
+                    return (Orientation.Portrait | Orientation.Landscape | Orientation.LandscapeInverted)
+                default:
+                    return Orientation.Portrait
+            }
+        })
     }
 
 }

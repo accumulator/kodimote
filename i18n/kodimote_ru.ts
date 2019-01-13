@@ -1693,6 +1693,26 @@
         <source>Prevent display blanking on keypad</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Orientation:</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Sets the preferred screen orientation.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Portrait</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Landscape</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dynamic</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>SettingsSheet</name>

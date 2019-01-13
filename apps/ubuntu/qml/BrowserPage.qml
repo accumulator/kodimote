@@ -276,7 +276,7 @@ KodiPage {
                     id: contentLoader
                     anchors.fill: parent
 
-                    source: delegateItem.expanded ? root.model.getItem(filterModel.mapToSourceIndex(index)).type == "channel" ? "ChannelDetails.qml" : "ItemDetails.qml" : ""
+                    source: delegateItem.expanded ? root.model.getItem(filterModel.mapToSourceIndex(index)).type === "channel" ? "ChannelDetails.qml" : "ItemDetails.qml" : ""
 
                     onLoaded: {
                         item.item = root.model.getItem(index)
@@ -406,7 +406,7 @@ KodiPage {
                         Label {
                             width: parent.width
                             text: subtitle + (year.length > 0 ? '\n' + year : "")
-                            height: text.length == 0 ? 0 : implicitHeight
+                            height: text.length === 0 ? 0 : implicitHeight
                             fontSize: "small"
                             wrapMode: Text.WordWrap
                             maximumLineCount: index >= 0 && root.model.getItem(filterModel.mapToSourceIndex(index)).type === "channel" ? 2 : 3
@@ -423,7 +423,7 @@ KodiPage {
                             height: units.dp(3)
                             property int minimumValue: 0
                             property int maximumValue: 100
-                            property int value: model.progressPercentage != undefined ? progressPercentage : 0
+                            property int value: model.progressPercentage !== undefined ? progressPercentage : 0
 
                             UbuntuShape {
                                 anchors.fill: parent
@@ -590,10 +590,10 @@ KodiPage {
         }
         BottomEdgeButton {
             text: qsTr("Sorting")
-            source: filterModel.sortOrder == Qt.AscendingOrder ? "image://theme/go-down" : "image://theme/go-up"
+            source: filterModel.sortOrder === Qt.AscendingOrder ? "image://theme/go-down" : "image://theme/go-up"
             Layout.fillWidth: true
             onClicked: {
-                filterModel.sortOrder = filterModel.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
+                filterModel.sortOrder = filterModel.sortOrder === Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
             }
         }
     }

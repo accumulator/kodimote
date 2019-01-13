@@ -128,7 +128,7 @@ Row {
         icon.source: "../icons/icon-m-forward.png"
         icon.height: iconResize; icon.width: iconResize
         height: iconResize; width: iconResize
-        enabled: player ? player.state == "playing" && player.type !== Player.PlayerTypePictures : false
+        enabled: player ? player.state === "playing" && player.type !== Player.PlayerTypePictures : false
         onClicked: {
             if (settings.hapticsEnabled) {
                 rumbleEffect.start(2);

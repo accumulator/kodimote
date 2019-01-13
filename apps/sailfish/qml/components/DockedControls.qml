@@ -33,7 +33,7 @@ DockedPanel {
     property int iconResize: appWindow.largeScreen? 140 : appWindow.mediumScreen ? 128 : appWindow.smallScreen ? 96 : 64
     open: player
     width: parent.width
-    height: column.height + (2 * Theme.paddingLarge)
+    height: column.height + (2 * Theme.paddingMedium)
     contentHeight: height
 
     onPlayerChanged: {

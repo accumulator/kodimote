@@ -24,6 +24,7 @@ import Sailfish.Silica 1.0
 
 Dialog {
     id: mediaSelectionDialog
+    allowedOrientations: appWindow.orientationSetting
 
     property alias mediaModel: mediaSelection.model
     property int currentIndex
