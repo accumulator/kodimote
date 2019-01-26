@@ -1,3 +1,5 @@
+* Sat Jan 26 2019 Arno Dekker <email@me.com> 2.1.3-25
+- Some optimisations for nowplaying page in landscape
 * Sat Jan 12 2019 Arno Dekker <email@me.com> 2.1.3-24
 - Use translated text in remorse timer
 - Updated French translation

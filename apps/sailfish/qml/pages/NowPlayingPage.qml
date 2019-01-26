@@ -21,8 +21,8 @@
 
 import QtQuick 2.0
 import Sailfish.Silica 1.0
-import "../components/"
 import harbour.kodimote 1.0
+import "../components/"
 
 Page {
     id: nowPlayingPage
@@ -79,11 +79,22 @@ Page {
             // create space to display thumbnail below navigation bullets
             PageHeader {
                 title: qsTr("Now Playing")
+                visible: isPortrait || appWindow.bigScreen
             }
 
-            Thumbnail {
-                artworkSource: currentItem ? currentItem.thumbnail : ""
+            // Some space on top when header is not shown
+            Item {
+                visible: isLandscape && ! appWindow.bigScreen
                 width: parent.width
+                height: Theme.paddingLarge
+            }
+
+            Row {
+                width: column.width
+                Thumbnail {
+                    id: thumb
+                artworkSource: currentItem ? currentItem.thumbnail : ""
+                width: isPortrait ? parent.width : parent.width / 2
                 height: artworkSize && artworkSize.width > artworkSize.height ? artworkSize.height / (artworkSize.width / width) : appWindow.mediumScreen || appWindow.largeScreen ? 900 : appWindow.smallScreen ? 648 : 400
                 fillMode: Image.PreserveAspectFit
                 smooth: true
@@ -94,9 +105,93 @@ Page {
                     onClicked: drawer.open = !drawer.open
                 }
             }
+            Column {
+                visible: isLandscape
+                spacing: Theme.paddingMedium
+                width: parent.width
+                    Label {
+                    width: parent.width / 2
+                        horizontalAlignment: Text.AlignRight
+                        id: titleLabel_landscape
+                        font {
+                            bold: true
+                            family: Theme.fontFamilyHeading
+                        }
+                        wrapMode: Text.Wrap
+                        text: currentItem ? currentItem.title : ""
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: drawer.open = !drawer.open
+                        }
+                    }
+
+                    Label {
+                    width: parent.width / 2
+                        id: playlistItemLabel_landscape
+                        horizontalAlignment: Text.AlignRight
+                        truncationMode: TruncationMode.Fade
+                        text: playlist ? playlist.currentTrackNumber + "/" + playlist.count : "0/0"
+
+                        Behavior on opacity {
+                            NumberAnimation {
+                                property: "opacity"
+                                duration: 300
+                                easing.type: Easing.InOutQuad
+                            }
+                        }
+
+                        MouseArea {
+                            anchors.fill: parent
+                            onClicked: pageStack.navigateForward()
+                        }
+                    }
+                Label {
+                    text: currentItem.subtitle
+                    horizontalAlignment: Text.AlignRight
+                    width: parent.width / 2
+                    wrapMode: Text.Wrap
+                    color: Theme.highlightColor
+                    visible: text.length > 0
+                    font {
+                        family: Theme.fontFamilyHeading
+                        bold: true
+                    }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: drawer.open = !drawer.open
+                    }
+                }
+
+                Label {
+                    text: currentItem.album
+                    horizontalAlignment: Text.AlignRight
+                    width: parent.width / 2
+                    wrapMode: Text.Wrap
+                    visible: text.length > 0
+                    font.bold: true
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: drawer.open = !drawer.open
+                    }
+                }
+
+                ItemDetailRow {
+                    visible: currentItem.season > -1
+                    title: qsTr("Season:")
+                    text: currentItem.season
+                }
+
+                ItemDetailRow {
+                    visible: currentItem.episode > -1
+                    title: qsTr("Episode:")
+                    text: currentItem.episode
+                }
+            }
+        }
 
             // create some space between thumbnail and title
-            Item{
+            Item {
                 width: parent.width
                 height: Theme.paddingLarge
 
@@ -110,6 +205,7 @@ Page {
                 height: titleLabel.height
                 anchors.left: parent.left
                 anchors.right: parent.right
+                visible: isPortrait
                 Label {
                     id: titleLabel
                     anchors {
@@ -123,6 +219,7 @@ Page {
                     }
                     truncationMode: TruncationMode.Fade
                     text: currentItem ? currentItem.title : ""
+
 
                     MouseArea {
                         anchors.fill: parent
@@ -156,7 +253,7 @@ Page {
                 width: parent.width
                 truncationMode: TruncationMode.Fade
                 color: Theme.highlightColor
-                visible: text.length > 0
+                visible: text.length > 0 && isPortrait
                 font {
                     family: Theme.fontFamilyHeading
                     bold: true
@@ -167,18 +264,18 @@ Page {
                 text: currentItem.album
                 width: parent.width
                 truncationMode: TruncationMode.Fade
-                visible: text.length > 0
+                visible: text.length > 0 && isPortrait
                 font.bold: true
             }
 
             ItemDetailRow {
-                visible: currentItem.season > -1
+                visible: currentItem.season > -1 && isPortrait
                 title: qsTr("Season:")
                 text: currentItem.season
             }
 
             ItemDetailRow {
-                visible: currentItem.episode > -1
+                visible: currentItem.episode > -1 && isPortrait
                 title: qsTr("Episode:")
                 text: currentItem.episode
             }
