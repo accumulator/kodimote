@@ -2112,27 +2112,27 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="54"/>
         <source>Orientation:</source>
-        <translation type="unfinished"></translation>
+        <translation>Orientering</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="55"/>
         <source>Sets the preferred screen orientation.</source>
-        <translation type="unfinished"></translation>
+        <translation>Anger önskad skärmorientering</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="59"/>
         <source>Portrait</source>
-        <translation type="unfinished"></translation>
+        <translation>Stående</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="62"/>
         <source>Landscape</source>
-        <translation type="unfinished"></translation>
+        <translation>Liggande</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="65"/>
         <source>Dynamic</source>
-        <translation type="unfinished"></translation>
+        <translation>Dynamisk</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="72"/>
