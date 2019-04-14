@@ -619,17 +619,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="205"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="206"/>
         <source>Kodi on</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="222"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="223"/>
         <source>Kodimote</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="223"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="224"/>
         <source>Disconnected</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1060,69 +1060,69 @@
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="147"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="583"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="584"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="70"/>
         <source>To move left or right, swipe horizontally anywhere on the pad.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="149"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="585"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="586"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="72"/>
         <source>To move up or down, swipe vertically.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="153"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="589"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="590"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="76"/>
         <source>To scroll through lists keep holding after swiping.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="155"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="591"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="592"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="78"/>
         <source>You&apos;ve scrolled 1 time, keep holding to scroll another 9 times.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="157"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="593"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="594"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="80"/>
         <source>You&apos;ve scrolled %1 times, keep holding to scroll another %2 times.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="162"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="598"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="599"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="83"/>
         <source>To select an item, tap anywhere on the pad.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="164"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="600"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="601"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="85"/>
         <source>Pro tip: The color buttons at the bottom simulate an infrared remote.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="166"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="602"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="603"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="87"/>
         <source>Tap the pad to finish the tutorial.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="417"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="458"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="483"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="508"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="727"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="767"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="791"/>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="815"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="418"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="459"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="484"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="509"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="729"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="769"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="793"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="817"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="278"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="291"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
@@ -1131,13 +1131,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="540"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="541"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="542"/>
+        <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="543"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
         <translation type="unfinished"></translation>
@@ -1208,32 +1208,32 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="147"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="148"/>
         <source>Change user</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="150"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="151"/>
         <source>Quit</source>
         <translation type="unfinished">Sair</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="153"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="154"/>
         <source>Shutdown</source>
         <translation type="unfinished">Desligar</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="156"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="157"/>
         <source>Reboot</source>
         <translation type="unfinished">Reiniciar</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="159"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="160"/>
         <source>Suspend</source>
         <translation type="unfinished">Suspender</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="162"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="163"/>
         <source>Hibernate</source>
         <translation type="unfinished">Hibernar</translation>
     </message>
@@ -1290,21 +1290,21 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="91"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="270"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="271"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="70"/>
         <source>Music</source>
         <translation>Música</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="94"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="273"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="274"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="73"/>
         <source>Videos</source>
         <translation>Vídeos</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="97"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="276"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="277"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="76"/>
         <source>Pictures</source>
         <translation>Imagens</translation>
@@ -1336,15 +1336,15 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="293"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="181"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="267"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="182"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="268"/>
         <source>Rescan library</source>
         <translation>Reanalisar biblioteca</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="309"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="189"/>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="268"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="190"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="269"/>
         <source>Clean library</source>
         <translation>Limpar biblioteca</translation>
     </message>
@@ -1354,13 +1354,13 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="279"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="280"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="79"/>
         <source>Live TV</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="307"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="308"/>
         <source>About</source>
         <translation type="unfinished">Acerca</translation>
     </message>
@@ -1370,7 +1370,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/ubuntu/qml/MainPage.qml" line="299"/>
+        <location filename="../apps/ubuntu/qml/MainPage.qml" line="300"/>
         <source>Options</source>
         <translation>Opções</translation>
     </message>
@@ -1751,14 +1751,16 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="176"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="181"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="273"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Season:</source>
         <translation>Temporada:</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="182"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="187"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="279"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Episode:</source>
         <translation>Episódio:</translation>
@@ -1802,7 +1804,7 @@
         <translation type="unfinished">Em Reprodução</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="229"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="326"/>
         <source>ends at </source>
         <translation type="unfinished"></translation>
     </message>

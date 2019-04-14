@@ -231,7 +231,7 @@ void Player::receivedAnnouncement(const QVariantMap &map)
         emit stateChanged();
         m_speed = 1;
         emit speedChanged();
-    } else if(map.value("method").toString() == "Player.OnPlay") {
+    } else if (map.value("method").toString() == "Player.OnPlay" || map.value("method").toString() == "Player.OnResume") {
         m_state = "playing";
         emit stateChanged();
         //this has to be delayed, otherwise returned times aren't correct (yet)

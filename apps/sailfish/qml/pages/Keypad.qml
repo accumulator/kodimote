@@ -111,7 +111,7 @@ Page {
             PageHeader {
                 id: header
                 title: qsTr("Keypad")
-                visible: isPortrait
+                visible: isPortrait || appWindow.bigScreen
             }
 
             Rectangle {
