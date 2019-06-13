@@ -363,7 +363,7 @@ Page {
                         when: open
                         PropertyChanges { target: listView; interactive: false; contentY: listView.itemHeight * listView.currentIndex }
                         PropertyChanges { target: flickable; interactive: false }
-                        PropertyChanges { target: contentLoader; source: browserPage.model.getItem(filterModel.mapToSourceIndex(index)).type == "channel" ? "../components/ChannelDetails.qml" : "../components/ItemDetails.qml" }
+                        PropertyChanges { target: contentLoader; source: browserPage.model.getItem(filterModel.mapToSourceIndex(index)).type === "channel" ? "../components/ChannelDetails.qml" : "../components/ItemDetails.qml" }
                         PropertyChanges { target: dockedControls; hideTemporary: true }
                         PropertyChanges { target: controlBar; height: 0 }
                     },

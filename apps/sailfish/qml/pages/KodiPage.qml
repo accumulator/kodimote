@@ -237,5 +237,4 @@ Page {
             pageStack.pushAttached("MainPage.qml");
         }
     }
-
 }

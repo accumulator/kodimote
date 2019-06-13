@@ -59,7 +59,7 @@ Dialog {
 
                 onTextChanged: {
                     for (var i = 0; i < kodi.hostModel().count; ++i) {
-                        if (kodi.hostModel().host(i).hostname === text && kodi.hostModel().host(i) != host) {
+                        if (kodi.hostModel().host(i).hostname === text && kodi.hostModel().host(i) !== host) {
                             conflicting = true;
                             return;
                         }

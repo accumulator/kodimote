@@ -1290,21 +1290,21 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="91"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="271"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="272"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="70"/>
         <source>Music</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="94"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="274"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="275"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="73"/>
         <source>Videos</source>
         <translation>Videa</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="97"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="277"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="278"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="76"/>
         <source>Pictures</source>
         <translation type="unfinished"></translation>
@@ -1354,7 +1354,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="280"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="281"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="79"/>
         <source>Live TV</source>
         <translation type="unfinished"></translation>
@@ -1751,16 +1751,16 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="181"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="273"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="199"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="353"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Season:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="187"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="279"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="205"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="359"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Episode:</source>
         <translation type="unfinished"></translation>
@@ -1793,18 +1793,19 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="66"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="71"/>
         <source>Play YouTube URL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="81"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="86"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="31"/>
         <source>Now Playing</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="326"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="234"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="388"/>
         <source>ends at </source>
         <translation type="unfinished"></translation>
     </message>
