@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -19,8 +21,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import "../components/"
 
@@ -35,10 +36,22 @@ Page {
     states: [
         State {
             when: connected
-            PropertyChanges { target: listView.headerItem; visible: true }
-            PropertyChanges { target: mainMenu; enabled: true }
-            PropertyChanges { target: listView; model: mainMenuModel }
-            PropertyChanges { target: noConnection; visible: false }
+            PropertyChanges {
+                target: listView.headerItem
+                visible: true
+            }
+            PropertyChanges {
+                target: mainMenu
+                enabled: true
+            }
+            PropertyChanges {
+                target: listView
+                model: mainMenuModel
+            }
+            PropertyChanges {
+                target: noConnection
+                visible: false
+            }
         }
     ]
 
@@ -58,7 +71,7 @@ Page {
     function browse(target) {
         var menuModel = null
 
-        for (var i = mainMenuModel.count; i--;) {
+        for (var i = mainMenuModel.count; i--; ) {
             menuModel = mainMenuModel.get(i)
             if (menuModel.target === target) {
                 break
@@ -76,11 +89,12 @@ Page {
             newModel = kodi.shares(menuModel.target)
         }
 
-
         console.log("setting model: " + newModel)
         pageStack.completeAnimation()
-        var browser = pageStack.push("BrowserPage.qml", {model: newModel})
-        browser.home.connect(function() {
+        var browser = pageStack.push("BrowserPage.qml", {
+                                         "model": newModel
+                                     })
+        browser.home.connect(function () {
             pageStack.pop(mainPage)
         })
     }
@@ -102,7 +116,6 @@ Page {
             visible: kodi.activePlayer
             enabled: false
             ControlsMenuItem {
-
             }
         }
 
@@ -121,6 +134,26 @@ Page {
             contentHeight: Theme.itemSizeExtraLarge
             menu: contextMenuComponent
 
+            Rectangle {
+                anchors.left: parent.left
+                anchors.leftMargin: Theme.paddingLarge
+                anchors.verticalCenter: parent.verticalCenter
+                width: parent.width - Theme.paddingLarge * 2
+                height: img.height
+                opacity: 0.5
+                radius: 10
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.0
+                        color: Theme.rgba(Theme.primaryColor, 0.1)
+                    }
+                    GradientStop {
+                        position: 1.0
+                        color: Theme.rgba(Theme.primaryColor, 0.05)
+                    }
+                }
+            }
+
             Image {
                 id: img
                 anchors.left: parent.left
@@ -128,7 +161,8 @@ Page {
                 anchors.verticalCenter: parent.verticalCenter
 
                 source: icon
-                height: referenceIcon.icon.height; width: referenceIcon.icon.width
+                height: referenceIcon.icon.height
+                width: referenceIcon.icon.width
                 layer.effect: ShaderEffect {
                     property color color: Theme.primaryColor
 
@@ -195,7 +229,8 @@ Page {
                     }
                 }
             }
-            VerticalScrollDecorator {}
+            VerticalScrollDecorator {
+            }
         }
     }
 
@@ -207,11 +242,11 @@ Page {
 
             pageStack.pushAttached("Keypad.qml")
 
-//            if (kodi.connected) {
-//                pageStack.pushAttached("KodiPage.qml")
-//            } else {
-//                pageStack.popAttached()
-//            }
+            //            if (kodi.connected) {
+            //                pageStack.pushAttached("KodiPage.qml")
+            //            } else {
+            //                pageStack.popAttached()
+            //            }
         }
     }
 

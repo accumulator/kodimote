@@ -153,8 +153,15 @@ void Albums::detailsReceived(const QVariantMap &rsp)
     QVariantMap details = rsp.value("result").toMap().value("albumdetails").toMap();
     item->setDescription(details.value("description").toString());
     item->setRating(details.value("rating").toInt());
-    item->setGenre(details.value("genre").toString());
+    QVariantList genre_list = details.value("genre").toList();
+    for (QVariantList::iterator j = genre_list.begin(); j != genre_list.end(); j++)
+    {
+        item->setGenre((*j).toString());
+        break;
+    }
     item->setYear(details.value("year").toString());
+    qDebug() << "komtie";
+    qDebug() << index(row, 0, QModelIndex());
     emit dataChanged(index(row, 0, QModelIndex()), index(row, 0, QModelIndex()));
 }
 

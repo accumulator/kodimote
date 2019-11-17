@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Page {
@@ -41,14 +42,14 @@ Page {
                 id: settingsMenu
                 text: qsTr("Settings")
                 onClicked: {
-                    pageStack.push("SettingsDialog.qml");
+                    pageStack.push("SettingsDialog.qml")
                 }
             }
 
             MenuItem {
                 text: qsTr("About")
                 onClicked: {
-                    pageStack.push("AboutDialog.qml");
+                    pageStack.push("AboutDialog.qml")
                 }
             }
         }
@@ -62,7 +63,31 @@ Page {
 
             contentHeight: Theme.itemSizeExtraLarge
 
-            onClicked: Remorse.itemAction(listItem, listView.model.title(index), function() { kodiMenuModel.click(index) })
+            onClicked: Remorse.itemAction(listItem,
+                                          listView.model.title(index),
+                                          function () {
+                                              kodiMenuModel.click(index)
+                                          })
+
+            Rectangle {
+                anchors.left: parent.left
+                anchors.leftMargin: Theme.paddingLarge
+                anchors.verticalCenter: parent.verticalCenter
+                width: parent.width - Theme.paddingLarge * 2
+                height: img.height
+                opacity: 0.5
+                radius: 10
+                gradient: Gradient {
+                    GradientStop {
+                        position: 0.0
+                        color: Theme.rgba(Theme.primaryColor, 0.1)
+                    }
+                    GradientStop {
+                        position: 1.0
+                        color: Theme.rgba(Theme.primaryColor, 0.05)
+                    }
+                }
+            }
 
             Image {
                 id: img
@@ -82,8 +107,8 @@ Page {
                     uniform lowp sampler2D source;
                     uniform highp vec4 color;
                     void main() {
-                        highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
-                        gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
+                    highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
+                    gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
                     }
                     "
                 }
@@ -104,7 +129,8 @@ Page {
                     font.pixelSize: Theme.fontSizeLarge
                 }
             }
-            VerticalScrollDecorator {}
+            VerticalScrollDecorator {
+            }
         }
 
         ListModel {
@@ -139,102 +165,97 @@ Page {
             id: kodiMenuModel
             // workaround: its not possible to have qsTr() in ListElements for now...
             function title(index) {
-                var item = kodiMenuModel.get(index);
+                var item = kodiMenuModel.get(index)
 
                 if (item) {
-                    var target = kodiMenuModel.get(index).target;
+                    var target = kodiMenuModel.get(index).target
                     if (target === "changeUser") {
-                        return qsTr("Change user");
+                        return qsTr("Change user")
                     }
                     if (target === "quit") {
-                        return qsTr("Quit");
+                        return qsTr("Quit")
                     }
                     if (target === "shutdown") {
-                        return qsTr("Shutdown");
+                        return qsTr("Shutdown")
                     }
                     if (target === "reboot") {
-                        return qsTr("Reboot");
+                        return qsTr("Reboot")
                     }
                     if (target === "suspend") {
-                        return qsTr("Suspend");
+                        return qsTr("Suspend")
                     }
                     if (target === "hibernate") {
-                        return qsTr("Hibernate");
+                        return qsTr("Hibernate")
                     }
                 }
-                return "";
+                return ""
             }
 
             function click(index) {
-                var item = kodiMenuModel.get(index);
+                var item = kodiMenuModel.get(index)
 
                 if (!item) {
-                    return;
+                    return
                 }
 
-                var target = kodiMenuModel.get(index).target;
+                var target = kodiMenuModel.get(index).target
                 if (target === "changeUser") {
-                    pageStack.push("ProfileSelectionDialog.qml");
-                }
-                else if (target === "quit") {
-                    kodi.quit();
-                }
-                else if (target === "shutdown") {
-                    kodi.shutdown();
-                }
-                else if (target === "reboot") {
-                    kodi.reboot();
-                }
-                else if (target === "suspend") {
-                    kodi.suspend();
-                }
-                else if (target === "hibernate") {
-                    kodi.hibernate();
+                    pageStack.push("ProfileSelectionDialog.qml")
+                } else if (target === "quit") {
+                    kodi.quit()
+                } else if (target === "shutdown") {
+                    kodi.shutdown()
+                } else if (target === "reboot") {
+                    kodi.reboot()
+                } else if (target === "suspend") {
+                    kodi.suspend()
+                } else if (target === "hibernate") {
+                    kodi.hibernate()
                 }
             }
         }
     }
 
     function populateKodiMenu() {
-        kodiMenuModel.clear();
+        kodiMenuModel.clear()
         if (kodi.profiles().count > 1) {
-            kodiMenuModel.append(kodiMenuModelTemplate.get(0));
+            kodiMenuModel.append(kodiMenuModelTemplate.get(0))
         }
-        kodiMenuModel.append(kodiMenuModelTemplate.get(1));
+        kodiMenuModel.append(kodiMenuModelTemplate.get(1))
         if (kodi.canShutdown) {
-            kodiMenuModel.append(kodiMenuModelTemplate.get(2));
+            kodiMenuModel.append(kodiMenuModelTemplate.get(2))
         }
         if (kodi.canReboot) {
-            kodiMenuModel.append(kodiMenuModelTemplate.get(3));
+            kodiMenuModel.append(kodiMenuModelTemplate.get(3))
         }
         if (kodi.canShutdown) {
-            kodiMenuModel.append(kodiMenuModelTemplate.get(4));
+            kodiMenuModel.append(kodiMenuModelTemplate.get(4))
         }
         if (kodi.canHibernate) {
-            kodiMenuModel.append(kodiMenuModelTemplate.get(5));
+            kodiMenuModel.append(kodiMenuModelTemplate.get(5))
         }
     }
 
     Component.onCompleted: {
-        populateKodiMenu();
+        populateKodiMenu()
     }
 
     Connections {
         target: kodi
-        onSystemPropertiesChanged: populateKodiMenu();
+        onSystemPropertiesChanged: populateKodiMenu()
     }
 
     Connections {
         target: kodi.profiles()
-        onCountChanged: populateKodiMenu();
+        onCountChanged: populateKodiMenu()
     }
 
     onStatusChanged: {
         if (status === PageStatus.Active) {
             if (!kodi.connected && !kodi.connecting) {
-                showConnect();
+                showConnect()
             }
-            pageStack.pushAttached("MainPage.qml");
+            pageStack.pushAttached("MainPage.qml")
         }
     }
 }

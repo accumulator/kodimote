@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Column {
@@ -115,13 +116,13 @@ Column {
     Label {
         width: parent.width
         visible: currentItem.plot.length > 0
-        text: currentItem.plot;
+        text: currentItem.plot
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
     }
     Label {
         width: parent.width
         visible: currentItem.description.length > 0
-        text: currentItem.description;
+        text: currentItem.description
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
     }
 }

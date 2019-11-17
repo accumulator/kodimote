@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Dialog {
@@ -34,7 +35,7 @@ Dialog {
         id: mediaSelection
 
         header: DialogHeader {
-            cancelText: mediaSelectionDialog.supportsOff ? qsTr("None") : undefined;
+            cancelText: mediaSelectionDialog.supportsOff ? qsTr("None") : undefined
         }
 
         anchors.fill: parent
@@ -45,7 +46,7 @@ Dialog {
             highlighted: down || index === mediaSelectionDialog.currentIndex
 
             onClicked: {
-                mediaSelectionDialog.currentIndex = index;
+                mediaSelectionDialog.currentIndex = index
             }
 
             Label {

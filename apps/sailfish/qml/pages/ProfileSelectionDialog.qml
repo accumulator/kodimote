@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014-2015 Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import harbour.kodimote 1.0
 
@@ -37,7 +38,7 @@ Dialog {
         target: listView.model
         onCurrentProfileIndexChanged: {
             if (listView.currentIndex === -1) {
-                listView.currentIndex = listView.model.currentProfileIndex;
+                listView.currentIndex = listView.model.currentProfileIndex
             }
         }
     }
@@ -53,22 +54,25 @@ Dialog {
     SilicaListView {
         id: listView
         anchors.fill: parent
-        model: kodi.profiles();
+        model: kodi.profiles()
         currentIndex: model.currentProfileIndex
 
         header: DialogHeader {
             acceptText: qsTr("Select user")
         }
 
-        VerticalScrollDecorator {}
+        VerticalScrollDecorator {
+        }
 
         delegate: ListItem {
             id: item
             property bool active: listView.currentIndex === index
-            property bool mustUnlock: lockMode === KodiModel.LockModeNumeric || lockMode === KodiModel.LockModeAlphaNumeric;
+            property bool mustUnlock: lockMode === KodiModel.LockModeNumeric
+                                      || lockMode === KodiModel.LockModeAlphaNumeric
 
             width: listView.width
-            height: active && mustUnlock ? Theme.itemSizeExtraLarge : Theme.itemSizeLarge
+            height: active
+                    && mustUnlock ? Theme.itemSizeExtraLarge : Theme.itemSizeLarge
             contentHeight: height
 
             highlighted: down || active
@@ -80,10 +84,12 @@ Dialog {
             onActiveChanged: {
                 if (active) {
                     if (mustUnlock) {
-                        lockCode.forceActiveFocus();
-                        dialog.canAccept = Qt.binding(function() { return lockCode.text.length > 0; });
+                        lockCode.forceActiveFocus()
+                        dialog.canAccept = Qt.binding(function () {
+                            return lockCode.text.length > 0
+                        })
                     } else {
-                        dialog.canAccept = true;
+                        dialog.canAccept = true
                     }
                 }
             }
@@ -130,9 +136,11 @@ Dialog {
                         label: qsTr("Lock code")
                         placeholderText: qsTr("Lock code")
                         echoMode: TextInput.Password
-                        inputMethodHints: (lockMode === KodiModel.LockModeNumeric ? Qt.ImhDigitsOnly : 0) | Qt.ImhSensitiveData | Qt.ImhNoPredictiveText
+                        inputMethodHints: (lockMode
+                                           === KodiModel.LockModeNumeric ? Qt.ImhDigitsOnly : 0)
+                                          | Qt.ImhSensitiveData | Qt.ImhNoPredictiveText
                         onTextChanged: {
-                            dialog.lockCode = text;
+                            dialog.lockCode = text
                         }
 
                         EnterKey.enabled: text.length > 0

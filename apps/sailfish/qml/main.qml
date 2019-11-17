@@ -1,3 +1,4 @@
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -19,30 +20,32 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import "pages"
 import "components"
 import "cover"
 
-ApplicationWindow
-{
+ApplicationWindow {
     id: appWindow
 
     property string lastConnectedHostName
     property bool bigScreen: Screen.sizeCategory === Screen.Large
-                               || Screen.sizeCategory === Screen.ExtraLarge
+                             || Screen.sizeCategory === Screen.ExtraLarge
     property bool largeScreen: Screen.width > 1080
     property bool mediumScreen: (Screen.width > 720 && Screen.width <= 1080)
-    property bool smallScreen: (Screen.width  >= 720 && Screen.width < 1080)
-    property bool smallestScreen: Screen.width  < 720
+    property bool smallScreen: (Screen.width >= 720 && Screen.width < 1080)
+    property bool smallestScreen: Screen.width < 720
     property int sizeRatio: smallestScreen ? 1 : smallScreen ? 1.5 : 2
-    property int orientationSetting: (Orientation.Portrait | Orientation.Landscape | Orientation.LandscapeInverted)
+    property int orientationSetting: (Orientation.Portrait | Orientation.Landscape
+                                      | Orientation.LandscapeInverted)
     _defaultPageOrientations: (Orientation.Portrait | Orientation.Landscape
-                                     | Orientation.LandscapeInverted)
+                               | Orientation.LandscapeInverted)
     property bool isLightTheme: {
-        if (Theme.colorScheme === Theme.LightOnDark) return false
-        else return true
+        if (Theme.colorScheme === Theme.LightOnDark)
+            return false
+        else
+            return true
     }
 
     cover: CoverPage {
@@ -59,7 +62,7 @@ ApplicationWindow
         property var psfunc
 
         function submit(func) {
-            psfunc = func;
+            psfunc = func
             pswTimer.start()
         }
 
@@ -70,18 +73,21 @@ ApplicationWindow
             running: false
             onTriggered: {
                 if (appWindow.pageStack.busy) {
-                    return;
+                    return
                 }
 
-                stop();
-                console.info(psw.psfunc);
-                psw.psfunc();
+                stop()
+                console.info(psw.psfunc)
+                psw.psfunc()
             }
         }
     }
 
     function showConnect(operationType) {
-        psw.submit(function() { return pageStack.push("pages/ConnectionDialog.qml", undefined, operationType); });
+        psw.submit(function () {
+            return pageStack.push("pages/ConnectionDialog.qml", undefined,
+                                  operationType)
+        })
     }
 
     Component {
@@ -124,11 +130,11 @@ ApplicationWindow
     function showAuthenticate(hostname) {
         var component = Qt.createComponent("pages/AuthenticationDialog.qml")
         if (component.status == Component.Ready) {
-            var authDialog = component.createObject(initialPage);
-            authDialog.hostname = hostname;
-            authDialog.open();
+            var authDialog = component.createObject(initialPage)
+            authDialog.hostname = hostname
+            authDialog.open()
         } else {
-            console.log("Error loading component:", component.errorString());
+            console.log("Error loading component:", component.errorString())
         }
     }
 
@@ -140,10 +146,10 @@ ApplicationWindow
         running: false
         onTriggered: {
             if (pageStack.busy) {
-                return;
+                return
             }
 
-            stop();
+            stop()
             showAuthenticate(hostname)
         }
         property string hostname
@@ -153,10 +159,10 @@ ApplicationWindow
         target: kodi
         onAuthenticationRequired: {
             if (pageStack.busy) {
-                delayedAuthenticate.hostname = hostname;
-                delayedAuthenticate.start();
+                delayedAuthenticate.hostname = hostname
+                delayedAuthenticate.start()
             } else {
-                showAuthenticate(hostname);
+                showAuthenticate(hostname)
             }
         }
     }
@@ -168,8 +174,8 @@ ApplicationWindow
             readonly property string value: Qt.formatDate(date, "dd/MM/yyyy")
 
             onInitialValueChanged: {
-                var splitted = initialValue.split("/");
-                date = new Date(splitted[2], splitted[1], splitted[0]);
+                var splitted = initialValue.split("/")
+                date = new Date(splitted[2], splitted[1], splitted[0])
             }
         }
     }
@@ -181,9 +187,9 @@ ApplicationWindow
             readonly property string value: Qt.formatTime(time, "hh:mm")
 
             onInitialValueChanged: {
-                var splitted = initialValue.split(":");
-                hour = splitted[0];
-                minute = splitted[1];
+                var splitted = initialValue.split(":")
+                hour = splitted[0]
+                minute = splitted[1]
             }
         }
     }
@@ -224,17 +230,17 @@ ApplicationWindow
         onInputRequested: {
             if (pageStack.busy) {
                 delayedInputDialog.title = title
-                delayedInputDialog.type = type;
-                delayedInputDialog.value = value;
-                delayedInputDialog.start();
+                delayedInputDialog.type = type
+                delayedInputDialog.value = value
+                delayedInputDialog.start()
             } else {
-                showInputDialog(title, type, value);
+                showInputDialog(title, type, value)
             }
         }
         onInputFinished: {
             if (appWindow.inputDialog) {
-                appWindow.inputDialog.close();
-                appWindow.inputDialog = null;
+                appWindow.inputDialog.close()
+                appWindow.inputDialog = null
             }
         }
     }
@@ -246,11 +252,11 @@ ApplicationWindow
         running: false
         onTriggered: {
             if (pageStack.busy) {
-                return;
+                return
             }
 
-            stop();
-            showInputDialog(title, type, value);
+            stop()
+            showInputDialog(title, type, value)
         }
         property string title
         property string type
@@ -259,45 +265,46 @@ ApplicationWindow
 
     function showInputDialog(title, type, value) {
         if (type === "date") {
-            appWindow.inputDialog = datePickerComponent.createObject(appWindow);
+            appWindow.inputDialog = datePickerComponent.createObject(appWindow)
         } else if (type === "time") {
-            appWindow.inputDialog = timePickerComponent.createObject(appWindow);
+            appWindow.inputDialog = timePickerComponent.createObject(appWindow)
         } else {
-            appWindow.inputDialog = inputComponent.createObject(appWindow);
-            appWindow.inputDialog.title = title;
+            appWindow.inputDialog = inputComponent.createObject(appWindow)
+            appWindow.inputDialog.title = title
 
-            if (type === "number" || type === "numericpassword" || type === "seconds") {
-                appWindow.inputDialog.inputMethodHints = Qt.ImhDigitsOnly;
+            if (type === "number" || type === "numericpassword"
+                    || type === "seconds") {
+                appWindow.inputDialog.inputMethodHints = Qt.ImhDigitsOnly
             }
         }
 
-        appWindow.inputDialog.initialValue = value;
-        appWindow.inputDialog.accepted.connect(function() {
-            var value = appWindow.inputDialog.value;
+        appWindow.inputDialog.initialValue = value
+        appWindow.inputDialog.accepted.connect(function () {
+            var value = appWindow.inputDialog.value
             console.log("Sending text: " + value)
-            kodi.keys().sendText(value);
-            appWindow.inputDialog = null;
-        });
-        appWindow.inputDialog.rejected.connect(function() {
-            kodi.keys().previousMenu();
-            appWindow.inputDialog = null;
-        });
-        appWindow.inputDialog.open();
+            kodi.keys().sendText(value)
+            appWindow.inputDialog = null
+        })
+        appWindow.inputDialog.rejected.connect(function () {
+            kodi.keys().previousMenu()
+            appWindow.inputDialog = null
+        })
+        appWindow.inputDialog.open()
     }
     Component.onCompleted: {
         // This binds the setting for allowed orientations to the property which is used on all sub-pages
-        orientationSetting = Qt.binding(function() {
+        orientationSetting = Qt.binding(function () {
             switch (parseInt(settings.orientation)) {
-                case 0:
-                    return Orientation.Portrait
-                case 1:
-                    return Orientation.Landscape
-                case 2:
-                    return (Orientation.Portrait | Orientation.Landscape | Orientation.LandscapeInverted)
-                default:
-                    return Orientation.Portrait
+            case 0:
+                return Orientation.Portrait
+            case 1:
+                return Orientation.Landscape
+            case 2:
+                return (Orientation.Portrait | Orientation.Landscape
+                        | Orientation.LandscapeInverted)
+            default:
+                return Orientation.Portrait
             }
         })
     }
-
 }

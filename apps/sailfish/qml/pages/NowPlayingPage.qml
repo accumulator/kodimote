@@ -20,7 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import harbour.kodimote 1.0
 import "../components/"
@@ -214,10 +214,11 @@ Page {
                         background: NowPlayingDetails {
                             id: itemDetails_landscape
                             width: parent.width / 2
+                            x: Theme.paddingMedium
                         }
 
                         height: Math.max(playerColumn_landscape.height,
-                                         backgroundHeight)
+                                         backgroundHeight) - 30
                         width: parent.width
 
                         Column {
@@ -363,7 +364,7 @@ Page {
                 id: drawer
                 visible: isPortrait
                 backgroundSize: itemDetails.height
-                property real backgroundHeight: itemDetails.height * drawer._progress
+                property real backgroundHeight: itemDetails.height * drawer._progress + 30
 
                 background: NowPlayingDetails {
                     id: itemDetails
@@ -371,7 +372,7 @@ Page {
                     width: parent.width
                 }
 
-                height: Math.max(playerColumn.height, backgroundHeight)
+                height: Math.max(playerColumn.height, backgroundHeight) - 30
                 width: parent.width
 
                 Column {

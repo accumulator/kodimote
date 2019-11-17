@@ -9018,7 +9018,9 @@
           "displaylyricist",
           "userrating",
           "sortartist",
-          "musicbrainzreleasegroupid"
+          "musicbrainzreleasegroupid",
+          "mediapath",
+          "dynpath"
         ],
         "type":"string"
       }
@@ -9886,6 +9888,12 @@
           "default":0,
           "type":"integer"
         },
+        "dynpath":{
+          "default":"",
+          "description":"An experimental property for debug purposes,
+           often same as mediapath but when different gives the actual file playing that should also be in file property",
+          "type":"string"
+        },
         "episode":{
           "default":0,
           "type":"integer"
@@ -9908,6 +9916,11 @@
         },
         "lyrics":{
           "default":"",
+          "type":"string"
+        },
+        "mediapath":{
+          "default":"",
+          "description":"Media source path that identifies the item",
           "type":"string"
         },
         "mood":{
@@ -13419,6 +13432,6 @@
       "type":"object"
     }
   },
-  "version":"10.2.0"
+  "version":"10.3.0"
 }
 }

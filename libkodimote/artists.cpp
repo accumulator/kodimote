@@ -126,12 +126,36 @@ void Artists::detailsReceived(const QVariantMap &rsp)
     LibraryItem *item = qobject_cast<LibraryItem*>(m_list.at(row));
     QVariantMap details = rsp.value("result").toMap().value("artistdetails").toMap();
     item->setDescription(details.value("description").toString());
-    item->setInstrument(details.value("instrument").toString());
-    item->setStyle(details.value("style").toString());
-    item->setMood(details.value("mood").toString());
+    // item->setInstrument(details.value("instrument").toString());
+    QVariantList instrument_list = details.value("instrument").toList();
+    for (QVariantList::iterator j = instrument_list.begin(); j != instrument_list.end(); j++)
+    {
+        item->setInstrument((*j).toString());
+        break;
+    }
+    // item->setStyle(details.value("style").toString());
+    QVariantList style_list = details.value("style").toList();
+    for (QVariantList::iterator j = style_list.begin(); j != style_list.end(); j++)
+    {
+        item->setStyle((*j).toString());
+        break;
+    }
+    QVariantList mood_list = details.value("mood").toList();
+    for (QVariantList::iterator j = mood_list.begin(); j != mood_list.end(); j++)
+    {
+        item->setMood((*j).toString());
+        break;
+    }
+    // item->setMood(details.value("mood").toString());
     item->setBorn(details.value("born").toString());
     item->setFormed(details.value("formed").toString());
-    item->setGenre(details.value("genre").toString());
+    QVariantList genre_list = details.value("genre").toList();
+    for (QVariantList::iterator j = genre_list.begin(); j != genre_list.end(); j++)
+    {
+        item->setGenre((*j).toString());
+        break;
+    }
+    // item->setGenre(details.value("genre").toString());
     item->setDied(details.value("died").toString());
     item->setDisbanded(details.value("disbanded").toString());
     emit dataChanged(index(row, 0, QModelIndex()), index(row, 0, QModelIndex()));

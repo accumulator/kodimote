@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Item {
@@ -64,13 +65,14 @@ Item {
                 width: parent.width - (Theme.paddingLarge * 2)
                 anchors.horizontalCenter: parent.horizontalCenter
                 wrapMode: Text.WordWrap
-                text: qsTr("Please enable the following options in the Services settings of Kodi:") + "\n- "
-                      + qsTr("Allow control of Kodi via HTTP") + "\n- "
-                      + qsTr("Allow programs on other systems to control Kodi")
+                text: qsTr("Please enable the following options in the Services settings of Kodi:")
+                      + "\n- " + qsTr(
+                          "Allow control of Kodi via HTTP") + "\n- " + qsTr(
+                          "Allow programs on other systems to control Kodi")
                 color: Theme.highlightColor
             }
 
-            Button{
+            Button {
                 text: qsTr("Connect")
                 anchors.horizontalCenter: parent.horizontalCenter
                 onClicked: noConnection.showConnect()
@@ -79,10 +81,11 @@ Item {
             Button {
                 text: qsTr("Wake host")
                 anchors.horizontalCenter: parent.horizontalCenter
-                visible: kodi.connecting && kodi.connectedHost && kodi.connectedHost.hwAddr
+                visible: kodi.connecting && kodi.connectedHost
+                         && kodi.connectedHost.hwAddr
                 enabled: kodi.connectedHost.hwAddr
                 onClicked: {
-                    kodi.connectedHost.wakeup();
+                    kodi.connectedHost.wakeup()
                 }
             }
         }

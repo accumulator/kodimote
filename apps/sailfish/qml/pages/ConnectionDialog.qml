@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import harbour.kodimote 1.0
 
@@ -29,7 +30,7 @@ Dialog {
     canAccept: hostList.currentIndex >= 0
 
     onAccepted: {
-        kodi.hostModel().host(hostList.currentIndex).connect();
+        kodi.hostModel().host(hostList.currentIndex).connect()
     }
 
     Component {
@@ -40,14 +41,17 @@ Dialog {
     }
 
     function addHost() {
-        var host = hostComponent.createObject();
-        var hostPage = pageStack.push(Qt.resolvedUrl("AddHostDialog.qml"), { host: host, title: qsTr("Add") });
-        hostPage.onRejected.connect(function() {
-            host.destroy();
-        });
-        hostPage.onAccepted.connect(function() {
-            kodi.hostModel().addHost(host);
-        });
+        var host = hostComponent.createObject()
+        var hostPage = pageStack.push(Qt.resolvedUrl("AddHostDialog.qml"), {
+                                          "host": host,
+                                          "title": qsTr("Add")
+                                      })
+        hostPage.onRejected.connect(function () {
+            host.destroy()
+        })
+        hostPage.onAccepted.connect(function () {
+            kodi.hostModel().addHost(host)
+        })
     }
 
     SilicaListView {
@@ -87,12 +91,14 @@ Dialog {
                     width: parent.width
                     wrapMode: Text.WordWrap
                     color: Theme.highlightColor
-                    text: qsTr("Searching for Kodi hosts.") + "\n" + "\n"
-                          + qsTr("Please enable the following options in the Services settings of Kodi:") + "\n- "
-                          + qsTr("Allow control of Kodi via HTTP") + "\n- "
-                          + qsTr("Allow programs on other systems to control Kodi") + "\n- "
-                          + qsTr("Announce these services to other systems via Zeroconf") + "\n"
-                          + qsTr("If you don't use Zeroconf, add a host manually.");
+                    text: qsTr(
+                              "Searching for Kodi hosts.") + "\n" + "\n" + qsTr(
+                              "Please enable the following options in the Services settings of Kodi:") + "\n- "
+                          + qsTr("Allow control of Kodi via HTTP") + "\n- " + qsTr(
+                              "Allow programs on other systems to control Kodi") + "\n- "
+                          + qsTr("Announce these services to other systems via Zeroconf")
+                          + "\n" + qsTr(
+                              "If you don't use Zeroconf, add a host manually.")
                 }
             }
         }
@@ -116,11 +122,11 @@ Dialog {
             }
 
             function wakeupHost() {
-                kodi.hostModel().host(index).wakeup();
+                kodi.hostModel().host(index).wakeup()
             }
 
             function removeHost() {
-                kodi.hostModel().removeHost(index);
+                kodi.hostModel().removeHost(index)
             }
 
             Label {
@@ -142,21 +148,27 @@ Dialog {
                     MenuItem {
                         text: qsTr("Edit")
                         onClicked: {
-                            var host = kodi.hostModel().host(index);
-                            var hostPage = pageStack.push(Qt.resolvedUrl("AddHostDialog.qml"), { host: host, title: qsTr("Save") });
+                            var host = kodi.hostModel().host(index)
+                            var hostPage = pageStack.push(
+                                        Qt.resolvedUrl("AddHostDialog.qml"), {
+                                            "host": host,
+                                            "title": qsTr("Save")
+                                        })
                         }
                     }
                     MenuItem {
                         text: qsTr("Remove")
                         onClicked: {
-                            hostDelegate.remorseAction(qsTr("Removing %1").arg(hostname), hostDelegate.removeHost)
+                            hostDelegate.remorseAction(qsTr("Removing %1").arg(
+                                                           hostname),
+                                                       hostDelegate.removeHost)
                         }
                     }
                     MenuItem {
                         text: qsTr("Wake up")
                         visible: hwaddr.length > 0
                         onClicked: {
-                            hostDelegate.wakeupHost();
+                            hostDelegate.wakeupHost()
                         }
                     }
                 }

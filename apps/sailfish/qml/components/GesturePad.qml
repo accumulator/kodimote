@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import QtFeedback 5.0
 import harbour.kodimote 1.0
@@ -52,29 +53,29 @@ Item {
             switch (settings.introStep) {
             case Settings.IntroStepLeftRight:
                 leftArrows.item.animate()
-                rightArrows.item.animate();
-                break;
+                rightArrows.item.animate()
+                break
             case Settings.IntroStepUpDown:
                 upArrows.item.animate()
-                downArrows.item.animate();
-                break;
+                downArrows.item.animate()
+                break
             case Settings.IntroStepScroll:
-                downArrows.item.animate();
-                break;
+                downArrows.item.animate()
+                break
             case Settings.IntroStepColors:
             case Settings.IntroStepClick:
             case Settings.IntroStepExit:
-                animateAll();
-                break;
+                animateAll()
+                break
             }
         }
     }
 
     function animateAll() {
-        leftArrows.item.animate();
-        rightArrows.item.animate();
-        upArrows.item.animate();
-        downArrows.item.animate();
+        leftArrows.item.animate()
+        rightArrows.item.animate()
+        upArrows.item.animate()
+        downArrows.item.animate()
     }
 
     Component {
@@ -84,20 +85,20 @@ Item {
 
             function animate() {
                 if (!isRunning) {
-                    startAnimation();
+                    startAnimation()
                 } else {
-                    onceMore = true;
+                    onceMore = true
                 }
             }
 
-            signal startAnimation()
+            signal startAnimation
             property bool isRunning: false
             property bool onceMore: false
 
             onIsRunningChanged: {
                 if (!isRunning && onceMore) {
-                    onceMore = false;
-                    startAnimation();
+                    onceMore = false
+                    startAnimation()
                 }
             }
 
@@ -131,7 +132,7 @@ Item {
                     Connections {
                         target: arrowsRoot
                         onStartAnimation: {
-                            animation.start();
+                            animation.start()
                         }
                     }
 
@@ -139,20 +140,34 @@ Item {
                         id: animation
 
                         onStarted: {
-                            if (index === 0 ) {
-                                arrowsRoot.isRunning = true;
+                            if (index === 0) {
+                                arrowsRoot.isRunning = true
                             }
                         }
 
                         onStopped: {
-                            if (index === arrowRepeater.count - 1 ) {
-                                arrowsRoot.isRunning = false;
+                            if (index === arrowRepeater.count - 1) {
+                                arrowsRoot.isRunning = false
                             }
                         }
 
-                        PauseAnimation { duration: 50 * index }
-                        NumberAnimation { target: arrowImage; properties: "opacity"; from: 0.3; to: 1; duration: 150 }
-                        NumberAnimation { target: arrowImage; properties: "opacity"; from: 1; to: 0.3; duration: 150 }
+                        PauseAnimation {
+                            duration: 50 * index
+                        }
+                        NumberAnimation {
+                            target: arrowImage
+                            properties: "opacity"
+                            from: 0.3
+                            to: 1
+                            duration: 150
+                        }
+                        NumberAnimation {
+                            target: arrowImage
+                            properties: "opacity"
+                            from: 1
+                            to: 0.3
+                            duration: 150
+                        }
                     }
                 }
             }
@@ -213,25 +228,31 @@ Item {
         onPressed: {
             startx = mouse.x
             starty = mouse.y
-            scrollTimer.start();
+            scrollTimer.start()
         }
 
         onReleased: {
-            scrollTimer.stop();
+            scrollTimer.stop()
             if (scrollTimer.triggerCount == 0) {
-                doKeyPress(false);
+                doKeyPress(false)
             }
         }
 
         onPositionChanged: {
             if (scrollTimer.running) {
-                var dxAbs = Math.abs(mouseX - startx);
+                var dxAbs = Math.abs(mouseX - startx)
                 var dyAbs = Math.abs(mouseY - starty)
 
                 if (dxAbs > dyAbs) {
-                    scrollTimer.newSpeed = Math.min(100, Math.max(0, 100 * (dxAbs - minSwipeDistance) / (mouseArea.width - minSwipeDistance)));
+                    scrollTimer.newSpeed = Math.min(
+                                100, Math.max(
+                                    0, 100 * (dxAbs - minSwipeDistance)
+                                    / (mouseArea.width - minSwipeDistance)))
                 } else {
-                    scrollTimer.newSpeed = Math.min(100, Math.max(0, 100 * (dyAbs - minSwipeDistance) / (mouseArea.height - minSwipeDistance)));
+                    scrollTimer.newSpeed = Math.min(
+                                100, Math.max(
+                                    0, 100 * (dyAbs - minSwipeDistance)
+                                    / (mouseArea.height - minSwipeDistance)))
                 }
             }
         }
@@ -240,7 +261,7 @@ Item {
             id: scrollTimer
             running: false
             repeat: true
-            interval: maxInterval - ((maxInterval - minInterval) * speed / 100);
+            interval: maxInterval - ((maxInterval - minInterval) * speed / 100)
 
             property int minInterval: 50
             property int maxInterval: 500
@@ -255,24 +276,24 @@ Item {
 
             onRunningChanged: {
                 if (running) {
-                    triggerCount = 0;
+                    triggerCount = 0
                 }
             }
 
             onTriggered: {
-                triggerCount++;
-                if(newSpeed !== -1) {
-                    speed = newSpeed;
-                    newSpeed = -1;
+                triggerCount++
+                if (newSpeed !== -1) {
+                    speed = newSpeed
+                    newSpeed = -1
                 }
-                mouseArea.doKeyPress(true);
+                mouseArea.doKeyPress(true)
             }
         }
 
         function doKeyPress(repeated) {
-            var dx = mouseX - startx;
-            var dy = mouseY - starty;
-            var dxAbs = Math.abs(dx);
+            var dx = mouseX - startx
+            var dy = mouseY - starty
+            var dxAbs = Math.abs(dx)
             var dyAbs = Math.abs(dy)
 
             // Did we not move? => press enter
@@ -283,54 +304,56 @@ Item {
                 }
 
                 if (settings.hapticsEnabled) {
-                    rumbleEffectPress.start(1);
+                    rumbleEffectPress.start(1)
                 }
 
                 if (settings.introStep < Settings.IntroStepDone) {
-                    if (settings.introStep == Settings.IntroStepClick || settings.introStep == Settings.IntroStepColors) {
-                        settings.introStep++;
+                    if (settings.introStep == Settings.IntroStepClick
+                            || settings.introStep == Settings.IntroStepColors) {
+                        settings.introStep++
                     }
                     // If the user just clicked here during the colors step, let's skip the exit step
                     if (settings.introStep == Settings.IntroStepExit) {
-                        settings.introStep++;
+                        settings.introStep++
                     }
 
-                    return;
+                    return
                 }
 
-                keys.select();
-                animateAll();
-                return;
+                keys.select()
+                animateAll()
+                return
             }
 
             // Did we not move more than minSwipeDistance?
             if (dxAbs < minSwipeDistance && dyAbs < minSwipeDistance) {
-                if (dxAbs < (minSwipeDistance / 2) && dyAbs < (minSwipeDistance / 2)) {
+                if (dxAbs < (minSwipeDistance / 2)
+                        && dyAbs < (minSwipeDistance / 2)) {
                     // It is probably meant as a small touch of the keypad,
                     // so let's just treat it as such
-                    print("Moved only " + dx + "x" + dy + " pixels. But still activating gesture");
+                    print("Moved only " + dx + "x" + dy + " pixels. But still activating gesture")
                     if (settings.hapticsEnabled) {
-                        rumbleEffectPress.start(1);
+                        rumbleEffectPress.start(1)
                     }
-                    keys.select();
-                    animateAll();
+                    keys.select()
+                    animateAll()
                 } else {
-                    print("Only moved " + dx + "x" + dy + " pixels. Not activating gesture");
+                    print("Only moved " + dx + "x" + dy + " pixels. Not activating gesture")
                 }
-                return;
+                return
             }
 
             if (settings.hapticsEnabled) {
-                rumbleEffectSwipe.start(2);
+                rumbleEffectSwipe.start(2)
             }
 
             if (settings.introStep == Settings.IntroStepScroll && repeated) {
                 if (root.scrollCounter < 9) {
-                    root.scrollCounter++;
+                    root.scrollCounter++
                 } else {
-                    settings.introStep++;
+                    settings.introStep++
                 }
-                return;
+                return
             }
 
             // if horizontal delta is larger than twice the minimum distance,
@@ -339,33 +362,35 @@ Item {
             // just by touching the screen with more than the tip
             if (dxAbs > minSwipeDistance * 2 || dxAbs > dyAbs) {
                 if (settings.introStep < Settings.IntroStepDone) {
-                    if (settings.introStep == Settings.IntroStepLeftRight && !repeated) {
-                        settings.introStep++;
+                    if (settings.introStep == Settings.IntroStepLeftRight
+                            && !repeated) {
+                        settings.introStep++
                     }
-                    return;
+                    return
                 }
 
                 if (dx < 0) {
-                    leftArrows.item.animate();
-                    keys.left();
+                    leftArrows.item.animate()
+                    keys.left()
                 } else {
-                    rightArrows.item.animate();
-                    keys.right();
+                    rightArrows.item.animate()
+                    keys.right()
                 }
             } else {
                 if (settings.introStep < Settings.IntroStepDone) {
-                    if (settings.introStep == Settings.IntroStepUpDown && !repeated) {
-                        settings.introStep++;
+                    if (settings.introStep == Settings.IntroStepUpDown
+                            && !repeated) {
+                        settings.introStep++
                     }
-                    return;
+                    return
                 }
 
                 if (dy < 0) {
-                    upArrows.item.animate();
-                    keys.up();
+                    upArrows.item.animate()
+                    keys.up()
                 } else {
-                    downArrows.item.animate();
-                    keys.down();
+                    downArrows.item.animate()
+                    keys.down()
                 }
             }
         }

@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Dialog {
@@ -66,8 +67,9 @@ Dialog {
                     font.underline: true
                     color: Theme.highlightColor
                     MouseArea {
-                        anchors.fill : parent
-                        onClicked: Qt.openUrlExternally("mailto:michael_zanetti@gmx.net?subject=Kodimote...")
+                        anchors.fill: parent
+                        onClicked: Qt.openUrlExternally(
+                                       "mailto:michael_zanetti@gmx.net?subject=Kodimote...")
                     }
                 }
                 Label {
@@ -77,8 +79,9 @@ Dialog {
                     font.underline: true
                     color: Theme.highlightColor
                     MouseArea {
-                        anchors.fill : parent
-                        onClicked: Qt.openUrlExternally("mailto:robert.meijers@gmail.com?subject=Kodimote...")
+                        anchors.fill: parent
+                        onClicked: Qt.openUrlExternally(
+                                       "mailto:robert.meijers@gmail.com?subject=Kodimote...")
                     }
                 }
             }
@@ -95,8 +98,9 @@ Dialog {
                     width: (parent.width / 2) * 0.95
                     color: Theme.highlightColor
                     MouseArea {
-                        anchors.fill : parent
-                        onClicked: Qt.openUrlExternally("mailto:sander@outrightsolutions.nl?subject=Kodimote...")
+                        anchors.fill: parent
+                        onClicked: Qt.openUrlExternally(
+                                       "mailto:sander@outrightsolutions.nl?subject=Kodimote...")
                     }
                 }
                 Label {
@@ -114,18 +118,16 @@ Dialog {
                 x: Theme.paddingSmall
                 font.pixelSize: Theme.fontSizeSmall * 0.75
                 color: Theme.secondaryColor
-                text: "This program is free software: you can redistribute it and/or modify " +
-                "it under the terms of the GNU General Public License as published by " +
-                "the Free Software Foundation, either version 3 of the License, or " +
-                "(at your option) any later version.\n\n" +
-
-                "This program is distributed in the hope that it will be useful, " +
-                "but WITHOUT ANY WARRANTY; without even the implied warranty of " +
-                "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the " +
-                "GNU General Public License for more details.\n\n" +
-
-                "You should have received a copy of the GNU General Public License " +
-                "along with this program.  If not, see http://www.gnu.org/licenses/."
+                text: "This program is free software: you can redistribute it and/or modify "
+                      + "it under the terms of the GNU General Public License as published by "
+                      + "the Free Software Foundation, either version 3 of the License, or "
+                      + "(at your option) any later version.\n\n" +
+                      "This program is distributed in the hope that it will be useful, "
+                      + "but WITHOUT ANY WARRANTY; without even the implied warranty of "
+                      + "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the "
+                      + "GNU General Public License for more details.\n\n" +
+                      "You should have received a copy of the GNU General Public License "
+                      + "along with this program.  If not, see http://www.gnu.org/licenses/."
             }
 
             Row {
@@ -140,13 +142,15 @@ Dialog {
                     anchors.bottom: parent.bottom
                     width: (parent.width / 2) * 0.95
                     text: qsTr("Donate")
-                    onClicked: Qt.openUrlExternally("https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CWFYRZH8XNYF2")
+                    onClicked: Qt.openUrlExternally(
+                                   "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CWFYRZH8XNYF2")
                 }
                 Button {
                     anchors.bottom: parent.bottom
                     width: (parent.width / 2) * 0.95
                     text: qsTr("Flattr")
-                    onClicked: Qt.openUrlExternally("http://flattr.com/thing/412274/Kodimote")
+                    onClicked: Qt.openUrlExternally(
+                                   "http://flattr.com/thing/412274/Kodimote")
                 }
             }
         }

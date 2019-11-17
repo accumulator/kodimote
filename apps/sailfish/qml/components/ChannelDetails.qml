@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Item {
@@ -60,19 +61,23 @@ Item {
                     color: Theme.secondaryColor
                     font.pixelSize: Theme.fontSizeSmall
                     truncationMode: TruncationMode.Fade
-                    text: Qt.formatDate(startTime) + "  " + Qt.formatTime(startTime) + " - " + Qt.formatTime(endTime)
+                    text: Qt.formatDate(startTime) + "  " + Qt.formatTime(
+                              startTime) + " - " + Qt.formatTime(endTime)
                 }
             }
 
             Rectangle {
-                anchors { right: parent.right; verticalCenter: parent.verticalCenter; rightMargin: Theme.paddingSmall }
+                anchors {
+                    right: parent.right
+                    verticalCenter: parent.verticalCenter
+                    rightMargin: Theme.paddingSmall
+                }
                 color: "red"
                 height: 15
                 width: height
                 radius: height * 0.5
                 visible: hasTimer
             }
-
 
             ProgressBar {
                 width: parent.width
@@ -84,10 +89,14 @@ Item {
                 leftMargin: Theme.paddingLarge
                 rightMargin: Theme.paddingLarge
                 height: 20
-                anchors { verticalCenter: parent.bottom; verticalCenterOffset: 20 }
+                anchors {
+                    verticalCenter: parent.bottom
+                    verticalCenterOffset: 20
+                }
             }
         }
 
-        VerticalScrollDecorator { }
+        VerticalScrollDecorator {
+        }
     }
 }

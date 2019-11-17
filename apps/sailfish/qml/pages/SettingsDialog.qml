@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,15 +20,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Dialog {
     allowedOrientations: appWindow.orientationSetting
     Component.onCompleted: {
-        console.log("settings: " + settings);
-        console.log("use thumbnail: " + settings.useThumbnails);
+        console.log("settings: " + settings)
+        console.log("use thumbnail: " + settings.useThumbnails)
     }
 
     SilicaFlickable {
@@ -42,7 +43,13 @@ Dialog {
 
         Column {
             id: settingsCol
-            anchors {left: parent.left; right: parent.right; top: header.bottom; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+            anchors {
+                left: parent.left
+                right: parent.right
+                top: header.bottom
+                leftMargin: Theme.paddingLarge
+                rightMargin: Theme.paddingLarge
+            }
             spacing: Theme.paddingSmall
 
             SectionHeader {
@@ -72,6 +79,7 @@ Dialog {
                 text: qsTr("Use Thumbnails")
                 checked: settings.useThumbnails
             }
+
             /*TextSwitch {
                 id: keepDisplayLit
                 text: qsTr("Keep display on when charging")
