@@ -4,13 +4,13 @@
 <context>
     <name>AboutDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="142"/>
+        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="144"/>
         <location filename="../apps/generic/ui/aboutdialog.cpp" line="73"/>
         <source>Donate</source>
         <translation>捐赠</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="148"/>
+        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="151"/>
         <location filename="../apps/generic/ui/aboutdialog.cpp" line="77"/>
         <source>Flattr</source>
         <translation>Flattr</translation>
@@ -22,7 +22,7 @@
         <translation>关闭</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="43"/>
+        <location filename="../apps/sailfish/qml/pages/AboutDialog.qml" line="44"/>
         <location filename="../apps/generic/ui/aboutdialog.cpp" line="36"/>
         <source>About</source>
         <translation>关于</translation>
@@ -41,68 +41,68 @@
 <context>
     <name>AddHostDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="51"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="52"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="53"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="54"/>
         <source>Name</source>
         <translation>名称</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="87"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="88"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="90"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="91"/>
         <source>Hostname or IP Address</source>
         <translation>主机名或 IP 地址</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="100"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="101"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="103"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="104"/>
         <source>Port</source>
         <translation>端口</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="113"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="114"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="116"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="117"/>
         <source>Mac Address</source>
         <translation>Mac地址</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="122"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="125"/>
         <source>Volume</source>
         <translation>音量</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="130"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="133"/>
         <source>Control type</source>
         <translation>控制类型</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="134"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="137"/>
         <source>Custom stepping</source>
         <translation>自定义音量步长</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="137"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="140"/>
         <source>Up or down</source>
         <translation>调高或调低</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="140"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="143"/>
         <source>Custom script</source>
         <translation>自定义脚本</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="152"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="155"/>
         <source>Stepping</source>
         <translation>音量步长</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="165"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="166"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="168"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="169"/>
         <source>Up command</source>
         <translation>调高命令</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="175"/>
-        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="176"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="178"/>
+        <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="179"/>
         <source>Down command</source>
         <translation>调低命令</translation>
     </message>
@@ -110,7 +110,7 @@
 <context>
     <name>Albums</name>
     <message>
-        <location filename="../libkodimote/albums.cpp" line="196"/>
+        <location filename="../libkodimote/albums.cpp" line="203"/>
         <source>Albums</source>
         <translation>专辑</translation>
     </message>
@@ -118,7 +118,7 @@
 <context>
     <name>Artists</name>
     <message>
-        <location filename="../libkodimote/artists.cpp" line="173"/>
+        <location filename="../libkodimote/artists.cpp" line="197"/>
         <source>Artists</source>
         <translation>艺人</translation>
     </message>
@@ -219,25 +219,25 @@
 <context>
     <name>AuthenticationDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="33"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="34"/>
         <source>Authenticate</source>
-        <translation授权验证</translation>
+        <translation>授权验证</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="48"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="49"/>
         <location filename="../apps/generic/ui/authenticationdialog.cpp" line="47"/>
         <source>Kodi on %1 requires authentication:</source>
         <translation>%1 kodi 需要授权验证:</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="57"/>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="58"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="59"/>
         <source>Username</source>
         <translation>用户名</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="68"/>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="69"/>
+        <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="70"/>
         <source>Password</source>
         <translation>密码</translation>
     </message>
@@ -301,33 +301,33 @@
 <context>
     <name>BrowserPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="83"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="84"/>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="573"/>
         <source>Home</source>
-        <translation主页></translation>
+        <translation>主页&gt;</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="90"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="92"/>
         <source>Sort (asc)</source>
         <translation>类型（asc）</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="90"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="92"/>
         <source>Sort (desc)</source>
         <translation>类型（desc）</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="97"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="101"/>
         <source>Search</source>
         <translation>搜索</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="240"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="262"/>
         <source>Play</source>
         <translation>播放</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="244"/>
+        <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="266"/>
         <source>Add to playlist</source>
         <translation>添加到播放列表</translation>
     </message>
@@ -445,77 +445,77 @@
 <context>
     <name>ConnectionDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="44"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="47"/>
         <source>Add</source>
         <translation>添加</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="62"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="66"/>
         <source>Connect</source>
         <translation>连接</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="63"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="67"/>
         <source>Cancel</source>
         <translation>取消</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="90"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="94"/>
         <source>Searching for Kodi hosts.</source>
         <translation>搜索 Kodi主机</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="91"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="95"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
         <translation>请在 Kodi服务设置中开启下列选项：</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="92"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="97"/>
         <source>Allow control of Kodi via HTTP</source>
         <translation>允许通过 HTTP 连接到 Kodi</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="93"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="97"/>
         <source>Allow programs on other systems to control Kodi</source>
         <translation>允许其它系统程序控制 Kodi</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="94"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="99"/>
         <source>Announce these services to other systems via Zeroconf</source>
         <translation>通过 Zeroconf协议发布这些服务</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="95"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="100"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
         <translation>如果你使用的不是 Zeroconf ，请手动添加主机。</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="102"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="108"/>
         <source>Add host</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="143"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="149"/>
         <source>Edit</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="146"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="155"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="150"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="160"/>
         <source>Remove</source>
         <translation>移除</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="152"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="162"/>
         <source>Removing %1</source>
         <translation>正在移除 %1</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="156"/>
+        <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="168"/>
         <source>Wake up</source>
         <translation>唤醒</translation>
     </message>
@@ -606,12 +606,12 @@
 <context>
     <name>ControlsMenuItem</name>
     <message>
-        <location filename="../apps/sailfish/qml/components/ControlsMenuItem.qml" line="27"/>
+        <location filename="../apps/sailfish/qml/components/ControlsMenuItem.qml" line="28"/>
         <source>Hide controls</source>
         <translation>隐藏控件</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ControlsMenuItem.qml" line="27"/>
+        <location filename="../apps/sailfish/qml/components/ControlsMenuItem.qml" line="28"/>
         <source>Show controls</source>
         <translation>显示控件</translation>
     </message>
@@ -619,17 +619,17 @@
 <context>
     <name>CoverPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="206"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="215"/>
         <source>Kodi on</source>
         <translation>Kodi 开启</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="223"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="232"/>
         <source>Kodimote</source>
         <translation>Kodimote</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="224"/>
+        <location filename="../apps/sailfish/qml/cover/CoverPage.qml" line="232"/>
         <source>Disconnected</source>
         <translation>已断开</translation>
     </message>
@@ -912,14 +912,14 @@
     <message>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="249"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="273"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="49"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="50"/>
         <source>Play</source>
         <translation>播放</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="253"/>
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="277"/>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="45"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="46"/>
         <source>Add to playlist</source>
         <translation>添加到播放列表</translation>
     </message>
@@ -935,107 +935,107 @@
         <translation>标题：</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="81"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="85"/>
         <source>Rating</source>
         <translation>等级</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="107"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="113"/>
         <source>Title</source>
         <translation>标题</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="113"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="119"/>
         <source>Season</source>
         <translation>季</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="119"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="125"/>
         <source>Episode</source>
         <translation>集</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="124"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="130"/>
         <source>First aired</source>
         <translation>首播</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="129"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="135"/>
         <source>Genre</source>
         <translation>类型</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="134"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="140"/>
         <source>Year</source>
         <translation>年代</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="139"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="145"/>
         <source>Director</source>
         <translation>导演</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="144"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="150"/>
         <source>Tagline</source>
         <translation>标语</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="149"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="155"/>
         <source>MPAA</source>
         <translation>分级</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="154"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="160"/>
         <source>Instrument</source>
         <translation>道具</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="159"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="165"/>
         <source>Style</source>
         <translation>风格</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="164"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="170"/>
         <source>Mood</source>
         <translation>风格</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="169"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="175"/>
         <source>Born</source>
         <translation>出生</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="174"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="180"/>
         <source>Formed</source>
         <translation>体裁</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="179"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="185"/>
         <source>Died</source>
         <translation>逝于</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="184"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="190"/>
         <source>Disbanded</source>
         <translation>解散</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="189"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="195"/>
         <source>Duration</source>
         <translation>片长</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="194"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="200"/>
         <source>Comment</source>
         <translation>评论</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="200"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="206"/>
         <source>Playcount</source>
         <translation>播放次数</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="205"/>
+        <location filename="../apps/sailfish/qml/components/ItemDetails.qml" line="211"/>
         <source>Cast</source>
         <translation>演员表</translation>
     </message>
@@ -1188,52 +1188,52 @@
 <context>
     <name>KodiPage</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="35"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="36"/>
         <source>Change connection...</source>
         <translation>正在更改连接……</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="42"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="43"/>
         <source>Settings</source>
         <translation>设置</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="49"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="50"/>
         <source>About</source>
         <translation>关于</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="57"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="58"/>
         <source>Kodi on %1</source>
-        <translation>Kodi ％1</translation>
+        <translation>Kodi %1</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="148"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="174"/>
         <source>Change user</source>
         <translation>更改用户</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="151"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="177"/>
         <source>Quit</source>
         <translation>退出</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="154"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="180"/>
         <source>Shutdown</source>
         <translation>关机</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="157"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="183"/>
         <source>Reboot</source>
         <translation>重启</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="160"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="186"/>
         <source>Suspend</source>
         <translation>暂停</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="163"/>
+        <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="189"/>
         <source>Hibernate</source>
         <translation>休眠</translation>
     </message>
@@ -1290,21 +1290,21 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="91"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="272"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="307"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="70"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="94"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="275"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="310"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="73"/>
         <source>Videos</source>
         <translation>视频</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="97"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="278"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="313"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="76"/>
         <source>Pictures</source>
         <translation>图片</translation>
@@ -1336,25 +1336,25 @@
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="293"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="182"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="216"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="268"/>
         <source>Rescan library</source>
         <translation>重新扫描库</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="309"/>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="190"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="224"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="269"/>
         <source>Clean library</source>
         <translation>清除资料库</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="97"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="111"/>
         <source>Browse %1</source>
-        <translation>浏览 ％1</translation>
+        <translation>浏览 %1</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="281"/>
+        <location filename="../apps/sailfish/qml/pages/MainPage.qml" line="316"/>
         <location filename="../apps/ubuntu/qml/MainPage.qml" line="79"/>
         <source>Live TV</source>
         <translation>电视直播</translation>
@@ -1416,7 +1416,7 @@
 <context>
     <name>MediaSelectionDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/MediaSelectionDialog.qml" line="37"/>
+        <location filename="../apps/sailfish/qml/pages/MediaSelectionDialog.qml" line="38"/>
         <source>None</source>
         <translation>无</translation>
     </message>
@@ -1486,27 +1486,27 @@
 <context>
     <name>NoConnection</name>
     <message>
-        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="67"/>
+        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="68"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
         <translation>请在 Kodi 服务设置以启用下列选项。</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="68"/>
+        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="69"/>
         <source>Allow control of Kodi via HTTP</source>
         <translation>允许通过 HTTP控制 Kodi 。</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="69"/>
+        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="70"/>
         <source>Allow programs on other systems to control Kodi</source>
         <translation>允许其它系统程序控制 Kodi</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="74"/>
+        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="76"/>
         <source>Connect</source>
         <translation>连接</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="80"/>
+        <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="82"/>
         <source>Wake host</source>
         <translation>唤醒主机</translation>
     </message>
@@ -1645,87 +1645,87 @@
         <translation>演员：</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="31"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="32"/>
         <source>First aired</source>
         <translation>首播</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="36"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="37"/>
         <source>Genre</source>
         <translation>类型</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="41"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="42"/>
         <source>Year</source>
         <translation>年代</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="46"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="47"/>
         <source>Director</source>
         <translation>导演</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="51"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="52"/>
         <source>Tagline</source>
         <translation>标语</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="56"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="57"/>
         <source>MPAA</source>
         <translation>MPAA</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="61"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="62"/>
         <source>Instrument</source>
         <translation>道具</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="66"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="67"/>
         <source>Style</source>
-        <translation风格</translation>
+        <translation>风格</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="71"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="72"/>
         <source>Mood</source>
         <translation>氛围</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="76"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="77"/>
         <source>Born</source>
         <translation>出生</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="81"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="82"/>
         <source>Formed</source>
         <translation>体裁</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="86"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="87"/>
         <source>Died</source>
         <translation>逝于</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="91"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="92"/>
         <source>Disbanded</source>
         <translation>解散</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="96"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="97"/>
         <source>Duration</source>
         <translation>片长</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="101"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="102"/>
         <source>Comment</source>
         <translation>评论</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="106"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="107"/>
         <source>Playcount</source>
         <translation>播放次数</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="111"/>
+        <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="112"/>
         <source>Cast</source>
         <translation>全体演员</translation>
     </message>
@@ -1752,7 +1752,7 @@
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="199"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="353"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="354"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Season:</source>
         <translation>季：</translation>
@@ -1760,7 +1760,7 @@
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingPage.qml" line="298"/>
         <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="205"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="359"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="360"/>
         <location filename="../apps/ubuntu/qml/NowPlayingPage.qml" line="243"/>
         <source>Episode:</source>
         <translation>插曲：</translation>
@@ -1804,8 +1804,8 @@
         <translation>正在播放</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="234"/>
-        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="388"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="235"/>
+        <location filename="../apps/sailfish/qml/pages/NowPlayingPage.qml" line="389"/>
         <source>ends at </source>
         <translation>结束</translation>
     </message>
@@ -1875,30 +1875,30 @@
     <name>PlaylistPage</name>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="157"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="94"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="99"/>
         <source>Play</source>
         <translation>播放</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="163"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="100"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="105"/>
         <source>Remove from playlist</source>
         <translation>从播放列表里删除</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="169"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="58"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="61"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="63"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="66"/>
         <source>Clear playlist</source>
         <translation>清除播放列表</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="52"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="57"/>
         <source>Play YouTube URL</source>
         <translation>播放 YouTube URL</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="79"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="84"/>
         <source>Current Playlist</source>
         <translation>当前列表</translation>
     </message>
@@ -1967,14 +1967,14 @@
 <context>
     <name>ProfileSelectionDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="60"/>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="61"/>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="10"/>
         <source>Select user</source>
         <translation>选择用户</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="130"/>
-        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="131"/>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="136"/>
+        <location filename="../apps/sailfish/qml/pages/ProfileSelectionDialog.qml" line="137"/>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="61"/>
         <location filename="../apps/ubuntu/qml/components/ProfileSelectionDialog.qml" line="66"/>
         <source>Lock code</source>
@@ -1999,7 +1999,7 @@
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="32"/>
         <source>TV Channels</source>
-        <translation电视频道></translation>
+        <translation>电视频道&gt;</translation>
     </message>
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="37"/>
@@ -2072,12 +2072,12 @@
 <context>
     <name>ResumeDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="31"/>
+        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="32"/>
         <source>Resume</source>
         <translation>恢复</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="37"/>
+        <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="44"/>
         <source>Do you want to resume playback at %1?</source>
         <translation>是否继续播放 %1?</translation>
     </message>
@@ -2103,109 +2103,109 @@
 <context>
     <name>SettingsDialog</name>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="39"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="40"/>
         <source>Save</source>
         <translation>保存</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="49"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="56"/>
         <source>Look and feel</source>
         <translation>界面与体验</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="54"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="61"/>
         <source>Orientation:</source>
         <translation>显示方向：</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="55"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="62"/>
         <source>Sets the preferred screen orientation.</source>
         <translation>设置屏幕显示方向。</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="59"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="66"/>
         <source>Portrait</source>
         <translation>竖屏</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="62"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="69"/>
         <source>Landscape</source>
         <translation>横屏</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="65"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="72"/>
         <source>Dynamic</source>
         <translation>动态旋转</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="72"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="79"/>
         <location filename="../apps/generic/ui/settingsdialog.cpp" line="71"/>
         <source>Use Thumbnails</source>
         <translation>使用缩略图</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="82"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="90"/>
         <location filename="../apps/generic/ui/settingsdialog.cpp" line="75"/>
         <source>Ignore articles for sorting</source>
         <translation>排序时忽略条目的分类</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="88"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="96"/>
         <source>Enable haptics on keypad</source>
         <translation>启用键盘振动</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="94"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="102"/>
         <source>Prevent display blanking on keypad</source>
         <translation>键盘常显</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="99"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="107"/>
         <source>Used media</source>
         <translation>之前的媒体</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="106"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="114"/>
         <source>Music</source>
         <translation>音乐</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="112"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="120"/>
         <source>Videos</source>
         <translation>视频</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="122"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="130"/>
         <source>Pictures</source>
         <translation>图片</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="128"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="136"/>
         <source>Live TV</source>
         <translation>电视直播</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="136"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="144"/>
         <source>Phone calls</source>
         <translation>来电时</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="141"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="149"/>
         <source>Change volume</source>
         <translation>改变音量</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="156"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="164"/>
         <source>Pause video</source>
         <translation>暂停视频</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="161"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="169"/>
         <source>Pause music</source>
         <translation>暂停音乐</translation>
     </message>
     <message>
-        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="166"/>
+        <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="174"/>
         <location filename="../apps/generic/ui/settingsdialog.cpp" line="98"/>
         <source>Show call notifications</source>
         <translation>显示来电通知</translation>
