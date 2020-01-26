@@ -304,7 +304,7 @@
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="84"/>
         <location filename="../apps/ubuntu/qml/BrowserPage.qml" line="573"/>
         <source>Home</source>
-        <translation>主页&gt;</translation>
+        <translation>主页</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/BrowserPage.qml" line="92"/>
@@ -398,7 +398,7 @@
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="56"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation>通过Zeroconf协议发布这些服务</translation>
+        <translation>通过 Zeroconf协议发布这些服务</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="57"/>
@@ -560,7 +560,7 @@
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="86"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation>如果你使用的不是 Zeroconf ,，请手动添加主机。</translation>
+        <translation>如果你使用的不是 Zeroconf ，请手动添加主机。</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="128"/>
@@ -1161,7 +1161,7 @@
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="230"/>
         <source>Connecting to %1...</source>
-        <translation>连接到%1。。</translation>
+        <translation>连接到 %1 。</translation>
     </message>
     <message>
         <location filename="../libkodimote/kodiconnection.cpp" line="295"/>
@@ -2079,7 +2079,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/ResumeDialog.qml" line="44"/>
         <source>Do you want to resume playback at %1?</source>
-        <translation>是否继续播放 %1?</translation>
+        <translation>是否继续播放 %1 ?</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/ResumeDialog.qml" line="34"/>
@@ -2655,7 +2655,7 @@
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="245"/>
         <source>If you don&apos;t use Zeroconf, add a host manually.</source>
-        <translation>如果你使用的不是Zeroconf,，请手动添加主机。</translation>
+        <translation>如果你使用的不是 Zeroconf ，请手动添加主机。</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="311"/>
