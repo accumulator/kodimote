@@ -1,3 +1,6 @@
+* Sat Jan 25 2020 Arno Dekker <email@me.com> 2.1.6-1
+- Slightly highlight playing item in current playlist
+- Workaround for issue that progres info was not always refreshed at end of item play
 * Mon Nov 22 2019 Arno Dekker <email@me.com> 2.1.5-1
 - Full Chinese translation
 * Mon Nov 16 2019 Arno Dekker <email@me.com> 2.1.4-2

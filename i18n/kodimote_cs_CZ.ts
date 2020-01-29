@@ -1875,13 +1875,13 @@
     <name>PlaylistPage</name>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="157"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="99"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="116"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/PlaylistPage.qml" line="163"/>
-        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="105"/>
+        <location filename="../apps/sailfish/qml/pages/PlaylistPage.qml" line="122"/>
         <source>Remove from playlist</source>
         <translation type="unfinished"></translation>
     </message>

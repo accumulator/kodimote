@@ -490,6 +490,16 @@ void Player::updatePlaytime()
 
     emit percentageChanged();
     emit timeChanged();
+    if(m_playtimeTimer.isActive()) {
+        if (m_lastPlaytime / 1000 > QTime(0, 0, 0).secsTo(m_totalTime)) {
+            // force refesh of current item as it sometimes not gets notified
+            m_lastPlaytime = 0;
+
+            getCurrentItemDetails();
+            playlist()->refresh();
+        }
+    }
+
 }
 
 void Player::updatePlaytime(const QVariantMap &timeMap)

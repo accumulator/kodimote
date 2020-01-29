@@ -93,6 +93,23 @@ Page {
                 onClicked: {
                     player.playItem(index)
                 }
+                Rectangle {
+                    width: parent.width
+                    height: parent.height
+                    opacity: 0.5
+                    radius: 10
+                    gradient: Gradient {
+                        GradientStop {
+                            position: 0.0
+                            color: Theme.rgba(Theme.primaryColor, 0.1)
+                        }
+                        GradientStop {
+                            position: 1.0
+                            color: Theme.rgba(Theme.primaryColor, 0.05)
+                        }
+                    }
+                    visible: index === listView.model.currentTrackNumber - 1
+                }
 
                 menu: ContextMenu {
                     MenuItem {
