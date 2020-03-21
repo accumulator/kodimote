@@ -137,7 +137,6 @@ Page {
                     Label {
                         id: mainText
                         text: title
-                        font.weight: Font.Bold
                         font.pixelSize: 26 * appWindow.sizeRatio
                         width: listView.width - durationLabel.width
                         truncationMode: TruncationMode.Fade

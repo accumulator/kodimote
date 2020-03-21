@@ -123,7 +123,6 @@ Page {
                         horizontalAlignment: Text.AlignRight
                         id: titleLabel_landscape
                         font {
-                            bold: true
                             family: Theme.fontFamilyHeading
                         }
                         wrapMode: Text.Wrap
@@ -167,7 +166,6 @@ Page {
                         visible: text.length > 0
                         font {
                             family: Theme.fontFamilyHeading
-                            bold: true
                         }
                         MouseArea {
                             anchors.fill: parent
@@ -184,7 +182,6 @@ Page {
                         width: parent.width / 2
                         wrapMode: Text.Wrap
                         visible: text.length > 0
-                        font.bold: true
                         MouseArea {
                             anchors.fill: parent
                             onClicked: {
@@ -293,7 +290,6 @@ Page {
                         rightMargin: Theme.paddingMedium
                     }
                     font {
-                        bold: true
                         family: Theme.fontFamilyHeading
                     }
                     truncationMode: TruncationMode.Fade
@@ -337,7 +333,6 @@ Page {
                 visible: text.length > 0 && isPortrait
                 font {
                     family: Theme.fontFamilyHeading
-                    bold: true
                 }
             }
 
@@ -346,7 +341,6 @@ Page {
                 width: parent.width
                 truncationMode: TruncationMode.Fade
                 visible: text.length > 0 && isPortrait
-                font.bold: true
             }
 
             ItemDetailRow {

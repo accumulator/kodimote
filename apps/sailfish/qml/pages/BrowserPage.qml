@@ -336,7 +336,6 @@ Page {
                             Label {
                                 id: mainText
                                 text: title
-                                font.weight: Font.Bold
                                 font.pixelSize: Theme.fontSizeMedium
                                 width: itemRow.width
                                 truncationMode: TruncationMode.Fade

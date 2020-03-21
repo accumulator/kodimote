@@ -125,7 +125,6 @@ Page {
                 Label {
                     id: mainText
                     text: listView.model.title(index)
-                    font.weight: Font.Bold
                     font.pixelSize: Theme.fontSizeLarge
                 }
             }

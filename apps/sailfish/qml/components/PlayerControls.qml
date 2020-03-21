@@ -32,7 +32,7 @@ Row {
     property QtObject player
     spacing: (appWindow.mediumScreen
               || appWindow.largeScreen) ? Theme.paddingLarge : appWindow.smallScreen ? Theme.paddingMedium : Theme.paddingSmall
-    property int iconResize: appWindow.largeScreen ? 200 : appWindow.mediumScreen ? 128 : appWindow.smallScreen ? 100 : 75
+    property int iconResize: appWindow.largeScreen ? 160 : appWindow.mediumScreen ? 128 : appWindow.smallScreen ? 100 : 75
 
     HapticsEffect {
         id: rumbleEffect

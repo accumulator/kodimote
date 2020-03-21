@@ -111,7 +111,6 @@ Dialog {
                     anchors.left: parent.left
                     anchors.right: parent.right
 
-                    font.weight: Font.Bold
                     font.pixelSize: Theme.fontSizeMedium
                     truncationMode: TruncationMode.Fade
                 }
