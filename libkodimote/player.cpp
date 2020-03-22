@@ -476,11 +476,11 @@ QString Player::totalTimeString() const
 
 void Player::updatePlaytime()
 {
-    if(!m_currentItem) {
+    if (!m_currentItem) {
         return;
     }
 
-    //use milliseconds, otherwise it tends to skip a sec. once in a while
+    // use milliseconds, otherwise it tends to skip a sec. once in a while
     int duration = QTime(0, 0, 0).msecsTo(m_totalTime);
     QDateTime currentTime = QDateTime::currentDateTime();
     int elapsedMSeconds = m_lastPlaytimeUpdate.msecsTo(currentTime);
@@ -490,16 +490,14 @@ void Player::updatePlaytime()
 
     emit percentageChanged();
     emit timeChanged();
-    if(m_playtimeTimer.isActive()) {
+    if (m_playtimeTimer.isActive()) {
         if (m_lastPlaytime / 1000 > QTime(0, 0, 0).secsTo(m_totalTime)) {
             // force refesh of current item as it sometimes not gets notified
             m_lastPlaytime = 0;
 
-            getCurrentItemDetails();
-            playlist()->refresh();
+            refresh();
         }
     }
-
 }
 
 void Player::updatePlaytime(const QVariantMap &timeMap)
