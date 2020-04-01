@@ -285,7 +285,7 @@ Page {
                                  && browserPage.model.thumbnailFormat
                                  !== KodiModel.ThumbnailFormatNone
 
-                        artworkSource: thumbnail
+                        artworkSource: thumbnail ? thumbnail : filetype === "directory" ? "image://theme/icon-m-folder" : ""
                         defaultText: title
 
                         IconButton {

@@ -1,3 +1,5 @@
+* Wed Apr 1 2020 Arno Dekker <email@me.com> 2.1.7-2
+- Replaced colored title text by folder icon if relevant
 * Sat Jan 25 2020 Arno Dekker <email@me.com> 2.1.7-1
 - Changed all bold fonts to regular fonts
 - More hi-res stop button for bigger screens (thanks dikonov)
