@@ -1,3 +1,5 @@
+* Tue May 19 2020 Arno Dekker <email@me.com> 2.1.8-1
+- Fixed sorting of artist list
 * Wed Apr 1 2020 Arno Dekker <email@me.com> 2.1.7-2
 - Replaced colored title text by folder icon if relevant
 * Sat Jan 25 2020 Arno Dekker <email@me.com> 2.1.7-1

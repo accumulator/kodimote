@@ -45,7 +45,8 @@ void Artists::refresh()
 
     QVariantMap sort;
     sort.insert("ignorearticle", ignoreArticle());
-    sort.insert("method", "label");
+    sort.insert("method", "artist");
+    sort.insert("order", "ascending");
     params.insert("sort", sort);
 
     QVariantList properties;
