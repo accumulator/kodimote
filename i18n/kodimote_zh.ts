@@ -50,7 +50,7 @@
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="90"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="91"/>
         <source>Hostname or IP Address</source>
-        <translation>主机名或 IP 地址</translation>
+        <translation>主机名或  IP  地址</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="103"/>
@@ -62,7 +62,7 @@
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="116"/>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="117"/>
         <source>Mac Address</source>
-        <translation>Mac地址</translation>
+        <translation>Mac 地址</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AddHostDialog.qml" line="125"/>
@@ -227,7 +227,7 @@
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="49"/>
         <location filename="../apps/generic/ui/authenticationdialog.cpp" line="47"/>
         <source>Kodi on %1 requires authentication:</source>
-        <translation>%1 kodi 需要授权验证:</translation>
+        <translation>%1 上的 kodi 需要授权验证：</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/AuthenticationDialog.qml" line="58"/>
@@ -383,12 +383,12 @@
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="53"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
-        <translation>请在kodi 服务设置中启用下列选项：</translation>
+        <translation>请在 kodi 服务设置中启用下列选项：</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="54"/>
         <source>Allow control of Kodi via HTTP</source>
-        <translation>允许通过HTTP连接到 Kodi</translation>
+        <translation>允许通过 HTTP 连接到 Kodi</translation>
     </message>
     <message>
         <location filename="../apps/generic/ui/connectdialog.cpp" line="55"/>
@@ -462,12 +462,12 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="94"/>
         <source>Searching for Kodi hosts.</source>
-        <translation>搜索 Kodi主机</translation>
+        <translation>搜索 Kodi 主机</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="95"/>
         <source>Please enable the following options in the Services settings of Kodi:</source>
-        <translation>请在 Kodi服务设置中开启下列选项：</translation>
+        <translation>请在 Kodi 服务设置中开启下列选项：</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="97"/>
@@ -482,7 +482,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="99"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation>通过 Zeroconf协议发布这些服务</translation>
+        <translation>通过 Zeroconf 协议发布这些服务</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="100"/>
@@ -492,12 +492,12 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="108"/>
         <source>Add host</source>
-        <translation></translation>
+        <translation>添加 host</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="149"/>
         <source>Edit</source>
-        <translation></translation>
+        <translation>编辑</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/ConnectionDialog.qml" line="155"/>
@@ -590,12 +590,12 @@
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="192"/>
         <source>HTTP Port:</source>
-        <translation>HTTP端口：</translation>
+        <translation>HTTP 端口：</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="206"/>
         <source>MAC Address for WakeOnLan (optional):</source>
-        <translation>MAC地址用于网络唤醒(可选)：</translation>
+        <translation>MAC 地址用于网络唤醒(可选)：</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/ConnectionSheet.qml" line="217"/>
@@ -774,7 +774,7 @@
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="64"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="76"/>
         <source>Rating:</source>
-        <translation>等级：</translation>
+        <translation>评级：</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="119"/>
@@ -851,7 +851,7 @@
         <location filename="../apps/harmattan/qml/ItemDetails.qml" line="143"/>
         <location filename="../apps/ubuntu/qml/ItemDetails.qml" line="154"/>
         <source>Mood:</source>
-        <translation>旋律：</translation>
+        <translation>情绪：</translation>
     </message>
     <message>
         <location filename="../apps/generic/qml/ItemDetails.qml" line="185"/>
@@ -1128,19 +1128,19 @@
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="304"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="317"/>
         <source>Remote name: %1&lt;br&gt;Button name: %2</source>
-        <translation></translation>
+        <translation>远程名称： %1&lt;br&gt; 按钮名称：  %2</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="541"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="233"/>
         <source>The further you move, the faster you scroll.</source>
-        <translation></translation>
+        <translation>移动距离越长，滚动速度越快。</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/Keypad.qml" line="543"/>
         <location filename="../apps/ubuntu/qml/Keypad.qml" line="235"/>
         <source>You can map them to anything you want in Kodi&apos;s Lircmap.xml</source>
-        <translation></translation>
+        <translation>你可以在 Kodi 的 Lircmap.xml 中将它们映射到任何你需要东西。</translation>
     </message>
 </context>
 <context>
@@ -1205,7 +1205,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="58"/>
         <source>Kodi on %1</source>
-        <translation>Kodi %1</translation>
+        <translation>%1 上的 kodi</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/KodiPage.qml" line="174"/>
@@ -1240,7 +1240,7 @@
     <message>
         <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="24"/>
         <source>Media</source>
-        <translation></translation>
+        <translation>媒体</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/components/KodiPage.qml" line="33"/>
@@ -1327,7 +1327,7 @@
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="267"/>
         <source>Show files</source>
-        <translation>以文件显示</translation>
+        <translation>文件显示</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/MainPage.qml" line="280"/>
@@ -1442,7 +1442,7 @@
     <message>
         <location filename="../libkodimote/mpris2/mprisapplication.cpp" line="63"/>
         <source>Kodi on %1</source>
-        <translation>Kodi %1</translation>
+        <translation>%1 上的 kodi</translation>
     </message>
 </context>
 <context>
@@ -1465,7 +1465,7 @@
     <message>
         <location filename="../apps/harmattan/nfchandler.cpp" line="117"/>
         <source>NFC tag is outdated. In order to use it with Kodimote you need to update it by rewriting connection information to it.</source>
-        <translation>NFC标签已过期。你需要重写连接信息以使用。</translation>
+        <translation>NFC 标签已过期。你需要重写连接信息以使用。</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/nfchandler.cpp" line="152"/>
@@ -1480,7 +1480,7 @@
     <message>
         <location filename="../apps/harmattan/nfchandler.cpp" line="164"/>
         <source>Error writing NFC tag.</source>
-        <translation>写入NFC标签失败。</translation>
+        <translation>写入 NFC 标签失败。</translation>
     </message>
 </context>
 <context>
@@ -1493,7 +1493,7 @@
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="69"/>
         <source>Allow control of Kodi via HTTP</source>
-        <translation>允许通过 HTTP控制 Kodi 。</translation>
+        <translation>允许通过 HTTP 控制 Kodi 。</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NoConnection.qml" line="70"/>
@@ -1539,7 +1539,7 @@
     <message>
         <location filename="../apps/plasmoid/qml/NowPlaying.qml" line="85"/>
         <source>Rating:</source>
-        <translation>等级：</translation>
+        <translation>评级：</translation>
     </message>
 </context>
 <context>
@@ -1557,7 +1557,7 @@
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="123"/>
         <source>Episode:</source>
-        <translation>插曲：</translation>
+        <translation>集：</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/NowPlayingDetails.qml" line="129"/>
@@ -1687,7 +1687,7 @@
     <message>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="72"/>
         <source>Mood</source>
-        <translation>氛围</translation>
+        <translation>情绪</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/components/NowPlayingDetails.qml" line="77"/>
@@ -1908,7 +1908,7 @@
     <message>
         <location filename="../apps/plasmoid/qml/PopupDialog.qml" line="61"/>
         <source>Xbmc on %1</source>
-        <translation>Xbmc %1</translation>
+        <translation>%1 的 Xbmc</translation>
     </message>
     <message>
         <location filename="../apps/plasmoid/qml/PopupDialog.qml" line="80"/>
@@ -1999,7 +1999,7 @@
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="32"/>
         <source>TV Channels</source>
-        <translation>电视频道&gt;</translation>
+        <translation>电视频道</translation>
     </message>
     <message>
         <location filename="../libkodimote/pvrmenu.cpp" line="37"/>
@@ -2061,7 +2061,7 @@
         <location filename="../libkodimote/recordings.cpp" line="148"/>
         <location filename="../libkodimote/recordings.cpp" line="160"/>
         <source>%1 recordings</source>
-        <translation>%1 唱片</translation>
+        <translation>%1 张唱片</translation>
     </message>
     <message>
         <location filename="../libkodimote/recordings.cpp" line="188"/>
@@ -2110,7 +2110,7 @@
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="56"/>
         <source>Look and feel</source>
-        <translation>界面与体验</translation>
+        <translation>界面与观感</translation>
     </message>
     <message>
         <location filename="../apps/sailfish/qml/pages/SettingsDialog.qml" line="61"/>
@@ -2479,7 +2479,7 @@
     <message>
         <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="46"/>
         <source>Tap a NFC tag to write XBMC connection information to it. You can then use the tag to connect to this XBMC.</source>
-        <translation>触碰一个NFC标签以写入XBMC连接信息。下次你就可以通过触碰这个NFC标签来连接XBMC。</translation>
+        <translation>触碰一个NFC 标签以写入 XBMC 连接信息。下次你就可以通过触碰这个 NFC 标签来连接 XBMC。</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="58"/>
@@ -2494,7 +2494,7 @@
     <message>
         <location filename="../apps/harmattan/qml/WriteNfcTagSheet.qml" line="70"/>
         <source>Write NFC Tag</source>
-        <translation>写入NFC标签</translation>
+        <translation>写入 NFC 标签</translation>
     </message>
 </context>
 <context>
@@ -2530,12 +2530,12 @@
     <message>
         <location filename="../apps/harmattan/qml/main.qml" line="110"/>
         <source>Quit xbmc</source>
-        <translation>退出XBMC</translation>
+        <translation>退出 XBMC</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/main.qml" line="117"/>
         <source>Write NFC Tag</source>
-        <translation>写入NFC标签</translation>
+        <translation>写入 NFC 标签</translation>
     </message>
     <message>
         <location filename="../apps/harmattan/qml/main.qml" line="129"/>
@@ -2645,12 +2645,12 @@
         <location filename="../apps/ubuntu/qml/main.qml" line="243"/>
         <location filename="../apps/ubuntu/qml/main.qml" line="283"/>
         <source>Allow programs on other systems to control Kodi</source>
-        <translation>允许系统其它程序控制Kodi</translation>
+        <translation>允许系统其它程序控制 Kodi</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="244"/>
         <source>Announce these services to other systems via Zeroconf</source>
-        <translation>通过Zeroconf协议发布这些服务</translation>
+        <translation>通过 Zeroconf 协议发布这些服务</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="245"/>
@@ -2732,7 +2732,7 @@
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="572"/>
         <source>Kodi on %1 requires authentication:</source>
-        <translation> Kodi %1 要求授权：</translation>
+        <translation> %1 上的 kodi 需要授权：</translation>
     </message>
     <message>
         <location filename="../apps/ubuntu/qml/main.qml" line="576"/>
