@@ -26,6 +26,6 @@ simulator {
 }
 
 contains (QT_VERSION, ^4\\..\\..*) {
-	message("Desktop Qt4 build. Building generic app.")
-	SUBDIRS += generic
+    message("Desktop Qt4 build. Building generic app.")
+    SUBDIRS += generic
 }

@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Item {
@@ -57,16 +58,19 @@ Item {
             height: childrenRect.height
             anchors {
                 left: parent.left
-                leftMargin: Theme.paddingSmall + Theme.paddingLarge
+                leftMargin: Theme.paddingMedium
                 right: parent.right
-                rightMargin: Theme.paddingLarge
+                rightMargin: Theme.paddingMedium
             }
             y: Theme.paddingMedium
 
             Thumbnail {
-                visible: largeThumbnail.length > 0 && largeThumbnail !== "loading"
+                visible: largeThumbnail.length > 0
+                         && largeThumbnail !== "loading"
                 width: parent.width
-                height: artworkSize && artworkSize.width > artworkSize.height ? artworkSize.height / (artworkSize.width / width) : 400 * sizeRatio
+                height: artworkSize && artworkSize.width
+                        > artworkSize.height ? artworkSize.height
+                                               / (artworkSize.width / width) : 400 * sizeRatio
                 artworkSource: largeThumbnail
                 fillMode: Image.PreserveAspectFit
             }
@@ -81,7 +85,9 @@ Item {
                     text: qsTr("Rating")
                     color: Theme.secondaryHighlightColor
                 }
-                property int starCount: rating > 10 ? Math.round(rating / 20) : Math.round(rating / 2)
+                property int starCount: rating > 10 ? Math.round(
+                                                          rating / 20) : Math.round(
+                                                          rating / 2)
                 Repeater {
                     model: parent.starCount
                     Image {
@@ -207,19 +213,23 @@ Item {
             }
 
             Label {
-                id: plotLabel; width: parent.width; visible: plot.length > 0
-                text: plot;
+                id: plotLabel
+                width: parent.width
+                visible: plot.length > 0
+                text: plot
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                // color: Theme.highlightColor
             }
             Label {
-                id: descriptionLabel; width: parent.width; visible: description.length > 0
-                text: description;
+                id: descriptionLabel
+                width: parent.width
+                visible: description.length > 0
+                text: "\n" + description
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                color: Theme.highlightColor
+                color: Theme.primaryColor
             }
         }
 
-        VerticalScrollDecorator { }
+        VerticalScrollDecorator {
+        }
     }
 }

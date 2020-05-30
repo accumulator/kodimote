@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import "../"
 
@@ -27,7 +28,8 @@ CoverBackground {
     id: cover
     property QtObject player: kodi.activePlayer
     property QtObject currentItem: player ? player.currentItem : null
-    property bool hasThumbnail: cover.currentItem && cover.currentItem.thumbnail.length
+    property bool hasThumbnail: cover.currentItem
+                                && cover.currentItem.thumbnail.length
     property bool timerActive: cover.status === PageStatus.Active
 
     onTimerActiveChanged: {
@@ -73,11 +75,27 @@ CoverBackground {
         width: parent.width
         height: sourceSize.height * (parent.width / sourceSize.width)
         fillMode: Image.PreserveAspectFit
+        layer.effect: ShaderEffect {
+            property color color: Theme.primaryColor
+
+            fragmentShader: "
+            varying mediump vec2 qt_TexCoord0;
+            uniform highp float qt_Opacity;
+            uniform lowp sampler2D source;
+            uniform highp vec4 color;
+            void main() {
+            highp vec4 pixelColor = texture2D(source, qt_TexCoord0);
+            gl_FragColor = vec4(mix(pixelColor.rgb/max(pixelColor.a, 0.00390625), color.rgb/max(color.a, 0.00390625), color.a) * pixelColor.a, pixelColor.a) * qt_Opacity;
+            }
+            "
+            }
+        layer.enabled: true
+        layer.samplerName: "source"
     }
 
     Image {
         id: thumbnail
-        width: cover.hasThumbnail > 0 ? parent.width - 2*Theme.paddingLarge : 80
+        width: cover.hasThumbnail > 0 ? parent.width - 2 * Theme.paddingLarge : 80
 
         anchors.top: parent.top
         anchors.bottom: desc_col.top
@@ -95,7 +113,9 @@ CoverBackground {
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width - 2 * Theme.paddingLarge
         anchors.top: parent.top
-        anchors.topMargin: thumbnail.visible ? (subdescription.text !== "" ? parent.height / 2  : parent.height / 1.8 ) : parent.height / 3
+        anchors.topMargin: thumbnail.visible ? (subdescription.text
+                                                !== "" ? parent.height / 2 : parent.height
+                                                         / 1.8) : parent.height / 3
         spacing: 0
 
         Label {
@@ -106,8 +126,10 @@ CoverBackground {
             width: parent.width
             fontSizeMode: Text.HorizontalFit
             minimumPixelSize: subdescription.text === "" ? (20 * appWindow.sizeRatio) : -1
-            height: thumbnail.visible && lineCount > 2 ? 2 * font.pixelSize : lineCount * font.pixelSize
-            elide: thumbnail.visible && lineCount > 2 ? Text.ElideRight : Text.ElideNone
+            height: thumbnail.visible
+                    && lineCount > 2 ? 2 * font.pixelSize : lineCount * font.pixelSize
+            elide: thumbnail.visible
+                   && lineCount > 2 ? Text.ElideRight : Text.ElideNone
         }
 
         Label {
@@ -126,8 +148,8 @@ CoverBackground {
         anchors.horizontalCenter: parent.horizontalCenter
         width: parent.width
         anchors.top: parent.top
-        anchors.topMargin: parent.height / 1.5
-        height: Theme.paddingLarge
+        anchors.topMargin: parent.height / 1.6
+        height: appWindow.isLightTheme ? Theme.paddingLarge * 2 : Theme.paddingLarge
         ProgressBar {
             width: parent.width
             minimumValue: 0
@@ -140,11 +162,11 @@ CoverBackground {
         id: elapsed
         anchors.top: progBar.bottom
         width: parent.width
-        anchors.topMargin: -Theme.paddingSmall
+        anchors.topMargin: Theme.paddingSmall
         horizontalAlignment: Text.AlignHCenter
         color: Theme.highlightColor
         font.pixelSize: Theme.fontSizeSmall
-        text: player ? player.timeString  + " - " + player.totalTimeString : "00:00"
+        text: player ? player.timeString + " - " + player.totalTimeString : "00:00"
         visible: cover.player
     }
 
@@ -162,7 +184,8 @@ CoverBackground {
 
     states: [
         State {
-            when: cover.player && (cover.player.state === "playing" || cover.player.state === "paused")
+            when: cover.player && (cover.player.state === "playing"
+                                   || cover.player.state === "paused")
             PropertyChanges {
                 target: description
                 text: cover.currentItem ? cover.currentItem.title : ""
@@ -173,12 +196,14 @@ CoverBackground {
             }
             PropertyChanges {
                 target: leftAction
-                iconSource: "image://theme/icon-cover-" + (cover.player && cover.player.state === "playing" ? "pause" : "play")
+                iconSource: "image://theme/icon-cover-"
+                            + (cover.player
+                               && cover.player.state === "playing" ? "pause" : "play")
                 onTriggered: playPause()
             }
             PropertyChanges {
                 target: rightAction
-                iconSource: "../icons/icon-cover-stop.png"
+                iconSource: appWindow.isLightTheme ? "../icons/icon-cover-stop-rev.png" : "../icons/icon-cover-stop.png"
                 onTriggered: stop()
             }
         },
@@ -203,8 +228,7 @@ CoverBackground {
             when: !kodi.connected
             PropertyChanges {
                 target: description
-                text: qsTr("Kodimote") + "\n" +
-                      qsTr("Disconnected")
+                text: qsTr("Kodimote") + "\n" + qsTr("Disconnected")
             }
             PropertyChanges {
                 target: leftAction

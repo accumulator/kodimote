@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,16 +20,14 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Dialog {
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
+    allowedOrientations: appWindow.orientationSetting
     Component.onCompleted: {
-        console.log("settings: " + settings);
-        console.log("use thumbnail: " + settings.useThumbnails);
+        console.log("settings: " + settings)
+        console.log("use thumbnail: " + settings.useThumbnails)
     }
 
     SilicaFlickable {
@@ -43,11 +43,35 @@ Dialog {
 
         Column {
             id: settingsCol
-            anchors {left: parent.left; right: parent.right; top: header.bottom; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge }
+            anchors {
+                left: parent.left
+                right: parent.right
+                top: header.bottom
+                leftMargin: Theme.paddingLarge
+                rightMargin: Theme.paddingLarge
+            }
             spacing: Theme.paddingSmall
 
             SectionHeader {
                 text: qsTr("Look and feel")
+            }
+
+            ComboBox {
+                id: orientation
+                label: qsTr("Orientation:")
+                description: qsTr("Sets the preferred screen orientation.")
+                currentIndex: settings.orientation
+                menu: ContextMenu {
+                    MenuItem {
+                        text: qsTr("Portrait")
+                    } // 1
+                    MenuItem {
+                        text: qsTr("Landscape")
+                    } // 2
+                    MenuItem {
+                        text: qsTr("Dynamic")
+                    } // 3
+                }
             }
 
             TextSwitch {
@@ -55,6 +79,7 @@ Dialog {
                 text: qsTr("Use Thumbnails")
                 checked: settings.useThumbnails
             }
+
             /*TextSwitch {
                 id: keepDisplayLit
                 text: qsTr("Keep display on when charging")
@@ -167,5 +192,6 @@ Dialog {
         settings.pvrEnabled = pvrEnabled.checked
         settings.hapticsEnabled = hapticsEnabled.checked
         settings.preventDimEnabled = preventDimEnabled.checked
+        settings.orientation = orientation.currentIndex
     }
 }

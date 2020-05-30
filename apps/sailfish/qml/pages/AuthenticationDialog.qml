@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,15 +20,13 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Dialog {
     id: authenticationDialog
+    allowedOrientations: appWindow.orientationSetting
 
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
     property string hostname
 
     DialogHeader {
@@ -36,17 +36,17 @@ Dialog {
 
     Column {
         anchors {
-            top: header.bottom;
-            bottom: parent.bottom;
-            left: parent.left;
-            right: parent.right;
+            top: header.bottom
+            bottom: parent.bottom
+            left: parent.left
+            right: parent.right
         }
 
         Label {
             anchors.left: parent.left
             anchors.right: parent.right
             anchors.margins: Theme.paddingLarge
-            text: qsTr("Kodi on %1 requires authentication:").arg(hostname);
+            text: qsTr("Kodi on %1 requires authentication:").arg(hostname)
             wrapMode: Text.WordWrap
             font.family: Theme.fontFamilyHeading
             color: Theme.highlightColor
@@ -76,6 +76,6 @@ Dialog {
     }
 
     onAccepted: {
-        kodi.setAuthCredentials(username.text, password.text);
+        kodi.setAuthCredentials(username.text, password.text)
     }
 }

@@ -31,44 +31,41 @@
 #include <QContactPhoneNumber>
 #endif
 
-#include "sailfishhelper.h"
 #include "libkodimote/kodi.h"
 #include "libkodimote/kodihostmodel.h"
 #include "libkodimote/settings.h"
+#include "sailfishhelper.h"
 
 #ifndef HARBOUR_BUILD
 using namespace QtContacts;
 #endif
 
-SailfishHelper::SailfishHelper(QQuickView *quickView, Settings *settings, QObject *parent) :
-    PlatformHelper(settings, parent),
-    m_quickView(quickView),
-    m_resourceSet(new ResourcePolicy::ResourceSet("player", 0, false, true))
-{
+SailfishHelper::SailfishHelper(QQuickView *quickView, Settings *settings,
+                               QObject *parent)
+    : PlatformHelper(settings, parent),
+      m_quickView(quickView),
+      m_resourceSet(new ResourcePolicy::ResourceSet("player", 0, false, true)) {
     m_resourceSet->addResourceObject(new ResourcePolicy::ScaleButtonResource);
     QGuiApplication::instance()->installEventFilter(this);
 
     m_resourceSet->acquire();
 
     QDBusConnection systemBus = QDBusConnection::systemBus();
-    systemBus.connect("org.ofono", "/ril_0", "org.ofono.VoiceCallManager", "CallAdded", this, SLOT(callAdded(QDBusMessage)));
-    systemBus.connect("org.ofono", "/ril_0", "org.ofono.VoiceCallManager", "CallRemoved", this, SLOT(callEnded()));
+    systemBus.connect("org.ofono", "/ril_0", "org.ofono.VoiceCallManager",
+                      "CallAdded", this, SLOT(callAdded(QDBusMessage)));
+    systemBus.connect("org.ofono", "/ril_0", "org.ofono.VoiceCallManager",
+                      "CallRemoved", this, SLOT(callEnded()));
 }
 
-bool SailfishHelper::canRaise() const
-{
-    return true;
-}
+bool SailfishHelper::canRaise() const { return true; }
 
-void SailfishHelper::raise()
-{
-    m_quickView->raise();
-}
+void SailfishHelper::raise() { m_quickView->raise(); }
 
-bool SailfishHelper::eventFilter(QObject *obj, QEvent *event)
-{
+bool SailfishHelper::eventFilter(QObject *obj, QEvent *event) {
     if (event->type() == QEvent::ApplicationStateChange) {
-        Qt::ApplicationState state = static_cast<QApplicationStateChangeEvent*>(event)->applicationState();
+        Qt::ApplicationState state =
+            static_cast<QApplicationStateChangeEvent *>(event)
+                ->applicationState();
         if (state == Qt::ApplicationActive) {
             m_resourceSet->acquire();
         } else {
@@ -78,9 +75,8 @@ bool SailfishHelper::eventFilter(QObject *obj, QEvent *event)
     return QObject::eventFilter(obj, event);
 }
 
-void SailfishHelper::callAdded(const QDBusMessage &msg)
-{
-    QDBusArgument *arg = (QDBusArgument*)msg.arguments().at(1).data();
+void SailfishHelper::callAdded(const QDBusMessage &msg) {
+    QDBusArgument *arg = (QDBusArgument *)msg.arguments().at(1).data();
     if (arg->currentType() != QDBusArgument::MapType) {
         return;
     }
@@ -94,20 +90,21 @@ void SailfishHelper::callAdded(const QDBusMessage &msg)
     callStarted(properties.value("State") == "incoming", caller);
 }
 
-QString SailfishHelper::lookupContact(QString phoneNumber)
-{
+QString SailfishHelper::lookupContact(QString phoneNumber) {
 #ifndef HARBOUR_BUILD
     QString matchNumber = phoneNumber.right(6);
     QContactManager contactManager;
     QList<QContact> contacts = contactManager.contacts();
 
     for (int i = 0; i < contacts.size(); ++i) {
-        foreach (QContactPhoneNumber number, contacts.at(i).details<QContactPhoneNumber>()) {
-             if (!number.isEmpty()) {
+        foreach (QContactPhoneNumber number,
+                 contacts.at(i).details<QContactPhoneNumber>()) {
+            if (!number.isEmpty()) {
                 QString phone = number.number();
                 if (!phone.isEmpty() && phone.endsWith(matchNumber)) {
-                    QList<QContactDisplayLabel> labels = contacts.at(i).details<QContactDisplayLabel>();
-                    if (labels.size() > 0 && !labels.first().isEmpty()){
+                    QList<QContactDisplayLabel> labels =
+                        contacts.at(i).details<QContactDisplayLabel>();
+                    if (labels.size() > 0 && !labels.first().isEmpty()) {
                         return labels.first().label();
                     }
                 }
@@ -119,8 +116,8 @@ QString SailfishHelper::lookupContact(QString phoneNumber)
     return "";
 }
 
-QMap<QString, QString> SailfishHelper::unpackMessage(const QDBusArgument &args)
-{
+QMap<QString, QString> SailfishHelper::unpackMessage(
+    const QDBusArgument &args) {
     QMap<QString, QString> properties;
 
     args.beginMap();

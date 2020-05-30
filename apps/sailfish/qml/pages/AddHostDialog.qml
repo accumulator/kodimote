@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,19 +20,18 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import harbour.kodimote 1.0
 
 Dialog {
     id: addHostDialog
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
     property QtObject host
     property alias title: dialogHeader.acceptText
+    allowedOrientations: appWindow.orientationSetting
 
-    canAccept: nameTextField.text.length > 0 && addressTextField.text.length > 0 && portTextField.text.length > 0
+    canAccept: nameTextField.text.length > 0 && addressTextField.text.length > 0
+               && portTextField.text.length > 0
 
     SilicaFlickable {
         anchors.fill: parent
@@ -60,17 +61,18 @@ Dialog {
 
                 onTextChanged: {
                     for (var i = 0; i < kodi.hostModel().count; ++i) {
-                        if (kodi.hostModel().host(i).hostname == text && kodi.hostModel().host(i) != host) {
-                            conflicting = true;
-                            return;
+                        if (kodi.hostModel().host(i).hostname === text
+                                && kodi.hostModel().host(i) !== host) {
+                            conflicting = true
+                            return
                         }
-                        conflicting = false;
+                        conflicting = false
                     }
                 }
 
                 states: [
                     State {
-                        name: "conflicting";
+                        name: "conflicting"
                         when: nameTextField.conflicting
                         PropertyChanges {
                             target: nameTextField

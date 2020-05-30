@@ -344,7 +344,7 @@
               "properties":{
                 "genreid":{
                   "$ref":"Library.Id",
-                  "description":"Song genre. Filter for existance of songs with this genre",
+                  "description":"Song genre. Filter for existence of songs with this genre",
                   "required":true
                 }
               },
@@ -354,7 +354,7 @@
               "additionalProperties":false,
               "properties":{
                 "genre":{
-                  "description":"Song genre. Filter for existance of songs with this genre",
+                  "description":"Song genre. Filter for existence of songs with this genre",
                   "minLength":1,
                   "required":true,
                   "type":"string"
@@ -534,7 +534,7 @@
                 "genreid":{
                   "$ref":"Library.Id",
                   "description":"Deprecated,
-                   use songgenreid. Filter for existance of songs with this genre",
+                   use songgenreid. Filter for existence of songs with this genre",
                   "required":true
                 }
               },
@@ -545,7 +545,7 @@
               "properties":{
                 "songgenreid":{
                   "$ref":"Library.Id",
-                  "description":"Song genreid. Filter for existance of songs with this genre",
+                  "description":"Song genreid. Filter for existence of songs with this genre",
                   "required":true
                 }
               },
@@ -585,7 +585,7 @@
               "properties":{
                 "genre":{
                   "description":"Deprecated,
-                   use songgenre. Filter for existance of songs with this genre",
+                   use songgenre. Filter for existence of songs with this genre",
                   "minLength":1,
                   "required":true,
                   "type":"string"
@@ -597,7 +597,7 @@
               "additionalProperties":false,
               "properties":{
                 "songgenre":{
-                  "description":"Song genre. Filter for existance of songs with this genre",
+                  "description":"Song genre. Filter for existence of songs with this genre",
                   "minLength":1,
                   "required":true,
                   "type":"string"
@@ -701,7 +701,7 @@
               "properties":{
                 "roleid":{
                   "$ref":"Library.Id",
-                  "description":"Role contributed by artist. Overriden by allroles parameter",
+                  "description":"Role contributed by artist. Overridden by allroles parameter",
                   "required":true
                 }
               },
@@ -711,7 +711,7 @@
               "additionalProperties":false,
               "properties":{
                 "role":{
-                  "description":"Role contributed by artist. Overriden by allroles parameter",
+                  "description":"Role contributed by artist. Overridden by allroles parameter",
                   "minLength":1,
                   "required":true,
                   "type":"string"
@@ -1028,7 +1028,7 @@
               "properties":{
                 "genreid":{
                   "$ref":"Library.Id",
-                  "description":"Song genre. Filter for existance of songs with this genre",
+                  "description":"Song genre. Filter for existence of songs with this genre",
                   "required":true
                 }
               },
@@ -1038,7 +1038,7 @@
               "additionalProperties":false,
               "properties":{
                 "genre":{
-                  "description":"Song genre. Filter for existance of songs with this genre",
+                  "description":"Song genre. Filter for existence of songs with this genre",
                   "minLength":1,
                   "required":true,
                   "type":"string"
@@ -1155,6 +1155,8 @@
         },
         {
           "default":true,
+          "description":"Only songs from albums are returned when false,
+           but overidden when singlesonly parameter is true",
           "name":"includesingles",
           "type":"boolean"
         },
@@ -1163,6 +1165,13 @@
           "description":"Whether or not to include all roles when filtering by artist,
            rather than default of excluding other contributors. When true it overrides any role filter value.",
           "name":"allroles",
+          "type":"boolean"
+        },
+        {
+          "default":false,
+          "description":"Only singles are returned when true,
+           and overides includesingles parameter",
+          "name":"singlesonly",
           "type":"boolean"
         }
       ],
@@ -1176,6 +1185,42 @@
             "items":{
               "$ref":"Audio.Details.Song"
             },
+            "type":"array"
+          }
+        },
+        "type":"object"
+      },
+      "type":"method"
+    },
+
+    "AudioLibrary.GetSources":{
+      "description":"Get all music sources,
+       including unique ID",
+      "params":[
+        {
+          "$ref":"Library.Fields.Source",
+          "name":"properties"
+        },
+        {
+          "$ref":"List.Limits",
+          "name":"limits"
+        },
+        {
+          "$ref":"List.Sort",
+          "name":"sort"
+        }
+      ],
+      "returns":{
+        "properties":{
+          "limits":{
+            "$ref":"List.LimitsReturned",
+            "required":true
+          },
+          "sources":{
+            "items":{
+              "$ref":"Library.Details.Source"
+            },
+            "required":true,
             "type":"array"
           }
         },
@@ -1312,6 +1357,50 @@
           "$ref":"Optional.Integer",
           "default":null,
           "name":"votes"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"musicbrainzalbumid"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"musicbrainzreleasegroupid"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"sortartist"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"displayartist"
+        },
+        {
+          "default":null,
+          "name":"musicbrainzalbumartistid",
+          "type":[
+            {
+              "type":"null"
+            },
+            {
+              "$ref":"Array.String"
+            }
+          ]
+        },
+        {
+          "default":null,
+          "name":"art",
+          "type":[
+            {
+              "type":"null"
+            },
+            {
+              "$ref":"Media.Artwork.Set"
+            }
+          ]
         }
       ],
       "returns":{
@@ -1417,6 +1506,43 @@
               "$ref":"Array.String"
             }
           ]
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"musicbrainzartistid"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"sortname"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"type"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"gender"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"disambiguation"
+        },
+        {
+          "default":null,
+          "name":"art",
+          "type":[
+            {
+              "type":"null"
+            },
+            {
+              "$ref":"Media.Artwork.Set"
+            }
+          ]
         }
       ],
       "returns":{
@@ -1452,18 +1578,6 @@
         },
         {
           "default":null,
-          "name":"albumartist",
-          "type":[
-            {
-              "type":"null"
-            },
-            {
-              "$ref":"Array.String"
-            }
-          ]
-        },
-        {
-          "default":null,
           "name":"genre",
           "type":[
             {
@@ -1483,11 +1597,6 @@
           "$ref":"Optional.Number",
           "default":null,
           "name":"rating"
-        },
-        {
-          "$ref":"Optional.String",
-          "default":null,
-          "name":"album"
         },
         {
           "$ref":"Optional.Integer",
@@ -1520,16 +1629,6 @@
           "name":"musicbrainzartistid"
         },
         {
-          "$ref":"Optional.String",
-          "default":null,
-          "name":"musicbrainzalbumid"
-        },
-        {
-          "$ref":"Optional.String",
-          "default":null,
-          "name":"musicbrainzalbumartistid"
-        },
-        {
           "$ref":"Optional.Integer",
           "default":null,
           "name":"playcount"
@@ -1548,6 +1647,33 @@
           "$ref":"Optional.Integer",
           "default":null,
           "name":"votes"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"displayartist"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"sortartist"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"mood"
+        },
+        {
+          "default":null,
+          "name":"art",
+          "type":[
+            {
+              "type":"null"
+            },
+            {
+              "$ref":"Media.Artwork.Set"
+            }
+          ]
         }
       ],
       "returns":{
@@ -2775,6 +2901,15 @@
               "$ref":"Player.Id",
               "required":true
             },
+            "playertype":{
+              "enums":[
+                "internal",
+                "external",
+                "remote"
+              ],
+              "required":true,
+              "type":"string"
+            },
             "type":{
               "$ref":"Player.Type",
               "required":true
@@ -2880,6 +3015,39 @@
       ],
       "returns":{
         "$ref":"Player.Property.Value"
+      },
+      "type":"method"
+    },
+
+    "Player.GetViewMode":{
+      "description":"Get view mode of video player",
+      "params":[
+
+      ],
+      "returns":{
+        "properties":{
+          "nonlinearstretch":{
+            "required":true,
+            "type":"boolean"
+          },
+          "pixelratio":{
+            "required":true,
+            "type":"number"
+          },
+          "verticalshift":{
+            "required":true,
+            "type":"number"
+          },
+          "viewmode":{
+            "$ref":"Player.ViewMode",
+            "required":true
+          },
+          "zoom":{
+            "required":true,
+            "type":"number"
+          }
+        },
+        "type":"object"
       },
       "type":"method"
     },
@@ -3450,6 +3618,29 @@
               "description":"Index of the video stream to play",
               "minimum":0,
               "type":"integer"
+            }
+          ]
+        }
+      ],
+      "returns":{
+        "type":"string"
+      },
+      "type":"method"
+    },
+
+    "Player.SetViewMode":{
+      "description":"Set view mode of video player",
+      "params":[
+        {
+          "name":"viewmode",
+          "required":true,
+          "type":[
+            {
+              "$ref":"Player.CustomViewMode",
+              "description":"Custom view mode"
+            },
+            {
+              "$ref":"Player.ViewMode"
             }
           ]
         }
@@ -4090,13 +4281,25 @@
     },
 
     "VideoLibrary.Clean":{
-      "description":"Cleans the video library from non-existent items",
+      "description":"Cleans the video library for non-existent items",
       "params":[
         {
           "default":true,
           "description":"Whether or not to show the progress bar or any other GUI dialog",
           "name":"showdialogs",
           "type":"boolean"
+        },
+        {
+          "default":"video",
+          "description":"Content type to clean for",
+          "enums":[
+            "video",
+            "movies",
+            "tvshows",
+            "musicvideos"
+          ],
+          "name":"content",
+          "type":"string"
         }
       ],
       "returns":{
@@ -5681,7 +5884,7 @@
         {
           "$ref":"Optional.String",
           "default":null,
-          "description":"linked with year. Overriedes year",
+          "description":"linked with year. Overrides year",
           "name":"premiered"
         },
         {
@@ -5727,6 +5930,11 @@
               "$ref":"Media.Artwork.Set"
             }
           ]
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"plot"
         }
       ],
       "returns":{
@@ -5897,7 +6105,7 @@
         {
           "$ref":"Optional.String",
           "default":null,
-          "description":"linked with year. Overriedes year",
+          "description":"linked with year. Overrides year",
           "name":"premiered"
         }
       ],
@@ -5931,6 +6139,11 @@
           "$ref":"Optional.Integer",
           "default":null,
           "name":"userrating"
+        },
+        {
+          "$ref":"Optional.String",
+          "default":null,
+          "name":"title"
         }
       ],
       "returns":{
@@ -6335,6 +6548,10 @@
         {
           "name":"data",
           "properties":{
+            "added":{
+              "$ref":"Optional.Boolean",
+              "description":"True if the update is for a newly added item."
+            },
             "id":{
               "$ref":"Library.Id",
               "required":true
@@ -6497,6 +6714,42 @@
       "type":"notification"
     },
 
+    "Player.OnAVChange":{
+      "description":"Audio- or videostream has changed. If there is no ID available extra information will be provided.",
+      "params":[
+        {
+          "name":"sender",
+          "required":true,
+          "type":"string"
+        },
+        {
+          "$ref":"Player.Notifications.Data",
+          "name":"data",
+          "required":true
+        }
+      ],
+      "returns":null,
+      "type":"notification"
+    },
+
+    "Player.OnAVStart":{
+      "description":"Playback of a media item has been started and first frame is available. If there is no ID available extra information will be provided.",
+      "params":[
+        {
+          "name":"sender",
+          "required":true,
+          "type":"string"
+        },
+        {
+          "$ref":"Player.Notifications.Data",
+          "name":"data",
+          "required":true
+        }
+      ],
+      "returns":null,
+      "type":"notification"
+    },
+
     "Player.OnPause":{
       "description":"Playback of a media item has been paused. If there is no ID available extra information will be provided.",
       "params":[
@@ -6554,6 +6807,24 @@
           },
           "required":true,
           "type":"object"
+        }
+      ],
+      "returns":null,
+      "type":"notification"
+    },
+
+    "Player.OnResume":{
+      "description":"Playback of a media item has been resumed. If there is no ID available extra information will be provided.",
+      "params":[
+        {
+          "name":"sender",
+          "required":true,
+          "type":"string"
+        },
+        {
+          "$ref":"Player.Notifications.Data",
+          "name":"data",
+          "required":true
         }
       ],
       "returns":null,
@@ -6883,6 +7154,24 @@
       "type":"notification"
     },
 
+    "VideoLibrary.OnRefresh":{
+      "description":"The video library has been refreshed and a home screen reload might be necessary.",
+      "params":[
+        {
+          "name":"sender",
+          "required":true,
+          "type":"string"
+        },
+        {
+          "name":"data",
+          "required":true,
+          "type":"null"
+        }
+      ],
+      "returns":null,
+      "type":"notification"
+    },
+
     "VideoLibrary.OnRemove":{
       "description":"A video item has been removed.",
       "params":[
@@ -6962,6 +7251,10 @@
         {
           "name":"data",
           "properties":{
+            "added":{
+              "$ref":"Optional.Boolean",
+              "description":"True if the update is for a newly added item."
+            },
             "id":{
               "$ref":"Library.Id",
               "required":true
@@ -7151,8 +7444,8 @@
         "xbmc.player.musicviz",
         "xbmc.gui.skin",
         "xbmc.pvrclient",
-        "kodi.adsp",
         "kodi.inputstream",
+        "kodi.gameclient",
         "kodi.peripheral",
         "xbmc.python.script",
         "xbmc.python.weather",
@@ -7168,20 +7461,26 @@
         "xbmc.addon.repository",
         "xbmc.webinterface",
         "xbmc.service",
-        "xbmc.audioencoder",
+        "kodi.audioencoder",
         "kodi.context.item",
         "kodi.audiodecoder",
         "kodi.resource.images",
         "kodi.resource.language",
         "kodi.resource.uisounds",
+        "kodi.resource.games",
+        "kodi.resource.font",
+        "kodi.vfs",
+        "kodi.imagedecoder",
+        "xbmc.metadata.scraper.library",
+        "xbmc.python.library",
+        "xbmc.python.module",
+        "kodi.game.controller",
+        "",
         "xbmc.addon.video",
         "xbmc.addon.audio",
         "xbmc.addon.image",
         "xbmc.addon.executable",
-        "xbmc.metadata.scraper.library",
-        "xbmc.python.library",
-        "xbmc.python.module",
-        "kodi.game.controller"
+        "kodi.addon.game"
       ],
       "id":"Addon.Types",
       "type":"string"
@@ -7193,7 +7492,9 @@
         "volume",
         "muted",
         "name",
-        "version"
+        "version",
+        "sorttokens",
+        "language"
       ],
       "id":"Application.Property.Name",
       "type":"string"
@@ -7202,6 +7503,12 @@
     "Application.Property.Value":{
       "id":"Application.Property.Value",
       "properties":{
+        "language":{
+          "default":"",
+          "description":"Current language code and region e.g. en_GB",
+          "minLength":1,
+          "type":"string"
+        },
         "muted":{
           "default":false,
           "type":"boolean"
@@ -7210,6 +7517,10 @@
           "default":"",
           "minLength":1,
           "type":"string"
+        },
+        "sorttokens":{
+          "$ref":"Array.String",
+          "description":"Articles ignored during sorting when ignorearticle is enabled."
         },
         "version":{
           "properties":{
@@ -7357,8 +7668,20 @@
           "default":"",
           "type":"string"
         },
+        "lastplayed":{
+          "default":"",
+          "type":"string"
+        },
         "mood":{
           "$ref":"Array.String"
+        },
+        "musicbrainzalbumid":{
+          "default":"",
+          "type":"string"
+        },
+        "musicbrainzreleasegroupid":{
+          "default":"",
+          "type":"string"
         },
         "playcount":{
           "default":0,
@@ -7367,6 +7690,12 @@
         "releasetype":{
           "$ref":"Audio.Album.ReleaseType",
           "default":"album"
+        },
+        "songgenres":{
+          "$ref":"Audio.Details.Genres"
+        },
+        "sourceid":{
+          "$ref":"Array.Integer"
         },
         "style":{
           "$ref":"Array.String"
@@ -7409,11 +7738,19 @@
           "default":"",
           "type":"string"
         },
+        "disambiguation":{
+          "default":"",
+          "type":"string"
+        },
         "disbanded":{
           "default":"",
           "type":"string"
         },
         "formed":{
+          "default":"",
+          "type":"string"
+        },
+        "gender":{
           "default":"",
           "type":"string"
         },
@@ -7428,8 +7765,7 @@
           "$ref":"Array.String"
         },
         "musicbrainzartistid":{
-          "default":"",
-          "type":"string"
+          "$ref":"Array.String"
         },
         "roles":{
           "$ref":"Audio.Artist.Roles"
@@ -7437,8 +7773,19 @@
         "songgenres":{
           "$ref":"Audio.Details.Genres"
         },
+        "sortname":{
+          "default":"",
+          "type":"string"
+        },
+        "sourceid":{
+          "$ref":"Array.Integer"
+        },
         "style":{
           "$ref":"Array.String"
+        },
+        "type":{
+          "default":"",
+          "type":"string"
         },
         "yearsactive":{
           "$ref":"Array.String"
@@ -7450,6 +7797,9 @@
       "extends":"Media.Details.Base",
       "id":"Audio.Details.Base",
       "properties":{
+        "art":{
+          "$ref":"Media.Artwork"
+        },
         "dateadded":{
           "default":"",
           "type":"string"
@@ -7492,20 +7842,16 @@
           "default":"",
           "type":"string"
         },
-        "genreid":{
-          "$ref":"Array.Integer"
-        },
         "musicbrainzalbumartistid":{
-          "default":"",
-          "type":"string"
-        },
-        "musicbrainzalbumid":{
-          "default":"",
-          "type":"string"
+          "$ref":"Array.String"
         },
         "rating":{
           "default":0.0,
           "type":"number"
+        },
+        "sortartist":{
+          "default":"",
+          "type":"string"
         },
         "title":{
           "default":"",
@@ -7598,6 +7944,9 @@
           "default":"",
           "type":"string"
         },
+        "genreid":{
+          "$ref":"Array.Integer"
+        },
         "lastplayed":{
           "default":"",
           "type":"string"
@@ -7611,8 +7960,7 @@
           "type":"string"
         },
         "musicbrainzartistid":{
-          "default":"",
-          "type":"string"
+          "$ref":"Array.String"
         },
         "musicbrainztrackid":{
           "default":"",
@@ -7626,6 +7974,9 @@
           "$ref":"Library.Id",
           "required":true
         },
+        "sourceid":{
+          "$ref":"Array.Integer"
+        },
         "track":{
           "default":0,
           "type":"integer"
@@ -7637,7 +7988,8 @@
       "extends":"Item.Fields.Base",
       "id":"Audio.Fields.Album",
       "items":{
-        "description":"Requesting the genreid and/or artistid field will result in increased response times",
+        "description":"Requesting the songgenres,
+         artistid and/or sourceid fields will result in increased response times",
         "enums":[
           "title",
           "description",
@@ -7657,12 +8009,17 @@
           "fanart",
           "thumbnail",
           "playcount",
-          "genreid",
           "artistid",
           "displayartist",
           "compilation",
           "releasetype",
-          "dateadded"
+          "dateadded",
+          "sortartist",
+          "musicbrainzreleasegroupid",
+          "songgenres",
+          "art",
+          "lastplayed",
+          "sourceid"
         ],
         "type":"string"
       }
@@ -7673,7 +8030,7 @@
       "id":"Audio.Fields.Artist",
       "items":{
         "description":"Requesting the (song)genreid/genre,
-         or roleid/role fields will result in increased response times",
+         roleid/role or sourceid fields will result in increased response times",
         "enums":[
           "instrument",
           "style",
@@ -7692,7 +8049,13 @@
           "dateadded",
           "roles",
           "songgenres",
-          "isalbumartist"
+          "isalbumartist",
+          "sortname",
+          "type",
+          "gender",
+          "disambiguation",
+          "art",
+          "sourceid"
         ],
         "type":"string"
       }
@@ -7714,7 +8077,8 @@
       "id":"Audio.Fields.Song",
       "items":{
         "description":"Requesting the genreid,
-         artistid and/or albumartistid field will result in increased response times",
+         artistid,
+         albumartistid and/or sourceid fields will result in increased response times",
         "enums":[
           "title",
           "artist",
@@ -7751,7 +8115,10 @@
           "displaycomposer",
           "displayconductor",
           "displayorchestra",
-          "displaylyricist"
+          "displaylyricist",
+          "sortartist",
+          "art",
+          "sourceid"
         ],
         "type":"string"
       }
@@ -7760,7 +8127,8 @@
     "Audio.Property.Name":{
       "default":"missingartistid",
       "enums":[
-        "missingartistid"
+        "missingartistid",
+        "librarylastupdated"
       ],
       "id":"Audio.Property.Name",
       "type":"string"
@@ -7769,6 +8137,10 @@
     "Audio.Property.Value":{
       "id":"Audio.Property.Value",
       "properties":{
+        "librarylastupdated":{
+          "default":"",
+          "type":"string"
+        },
         "missingartistid":{
           "$ref":"Library.Id",
           "default":-1
@@ -7998,119 +8370,135 @@
     },
 
     "GUI.Window":{
-      "default":"home",
+      "default":"accesspoints",
       "enums":[
-        "home",
-        "programs",
-        "pictures",
+        "accesspoints",
+        "addon",
+        "addonbrowser",
+        "addoninformation",
+        "addonsettings",
+        "appearancesettings",
+        "busydialog",
+        "busydialognocancel",
+        "contentsettings",
+        "contextmenu",
+        "eventlog",
+        "extendedprogressdialog",
+        "favourites",
+        "filebrowser",
         "filemanager",
-        "settings",
-        "music",
-        "videos",
-        "tvchannels",
-        "tvrecordings",
-        "tvguide",
-        "tvtimers",
-        "tvsearch",
-        "radiochannels",
-        "radiorecordings",
-        "radioguide",
-        "radiotimers",
-        "radiosearch",
+        "fullscreengame",
+        "fullscreeninfo",
+        "fullscreenlivetv",
+        "fullscreenlivetvinput",
+        "fullscreenlivetvpreview",
+        "fullscreenradio",
+        "fullscreenradioinput",
+        "fullscreenradiopreview",
+        "fullscreenvideo",
+        "gameadvancedsettings",
         "gamecontrollers",
-        "pvrguideinfo",
-        "pvrrecordinginfo",
-        "pvrradiordsinfo",
-        "pvrtimersetting",
-        "pvrgroupmanager",
+        "gameosd",
+        "gamepadinput",
+        "games",
+        "gamesettings",
+        "gamestretchmode",
+        "gamevideofilter",
+        "gamevideorotation",
+        "gamevolume",
+        "home",
+        "infoprovidersettings",
+        "interfacesettings",
+        "libexportsettings",
+        "locksettings",
+        "loginscreen",
+        "mediafilter",
+        "mediasettings",
+        "mediasource",
+        "movieinformation",
+        "music",
+        "musicinformation",
+        "musicosd",
+        "musicplaylist",
+        "musicplaylisteditor",
+        "networksetup",
+        "notification",
+        "numericinput",
+        "okdialog",
+        "osdaudiosettings",
+        "osdcmssettings",
+        "osdsubtitlesettings",
+        "osdvideosettings",
+        "peripheralsettings",
+        "pictureinfo",
+        "pictures",
+        "playercontrols",
+        "playerprocessinfo",
+        "playersettings",
+        "profiles",
+        "profilesettings",
+        "programs",
+        "progressdialog",
+        "pvrchannelguide",
         "pvrchannelmanager",
-        "pvrguidesearch",
         "pvrchannelscan",
-        "pvrupdateprogress",
+        "pvrgroupmanager",
+        "pvrguideinfo",
+        "pvrguidesearch",
         "pvrosdchannels",
         "pvrosdguide",
         "pvrosdteletext",
-        "systeminfo",
-        "testpattern",
-        "screencalibration",
-        "systemsettings",
-        "servicesettings",
+        "pvrradiordsinfo",
+        "pvrrecordinginfo",
         "pvrsettings",
-        "playersettings",
-        "mediasettings",
-        "interfacesettings",
-        "appearancesettings",
-        "videoplaylist",
-        "loginscreen",
-        "profiles",
-        "skinsettings",
-        "addonbrowser",
-        "yesnodialog",
-        "progressdialog",
-        "virtualkeyboard",
-        "volumebar",
-        "submenu",
-        "favourites",
-        "contextmenu",
-        "notification",
-        "numericinput",
-        "gamepadinput",
-        "shutdownmenu",
-        "playercontrols",
-        "playerprocessinfo",
+        "pvrtimersetting",
+        "pvrupdateprogress",
+        "radiochannels",
+        "radioguide",
+        "radiorecordings",
+        "radiosearch",
+        "radiotimerrules",
+        "radiotimers",
+        "screencalibration",
+        "screensaver",
         "seekbar",
-        "musicosd",
-        "addonsettings",
-        "visualisationpresetlist",
-        "osdcmssettings",
-        "osdvideosettings",
-        "osdaudiosettings",
-        "audiodspmanager",
-        "osdaudiodspsettings",
-        "videobookmarks",
-        "filebrowser",
-        "networksetup",
-        "mediasource",
-        "profilesettings",
-        "locksettings",
-        "contentsettings",
-        "songinformation",
+        "selectdialog",
+        "servicesettings",
+        "settings",
+        "shutdownmenu",
+        "skinsettings",
+        "sliderdialog",
+        "slideshow",
         "smartplaylisteditor",
         "smartplaylistrule",
-        "busydialog",
-        "pictureinfo",
-        "accesspoints",
-        "fullscreeninfo",
-        "sliderdialog",
-        "addoninformation",
-        "subtitlesearch",
-        "musicplaylist",
-        "musicplaylisteditor",
-        "teletext",
-        "selectdialog",
-        "musicinformation",
-        "okdialog",
-        "movieinformation",
-        "textviewer",
-        "fullscreenvideo",
-        "fullscreenlivetv",
-        "fullscreenradio",
-        "visualisation",
-        "slideshow",
-        "weather",
-        "screensaver",
-        "videoosd",
-        "videomenu",
-        "videotimeseek",
-        "startwindow",
+        "songinformation",
+        "splash",
         "startup",
-        "peripheralsettings",
-        "extendedprogressdialog",
-        "mediafilter",
-        "addon",
-        "eventlog",
+        "startwindow",
+        "submenu",
+        "subtitlesearch",
+        "systeminfo",
+        "systemsettings",
+        "teletext",
+        "textviewer",
+        "tvchannels",
+        "tvguide",
+        "tvrecordings",
+        "tvsearch",
         "tvtimerrules",
-        "radiotimerrules"
+        "tvtimers",
+        "videobookmarks",
+        "videomenu",
+        "videoosd",
+        "videoplaylist",
+        "videos",
+        "videotimeseek",
+        "virtualkeyboard",
+        "visualisation",
+        "visualisationpresetlist",
+        "volumebar",
+        "weather",
+        "yesnodialog"
       ],
       "id":"GUI.Window",
       "type":"string"
@@ -8197,146 +8585,52 @@
     },
 
     "Input.Action":{
-      "default":"left",
+      "default":"analogfastforward",
       "enums":[
-        "left",
-        "right",
-        "up",
-        "down",
-        "pageup",
-        "pagedown",
-        "select",
-        "highlight",
-        "parentdir",
-        "parentfolder",
-        "back",
-        "menu",
-        "previousmenu",
-        "info",
-        "pause",
-        "stop",
-        "skipnext",
-        "skipprevious",
-        "fullscreen",
-        "aspectratio",
-        "stepforward",
-        "stepback",
-        "bigstepforward",
-        "bigstepback",
-        "chapterorbigstepforward",
-        "chapterorbigstepback",
-        "osd",
-        "showsubtitles",
-        "nextsubtitle",
-        "cyclesubtitle",
-        "playerdebug",
-        "codecinfo",
-        "playerprocessinfo",
-        "nextpicture",
-        "previouspicture",
-        "zoomout",
-        "zoomin",
-        "playlist",
-        "queue",
-        "zoomnormal",
-        "zoomlevel1",
-        "zoomlevel2",
-        "zoomlevel3",
-        "zoomlevel4",
-        "zoomlevel5",
-        "zoomlevel6",
-        "zoomlevel7",
-        "zoomlevel8",
-        "zoomlevel9",
-        "nextcalibration",
-        "resetcalibration",
-        "analogmove",
-        "analogmovex",
-        "analogmovey",
-        "rotate",
-        "rotateccw",
-        "close",
-        "subtitledelayminus",
-        "subtitledelay",
-        "subtitledelayplus",
-        "audiodelayminus",
-        "audiodelay",
-        "audiodelayplus",
-        "subtitleshiftup",
-        "subtitleshiftdown",
-        "subtitlealign",
-        "audionextlanguage",
-        "verticalshiftup",
-        "verticalshiftdown",
-        "nextresolution",
-        "audiotoggledigital",
-        "number0",
-        "number1",
-        "number2",
-        "number3",
-        "number4",
-        "number5",
-        "number6",
-        "number7",
-        "number8",
-        "number9",
-        "smallstepback",
-        "fastforward",
-        "rewind",
-        "play",
-        "playpause",
-        "switchplayer",
-        "delete",
-        "copy",
-        "move",
-        "screenshot",
-        "rename",
-        "togglewatched",
-        "scanitem",
-        "reloadkeymaps",
-        "volumeup",
-        "volumedown",
-        "mute",
-        "backspace",
-        "scrollup",
-        "scrolldown",
         "analogfastforward",
+        "analogmove",
+        "analogmovexleft",
+        "analogmovexright",
+        "analogmoveydown",
+        "analogmoveyup",
         "analogrewind",
-        "moveitemup",
-        "moveitemdown",
+        "analogseekback",
+        "analogseekforward",
+        "aspectratio",
+        "audiodelay",
+        "audiodelayminus",
+        "audiodelayplus",
+        "audionextlanguage",
+        "audiotoggledigital",
+        "back",
+        "backspace",
+        "bigstepback",
+        "bigstepforward",
+        "blue",
+        "browsesubtitle",
+        "channeldown",
+        "channelnumberseparator",
+        "channelup",
+        "chapterorbigstepback",
+        "chapterorbigstepforward",
+        "close",
+        "codecinfo",
         "contextmenu",
-        "shift",
-        "symbols",
+        "copy",
+        "createbookmark",
+        "createepisodebookmark",
         "cursorleft",
         "cursorright",
-        "showtime",
-        "analogseekforward",
-        "analogseekback",
-        "showpreset",
-        "nextpreset",
-        "previouspreset",
-        "lockpreset",
-        "randompreset",
-        "increasevisrating",
-        "decreasevisrating",
-        "showvideomenu",
-        "enter",
-        "increaserating",
+        "cyclesubtitle",
+        "decreasepar",
         "decreaserating",
-        "setrating",
-        "togglefullscreen",
-        "nextscene",
-        "previousscene",
-        "nextletter",
-        "prevletter",
-        "jumpsms2",
-        "jumpsms3",
-        "jumpsms4",
-        "jumpsms5",
-        "jumpsms6",
-        "jumpsms7",
-        "jumpsms8",
-        "jumpsms9",
+        "decreasevisrating",
+        "delete",
+        "doubleclick",
+        "down",
+        "enter",
+        "error",
+        "fastforward",
         "filter",
         "filterclear",
         "filtersms2",
@@ -8348,56 +8642,160 @@
         "filtersms8",
         "filtersms9",
         "firstpage",
-        "lastpage",
-        "guiprofile",
-        "red",
+        "fullscreen",
         "green",
-        "yellow",
-        "blue",
+        "guiprofile",
+        "highlight",
         "increasepar",
-        "decreasepar",
-        "volampup",
-        "volampdown",
-        "volumeamplification",
-        "createbookmark",
-        "createepisodebookmark",
-        "settingsreset",
-        "settingslevelchange",
-        "stereomode",
-        "nextstereomode",
-        "previousstereomode",
-        "togglestereomode",
-        "stereomodetomono",
-        "channelup",
-        "channeldown",
-        "previouschannelgroup",
-        "nextchannelgroup",
-        "playpvr",
-        "playpvrtv",
-        "playpvrradio",
-        "record",
-        "togglecommskip",
-        "showtimerrule",
+        "increaserating",
+        "increasevisrating",
+        "info",
+        "jumpsms2",
+        "jumpsms3",
+        "jumpsms4",
+        "jumpsms5",
+        "jumpsms6",
+        "jumpsms7",
+        "jumpsms8",
+        "jumpsms9",
+        "lastpage",
+        "left",
         "leftclick",
-        "rightclick",
-        "middleclick",
-        "doubleclick",
+        "lockpreset",
         "longclick",
-        "wheelup",
-        "wheeldown",
+        "longpress",
+        "menu",
+        "middleclick",
         "mousedrag",
         "mousemove",
-        "tap",
-        "longpress",
+        "move",
+        "moveitemdown",
+        "moveitemup",
+        "mute",
+        "nextcalibration",
+        "nextchannelgroup",
+        "nextletter",
+        "nextpicture",
+        "nextpreset",
+        "nextresolution",
+        "nextscene",
+        "nextstereomode",
+        "nextsubtitle",
+        "noop",
+        "number0",
+        "number1",
+        "number2",
+        "number3",
+        "number4",
+        "number5",
+        "number6",
+        "number7",
+        "number8",
+        "number9",
+        "osd",
+        "pagedown",
+        "pageup",
         "pangesture",
-        "zoomgesture",
+        "parentdir",
+        "parentfolder",
+        "pause",
+        "play",
+        "playerdebug",
+        "playerprocessinfo",
+        "playerprogramselect",
+        "playerresolutionselect",
+        "playlist",
+        "playnext",
+        "playpause",
+        "playpvr",
+        "playpvrradio",
+        "playpvrtv",
+        "previouschannelgroup",
+        "previousmenu",
+        "previouspicture",
+        "previouspreset",
+        "previousscene",
+        "previousstereomode",
+        "prevletter",
+        "queue",
+        "randompreset",
+        "record",
+        "red",
+        "reloadkeymaps",
+        "rename",
+        "resetcalibration",
+        "rewind",
+        "right",
+        "rightclick",
+        "rotate",
+        "rotateccw",
         "rotategesture",
+        "scanitem",
+        "screenshot",
+        "scrolldown",
+        "scrollup",
+        "select",
+        "setrating",
+        "settingslevelchange",
+        "settingsreset",
+        "shift",
+        "showpreset",
+        "showsubtitles",
+        "showtime",
+        "showtimerrule",
+        "showvideomenu",
+        "skipnext",
+        "skipprevious",
+        "smallstepback",
+        "stepback",
+        "stepforward",
+        "stereomode",
+        "stereomodetomono",
+        "stop",
+        "subtitlealign",
+        "subtitledelay",
+        "subtitledelayminus",
+        "subtitledelayplus",
+        "subtitleshiftdown",
+        "subtitleshiftup",
+        "swipedown",
         "swipeleft",
         "swiperight",
         "swipeup",
-        "swipedown",
-        "error",
-        "noop"
+        "switchplayer",
+        "symbols",
+        "tap",
+        "togglecommskip",
+        "togglefont",
+        "togglefullscreen",
+        "togglestereomode",
+        "togglewatched",
+        "up",
+        "verticalshiftdown",
+        "verticalshiftup",
+        "videonextstream",
+        "voicerecognizer",
+        "volampdown",
+        "volampup",
+        "volumeamplification",
+        "volumedown",
+        "volumeup",
+        "wheeldown",
+        "wheelup",
+        "yellow",
+        "zoomgesture",
+        "zoomin",
+        "zoomlevel1",
+        "zoomlevel2",
+        "zoomlevel3",
+        "zoomlevel4",
+        "zoomlevel5",
+        "zoomlevel6",
+        "zoomlevel7",
+        "zoomlevel8",
+        "zoomlevel9",
+        "zoomnormal",
+        "zoomout"
       ],
       "id":"Input.Action",
       "type":"string"
@@ -8431,6 +8829,10 @@
           "$ref":"Library.Id",
           "required":true
         },
+        "sourceid":{
+          "$ref":"Array.Integer",
+          "description":"The ids of sources with songs of the genre"
+        },
         "thumbnail":{
           "default":"",
           "type":"string"
@@ -8438,6 +8840,26 @@
         "title":{
           "default":"",
           "type":"string"
+        }
+      }
+    },
+
+    "Library.Details.Source":{
+      "extends":"Item.Details.Base",
+      "id":"Library.Details.Source",
+      "properties":{
+        "file":{
+          "description":"The url encoded multipath string combining all paths of the source ",
+          "required":true,
+          "type":"string"
+        },
+        "paths":{
+          "$ref":"Array.String",
+          "description":"The individual paths of the media source"
+        },
+        "sourceid":{
+          "$ref":"Library.Id",
+          "required":true
         }
       }
     },
@@ -8463,7 +8885,20 @@
       "items":{
         "enums":[
           "title",
-          "thumbnail"
+          "thumbnail",
+          "sourceid"
+        ],
+        "type":"string"
+      }
+    },
+
+    "Library.Fields.Source":{
+      "extends":"Item.Fields.Base",
+      "id":"Library.Fields.Source",
+      "items":{
+        "enums":[
+          "file",
+          "paths"
         ],
         "type":"string"
       }
@@ -8581,7 +9016,11 @@
           "displayconductor",
           "displayorchestra",
           "displaylyricist",
-          "userrating"
+          "userrating",
+          "sortartist",
+          "musicbrainzreleasegroupid",
+          "mediapath",
+          "dynpath"
         ],
         "type":"string"
       }
@@ -8661,7 +9100,9 @@
           "lastmodified",
           "mimetype",
           "specialsortseason",
-          "specialsortepisode"
+          "specialsortepisode",
+          "sortartist",
+          "musicbrainzreleasegroupid"
         ],
         "type":"string"
       }
@@ -8776,6 +9217,7 @@
       "default":"genre",
       "enums":[
         "genre",
+        "source",
         "album",
         "artist",
         "albumartist",
@@ -8803,11 +9245,15 @@
       "default":"artist",
       "enums":[
         "artist",
+        "source",
         "genre",
         "moods",
         "styles",
         "instruments",
         "biography",
+        "artisttype",
+        "gender",
+        "disambiguation",
         "born",
         "bandformed",
         "disbanded",
@@ -8826,6 +9272,7 @@
       "enums":[
         "title",
         "tvshow",
+        "originaltitle",
         "plot",
         "votes",
         "rating",
@@ -8868,6 +9315,7 @@
       "default":"title",
       "enums":[
         "title",
+        "originaltitle",
         "plot",
         "plotoutline",
         "tagline",
@@ -8949,6 +9397,7 @@
       "default":"genre",
       "enums":[
         "genre",
+        "source",
         "album",
         "artist",
         "albumartist",
@@ -8975,6 +9424,7 @@
       "default":"title",
       "enums":[
         "title",
+        "originaltitle",
         "plot",
         "status",
         "votes",
@@ -9438,6 +9888,12 @@
           "default":0,
           "type":"integer"
         },
+        "dynpath":{
+          "default":"",
+          "description":"An experimental property for debug purposes,
+           often same as mediapath but when different gives the actual file playing that should also be in file property",
+          "type":"string"
+        },
         "episode":{
           "default":0,
           "type":"integer"
@@ -9462,6 +9918,11 @@
           "default":"",
           "type":"string"
         },
+        "mediapath":{
+          "default":"",
+          "description":"Media source path that identifies the item",
+          "type":"string"
+        },
         "mood":{
           "$ref":"Array.String"
         },
@@ -9470,8 +9931,7 @@
           "type":"string"
         },
         "musicbrainzartistid":{
-          "default":"",
-          "type":"string"
+          "$ref":"Array.String"
         },
         "musicbrainztrackid":{
           "default":"",
@@ -9735,6 +10195,10 @@
             "descending"
           ],
           "type":"string"
+        },
+        "useartistsortname":{
+          "default":false,
+          "type":"boolean"
         }
       },
       "type":"object"
@@ -10764,6 +11228,78 @@
       "type":"object"
     },
 
+    "Player.CustomViewMode":{
+      "id":"Player.CustomViewMode",
+      "properties":{
+        "nonlinearstretch":{
+          "default":null,
+          "type":[
+            {
+              "enums":[
+                "increase",
+                "decrease"
+              ],
+              "type":"string"
+            },
+            {
+              "$ref":"Optional.Boolean",
+              "description":"Flag to enable nonlinear stretch"
+            }
+          ]
+        },
+        "pixelratio":{
+          "default":null,
+          "type":[
+            {
+              "enums":[
+                "increase",
+                "decrease"
+              ],
+              "type":"string"
+            },
+            {
+              "$ref":"Optional.Number",
+              "description":"Pixel aspect ratio where 1.0 means square pixel"
+            }
+          ]
+        },
+        "verticalshift":{
+          "default":null,
+          "type":[
+            {
+              "enums":[
+                "increase",
+                "decrease"
+              ],
+              "type":"string"
+            },
+            {
+              "$ref":"Optional.Number",
+              "description":"Vertical shift 1.0 means shift to bottom"
+            }
+          ]
+        },
+        "zoom":{
+          "default":null,
+          "type":[
+            {
+              "enums":[
+                "increase",
+                "decrease"
+              ],
+              "type":"string"
+            },
+            {
+              "$ref":"Optional.Number",
+              "description":"Zoom where 1.0 means 100%"
+            }
+          ]
+        }
+      },
+      "required":true,
+      "type":"object"
+    },
+
     "Player.Id":{
       "default":-1,
       "id":"Player.Id",
@@ -11082,6 +11618,23 @@
       "type":"object"
     },
 
+    "Player.ViewMode":{
+      "default":"normal",
+      "enums":[
+        "normal",
+        "zoom",
+        "stretch4x3",
+        "widezoom",
+        "stretch16x9",
+        "original",
+        "stretch16x9nonlin",
+        "zoom120width",
+        "zoom110width"
+      ],
+      "id":"Player.ViewMode",
+      "type":"string"
+    },
+
     "Playlist.Id":{
       "default":-1,
       "id":"Playlist.Id",
@@ -11349,6 +11902,9 @@
         },
         {
           "$ref":"Setting.Details.ControlRange"
+        },
+        {
+          "$ref":"Setting.Details.ControlLabel"
         }
       ]
     },
@@ -11435,6 +11991,27 @@
       "properties":{
         "heading":{
           "default":"",
+          "type":"string"
+        }
+      }
+    },
+
+    "Setting.Details.ControlLabel":{
+      "extends":"Setting.Details.ControlBase",
+      "id":"Setting.Details.ControlLabel",
+      "properties":{
+        "format":{
+          "enums":[
+            "string"
+          ],
+          "required":true,
+          "type":"string"
+        },
+        "type":{
+          "enums":[
+            "label"
+          ],
+          "required":true,
           "type":"string"
         }
       }
@@ -11587,6 +12164,12 @@
         },
         {
           "$ref":"Setting.Details.SettingAddon"
+        },
+        {
+          "$ref":"Setting.Details.SettingDate"
+        },
+        {
+          "$ref":"Setting.Details.SettingTime"
         }
       ]
     },
@@ -11594,7 +12177,13 @@
     "Setting.Details.SettingAction":{
       "additionalProperties":false,
       "extends":"Setting.Details.SettingBase",
-      "id":"Setting.Details.SettingAction"
+      "id":"Setting.Details.SettingAction",
+      "properties":{
+        "data":{
+          "required":true,
+          "type":"string"
+        }
+      }
     },
 
     "Setting.Details.SettingAddon":{
@@ -11650,6 +12239,12 @@
           "type":"boolean"
         }
       }
+    },
+
+    "Setting.Details.SettingDate":{
+      "additionalProperties":false,
+      "extends":"Setting.Details.SettingString",
+      "id":"Setting.Details.SettingDate"
     },
 
     "Setting.Details.SettingInt":{
@@ -11813,6 +12408,12 @@
       }
     },
 
+    "Setting.Details.SettingTime":{
+      "additionalProperties":false,
+      "extends":"Setting.Details.SettingString",
+      "id":"Setting.Details.SettingTime"
+    },
+
     "Setting.Level":{
       "default":"basic",
       "enums":[
@@ -11835,7 +12436,9 @@
         "action",
         "list",
         "path",
-        "addon"
+        "addon",
+        "date",
+        "time"
       ],
       "id":"Setting.Type",
       "type":"string"
@@ -12379,6 +12982,10 @@
           "default":"",
           "type":"string"
         },
+        "title":{
+          "default":"",
+          "type":"string"
+        },
         "tvshowid":{
           "$ref":"Library.Id",
           "default":-1
@@ -12641,7 +13248,8 @@
           "tvshowid",
           "watchedepisodes",
           "art",
-          "userrating"
+          "userrating",
+          "title"
         ],
         "type":"string"
       }
@@ -12824,6 +13432,6 @@
       "type":"object"
     }
   },
-  "version":"8.0.0"
+  "version":"10.3.0"
 }
 }

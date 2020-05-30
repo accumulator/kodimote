@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,14 +20,12 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Dialog {
     property variant item
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
+    allowedOrientations: appWindow.orientationSetting
 
     DialogHeader {
         id: header
@@ -33,9 +33,16 @@ Dialog {
     }
 
     Label {
-        anchors { left: parent.left; right: parent.right; leftMargin: Theme.paddingLarge; rightMargin: Theme.paddingLarge; verticalCenter: parent.verticalCenter }
+        anchors {
+            left: parent.left
+            right: parent.right
+            leftMargin: Theme.paddingLarge
+            rightMargin: Theme.paddingLarge
+            verticalCenter: parent.verticalCenter
+        }
         font.pixelSize: Theme.fontSizeExtraLarge
-        text: qsTr("Do you want to resume playback at %1?"). arg(item.resumeString)
+        text: qsTr("Do you want to resume playback at %1?").arg(
+                  item.resumeString)
         wrapMode: Text.WrapAtWordBoundaryOrAnywhere
         horizontalAlignment: Text.AlignHCenter
         color: Theme.highlightColor

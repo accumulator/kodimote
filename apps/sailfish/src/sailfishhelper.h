@@ -22,31 +22,31 @@
 #ifndef SAILFISHHELPER_H
 #define SAILFISHHELPER_H
 
+#include <policy/resource-set.h>
 #include <QDBusArgument>
 #include <QDBusMessage>
 #include <QDBusObjectPath>
 #include <QObject>
-#include <policy/resource-set.h>
 #include <QQuickView>
 
 #include "libkodimote/platformhelper.h"
 
 class Settings;
 
-class SailfishHelper : public PlatformHelper
-{
+class SailfishHelper : public PlatformHelper {
     Q_OBJECT
-public:
-    explicit SailfishHelper(QQuickView *quickView, Settings *settings, QObject *parent = 0);
-    
+   public:
+    explicit SailfishHelper(QQuickView *quickView, Settings *settings,
+                            QObject *parent = 0);
+
     bool canRaise() const;
     void raise();
 
-private slots:
+   private slots:
     void callAdded(const QDBusMessage &msg);
     bool eventFilter(QObject *obj, QEvent *event);
 
-private:
+   private:
     QString lookupContact(QString phoneNumber);
     QMap<QString, QString> unpackMessage(const QDBusArgument &args);
 
@@ -54,4 +54,4 @@ private:
     ResourcePolicy::ResourceSet *m_resourceSet;
 };
 
-#endif // SAILFISHHELPER_H
+#endif  // SAILFISHHELPER_H

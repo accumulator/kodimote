@@ -231,17 +231,17 @@ void Player::receivedAnnouncement(const QVariantMap &map)
         emit stateChanged();
         m_speed = 1;
         emit speedChanged();
-    } else if(map.value("method").toString() == "Player.OnPlay") {
+    } else if (map.value("method").toString() == "Player.OnPlay" || map.value("method").toString() == "Player.OnResume") {
         m_state = "playing";
         emit stateChanged();
         //this has to be delayed, otherwise returned times aren't correct (yet)
         QTimer::singleShot(100, this, SLOT(refresh()));
         m_speed = data.value("player").toMap().value("speed").toInt();
         emit speedChanged();
-    } else if(map.value("method").toString() == "Player.OnSeek") {
+    } else if (map.value("method").toString() == "Player.OnSeek") {
         updatePlaytime(data.value("player").toMap().value("time").toMap());
         m_seeking = false;
-    } else if(map.value("method").toString() == "Player.OnSpeedChanged") {
+    } else if (map.value("method").toString() == "Player.OnSpeedChanged") {
         updatePlaytime();
         m_speed = data.value("player").toMap().value("speed").toInt();
         emit speedChanged();
@@ -460,6 +460,10 @@ QString Player::endTimeString() const
     return endTime.toString(format);
 }
 
+QString Player::remainingTimeString() const {
+    return formatTime(m_totalTime.addMSecs(m_lastPlaytime * -1));
+}
+
 QTime Player::totalTime() const
 {
     return m_totalTime;
@@ -472,20 +476,28 @@ QString Player::totalTimeString() const
 
 void Player::updatePlaytime()
 {
-    if(!m_currentItem) {
+    if (!m_currentItem) {
         return;
     }
 
-    //use milliseconds, otherwise it tends to skip a sec. once in a while
+    // use milliseconds, otherwise it tends to skip a sec. once in a while
     int duration = QTime(0, 0, 0).msecsTo(m_totalTime);
     QDateTime currentTime = QDateTime::currentDateTime();
     int elapsedMSeconds = m_lastPlaytimeUpdate.msecsTo(currentTime);
     m_lastPlaytime += elapsedMSeconds * m_speed;
-    m_percentage = qMax(0.0, qMin(100.0, (double)m_lastPlaytime / duration * 100));
+    m_percentage = qMax(0.0, qMin(100.0, static_cast<double>(m_lastPlaytime) / duration * 100));
     m_lastPlaytimeUpdate = currentTime;
 
     emit percentageChanged();
     emit timeChanged();
+    if (m_playtimeTimer.isActive()) {
+        if (m_lastPlaytime / 1000 > QTime(0, 0, 0).secsTo(m_totalTime)) {
+            // force refesh of current item as it sometimes not gets notified
+            m_lastPlaytime = 0;
+
+            refresh();
+        }
+    }
 }
 
 void Player::updatePlaytime(const QVariantMap &timeMap)
@@ -495,7 +507,7 @@ void Player::updatePlaytime(const QVariantMap &timeMap)
     m_lastPlaytime = QTime(0, 0, 0).msecsTo(time);
     m_lastPlaytimeUpdate = currentTime;
     int duration = QTime(0, 0, 0).msecsTo(m_totalTime);
-    m_percentage = (double)m_lastPlaytime / duration * 100;
+    m_percentage = static_cast<double>(m_lastPlaytime) / duration * 100;
 
     emit percentageChanged();
     emit timeChanged();

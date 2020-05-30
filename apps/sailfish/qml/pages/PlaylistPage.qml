@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -19,22 +21,25 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import "../components/"
 
 Page {
     id: playlistPage
+    allowedOrientations: appWindow.orientationSetting
 
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
     property QtObject player: kodi.activePlayer
     property QtObject playlist: player.playlist()
-    property bool timerActive: (( Qt.application.active && playlistPage.status == PageStatus.Active ) ||
-    cover.status === Cover.Active) && cover.status !== Cover.Deactivating && dockedControls.open
+    property bool timerActive: ((Qt.application.active
+                                 && playlistPage.status == PageStatus.Active)
+                                || cover.status === Cover.Active)
+                               && cover.status !== Cover.Deactivating
+                               && dockedControls.open
 
-    onTimerActiveChanged: { player.timerActive = timerActive }
+    onTimerActiveChanged: {
+        player.timerActive = timerActive
+    }
 
     SilicaFlickable {
         id: flickable
@@ -46,7 +51,6 @@ Page {
             id: mainMenu
 
             ControlsMenuItem {
-
             }
 
             MenuItem {
@@ -87,7 +91,24 @@ Page {
                 contentHeight: Theme.itemSizeMedium
 
                 onClicked: {
-                    player.playItem(index);
+                    player.playItem(index)
+                }
+                Rectangle {
+                    width: parent.width
+                    height: parent.height
+                    opacity: 0.5
+                    radius: 10
+                    gradient: Gradient {
+                        GradientStop {
+                            position: 0.0
+                            color: Theme.rgba(Theme.primaryColor, 0.1)
+                        }
+                        GradientStop {
+                            position: 1.0
+                            color: Theme.rgba(Theme.primaryColor, 0.05)
+                        }
+                    }
+                    visible: index === listView.model.currentTrackNumber - 1
                 }
 
                 menu: ContextMenu {
@@ -116,7 +137,6 @@ Page {
                     Label {
                         id: mainText
                         text: title
-                        font.weight: Font.Bold
                         font.pixelSize: 26 * appWindow.sizeRatio
                         width: listView.width - durationLabel.width
                         truncationMode: TruncationMode.Fade
@@ -156,8 +176,8 @@ Page {
                 }
             }
 
-            VerticalScrollDecorator {  }
+            VerticalScrollDecorator {
+            }
         }
-
     }
 }

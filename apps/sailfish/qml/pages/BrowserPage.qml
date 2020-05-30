@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 import harbour.kodimote 1.0
 import "../components/"
@@ -27,31 +28,31 @@ import "../components/"
 Page {
     id: browserPage
 
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                         | Orientation.LandscapeInverted : Orientation.Portrait
     property variant model
-    property bool showSearch: !model.busy && browserPage.model && browserPage.model.allowSearch
+    property bool showSearch: !model.busy && browserPage.model
+                              && browserPage.model.allowSearch
+    allowedOrientations: appWindow.orientationSetting
 
-    signal home();
+    signal home
 
     Component.onCompleted: {
-        var setting = model.watchedFilterSetting;
+        var setting = model.watchedFilterSetting
         if (setting) {
-            settings[setting + 'Changed'].connect(function() {
-                filterModel.hideWatched = !settings[setting];
-            });
+            settings[setting + 'Changed'].connect(function () {
+                filterModel.hideWatched = !settings[setting]
+            })
         }
     }
 
     Component.onDestruction: {
         if (model) {
-            model.exit();
+            model.exit()
         }
     }
 
     onStatusChanged: {
         if (status === PageStatus.Active) {
-            pageStack.pushAttached("Keypad.qml");
+            pageStack.pushAttached("Keypad.qml")
         }
     }
 
@@ -62,9 +63,9 @@ Page {
         hideWatched: model.watchedFilterSetting ? !settings[model.watchedFilterSetting] : false
 
         onHideWatchedChanged: {
-            var setting = model.watchedFilterSetting;
+            var setting = model.watchedFilterSetting
             if (setting) {
-                settings[setting] = !hideWatched;
+                settings[setting] = !hideWatched
             }
         }
     }
@@ -77,20 +78,22 @@ Page {
 
         PullDownMenu {
             ControlsMenuItem {
-
             }
 
             MenuItem {
                 text: qsTr("Home")
                 onClicked: {
-                    browserPage.home();
+                    browserPage.home()
                 }
             }
 
             MenuItem {
-                text: filterModel.sortOrder == Qt.AscendingOrder ? qsTr("Sort (asc)") + " ▲" : qsTr("Sort (desc)") + " ▼"
+                text: filterModel.sortOrder
+                      === Qt.AscendingOrder ? qsTr("Sort (asc)") + " ▲" : qsTr(
+                                                  "Sort (desc)") + " ▼"
                 onClicked: {
-                    filterModel.sortOrder = filterModel.sortOrder == Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
+                    filterModel.sortOrder = filterModel.sortOrder
+                            === Qt.AscendingOrder ? Qt.DescendingOrder : Qt.AscendingOrder
                 }
             }
 
@@ -100,7 +103,7 @@ Page {
                 onClicked: {
                     browserPage.showSearch = !browserPage.showSearch
                     if (browserPage.showSearch)
-                        searchField.forceActiveFocus();
+                        searchField.forceActiveFocus()
                 }
             }
 
@@ -133,7 +136,9 @@ Page {
             cacheBuffer: itemHeight * 3
 
             property bool useThumbnails: settings.useThumbnails
-            property int itemHeight: browserPage.model && browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallScreen ? 200 : 126 * appWindow.sizeRatio) : (appWindow.smallScreen ? 148 : 92 * appWindow.sizeRatio)
+            property int itemHeight: browserPage.model
+                                     && browserPage.model.thumbnailFormat
+                                     === KodiModel.ThumbnailFormatPortrait ? (appWindow.smallScreen ? 200 : 126 * appWindow.sizeRatio) : (appWindow.smallScreen ? 148 : 92 * appWindow.sizeRatio)
 
             header: PageHeader {
                 title: model ? model.title : ""
@@ -143,20 +148,28 @@ Page {
                 id: drawer
 
                 width: parent.width
-                height: opened && listView.height * drawer._progress > contentItem.height ? listView.height * drawer._progress : contentItem.height
+                height: opened && listView.height * drawer._progress
+                        > contentItem.height ? listView.height
+                                               * drawer._progress : contentItem.height
                 dock: Dock.Bottom
 
                 function playItem() {
                     if (resume === 0) {
-                        browserPage.model.playItem(filterModel.mapToSourceIndex(index));
+                        browserPage.model.playItem(
+                                    filterModel.mapToSourceIndex(index))
                     } else {
-                        var dialog = pageStack.push("ResumeDialog.qml", {item: model});
-                        dialog.onAccepted.connect(function() {
-                            browserPage.model.playItem(filterModel.mapToSourceIndex(index), true);
-                        });
-                        dialog.onRejected.connect(function() {
-                            browserPage.model.playItem(filterModel.mapToSourceIndex(index));
-                        });
+                        var dialog = pageStack.push("ResumeDialog.qml", {
+                                                        "item": model
+                                                    })
+                        dialog.onAccepted.connect(function () {
+                            browserPage.model.playItem(
+                                        filterModel.mapToSourceIndex(index),
+                                        true)
+                        })
+                        dialog.onRejected.connect(function () {
+                            browserPage.model.playItem(
+                                        filterModel.mapToSourceIndex(index))
+                        })
                     }
                 }
 
@@ -169,18 +182,19 @@ Page {
                         anchors.fill: parent
 
                         onLoaded: {
-                            item.item = browserPage.model.getItem(index);
+                            item.item = browserPage.model.getItem(index)
                         }
 
                         Connections {
                             target: contentLoader.item
 
                             onPlayItem: {
-                                drawer.playItem();
+                                drawer.playItem()
                             }
 
                             onAddToPlaylist: {
-                                browserPage.model.addToPlaylist(filterModel.mapToSourceIndex(index))
+                                browserPage.model.addToPlaylist(
+                                            filterModel.mapToSourceIndex(index))
                             }
                         }
                     }
@@ -194,7 +208,8 @@ Page {
                     width: parent.width
                     anchors.topMargin: Theme.paddingSmall
                     anchors.rightMargin: Theme.paddingSmall
-                    showMenuOnPressAndHold: playable && !browserPage.model.hasDetails()
+                    showMenuOnPressAndHold: playable
+                                            && !browserPage.model.hasDetails()
 
                     onPressed: {
                         listView.currentIndex = index
@@ -202,24 +217,30 @@ Page {
 
                     onPressAndHold: {
                         if (browserPage.model.hasDetails()) {
-                            browserPage.model.fetchItemDetails(filterModel.mapToSourceIndex(listView.currentIndex));
-                            drawer.open = true;
+                            browserPage.model.fetchItemDetails(
+                                        filterModel.mapToSourceIndex(
+                                            listView.currentIndex))
+                            drawer.open = true
                         }
                     }
 
                     onClicked: {
                         if (drawer.open) {
-                            drawer.open = false;
+                            drawer.open = false
                         } else {
                             if (filetype === "directory") {
-                                var newModel = browserPage.model.enterItem(filterModel.mapToSourceIndex(index));
-                                newModel.ignoreArticle = settings.ignoreArticle;
-                                var browser = pageStack.push("BrowserPage.qml", {model: newModel});
-                                browser.home.connect(function() {
-                                    browserPage.home();
-                                });
+                                var newModel = browserPage.model.enterItem(
+                                            filterModel.mapToSourceIndex(index))
+                                newModel.ignoreArticle = settings.ignoreArticle
+                                var browser = pageStack.push("BrowserPage.qml",
+                                                             {
+                                                                 "model": newModel
+                                                             })
+                                browser.home.connect(function () {
+                                    browserPage.home()
+                                })
                             } else {
-                                drawer.playItem();
+                                drawer.playItem()
                             }
                         }
                     }
@@ -243,36 +264,57 @@ Page {
                             }
                             MenuItem {
                                 text: qsTr("Add to playlist")
-                                onClicked: browserPage.model.addToPlaylist(filterModel.mapToSourceIndex(index))
+                                onClicked: browserPage.model.addToPlaylist(
+                                               filterModel.mapToSourceIndex(
+                                                   index))
                             }
                         }
                     }
 
                     Thumbnail {
                         id: thumbnailImage
-                        height: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (120 * appWindow.sizeRatio) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatNone ? 0 : (86 * appWindow.sizeRatio))
-                        width: browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatPortrait ? (80 * appWindow.sizeRatio) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatLandscape ? (152 * appWindow.sizeRatio ) : height)
+                        height: browserPage.model.thumbnailFormat
+                                === KodiModel.ThumbnailFormatPortrait ? (120 * appWindow.sizeRatio) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatNone ? 0 : (86 * appWindow.sizeRatio))
+                        width: browserPage.model.thumbnailFormat
+                               === KodiModel.ThumbnailFormatPortrait ? (80 * appWindow.sizeRatio) : (browserPage.model.thumbnailFormat === KodiModel.ThumbnailFormatLandscape ? (152 * appWindow.sizeRatio) : height)
 
                         anchors.left: parent.left
                         anchors.leftMargin: Theme.paddingLarge
                         anchors.verticalCenter: parent.verticalCenter
-                        visible: listView.useThumbnails && browserPage.model.thumbnailFormat !== KodiModel.ThumbnailFormatNone
+                        visible: listView.useThumbnails
+                                 && browserPage.model.thumbnailFormat
+                                 !== KodiModel.ThumbnailFormatNone
 
-                        artworkSource: thumbnail
+                        artworkSource: thumbnail ? thumbnail : filetype === "directory" ? "image://theme/icon-m-folder" : ""
                         defaultText: title
 
                         IconButton {
                             id: playingOverlay
                             icon.source: playingState === "playing" ? "image://theme/icon-m-play" : "image://theme/icon-m-pause"
-                            visible: playingState === "playing" || playingState == "paused"
+                            visible: playingState === "playing"
+                                     || playingState === "paused"
                             z: 2
                             anchors.centerIn: thumbnailImage
 
                             SequentialAnimation on opacity {
                                 loops: Animation.Infinite
                                 running: playingOverlay.visible
-                                NumberAnimation {target: playingOverlay; properties: "opacity"; from: 1; to: 0.5; duration: 1000; easing.type: Easing.InOutQuad}
-                                NumberAnimation {target: playingOverlay; properties: "opacity"; from: 0.5; to: 1; duration: 1000; easing.type: Easing.InOutQuad}
+                                NumberAnimation {
+                                    target: playingOverlay
+                                    properties: "opacity"
+                                    from: 1
+                                    to: 0.5
+                                    duration: 1000
+                                    easing.type: Easing.InOutQuad
+                                }
+                                NumberAnimation {
+                                    target: playingOverlay
+                                    properties: "opacity"
+                                    from: 0.5
+                                    to: 1
+                                    duration: 1000
+                                    easing.type: Easing.InOutQuad
+                                }
                             }
                         }
                     }
@@ -280,10 +322,10 @@ Page {
                     Row {
                         id: itemRow
                         anchors {
-                            left: (thumbnailImage.visible ? thumbnailImage.right : parent.left);
-                            leftMargin: (thumbnailImage.visible ? Theme.paddingMedium : Theme.paddingLarge);
-                            top: parent.top;
-                            right: parent.right;
+                            left: (thumbnailImage.visible ? thumbnailImage.right : parent.left)
+                            leftMargin: (thumbnailImage.visible ? Theme.paddingMedium : Theme.paddingLarge)
+                            top: parent.top
+                            right: parent.right
                             rightMargin: Theme.paddingLarge
                         }
                         height: listView.itemHeight
@@ -294,7 +336,6 @@ Page {
                             Label {
                                 id: mainText
                                 text: title
-                                font.weight: Font.Bold
                                 font.pixelSize: Theme.fontSizeMedium
                                 width: itemRow.width
                                 truncationMode: TruncationMode.Fade
@@ -304,8 +345,13 @@ Page {
 
                                 states: [
                                     State {
-                                        name: "highlighted"; when: playingState === "playing" || playingState === "paused"
-                                        PropertyChanges { target: mainText; color: Theme.highlightColor }
+                                        name: "highlighted"
+                                        when: playingState === "playing"
+                                              || playingState === "paused"
+                                        PropertyChanges {
+                                            target: mainText
+                                            color: Theme.highlightColor
+                                        }
                                     }
                                 ]
                             }
@@ -318,7 +364,7 @@ Page {
                                 color: Theme.secondaryColor
                                 width: mainText.width
                                 truncationMode: TruncationMode.Fade
-                                visible: text != ""
+                                visible: text !== ""
                                 height: font.pixelSize
                                 verticalAlignment: Text.AlignVCenter
                             }
@@ -331,7 +377,7 @@ Page {
                                 color: Theme.secondaryColor
                                 width: mainText.width
                                 truncationMode: TruncationMode.Fade
-                                visible: text != ""
+                                visible: text !== ""
                                 height: font.pixelSize
                                 verticalAlignment: Text.AlignVCenter
                             }
@@ -341,38 +387,66 @@ Page {
                     ProgressBar {
                         minimumValue: 0
                         maximumValue: 100
-                        value: model.progressPercentage != undefined ? progressPercentage : 0
-                        visible: index >= 0 && browserPage.model.getItem(filterModel.mapToSourceIndex(index)).type === "channel"
+                        value: model.progressPercentage !== undefined ? progressPercentage : 0
+                        visible: index >= 0 && browserPage.model.getItem(
+                                     filterModel.mapToSourceIndex(
+                                         index)).type === "channel"
 
                         leftMargin: 10
                         rightMargin: 10
                         height: 20
                         anchors {
-                            left: (thumbnailImage.visible ? thumbnailImage.right : parent.left);
-                            leftMargin: (thumbnailImage.visible ? Theme.paddingSmall : Theme.paddingLarge);
+                            left: (thumbnailImage.visible ? thumbnailImage.right : parent.left)
+                            leftMargin: (thumbnailImage.visible ? Theme.paddingSmall : Theme.paddingLarge)
                             right: parent.right
                             rightMargin: Theme.paddingLarge
                             verticalCenter: parent.bottom
                             verticalCenterOffset: 25
                         }
                     }
-
                 }
 
                 states: [
                     State {
                         when: open
-                        PropertyChanges { target: listView; interactive: false; contentY: listView.itemHeight * listView.currentIndex }
-                        PropertyChanges { target: flickable; interactive: false }
-                        PropertyChanges { target: contentLoader; source: browserPage.model.getItem(filterModel.mapToSourceIndex(index)).type == "channel" ? "../components/ChannelDetails.qml" : "../components/ItemDetails.qml" }
-                        PropertyChanges { target: dockedControls; hideTemporary: true }
-                        PropertyChanges { target: controlBar; height: 0 }
+                        PropertyChanges {
+                            target: listView
+                            interactive: false
+                            contentY: listView.itemHeight * listView.currentIndex
+                        }
+                        PropertyChanges {
+                            target: flickable
+                            interactive: false
+                        }
+                        PropertyChanges {
+                            target: contentLoader
+                            source: browserPage.model.getItem(
+                                        filterModel.mapToSourceIndex(
+                                            index)).type === "channel" ? "../components/ChannelDetails.qml" : "../components/ItemDetails.qml"
+                        }
+                        PropertyChanges {
+                            target: dockedControls
+                            hideTemporary: true
+                        }
+                        PropertyChanges {
+                            target: controlBar
+                            height: 0
+                        }
                     },
                     State {
                         when: opened
-                        PropertyChanges { target: listView; interactive: false }
-                        PropertyChanges { target: flickable; interactive: false }
-                        PropertyChanges { target: dockedControls; hideTemporary: true }
+                        PropertyChanges {
+                            target: listView
+                            interactive: false
+                        }
+                        PropertyChanges {
+                            target: flickable
+                            interactive: false
+                        }
+                        PropertyChanges {
+                            target: dockedControls
+                            hideTemporary: true
+                        }
                     }
                 ]
             }
@@ -384,7 +458,8 @@ Page {
                 }
             }
 
-            VerticalScrollDecorator { }
+            VerticalScrollDecorator {
+            }
         }
 
         Column {
@@ -402,9 +477,9 @@ Page {
                 visible: browserPage.showSearch
 
                 onTextChanged: {
-                    if (text == "") {
+                    if (text === "") {
                         browserPage.showSearch = false
-                        controlBar.forceActiveFocus();
+                        controlBar.forceActiveFocus()
                     }
                 }
 

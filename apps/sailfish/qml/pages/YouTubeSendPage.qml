@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,19 +20,17 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 import Sailfish.Silica 1.0
 
 Page {
     id: youTubePage
-    allowedOrientations: appWindow.bigScreen ? Orientation.Portrait | Orientation.Landscape
-                                               | Orientation.LandscapeInverted : Orientation.Portrait
+    allowedOrientations: appWindow.orientationSetting
     property bool menuDockOpen
-
 
     Component.onCompleted: {
         menuDockOpen = dockedControls.open
+        youtubeUrl.forceActiveFocus()
     }
 
     onStatusChanged: {
@@ -62,7 +62,8 @@ Page {
                 x: Theme.paddingLarge
                 y: Theme.paddingLarge
                 font.pixelSize: Theme.fontSizeMedium
-                placeholderText: qsTr('Enter YouTube URL')
+                label: qsTr('Enter YouTube URL')
+                placeholderText: label
                 inputMethodHints: Qt.ImhUrlCharactersOnly
                 text: Clipboard.text
                 width: column.width - (2 * Theme.paddingLarge)

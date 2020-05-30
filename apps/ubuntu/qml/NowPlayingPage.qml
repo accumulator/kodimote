@@ -230,7 +230,7 @@ KodiPage {
                     id: artistLabel
                     Layout.fillWidth: true
                     elide: Text.ElideRight
-                    text: !currentItem ? "" : (kodi.state == "audio" ? currentItem.artist : (currentItem.type == "episode" ? currentItem.tvShow : qsTr("Year:") + " " + currentItem.year))
+                    text: !currentItem ? "" : (kodi.state === "audio" ? currentItem.artist : (currentItem.type == "episode" ? currentItem.tvShow : qsTr("Year:") + " " + currentItem.year))
                 }
                 RowLayout {
                     id: albumRow
@@ -240,7 +240,7 @@ KodiPage {
                     Label {
                         id: albumLabel
                         elide: Text.ElideRight
-                        text: !currentItem ? "" : (kodi.state == "audio" ? currentItem.album : (currentItem.type == "episode" ? qsTr("Season:") + " " + currentItem.season + "   " + qsTr("Episode:") + " " + currentItem.episode : qsTr("Rating:") + " "))
+                        text: !currentItem ? "" : (kodi.state === "audio" ? currentItem.album : (currentItem.type === "episode" ? qsTr("Season:") + " " + currentItem.season + "   " + qsTr("Episode:") + " " + currentItem.episode : qsTr("Rating:") + " "))
                     }
                     property int starCount: !currentItem ? 0 : (currentItem.rating > 10 ? Math.floor(currentItem.rating / 20) : Math.floor(currentItem.rating / 2))
 
@@ -431,10 +431,10 @@ KodiPage {
         BottomEdgeButton {
             text: qsTr("Repeat")
             Layout.fillWidth: true
-            source: player && player.repeat == Player.RepeatNone ? "image://theme/media-playlist-repeat" :
-                                                             player && player.repeat == Player.RepeatOne ? "../images/media-playlist-repeat-one.svg" :
+            source: player && player.repeat === Player.RepeatNone ? "image://theme/media-playlist-repeat" :
+                                                             player && player.repeat === Player.RepeatOne ? "../images/media-playlist-repeat-one.svg" :
                                                                                                  "../images/media-playlist-repeat-all.svg"
-            visible: root.player && root.player.type == Player.PlayerTypeAudio
+            visible: root.player && root.player.type === Player.PlayerTypeAudio
             onClicked: {
                 if (player.repeat === Player.RepeatNone) {
                     player.repeat = Player.RepeatOne;
@@ -450,7 +450,7 @@ KodiPage {
             text: qsTr("Shuffle")
             Layout.fillWidth: true
             source: player && player.shuffle ? "../images/media-playlist-shuffle-active.svg" : "image://theme/media-playlist-shuffle"
-            visible: root.player && root.player.type == Player.PlayerTypeAudio
+            visible: root.player && root.player.type === Player.PlayerTypeAudio
             onClicked: {
                 player.shuffle = ! player.shuffle
             }
@@ -459,7 +459,7 @@ KodiPage {
             text: qsTr("Subtitles")
             Layout.fillWidth: true
             source: "image://theme/message"
-            visible: root.player && root.player.type == Player.PlayerTypeVideo
+            visible: root.player && root.player.type === Player.PlayerTypeVideo
             onClicked: {
                 var popup = PopupUtils.open(toolbarMenuComponent, root, {model: player.subtitles, currentIndex: player.currentSubtitle, title: qsTr("Select subtitle"), showClearButton: true})
                 popup.accepted.connect(function(selectedIndex) {player.currentSubtitle = selectedIndex})
@@ -469,7 +469,7 @@ KodiPage {
         BottomEdgeButton {
             text: qsTr("Audio track")
             source: "image://theme/audio-speakers-symbolic"
-            visible: root.player && root.player.type == Player.PlayerTypeVideo
+            visible: root.player && root.player.type === Player.PlayerTypeVideo
             Layout.fillWidth: true
             onClicked: {
                 var popup = PopupUtils.open(toolbarMenuComponent, root, {model: player.audiostreams, currentIndex: player.currentAudiostream, title: qsTr("Select audio track")})

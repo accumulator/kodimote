@@ -1,3 +1,5 @@
+
+
 /*****************************************************************************
  * Copyright: 2011-2013 Michael Zanetti <michael_zanetti@gmx.net>            *
  *            2014      Robert Meijers <robert.meijers@gmail.com>            *
@@ -18,8 +20,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.     *
  *                                                                           *
  ****************************************************************************/
-
-import QtQuick 2.0
+import QtQuick 2.2
 
 Loader {
     width: 100
@@ -55,8 +56,9 @@ Loader {
             font.pointSize: height / 6
             clip: true
             property int colorNr: Math.floor(Math.random() * 5)
-            color:  colorNr == 0  ? "lightblue" : colorNr == 1 ? "red" : colorNr == 2 ? "lightgreen" : colorNr == 3 ? "yellow" : "white"
+            color: colorNr == 0 ? "lightblue" : colorNr
+                                  == 1 ? "red" : colorNr
+                                         == 2 ? "lightgreen" : colorNr == 3 ? "yellow" : "white"
         }
     }
-
 }

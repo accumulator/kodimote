@@ -225,6 +225,19 @@ void Settings::setPreventDimEnabled(bool enabled)
     emit preventDimEnabledChanged();
 }
 
+int Settings::orientation() const
+{
+    QSettings settings;
+    return settings.value("Orientation", 0).toInt();
+}
+
+void Settings::setOrientation(int orientationNbr)
+{
+    QSettings settings;
+    settings.setValue("Orientation", orientationNbr);
+    emit orientationChanged();
+}
+
 Settings::IntroStep Settings::introStep() const
 {
     QSettings settings;

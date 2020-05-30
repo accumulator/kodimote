@@ -256,11 +256,11 @@
     </message>
     <message>
         <source>Sort (asc)</source>
-        <translation>Сортировка (Восходящий)</translation>
+        <translation>Сортировка (прямая)</translation>
     </message>
     <message>
         <source>Sort (desc)</source>
-        <translation>Сортировка (нисходящий)</translation>
+        <translation>Сортировка (обратная)</translation>
     </message>
     <message>
         <source>Search</source>
@@ -642,7 +642,7 @@
     </message>
     <message>
         <source>Director</source>
-        <translation>Режиссер</translation>
+        <translation>Режиссёр</translation>
     </message>
     <message>
         <source>Tagline</source>
@@ -670,7 +670,7 @@
     </message>
     <message>
         <source>Formed</source>
-        <translation>Создан</translation>
+        <translation>Создание</translation>
     </message>
     <message>
         <source>Died</source>
@@ -690,7 +690,7 @@
     </message>
     <message>
         <source>Playcount</source>
-        <translation>Счетчик воспроиведения</translation>
+        <translation>Счетчик воспроизведения</translation>
     </message>
     <message>
         <source>Cast</source>
@@ -714,87 +714,87 @@
     </message>
     <message>
         <source>Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Рейтинг:</translation>
     </message>
     <message>
         <source>Season:</source>
-        <translation type="unfinished"></translation>
+        <translation>Сезон:</translation>
     </message>
     <message>
         <source>Episode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Серия:</translation>
     </message>
     <message>
         <source>First aired:</source>
-        <translation type="unfinished"></translation>
+        <translation>Впервые на ТВ:</translation>
     </message>
     <message>
         <source>Genre:</source>
-        <translation type="unfinished"></translation>
+        <translation>Жанр:</translation>
     </message>
     <message>
         <source>Year:</source>
-        <translation type="unfinished"></translation>
+        <translation>Год:</translation>
     </message>
     <message>
         <source>Director:</source>
-        <translation type="unfinished"></translation>
+        <translation>Режиссёр:</translation>
     </message>
     <message>
         <source>Tagline:</source>
-        <translation type="unfinished"></translation>
+        <translation>Теги:</translation>
     </message>
     <message>
         <source>MPAA:</source>
-        <translation type="unfinished"></translation>
+        <translation>Рейтинг MPAA:</translation>
     </message>
     <message>
         <source>Instrument:</source>
-        <translation type="unfinished"></translation>
+        <translation>Инструмент:</translation>
     </message>
     <message>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Стиль:</translation>
     </message>
     <message>
         <source>Mood:</source>
-        <translation type="unfinished"></translation>
+        <translation>Настроение:</translation>
     </message>
     <message>
         <source>Born:</source>
-        <translation type="unfinished"></translation>
+        <translation>Родился:</translation>
     </message>
     <message>
         <source>Formed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Создание:</translation>
     </message>
     <message>
         <source>Died:</source>
-        <translation type="unfinished"></translation>
+        <translation>Умер:</translation>
     </message>
     <message>
         <source>Disbanded:</source>
-        <translation type="unfinished"></translation>
+        <translation>Распад:</translation>
     </message>
     <message>
         <source>Duration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Длительность:</translation>
     </message>
     <message>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарии:</translation>
     </message>
     <message>
         <source>Playcount:</source>
-        <translation type="unfinished"></translation>
+        <translation>Счетчик воспроизведения:</translation>
     </message>
     <message>
         <source>Cast:</source>
-        <translation type="unfinished"></translation>
+        <translation>Состав:</translation>
     </message>
     <message>
         <source>Title:</source>
-        <translation type="unfinished"></translation>
+        <translation>Название:</translation>
     </message>
 </context>
 <context>
@@ -1158,19 +1158,19 @@
     <name>NowPlaying</name>
     <message>
         <source>Year:</source>
-        <translation type="unfinished"></translation>
+        <translation>Год:</translation>
     </message>
     <message>
         <source>Season:</source>
-        <translation type="unfinished"></translation>
+        <translation>Сезон:</translation>
     </message>
     <message>
         <source>Episode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Серия:</translation>
     </message>
     <message>
         <source>Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Рейтинг:</translation>
     </message>
 </context>
 <context>
@@ -1189,7 +1189,7 @@
     </message>
     <message>
         <source>Director</source>
-        <translation>Режиссер</translation>
+        <translation>Режиссёр</translation>
     </message>
     <message>
         <source>Tagline</source>
@@ -1245,83 +1245,83 @@
     </message>
     <message>
         <source>Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Рейтинг:</translation>
     </message>
     <message>
         <source>Season:</source>
-        <translation type="unfinished"></translation>
+        <translation>Сезон:</translation>
     </message>
     <message>
         <source>Episode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Серия:</translation>
     </message>
     <message>
         <source>First aired:</source>
-        <translation type="unfinished"></translation>
+        <translation>Впервые на ТВ:</translation>
     </message>
     <message>
         <source>Genre:</source>
-        <translation type="unfinished"></translation>
+        <translation>Жанр:</translation>
     </message>
     <message>
         <source>Year:</source>
-        <translation type="unfinished"></translation>
+        <translation>Год:</translation>
     </message>
     <message>
         <source>Director:</source>
-        <translation type="unfinished"></translation>
+        <translation>Режиссёр:</translation>
     </message>
     <message>
         <source>Tagline:</source>
-        <translation type="unfinished"></translation>
+        <translation>Теги:</translation>
     </message>
     <message>
         <source>MPAA:</source>
-        <translation type="unfinished"></translation>
+        <translation>Рейтинг MPAA:</translation>
     </message>
     <message>
         <source>Instrument:</source>
-        <translation type="unfinished"></translation>
+        <translation>Инструмент:</translation>
     </message>
     <message>
         <source>Style:</source>
-        <translation type="unfinished"></translation>
+        <translation>Стиль:</translation>
     </message>
     <message>
         <source>Mood:</source>
-        <translation type="unfinished"></translation>
+        <translation>Настроение:</translation>
     </message>
     <message>
         <source>Born:</source>
-        <translation type="unfinished"></translation>
+        <translation>Родился:</translation>
     </message>
     <message>
         <source>Formed:</source>
-        <translation type="unfinished"></translation>
+        <translation>Создание:</translation>
     </message>
     <message>
         <source>Died:</source>
-        <translation type="unfinished"></translation>
+        <translation>Умер:</translation>
     </message>
     <message>
         <source>Disbanded:</source>
-        <translation type="unfinished"></translation>
+        <translation>Распад:</translation>
     </message>
     <message>
         <source>Duration:</source>
-        <translation type="unfinished"></translation>
+        <translation>Длительность:</translation>
     </message>
     <message>
         <source>Comment:</source>
-        <translation type="unfinished"></translation>
+        <translation>Комментарии:</translation>
     </message>
     <message>
         <source>Playcount:</source>
-        <translation type="unfinished"></translation>
+        <translation>Счетчик воспроизведения:</translation>
     </message>
     <message>
         <source>Cast:</source>
-        <translation type="unfinished"></translation>
+        <translation>Состав:</translation>
     </message>
 </context>
 <context>
@@ -1396,30 +1396,30 @@
     </message>
     <message>
         <source>Season:</source>
-        <translation type="unfinished"></translation>
+        <translation>Сезон:</translation>
     </message>
     <message>
         <source>Episode:</source>
-        <translation type="unfinished"></translation>
+        <translation>Серия:</translation>
     </message>
     <message>
         <source>Rating:</source>
-        <translation type="unfinished"></translation>
+        <translation>Рейтинг:</translation>
     </message>
     <message>
         <source>Year:</source>
-        <translation type="unfinished"></translation>
+        <translation>Год:</translation>
     </message>
 </context>
 <context>
     <name>NowPlayingView</name>
     <message>
         <source>Now playing:</source>
-        <translation type="unfinished"></translation>
+        <translation>Сейчас играет:</translation>
     </message>
     <message>
         <source>Track:</source>
-        <translation type="unfinished"></translation>
+        <translation>Дорожка:</translation>
     </message>
 </context>
 <context>
@@ -1691,7 +1691,27 @@
     </message>
     <message>
         <source>Prevent display blanking on keypad</source>
-        <translation type="unfinished"></translation>
+        <translation>Не гасить экран при пользовании пультом</translation>
+    </message>
+    <message>
+        <source>Orientation:</source>
+        <translation>Ориентация:</translation>
+    </message>
+    <message>
+        <source>Sets the preferred screen orientation.</source>
+        <translation>Предпочитаемая ориентация экрана</translation>
+    </message>
+    <message>
+        <source>Portrait</source>
+        <translation>портретная</translation>
+    </message>
+    <message>
+        <source>Landscape</source>
+        <translation>альбомная</translation>
+    </message>
+    <message>
+        <source>Dynamic</source>
+        <translation>динамическая</translation>
     </message>
 </context>
 <context>

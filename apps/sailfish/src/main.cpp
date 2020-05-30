@@ -20,43 +20,58 @@
  ****************************************************************************/
 
 #include <QDir>
-#include <QtQuick>
 #include <QStandardPaths>
+#include <QtQuick>
 
-#include "libkodimote/kodi.h"
 #include "libkodimote/eventclient.h"
-#include "libkodimote/settings.h"
-#include "libkodimote/networkaccessmanagerfactory.h"
+#include "libkodimote/kodi.h"
 #include "libkodimote/mpris2/mpriscontroller.h"
+#include "libkodimote/networkaccessmanagerfactory.h"
+#include "libkodimote/settings.h"
 #include "sailfishhelper.h"
 
 #include <sailfishapp.h>
 
 #include <keepalive/displayblanking.h>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]) {
     QGuiApplication *application = SailfishApp::application(argc, argv);
+    QProcess appinfo;
+    QString appversion;
+    // read app version from rpm database on startup
+    appinfo.start("/bin/rpm", QStringList() << "-qa"
+                                            << "--queryformat"
+                                            << "%{version}-%{RELEASE}"
+                                            << "harbour-kodimote");
+    appinfo.waitForFinished(-1);
+    if (appinfo.bytesAvailable() > 0) {
+        appversion = appinfo.readAll();
+    }
 
     // Load language file
     QString language = QLocale::system().bcp47Name();
     qDebug() << "got language:" << language;
 
     QTranslator qtTranslator;
-    if(!qtTranslator.load("qt_" + language, QLibraryInfo::location(QLibraryInfo::TranslationsPath))) {
+    if (!qtTranslator.load(
+            "qt_" + language,
+            QLibraryInfo::location(QLibraryInfo::TranslationsPath))) {
         qDebug() << "couldn't load qt_" + language;
     }
     application->installTranslator(&qtTranslator);
 
     QTranslator translator;
     if (!translator.load(":/kodimote_" + language + ".qm")) {
-        qDebug() << "Cannot load translation file" << "kodimote_" + language + ".qm";
+        qDebug() << "Cannot load translation file"
+                 << "kodimote_" + language + ".qm";
     }
     application->installTranslator(&translator);
 
-    Kodi::instance()->setDataPath(QStandardPaths::writableLocation(QStandardPaths::CacheLocation));
+    Kodi::instance()->setDataPath(
+        QStandardPaths::writableLocation(QStandardPaths::CacheLocation));
 
-    qmlRegisterType<DisplayBlanking>("harbour.kodimote", 1, 0, "DisplayBlanking");
+    qmlRegisterType<DisplayBlanking>("harbour.kodimote", 1, 0,
+                                     "DisplayBlanking");
 
     QQuickView *view = SailfishApp::createView();
 
@@ -69,14 +84,16 @@ int main(int argc, char *argv[])
     MprisController controller(&protocols, &helper);
     Q_UNUSED(controller)
 
-    view->engine()->setNetworkAccessManagerFactory(new NetworkAccessManagerFactory());
+    view->engine()->setNetworkAccessManagerFactory(
+        new NetworkAccessManagerFactory());
+    view->rootContext()->setContextProperty("version", appversion);
     view->engine()->rootContext()->setContextProperty("kodi", Kodi::instance());
     view->engine()->rootContext()->setContextProperty("settings", &settings);
-    view->engine()->rootContext()->setContextProperty("protocolManager", &protocols);
+    view->engine()->rootContext()->setContextProperty("protocolManager",
+                                                      &protocols);
     view->setSource(SailfishApp::pathTo("qml/main.qml"));
 
     view->show();
 
     return application->exec();
 }
-

@@ -1,3 +1,61 @@
+* Sat May 23 2020 Arno Dekker <email@me.com> 2.1.9-1
+- Update Chinese (by dashinfantry)
+- Open keyboard by default on YouTube URL page
+* Tue May 19 2020 Arno Dekker <email@me.com> 2.1.8-1
+- Fixed sorting of artist list
+* Wed Apr 1 2020 Arno Dekker <email@me.com> 2.1.7-2
+- Replaced colored title text by folder icon if relevant
+* Sat Jan 25 2020 Arno Dekker <email@me.com> 2.1.7-1
+- Changed all bold fonts to regular fonts
+- More hi-res stop button for bigger screens (thanks dikonov)
+- A bit smaller mediabuttonbar for larger devices
+- Change that should fix not skipping to next item in playlist occasionally
+* Sat Jan 25 2020 Arno Dekker <email@me.com> 2.1.6-1
+- Slightly highlight playing item in current playlist
+- Workaround for issue that progres info was not always refreshed at end of item play
+* Mon Nov 22 2019 Arno Dekker <email@me.com> 2.1.5-1
+- Full Chinese translation
+* Mon Nov 16 2019 Arno Dekker <email@me.com> 2.1.4-2
+- Small hotfix for description layout
+* Mon Nov 16 2019 Arno Dekker <email@me.com> 2.1.4-1
+- Improved image quality of some play buttons
+- Small space added between image and text in landscape mode
+- Fix passing of scraped data like genre, mood etc.
+- Discrete background bar below main menu items
+- Corrected small artifact when showing detail on Now Playing page
+* Mon Jun 10 2019 Arno Dekker <email@me.com> 2.1.3-28
+- Rewrite of slider and repositioning in landscape
+* Sat Apr 13 2019 Arno Dekker <email@me.com> 2.1.3-27
+- Fixed play/pause issue for Kodi v18 Leia
+* Sat Mar 10 2019 Arno Dekker <email@me.com> 2.1.3-26
+- Small change for tablet version, updated Russian language
+* Sat Jan 26 2019 Arno Dekker <email@me.com> 2.1.3-25
+- Some optimisations for nowplaying page in landscape
+* Sat Jan 12 2019 Arno Dekker <email@me.com> 2.1.3-24
+- Use translated text in remorse timer
+- Updated French translation
+- First changes for landscape support (can be enabled in settingspage)
+* Sat Nov 24 2018 Arno Dekker <email@me.com> 2.1.3-23
+- Added remorse timer for mainpage actions (reboot etc.)
+* Sat Nov 24 2018 Arno Dekker <email@me.com> 2.1.3-22
+- Small resize correction custom buttons in player panel
+- Better scaling slider hint text
+- Ugly workaround to get progressbar positioning acceptable in light ambiences
+* Wed Nov 14 2018 Arno Dekker <email@me.com> 2.1.3-21
+- Fixed switching of audiostreams
+* Sat Nov 10 2018 Arno Dekker <email@me.com> 2.1.3-20
+- Switched to default icons where possible for light ambiences
+- Made non default images support light ambiences
+- Progress bar position on light ambiences still needs work
+* Sat Oct 13 2018 Arno Dekker <email@me.com> 2.1.3-19
+- Progress bar layout fixes for SFOS 3
+* Sat Oct 13 2018 Arno Dekker <email@me.com> 2.1.3-18
+- Fix some text markup in plot descriptions
+* Wed Oct 07 2018 Arno Dekker <email@me.com> 2.1.3-17
+- Made keypad more sensitive for select press
+* Wed Oct 05 2018 Arno Dekker <email@me.com> 2.1.3-16
+- Rework on about page
+- Added slideshow play/pause button on Keypad in pictures mode
 * Wed Aug 22 2018 Arno Dekker <email@me.com> 2.1.3-15
 - Better scaling thumbnails in music/video library details for non-J1 devices
 - Switched to detailItem view for media details
