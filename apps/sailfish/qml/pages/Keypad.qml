@@ -266,113 +266,124 @@ Page {
                                                            * 0.75 : parent.width) : parent.width / 2
                 anchors.horizontalCenter: isPortrait ? parent.horizontalCenter : undefined
 
-                IconButton {
+                onCenterClicked: keys.select()
+                onTopleftClicked: {
+                    if (settings.hapticsEnabled) {
+                        rumbleEffect.start(2)
+                    }
+                    keys.back()
+                }
+                onToprightClicked: {
+                    if (settings.hapticsEnabled) {
+                        rumbleEffect.start(2)
+                    }
+                    if (usePictureControls) {
+                        picturePlayer.zoomIn()
+                    } else {
+                        keys.fullscreen()
+                    }
+                }
+                onBottomleftClicked: {
+                    if (settings.hapticsEnabled) {
+                        rumbleEffect.start(2)
+                    }
+                    if (settings.hapticsEnabled) {
+                        rumbleEffect.start(2)
+                    }
+
+                    if (usePictureControls) {
+                        picturePlayer.rotate()
+                    } else {
+                        keys.info()
+                    }
+                }
+                onBottomleftLongpress: {
+                    if (settings.hapticsEnabled) {
+                        rumbleEffect.start(2)
+                    }
+
+                    if (!usePictureControls) {
+                        keys.procinfo()
+                    }
+                }
+                onBottomrightClicked: {
+                    if (settings.hapticsEnabled) {
+                        rumbleEffect.start(2)
+                    }
+
+                    if (usePictureControls) {
+                        picturePlayer.zoomOut()
+                    } else {
+                        keys.osd()
+                        keys.contextMenu()
+                    }
+                }
+
+
+                Icon {
                     id: backButton
+                    width: Theme.itemSizeSmall; height: Theme.itemSizeSmall
+
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity {
                         NumberAnimation {
                             duration: 500
                         }
                     }
-                    icon.source: "image://theme/icon-m-back"
+                    source: "image://theme/icon-m-back"
                     anchors {
                         left: parent.left
                         top: parent.top
                         margins: Theme.paddingMedium
                     }
-                    onClicked: {
-                        if (settings.hapticsEnabled) {
-                            rumbleEffect.start(2)
-                        }
-                        keys.back()
-                    }
                 }
-                IconButton {
+
+                Icon {
+                    width: Theme.itemSizeSmall; height: Theme.itemSizeSmall
+
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity {
                         NumberAnimation {
                             duration: 500
                         }
                     }
-                    icon.source: usePictureControls ? "image://theme/icon-m-add" : "image://theme/icon-m-back"
+                    source: usePictureControls ? "image://theme/icon-m-add" : "image://theme/icon-m-back"
                     rotation: usePictureControls ? 0 : 135
                     anchors {
                         right: parent.right
                         top: parent.top
                         margins: Theme.paddingMedium
                     }
-                    onClicked: {
-                        if (settings.hapticsEnabled) {
-                            rumbleEffect.start(2)
-                        }
-
-                        if (usePictureControls) {
-                            picturePlayer.zoomIn()
-                        } else {
-                            keys.fullscreen()
-                        }
-                    }
                 }
-                IconButton {
+
+                Icon {
+                    width: Theme.itemSizeSmall; height: Theme.itemSizeSmall
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity {
                         NumberAnimation {
                             duration: 500
                         }
                     }
-                    icon.source: usePictureControls ? "image://theme/icon-m-refresh" : "image://theme/icon-m-about"
+                    source: usePictureControls ? "image://theme/icon-m-refresh" : "image://theme/icon-m-about"
                     anchors {
                         left: parent.left
                         bottom: parent.bottom
                         margins: Theme.paddingMedium
                     }
-                    onClicked: {
-                        if (settings.hapticsEnabled) {
-                            rumbleEffect.start(2)
-                        }
-
-                        if (usePictureControls) {
-                            picturePlayer.rotate()
-                        } else {
-                            keys.info()
-                        }
-                    }
-                    onPressAndHold: {
-                        if (settings.hapticsEnabled) {
-                            rumbleEffect.start(2)
-                        }
-
-                        if (!usePictureControls) {
-                            keys.procinfo()
-                        }
-                    }
                 }
-                IconButton {
+                Icon {
+                    width: Theme.itemSizeSmall; height: Theme.itemSizeSmall
                     opacity: settings.introStep < Settings.IntroStepDone ? 0 : 1
                     Behavior on opacity {
                         NumberAnimation {
                             duration: 500
                         }
                     }
-                    icon.source: usePictureControls ? "image://theme/icon-m-remove" : "image://theme/icon-m-menu"
-                    icon.height: backButton.icon.height
-                    icon.width: backButton.icon.width
+                    source: usePictureControls ? "image://theme/icon-m-remove" : "image://theme/icon-m-menu"
                     anchors {
                         right: parent.right
                         bottom: parent.bottom
                         margins: Theme.paddingMedium
-                    }
-                    onClicked: {
-                        if (settings.hapticsEnabled) {
-                            rumbleEffect.start(2)
-                        }
-
-                        if (usePictureControls) {
-                            picturePlayer.zoomOut()
-                        } else {
-                            keys.osd()
-                            keys.contextMenu()
-                        }
                     }
                 }
             }

@@ -32,6 +32,17 @@ Item {
 
     property int scrollCounter: 0
 
+    signal centerClicked;
+    signal topleftClicked;
+    signal toprightClicked;
+    signal bottomleftClicked;
+    signal bottomrightClicked;
+    signal centerLongpress;
+    signal topleftLongpress;
+    signal toprightLongpress;
+    signal bottomleftLongpress;
+    signal bottomrightLongpress;
+
     HapticsEffect {
         id: rumbleEffectSwipe
         intensity: 0.05
@@ -225,24 +236,74 @@ Item {
         property int maxClickDistance: 5
         property int minSwipeDistance: 100
 
+        function getQuadrant() {
+            // 0  inside, 1 = TL, 2 = TR, 3 = BL, 4 = BR
+            var rx = mouseX/width - 0.5
+            var ry = mouseY/height - 0.5
+            if (Math.abs(rx)+Math.abs(ry) < 0.5)
+                return 0
+
+            var quadrant = 1
+            if (rx > 0)
+                quadrant += 1
+            if (ry > 0)
+                quadrant += 2
+
+            return quadrant
+        }
+
+        function emitClick(quadrant, longPress) {
+            switch (quadrant) {
+            case 0:
+                if (longPress) { centerLongpress() } else { centerClicked() }
+                break
+            case 1:
+                if (longPress) { topleftLongpress() } else { topleftClicked() }
+                break
+            case 2:
+                if (longPress) { toprightLongpress() } else { toprightClicked() }
+                break
+            case 3:
+                if (longPress) { bottomleftLongpress() } else { bottomleftClicked() }
+                break
+            case 4:
+                if (longPress) { bottomrightLongpress() } else { bottomrightClicked() }
+            }
+        }
+
         onPressed: {
             startx = mouse.x
             starty = mouse.y
-            scrollTimer.start()
+            pressTimer.start()
         }
 
         onReleased: {
+            var isScroll = scrollTimer.running
+            pressTimer.stop()
             scrollTimer.stop()
-            if (scrollTimer.triggerCount == 0) {
-                doKeyPress(false)
+            if (!isScroll) {
+                handlePress(pressTimer.triggerCount > 0)
+            } else if (scrollTimer.triggerCount === 0) {
+                // handle quick flick
+                handleScroll(false)
             }
         }
 
         onPositionChanged: {
-            if (scrollTimer.running) {
-                var dxAbs = Math.abs(mouseX - startx)
-                var dyAbs = Math.abs(mouseY - starty)
+            var dx = mouseX - startx
+            var dy = mouseY - starty
+            var dxAbs = Math.abs(dx)
+            var dyAbs = Math.abs(dy)
 
+            if (pressTimer.running) {
+                if (pressTimer.triggerCount > 0)
+                    return // committed to longpress now
+                if (dxAbs >= minSwipeDistance || dyAbs >= minSwipeDistance) {
+                    scrollTimer.start()
+                    pressTimer.stop()
+                }
+            }
+            if (scrollTimer.running) {
                 if (dxAbs > dyAbs) {
                     scrollTimer.newSpeed = Math.min(
                                 100, Math.max(
@@ -254,6 +315,26 @@ Item {
                                     0, 100 * (dyAbs - minSwipeDistance)
                                     / (mouseArea.height - minSwipeDistance)))
                 }
+            }
+        }
+
+        Timer {
+            id: pressTimer
+
+            running: false
+            repeat: true
+            interval: 1000  //longpress interval
+
+            property int triggerCount: 0
+
+            onRunningChanged: if (running) triggerCount = 0
+            onTriggered: {
+                triggerCount += 1
+
+                if (triggerCount === 1 && settings.hapticsEnabled) {
+                    rumbleEffectPress.start(1)
+                }
+
             }
         }
 
@@ -286,22 +367,22 @@ Item {
                     speed = newSpeed
                     newSpeed = -1
                 }
-                mouseArea.doKeyPress(true)
+                mouseArea.handleScroll(true)
             }
         }
 
-        function doKeyPress(repeated) {
+        function handlePress(longPress) {
             var dx = mouseX - startx
             var dy = mouseY - starty
             var dxAbs = Math.abs(dx)
             var dyAbs = Math.abs(dy)
+            var quadrant = getQuadrant();
 
-            // Did we not move? => press enter
-            if (dxAbs < maxClickDistance && dyAbs < maxClickDistance) {
-                if (repeated) {
-                    // Do not trigger repeated enter presses
-                    return
-                }
+            // Did we not move more than minSwipeDistance?
+            if (dxAbs < (minSwipeDistance / 2) && dyAbs < (minSwipeDistance / 2)) {
+                    // It is probably meant as a small touch of the keypad,
+                    // so let's just treat it as such
+                    print("Moved only " + dx + "x" + dy + " pixels. But still activating gesture")
 
                 if (settings.hapticsEnabled) {
                     rumbleEffectPress.start(1)
@@ -320,29 +401,19 @@ Item {
                     return
                 }
 
-                keys.select()
-                animateAll()
-                return
-            }
-
-            // Did we not move more than minSwipeDistance?
-            if (dxAbs < minSwipeDistance && dyAbs < minSwipeDistance) {
-                if (dxAbs < (minSwipeDistance / 2)
-                        && dyAbs < (minSwipeDistance / 2)) {
-                    // It is probably meant as a small touch of the keypad,
-                    // so let's just treat it as such
-                    print("Moved only " + dx + "x" + dy + " pixels. But still activating gesture")
-                    if (settings.hapticsEnabled) {
-                        rumbleEffectPress.start(1)
-                    }
-                    keys.select()
+                emitClick(quadrant, longPress)
+                if (quadrant === 0)
                     animateAll()
-                } else {
-                    print("Only moved " + dx + "x" + dy + " pixels. Not activating gesture")
-                }
-                return
+            } else {
+                print("Only moved " + dx + "x" + dy + " pixels. Not activating gesture")
             }
+        }
 
+        function handleScroll(repeated) {
+            var dx = mouseX - startx
+            var dy = mouseY - starty
+            var dxAbs = Math.abs(dx)
+            var dyAbs = Math.abs(dy)
             if (settings.hapticsEnabled) {
                 rumbleEffectSwipe.start(2)
             }
