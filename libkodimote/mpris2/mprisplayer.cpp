@@ -384,7 +384,9 @@ void MprisPlayer::stateChanged()
 void MprisPlayer::currentItemChanged()
 {
     if (m_currentItem) {
-        disconnect(m_player->currentItem(), SIGNAL(thumbnailChanged()), this, SLOT(thumbnailChanged()));
+        if (m_player && m_player->currentItem()) {
+            disconnect(m_player->currentItem(), SIGNAL(thumbnailChanged()), this, SLOT(thumbnailChanged()));
+        }
         m_currentItem = 0;
     }
 
