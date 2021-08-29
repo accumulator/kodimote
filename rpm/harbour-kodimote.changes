@@ -1,3 +1,7 @@
+* Sat Aug 28 2021 Arno Dekker <email@me.com> 2.2.1-1
+- Fixed missing movie art posters for Kodi 19 (Matrix)/API v12
+* Tue Jun 30 2020 Arno Dekker <email@me.com> 2.2.0-1
+- Refactor keypad/gesturepad (thanks accumulator): all 4 full corner areas outside the diamond shaped center are now triggering button events. This should fix the annoyance of accidentally sending enter/select when you actually want to press the icon. Drag & hold now also works even when starting on an icon, unless the icon is held long enough to trigger a longpress
 * Sat May 23 2020 Arno Dekker <email@me.com> 2.1.9-1
 - Update Chinese (by dashinfantry)
 - Open keyboard by default on YouTube URL page

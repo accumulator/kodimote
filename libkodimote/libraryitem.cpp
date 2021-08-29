@@ -430,6 +430,7 @@ void LibraryItem::setPlot(const QString &plot)
     m_plot.replace("[UPPERCASE]","");
     m_plot.replace("[/UPPERCASE]","");
     m_plot.replace("[CR]","<br>");
+    m_plot.replace("\\r","<br>");
     emit plotChanged();
 }
 

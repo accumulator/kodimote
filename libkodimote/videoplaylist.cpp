@@ -53,6 +53,7 @@ void VideoPlaylist::queryItemData(int index)
     properties.append("showtitle");
     properties.append("fanart");
     properties.append("thumbnail");
+    properties.append("art");
     properties.append("runtime");
     properties.append("file");
     properties.append("year");
@@ -122,7 +123,12 @@ void VideoPlaylist::currentDataReceived(const QVariantMap &rsp)
         item->setTvShow(itemMap.value("showtitle").toString());
         item->setSeason(itemMap.value("season").toString());
         item->setFanart(itemMap.value("fanart").toString());
-        item->setThumbnail(itemMap.value("thumbnail").toString());
+
+        if (itemMap.value("art").toMap().value("poster").toString().isEmpty()) {
+            item->setThumbnail(itemMap.value("thumbnail").toString());
+        } else {
+            item->setThumbnail(itemMap.value("art").toMap().value("poster").toString());
+        }
         item->setYear(itemMap.value("year").toString());
         item->setRating(itemMap.value("rating").toString());
         emit currentChanged();

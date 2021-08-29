@@ -94,6 +94,7 @@ void Seasons::refresh()
     properties.append("showtitle");
     properties.append("season");
     properties.append("thumbnail");
+    properties.append("art");
     properties.append("playcount");
     params.insert("properties", properties);
 
@@ -122,7 +123,12 @@ void Seasons::listReceived(const QVariantMap &rsp)
         item->setSubtitle(itemMap.value("showtitle").toString());
         item->setSeason(itemMap.value("season").toInt());
         item->setSeasonId(itemMap.value("seasonid").toInt());
-        item->setThumbnail(itemMap.value("thumbnail").toString());
+        item->setFanart(itemMap.value("fanart").toString());
+        if (itemMap.value("art").toMap().value("poster").toString().isEmpty()) {
+            item->setThumbnail(itemMap.value("thumbnail").toString());
+        } else {
+            item->setThumbnail(itemMap.value("art").toMap().value("poster").toString());
+        }
         item->setPlaycount(itemMap.value("playcount").toInt());
         item->setIgnoreArticle(ignoreArticle());
         item->setFileType("directory");

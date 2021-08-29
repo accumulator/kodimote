@@ -56,6 +56,7 @@ void Files::refresh()
     properties.append("playcount");
     if(m_mediaType != "pictures") {
         properties.append("thumbnail");
+        properties.append("art");
     }
     params.insert("properties", properties);
 
@@ -89,7 +90,11 @@ void Files::listReceived(const QVariantMap &rsp)
         if(m_mediaType == "pictures") {
             item->setThumbnail(itemMap.value("file").toString());
         } else {
-            item->setThumbnail(itemMap.value("thumbnail").toString());
+            if (itemMap.value("art").toMap().value("poster").toString().isEmpty()) {
+                item->setThumbnail(itemMap.value("thumbnail").toString());
+            } else {
+                item->setThumbnail(itemMap.value("art").toMap().value("poster").toString());
+            }
         }
         item->setIgnoreArticle(ignoreArticle());
         item->setPlayable(true);

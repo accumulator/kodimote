@@ -63,6 +63,7 @@ void Movies::refresh()
     QVariantList properties;
     properties.append("fanart");
     properties.append("thumbnail");
+    properties.append("art");
     properties.append("playcount");
     properties.append("file");
     properties.append("genre");
@@ -149,7 +150,7 @@ void Movies::listReceived(const QVariantMap &rsp)
 {
     setBusy(false);
     QList<KodiModelItem*> list;
-    //qDebug() << "got movies:" << rsp.value("result");
+    // qDebug() << "got movies:" << rsp.value("result");
     QVariantList responseList = rsp.value("result").toMap().value("movies").toList();
     int index = 0;
     m_idIndexMapping.clear();
@@ -161,7 +162,11 @@ void Movies::listReceived(const QVariantMap &rsp)
         item->setMovieId(itemMap.value("movieid").toInt());
         item->setYear(itemMap.value("year").toString());
         item->setFanart(itemMap.value("fanart").toString());
-        item->setThumbnail(itemMap.value("thumbnail").toString());
+        if (itemMap.value("art").toMap().value("poster").toString().isEmpty()) {
+            item->setThumbnail(itemMap.value("thumbnail").toString());
+        } else {
+            item->setThumbnail(itemMap.value("art").toMap().value("poster").toString());
+        }
         item->setPlaycount(itemMap.value("playcount").toInt());
         item->setFileName(itemMap.value("file").toString());
         item->setIgnoreArticle(ignoreArticle());

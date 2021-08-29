@@ -112,6 +112,7 @@ void Player::getCurrentItemDetails()
     properties.append("plot");
 //    properties.append("description");
     properties.append("thumbnail");
+    properties.append("art");
     properties.append("runtime");
     params.insert("properties", properties);
 
@@ -411,7 +412,11 @@ void Player::detailsReceived(const QVariantMap &rsp)
     m_currentItem->setPlaycount(itemMap.value("playcount", -1).toInt());
     m_currentItem->setCast(itemMap.value("cast").toString());
     m_currentItem->setPlot(itemMap.value("plot").toString());
-    m_currentItem->setThumbnail(itemMap.value("thumbnail").toString());
+        if (itemMap.value("art").toMap().value("poster").toString().isEmpty()) {
+            m_currentItem->setThumbnail(itemMap.value("thumbnail").toString());
+        } else {
+            m_currentItem->setThumbnail(itemMap.value("art").toMap().value("poster").toString());
+        }
     m_currentItem->setAlbum(itemMap.value("album").toString());
     m_currentItem->setArtist(itemMap.value("artist").toString());
     if (m_currentItem->artist().isEmpty() && itemMap.value("artist").toList().count() > 0) {
